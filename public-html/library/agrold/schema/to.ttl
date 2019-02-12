@@ -1,0 +1,520 @@
+@prefix sd:    <http://www.w3.org/ns/sparql-service-description#> .
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix sbm:   <http://www.sparqlbuilder.org/2014/05/rdf-metadata-schema#> .
+
+[ a                  sd:Service ;
+  sd:defaultDataset  [ a                       sd:Dataset ;
+                       void:classPartition     [ a              void:Dataset ;
+                                                 void:class     <http://www.w3.org/2002/07/owl#Restriction> ;
+                                                 void:entities  "115"^^<http://www.w3.org/2001/XMLSchema#long>
+                                               ] ;
+                       void:classPartition     [ a              void:Dataset ;
+                                                 void:class     <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+                                                 void:entities  "16"^^<http://www.w3.org/2001/XMLSchema#long>
+                                               ] ;
+                       void:classPartition     [ a              void:Dataset ;
+                                                 void:class     <http://www.w3.org/2002/07/owl#AnnotationProperty> ;
+                                                 void:entities  "31"^^<http://www.w3.org/2001/XMLSchema#long>
+                                               ] ;
+                       void:classPartition     [ a              void:Dataset ;
+                                                 void:class     <http://www.w3.org/2002/07/owl#Class> ;
+                                                 void:entities  "1571"^^<http://www.w3.org/2001/XMLSchema#long>
+                                               ] ;
+                       void:classPartition     [ a              void:Dataset ;
+                                                 void:class     <http://www.w3.org/2002/07/owl#Ontology> ;
+                                                 void:entities  "1"^^<http://www.w3.org/2001/XMLSchema#long>
+                                               ] ;
+                       void:classPartition     [ a              void:Dataset ;
+                                                 void:class     <http://www.w3.org/2002/07/owl#Axiom> ;
+                                                 void:entities  "1547"^^<http://www.w3.org/2001/XMLSchema#long>
+                                               ] ;
+                       void:classes            "6"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                       void:properties         "33"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.obolibrary.org/obo/RO_0002581> ;
+                                                 void:triples       "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .\n@prefix ns1:   <http://purl.obolibrary.org/obo/> .\n\nns1:TO_0020079  ns1:RO_0002581  \"A xanthophyll content (TO:0000301) which is the amount of beta-cryptoxanthin (CHEBI:10362) in a plant structure (PO:0009011).\"^^xsd:string .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Class>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym> ;
+                                                 void:triples       "140"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "140"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .\n@prefix ns2:   <http://purl.obolibrary.org/obo/> .\n@prefix obo:   <http://www.geneontology.org/formats/oboInOwl#> .\n\nns2:TO_0000074  obo:hasNarrowSynonym  \"blast disease susceptibility (narrow)\"^^xsd:string .\n\nns2:TO_0000112  obo:hasNarrowSynonym  \"disease susceptibility (narrow)\"^^xsd:string .\n\nns2:TO_0000261  obo:hasNarrowSynonym  \"insect resistance (narrow)\"^^xsd:string .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Class>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "3"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> ;
+                                                 void:triples       "1545"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "16"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .\n@prefix ns2:   <http://purl.obolibrary.org/obo/> .\n@prefix obo:   <http://www.geneontology.org/formats/oboInOwl#> .\n\nns2:RO_0000052  obo:hasOBONamespace  \"plant_trait_ontology\"^^xsd:string .\n\nns2:BFO_0000051  obo:hasOBONamespace  \"plant_trait_ontology\"^^xsd:string .\n\nns2:BFO_0000050  obo:hasOBONamespace  \"plant_trait_ontology\"^^xsd:string .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#ObjectProperty>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1529"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .\n@prefix ns2:   <http://purl.obolibrary.org/obo/> .\n@prefix obo:   <http://www.geneontology.org/formats/oboInOwl#> .\n\nns2:TO_0000001  obo:hasOBONamespace  \"plant_trait_ontology\"^^xsd:string .\n\nns2:TO_0000222  obo:hasOBONamespace  \"plant_trait_ontology\"^^xsd:string .\n\nns2:TO_0000002  obo:hasOBONamespace  \"plant_trait_ontology\"^^xsd:string .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Class>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> ;
+                                                 void:triples       "1221"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1221"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .\n@prefix ns2:   <http://purl.obolibrary.org/obo/> .\n@prefix obo:   <http://www.geneontology.org/formats/oboInOwl#> .\n\nns2:TO_0000222  obo:hasRelatedSynonym  \"head milled rice (related)\"^^xsd:string , \"head rice ratio (related)\"^^xsd:string , \"HEADR (related)\"^^xsd:string .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Class>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.w3.org/2002/07/owl#annotatedSource> ;
+                                                 void:triples       "1547"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1547"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2002/07/owl#Class> ;
+                                                                      sbm:sample        "@prefix owl:   <http://www.w3.org/2002/07/owl#> .\n@prefix ns1:   <http://purl.obolibrary.org/obo/> .\n\n[ owl:annotatedSource  ns1:TO_0000002 ] .\n\n[ owl:annotatedSource  ns1:TO_0000222 ] .\n\n[ owl:annotatedSource  ns1:TO_0000001 ] .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Axiom>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.w3.org/2002/07/owl#imports> ;
+                                                 void:triples       "9"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "9"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix owl:   <http://www.w3.org/2002/07/owl#> .\n\n<http://purl.obolibrary.org/obo/to.owl>\n        owl:imports  <http://purl.obolibrary.org/obo/to/imports/ro_import.owl> , <http://purl.obolibrary.org/obo/to/imports/go_import.owl> , <http://purl.obolibrary.org/obo/to/imports/chebi_import.owl> .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Ontology>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion> ;
+                                                 void:triples       "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .\n@prefix obo:   <http://www.geneontology.org/formats/oboInOwl#> .\n\n<http://purl.obolibrary.org/obo/to.owl>\n        obo:hasOBOFormatVersion  \"1.2\"^^xsd:string .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Ontology>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "3"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.obolibrary.org/obo/IAO_0000231> ;
+                                                 void:triples       "25"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .\n@prefix ns1:   <http://purl.obolibrary.org/obo/> .\n\nns1:TO_0000935  ns1:IAO_0000231  \"A grain weight (TO:0000919) which is the total weight of all kernels on the primary ear infructescence (PO:0025597).\"^^xsd:string .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Class>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "24"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.obolibrary.org/obo/> .\n\nns0:TO_0000139  ns0:IAO_0000231  ns0:IAO_0000227 .\n\nns0:TO_0000150  ns0:IAO_0000231  ns0:IAO_0000227 .\n\nns0:TO_0000005  ns0:IAO_0000231  ns0:IAO_0000227 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Class>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.w3.org/2002/07/owl#deprecated> ;
+                                                 void:triples       "52"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "52"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix owl:   <http://www.w3.org/2002/07/owl#> .\n@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .\n@prefix ns2:   <http://purl.obolibrary.org/obo/> .\n\nns2:TO_0000037  owl:deprecated  true .\n\nns2:TO_0000002  owl:deprecated  true .\n\nns2:TO_0000005  owl:deprecated  true .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Class>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> ;
+                                                 void:triples       "8"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "8"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2002/07/owl#AnnotationProperty> ;
+                                                                      sbm:sample        "@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix ns1:   <http://purl.obolibrary.org/obo/to#> .\n@prefix obo:   <http://www.geneontology.org/formats/oboInOwl#> .\n\nns1:Glycine_max  rdfs:subPropertyOf  obo:SubsetProperty .\n\nns1:Triticum_aestivum\n        rdfs:subPropertyOf  obo:SubsetProperty .\n\nns1:Allium_porrum  rdfs:subPropertyOf  obo:SubsetProperty .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#AnnotationProperty>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.obolibrary.org/obo/IAO_0100001> ;
+                                                 void:triples       "26"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .\n@prefix ns1:   <http://purl.obolibrary.org/obo/> .\n\nns1:TO_0000667  ns1:IAO_0100001  \"TO:0001069\"^^xsd:string , \"TO:0001070\"^^xsd:string .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Class>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "24"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2002/07/owl#Class> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.obolibrary.org/obo/> .\n\nns0:TO_0000588  ns0:IAO_0100001  ns0:TO_0000162 .\n\nns0:TO_0000263  ns0:IAO_0100001  ns0:TO_0000050 .\n\nns0:TO_0000395  ns0:IAO_0100001  ns0:TO_0000146 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Class>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.geneontology.org/formats/oboInOwl#default-namespace> ;
+                                                 void:triples       "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .\n@prefix obo:   <http://www.geneontology.org/formats/oboInOwl#> .\n\n<http://purl.obolibrary.org/obo/to.owl>\n        obo:default-namespace  \"plant_trait_ontology\"^^xsd:string .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Ontology>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.geneontology.org/formats/oboInOwl#saved-by> ;
+                                                 void:triples       "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .\n@prefix obo:   <http://www.geneontology.org/formats/oboInOwl#> .\n\n<http://purl.obolibrary.org/obo/to.owl>\n        obo:saved-by  \"cooperl\"^^xsd:string .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Ontology>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.w3.org/2002/07/owl#versionIRI> ;
+                                                 void:triples       "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix owl:   <http://www.w3.org/2002/07/owl#> .\n\n<http://purl.obolibrary.org/obo/to.owl>\n        owl:versionIRI  <http://purl.obolibrary.org/obo/to/releases/2018-09-25/to.owl> .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Ontology>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.geneontology.org/formats/oboInOwl#inSubset> ;
+                                                 void:triples       "42"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "42"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2002/07/owl#AnnotationProperty> ;
+                                                                      sbm:sample        "@prefix ns2:   <http://purl.obolibrary.org/obo/to#> .\n@prefix obo:   <http://www.geneontology.org/formats/oboInOwl#> .\n@prefix ns1:   <http://purl.obolibrary.org/obo/> .\n\nns1:TO_0000431  obo:inSubset  ns2:Zea_mays .\n\nns1:TO_0000737  obo:inSubset  ns2:Zea_mays .\n\nns1:TO_0000433  obo:inSubset  ns2:Zea_mays .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Class>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "3"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.geneontology.org/formats/oboInOwl#id> ;
+                                                 void:triples       "1545"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "16"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .\n@prefix ns2:   <http://purl.obolibrary.org/obo/> .\n@prefix obo:   <http://www.geneontology.org/formats/oboInOwl#> .\n\nns2:RO_0000052  obo:id  \"inheres_in\"^^xsd:string .\n\nns2:BFO_0000051  obo:id  \"has_part\"^^xsd:string .\n\nns2:BFO_0000050  obo:id  \"part_of\"^^xsd:string .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#ObjectProperty>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1529"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .\n@prefix ns2:   <http://purl.obolibrary.org/obo/> .\n@prefix obo:   <http://www.geneontology.org/formats/oboInOwl#> .\n\nns2:TO_0000001  obo:id  \"TO:0000001\"^^xsd:string .\n\nns2:TO_0000222  obo:id  \"TO:0000222\"^^xsd:string .\n\nns2:TO_0000002  obo:id  \"TO:0000002\"^^xsd:string .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Class>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.geneontology.org/formats/oboInOwl#is_inferred> ;
+                                                 void:triples       "62"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "62"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .\n@prefix obo:   <http://www.geneontology.org/formats/oboInOwl#> .\n\n[ obo:is_inferred  \"true\"^^xsd:string ] .\n\n[ obo:is_inferred  \"true\"^^xsd:string ] .\n\n[ obo:is_inferred  \"true\"^^xsd:string ] .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Axiom>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "3"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.w3.org/2002/07/owl#annotatedProperty> ;
+                                                 void:triples       "1547"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "63"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix owl:   <http://www.w3.org/2002/07/owl#> .\n@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n\n[ owl:annotatedProperty  rdfs:subClassOf ] .\n\n[ owl:annotatedProperty  rdfs:subClassOf ] .\n\n[ owl:annotatedProperty  rdfs:subClassOf ] .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Axiom>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1484"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2002/07/owl#AnnotationProperty> ;
+                                                                      sbm:sample        "@prefix owl:   <http://www.w3.org/2002/07/owl#> .\n@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n\n[ owl:annotatedProperty  rdfs:comment ] .\n\n[ owl:annotatedProperty  rdfs:comment ] .\n\n[ owl:annotatedProperty  rdfs:comment ] .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Axiom>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.obolibrary.org/obo/IAO_0000115> ;
+                                                 void:triples       "1411"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1411"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .\n@prefix ns1:   <http://purl.obolibrary.org/obo/> .\n\nns1:TO_0000001  ns1:IAO_0000115  \"Sensitivity to the carbon content in the growth medium. It plays an important role in the synthesis of various inorganic and organic metabolites such as carbohydrates, lipids, amino acids and peptides and plays a role in various metabolic processes.\"^^xsd:string .\n\nns1:TO_0000222  ns1:IAO_0000115  \"A grain yield trait (TO:0000396) which is the amount of whole (3/4 of original length or longer) milled kernels separated from the total amount of milled rice.\"^^xsd:string .\n\nns1:TO_0000002  ns1:IAO_0000115  \"OBSOLETE. An epigenetic trait is a distinguishable feature or a characteristic or a quality of character or a phenotypic feature of a developing or developed individual but have arisen as a result of mechanisms regulating the expression of the genes rather than differences in the gene sequence.\"^^xsd:string .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Class>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> ;
+                                                 void:triples       "28"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "28"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .\n@prefix ns2:   <http://purl.obolibrary.org/obo/> .\n@prefix obo:   <http://www.geneontology.org/formats/oboInOwl#> .\n\nns2:TO_0000590  obo:hasBroadSynonym  \"GRWT (broad)\"^^xsd:string .\n\nns2:TO_0000591  obo:hasBroadSynonym  \"hundred grain weight (broad)\"^^xsd:string , \"HDGRWT (broad)\"^^xsd:string .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Class>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "4"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.w3.org/2000/01/rdf-schema#label> ;
+                                                 void:triples       "1558"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "16"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .\n@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix ns2:   <http://purl.obolibrary.org/obo/> .\n\nns2:RO_0000052  rdfs:label  \"inheres in\"^^xsd:string .\n\nns2:BFO_0000051  rdfs:label  \"has part\"^^xsd:string .\n\nns2:BFO_0000050  rdfs:label  \"part of\"^^xsd:string .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#ObjectProperty>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1529"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .\n@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix ns2:   <http://purl.obolibrary.org/obo/> .\n\nns2:TO_0000001  rdfs:label  \"carbon sensitivity\"^^xsd:string .\n\nns2:TO_0000222  rdfs:label  \"head rice yield\"^^xsd:string .\n\nns2:TO_0000002  rdfs:label  \"epigenetic trait\"^^xsd:string .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Class>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "13"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .\n@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix ns2:   <http://purl.obolibrary.org/obo/> .\n@prefix obo:   <http://www.geneontology.org/formats/oboInOwl#> .\n\nobo:hasExactSynonym  rdfs:label  \"has_exact_synonym\"^^xsd:string .\n\nns2:IAO_0000115  rdfs:label  \"definition\"^^xsd:string .\n\nns2:IAO_0100001  rdfs:label  \"term replaced by\"^^xsd:string .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#AnnotationProperty>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "5"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.w3.org/2002/07/owl#annotatedTarget> ;
+                                                 void:triples       "1547"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1485"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix owl:   <http://www.w3.org/2002/07/owl#> .\n@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .\n\n[ owl:annotatedTarget  \"Plant sensitivity to soils with alkali conditions (pH>7).\"^^xsd:string ] .\n\n[ owl:annotatedTarget  \"OBSOLETE. An epigenetic trait is a distinguishable feature or a characteristic or a quality of character or a phenotypic feature of a developing or developed individual but have arisen as a result of mechanisms regulating the expression of the genes rather than differences in the gene sequence.\"^^xsd:string ] .\n\n[ owl:annotatedTarget  \"Sensitivity to the carbon content in the growth medium. It plays an important role in the synthesis of various inorganic and organic metabolites such as carbohydrates, lipids, amino acids and peptides and plays a role in various metabolic processes.\"^^xsd:string ] .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Axiom>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "16"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix owl:   <http://www.w3.org/2002/07/owl#> .\n@prefix ns1:   <http://purl.obolibrary.org/obo/> .\n\n[ owl:annotatedTarget  ns1:PATO_0000052 ] .\n\n[ owl:annotatedTarget  ns1:PATO_0000014 ] .\n\n[ owl:annotatedTarget  ns1:PATO_0000586 ] .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Axiom>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "24"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2002/07/owl#Restriction> ;
+                                                                      sbm:sample        "@prefix owl:   <http://www.w3.org/2002/07/owl#> .\n\n[ owl:annotatedTarget  []  ] .\n\n[ owl:annotatedTarget  []  ] .\n\n[ owl:annotatedTarget  []  ] .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Axiom>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "22"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2002/07/owl#Class> ;
+                                                                      sbm:sample        "@prefix owl:   <http://www.w3.org/2002/07/owl#> .\n@prefix ns1:   <http://purl.obolibrary.org/obo/> .\n\n[ owl:annotatedTarget  ns1:TO_1000003 ] .\n\n[ owl:annotatedTarget  ns1:TO_0000817 ] .\n\n[ owl:annotatedTarget  ns1:TO_1000012 ] .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Axiom>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "4"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.geneontology.org/formats/oboInOwl#hasDbXref> ;
+                                                 void:triples       "3288"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .\n@prefix ns2:   <http://purl.obolibrary.org/obo/> .\n@prefix obo:   <http://www.geneontology.org/formats/oboInOwl#> .\n\nns2:RO_0000052  obo:hasDbXref  \"RO:0000052\"^^xsd:string .\n\nns2:BFO_0000051  obo:hasDbXref  \"BFO:0000051\"^^xsd:string .\n\nns2:BFO_0000050  obo:hasDbXref  \"BFO:0000050\"^^xsd:string .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#ObjectProperty>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "2494"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .\n@prefix obo:   <http://www.geneontology.org/formats/oboInOwl#> .\n\n[ obo:hasDbXref  \"Gramene:pankaj_jaiswal\"^^xsd:string , \"ISBN:0198506732\"^^xsd:string ] .\n\n[ obo:hasDbXref  \"Gramene:pankaj_jaiswal\"^^xsd:string ] .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Axiom>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "790"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .\n@prefix ns2:   <http://purl.obolibrary.org/obo/> .\n@prefix obo:   <http://www.geneontology.org/formats/oboInOwl#> .\n\nns2:TO_0000017  obo:hasDbXref  \"TO_GIT:54\"^^xsd:string .\n\nns2:TO_0000024  obo:hasDbXref  \"PATO:0000122\"^^xsd:string .\n\nns2:TO_0000222  obo:hasDbXref  \"TO_GIT:422\"^^xsd:string .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Class>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.geneontology.org/formats/oboInOwl#shorthand> ;
+                                                 void:triples       "4"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .\n@prefix ns2:   <http://purl.obolibrary.org/obo/> .\n@prefix obo:   <http://www.geneontology.org/formats/oboInOwl#> .\n\nns2:RO_0000052  obo:shorthand  \"inheres_in\"^^xsd:string .\n\nns2:BFO_0000051  obo:shorthand  \"has_part\"^^xsd:string .\n\nns2:BFO_0000050  obo:shorthand  \"part_of\"^^xsd:string .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#ObjectProperty>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> ;
+                                                 void:triples       "24"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "24"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .\n@prefix ns2:   <http://purl.obolibrary.org/obo/> .\n@prefix obo:   <http://www.geneontology.org/formats/oboInOwl#> .\n\nns2:TO_0000146  obo:hasAlternativeId  \"TO:0000395\"^^xsd:string .\n\nns2:TO_0000162  obo:hasAlternativeId  \"TO:0000588\"^^xsd:string .\n\nns2:TO_0000050  obo:hasAlternativeId  \"TO:0000263\"^^xsd:string .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Class>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "3"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.w3.org/2000/01/rdf-schema#subClassOf> ;
+                                                 void:triples       "6418"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4140"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix owl:   <http://www.w3.org/2002/07/owl#> .\n@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix ns1:   <http://purl.obolibrary.org/obo/> .\n\nns1:BFO_0000003  rdfs:subClassOf  ns1:BFO_0000001 .\n\nns1:BFO_0000002  rdfs:subClassOf  ns1:BFO_0000001 .\n\nns1:BFO_0000001  rdfs:subClassOf  owl:Thing .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2000/01/rdf-schema#Resource>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "37"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2002/07/owl#Class> ;
+                                                                      sbm:sample        "@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix ns1:   <http://purl.obolibrary.org/obo/> .\n\nns1:PO_0025280  rdfs:subClassOf  ns1:PO_0000003 .\n\nns1:PO_0025279  rdfs:subClassOf  ns1:PO_0000003 .\n\nns1:PO_0025017  rdfs:subClassOf  ns1:PO_0000003 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2000/01/rdf-schema#Resource>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "380"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix ns1:   <http://purl.obolibrary.org/obo/> .\n\nns1:PO_0005848  rdfs:subClassOf  ns1:PO_0005352 .\n\nns1:PO_0000003  rdfs:subClassOf  ns1:PO_0009011 .\n\nns1:PO_0005004  rdfs:subClassOf  ns1:PO_0025001 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Class>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "91"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2002/07/owl#Restriction> ;
+                                                                      sbm:sample        "@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix ns1:   <http://purl.obolibrary.org/obo/> .\n\nns1:TO_0000059  rdfs:subClassOf  []  ;\n        rdfs:subClassOf  []  .\n\nns1:TO_0000222  rdfs:subClassOf  []  .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Class>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1770"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2002/07/owl#Class> ;
+                                                                      sbm:sample        "@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix ns1:   <http://purl.obolibrary.org/obo/> .\n\nns1:PO_0009009  rdfs:subClassOf  ns1:PO_0000003 .\n\nns1:PO_0009040  rdfs:subClassOf  ns1:PO_0009037 .\n\nns1:PO_0020141  rdfs:subClassOf  ns1:PO_0005004 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Class>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "3"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.geneontology.org/formats/oboInOwl#created_by> ;
+                                                 void:triples       "411"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .\n@prefix obo:   <http://www.geneontology.org/formats/oboInOwl#> .\n\n[ obo:created_by  \"ethan_johnson\"^^xsd:string ] .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Axiom>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "410"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .\n@prefix ns2:   <http://purl.obolibrary.org/obo/> .\n@prefix obo:   <http://www.geneontology.org/formats/oboInOwl#> .\n\nns2:TO_0000077  obo:created_by  \"jaiswalp\"^^xsd:string .\n\nns2:TO_0000133  obo:created_by  \"jaiswalp\"^^xsd:string .\n\nns2:TO_0000079  obo:created_by  \"cooperl\"^^xsd:string .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Class>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.w3.org/2002/07/owl#onProperty> ;
+                                                 void:triples       "115"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "115"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+                                                                      sbm:sample        "@prefix owl:   <http://www.w3.org/2002/07/owl#> .\n@prefix ns1:   <http://purl.obolibrary.org/obo/> .\n\n[ owl:onProperty  ns1:BFO_0000050 ] .\n\n[ owl:onProperty  ns1:BFO_0000050 ] .\n\n[ owl:onProperty  ns1:BFO_0000050 ] .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Restriction>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> ;
+                                                 void:triples       "183"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "183"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .\n@prefix ns2:   <http://purl.obolibrary.org/obo/> .\n@prefix obo:   <http://www.geneontology.org/formats/oboInOwl#> .\n\nns2:TO_0000074  obo:hasExactSynonym  \"blast disease resistance trait (exact)\"^^xsd:string .\n\nns2:TO_0000081  obo:hasExactSynonym  \"DRTDWT (exact)\"^^xsd:string , \"deep root dry weight per tiller (exact)\"^^xsd:string .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Class>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.org/dc/elements/1.1/date> ;
+                                                 void:triples       "18"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "18"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .\n@prefix ns2:   <http://purl.obolibrary.org/obo/> .\n@prefix dc:    <http://purl.org/dc/elements/1.1/> .\n\nns2:TO_0001061  dc:date  \"2018-01-30T23:50:51Z\"^^xsd:dateTime .\n\nns2:TO_0001060  dc:date  \"2017-11-30T00:04:18Z\"^^xsd:dateTime .\n\nns2:TO_0001053  dc:date  \"2017-11-29T23:52:06Z\"^^xsd:dateTime .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Class>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.w3.org/2002/07/owl#someValuesFrom> ;
+                                                 void:triples       "115"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "115"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2002/07/owl#Class> ;
+                                                                      sbm:sample        "@prefix owl:   <http://www.w3.org/2002/07/owl#> .\n@prefix ns1:   <http://purl.obolibrary.org/obo/> .\n\n[ owl:someValuesFrom  ns1:PO_0000003 ] .\n\n[ owl:someValuesFrom  ns1:PO_0000003 ] .\n\n[ owl:someValuesFrom  ns1:PO_0005004 ] .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Restriction>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "4"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.w3.org/2000/01/rdf-schema#comment> ;
+                                                 void:triples       "455"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "5"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .\n@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n\n[ rdfs:comment  \"TO:cooperl\"^^xsd:string ] .\n\n[ rdfs:comment  \"TO:cooperl\"^^xsd:string ] .\n\n[ rdfs:comment  \"TO:cooperl\"^^xsd:string ] .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Axiom>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "442"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .\n@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix ns2:   <http://purl.obolibrary.org/obo/> .\n\nns2:TO_0000013  rdfs:comment  \"The factors needed for successful test are the presence of sources and vectors, inoculation at the susceptible growth stage of the test plants and favorable environmental conditions.\"^^xsd:string .\n\nns2:TO_0000003  rdfs:comment  \"Observed by general growth conditions in relation to standard resistant and susceptible checks. Since some soil problems are very heterogeneous in the field, several replications may be needed to obtain precise reading. Leaf is counted as discolored or dead if more than half of its area is discolored or dead.\"^^xsd:string .\n\nns2:TO_0000222  rdfs:comment  \"Depending on the grain type, whole milled kernels are spearated using special sized screens. The weight of whole milled kernels or head rice is expressed as a percentage of the original rough rice sample.\"^^xsd:string .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Class>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "8"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .\n@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix ns2:   <http://purl.obolibrary.org/obo/to#> .\n\nns2:Allium_porrum  rdfs:comment  \"Terms_used_for_leek\"^^xsd:string .\n\nns2:Zea_mays  rdfs:comment  \"Terms_used_for_maize_or_corn\"^^xsd:string .\n\nns2:Cucurbita  rdfs:comment  \"Terms_used_for_squash\"^^xsd:string .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#AnnotationProperty>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.geneontology.org/formats/oboInOwl#creation_date> ;
+                                                 void:triples       "390"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "390"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .\n@prefix ns2:   <http://purl.obolibrary.org/obo/> .\n@prefix obo:   <http://www.geneontology.org/formats/oboInOwl#> .\n\nns2:TO_0000738  obo:creation_date  \"2012-04-19T10:38:30Z\"^^xsd:string .\n\nns2:TO_0000737  obo:creation_date  \"2012-04-16T02:18:03Z\"^^xsd:string .\n\nns2:TO_0000736  obo:creation_date  \"2012-04-19T10:36:57Z\"^^xsd:string .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Class>
+                                                                    ]
+                                               ] ;
+                       sbm:crawlLog            [ a                     sbm:CrawlLog ;
+                                                 sbm:crawlEndTime      "2018-12-12T21:53:10+09:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                                 sbm:crawlStartTime    "2018-12-12T21:51:29+09:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                                 sbm:endpointAccesses  "134"^^<http://www.w3.org/2001/XMLSchema#long>
+                                               ] ;
+                       sd:namedGraph           [ a        sd:NamedGraph ;
+                                                 sd:name  <http://www.southgreen.fr/agrold/to>
+                                               ]
+                     ] ;
+  sd:endpoint        <http://volvestre.cirad.fr:8890/sparql>
+] .

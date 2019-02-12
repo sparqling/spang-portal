@@ -1,0 +1,28 @@
+digraph {
+    ranksep=2;
+    rankdir="LR";
+    charset="utf-8";
+
+    // Class relations with the numbers of edges
+    "owl:AnnotationProperty" -> "owl:Class" [ label="rdfs:domain\n  4"];
+    "owl:Class" -> "owl:Class" [ label="owl:equivalentClass\n  23"];
+    "owl:Class" -> "rdfs:Literal2" [ label="rdfs:label\n  46"];
+    "owl:DatatypeProperty" -> "rdfs:Literal3" [ label="rdfs:label\n  26"];
+    "owl:ObjectProperty" -> "owl:Class" [ label="rdfs:domain\n  6"];
+    "owl:ObjectProperty" -> "owl:ObjectProperty" [ label="owl:equivalentProperty\n  15"];
+    "owl:ObjectProperty" -> "owl:ObjectProperty" [ label="rdfs:subPropertyOf\n  3"];
+    "owl:ObjectProperty" -> "rdfs:Literal1" [ label="rdfs:label\n  20"];
+    "owl:Ontology" -> "rdfs:Resource4" [ label="owl:versionIRI\n  1"];
+
+    // The number of entities
+    "owl:AnnotationProperty" [ label="owl:AnnotationProperty\n1" ] ;
+    "owl:Class" [ label="owl:Class\n46" ] ;
+    "owl:DatatypeProperty" [ label="owl:DatatypeProperty\n26" ] ;
+    "owl:ObjectProperty" [ label="owl:ObjectProperty\n38" ] ;
+    "owl:Ontology" [ label="owl:Ontology\n1" ] ;
+    "rdfs:Literal1" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Literal2" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Literal3" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Resource4" [ label="rdfs:Resource" ] ;
+
+}

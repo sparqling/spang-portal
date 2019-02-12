@@ -1,0 +1,11 @@
+SELECT DISTINCT ?person
+WHERE {
+    ?person wdt:P31 wd:Q5 .
+    {
+	?parent wdt:P40 ?person .
+    }
+    UNION
+    {
+	?person wdt:P40 ?child .
+    }
+}

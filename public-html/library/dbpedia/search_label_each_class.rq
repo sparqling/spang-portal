@@ -1,0 +1,10 @@
+# Free text search in Virtuoso (count instances of each class)
+#param okazaki
+SELECT ?class (COUNT(DISTINCT ?instance) AS ?count)
+WHERE {
+    ?instance rdfs:label ?text .
+    ?text bif:contains '"$1"' .
+    ?instance a ?class .
+    ?class rdfs:subClassOf+ owl:Thing .
+}
+ORDER BY DESC(?count)

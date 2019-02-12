@@ -1,0 +1,8 @@
+# Function annotation
+#param K9Z723
+SELECT ?function
+WHERE {
+   uniprot:$1 up:annotation ?annot .
+   ?annot a up:Function_Annotation ;
+   	  rdfs:comment ?function .
+}

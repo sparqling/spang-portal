@@ -1,0 +1,99 @@
+@prefix sd:    <http://www.w3.org/ns/sparql-service-description#> .
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix sbm:   <http://www.sparqlbuilder.org/2014/05/rdf-metadata-schema#> .
+
+[ a                  sd:Service ;
+  sd:defaultDataset  [ a                       sd:Dataset ;
+                       void:classPartition     [ a              void:Dataset ;
+                                                 void:class     <http://www.southgreen.fr/agrold/resource/mRNA> ;
+                                                 void:entities  "1"^^<http://www.w3.org/2001/XMLSchema#long>
+                                               ] ;
+                       void:classPartition     [ a              void:Dataset ;
+                                                 void:class     <http://www.southgreen.fr/agrold/resource/Chromosome> ;
+                                                 void:entities  "1"^^<http://www.w3.org/2001/XMLSchema#long>
+                                               ] ;
+                       void:classes            "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                       void:properties         "6"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.southgreen.fr/agrold/vocabulary/has_end_position> ;
+                                                 void:triples       "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://www.southgreen.fr/agrold/vocabulary/> .\n@prefix ns1:   <http://www.southgreen.fr/agrold/orygenesdb.mrna/> .\n\nns1:Os01t0100100-01  ns0:has_end_position\n                10815 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.southgreen.fr/agrold/resource/mRNA>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.southgreen.fr/agrold/vocabulary/has_start_position> ;
+                                                 void:triples       "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://www.southgreen.fr/agrold/vocabulary/> .\n@prefix ns1:   <http://www.southgreen.fr/agrold/orygenesdb.mrna/> .\n\nns1:Os01t0100100-01  ns0:has_start_position\n                2983 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.southgreen.fr/agrold/resource/mRNA>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.w3.org/2000/01/rdf-schema#label> ;
+                                                 void:triples       "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix ns1:   <http://www.southgreen.fr/agrold/orygenesdb.mrna/> .\n\nns1:Os01t0100100-01  rdfs:label  \"Os01t0100100-01\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.southgreen.fr/agrold/resource/mRNA>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "3"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.southgreen.fr/agrold/vocabulary/taxon> ;
+                                                 void:triples       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://www.southgreen.fr/agrold/vocabulary/> .\n@prefix ns2:   <http://purl.obolibrary.org/obo/> .\n@prefix ns1:   <http://www.southgreen.fr/agrold/chromosome/> .\n\nns1:chr01  ns0:taxon  ns2:NCBITaxon_39947 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.southgreen.fr/agrold/resource/Chromosome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://www.southgreen.fr/agrold/vocabulary/> .\n@prefix ns2:   <http://purl.obolibrary.org/obo/> .\n@prefix ns1:   <http://www.southgreen.fr/agrold/orygenesdb.mrna/> .\n\nns1:Os01t0100100-01  ns0:taxon  ns2:NCBITaxon_39947 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.southgreen.fr/agrold/resource/mRNA>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.southgreen.fr/agrold/vocabulary/is_located_on> ;
+                                                 void:triples       "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.southgreen.fr/agrold/resource/Chromosome> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://www.southgreen.fr/agrold/vocabulary/> .\n@prefix ns2:   <http://www.southgreen.fr/agrold/chromosome/> .\n@prefix ns1:   <http://www.southgreen.fr/agrold/orygenesdb.mrna/> .\n\nns1:Os01t0100100-01  ns0:is_located_on  ns2:chr01 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.southgreen.fr/agrold/resource/mRNA>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.southgreen.fr/agrold/vocabulary/develops_from> ;
+                                                 void:triples       "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://www.southgreen.fr/agrold/vocabulary/> .\n@prefix ns2:   <http://identifiers.org/ensembl.plant/> .\n@prefix ns1:   <http://www.southgreen.fr/agrold/orygenesdb.mrna/> .\n\nns1:Os01t0100100-01  ns0:develops_from  ns2:Os01g0100100 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.southgreen.fr/agrold/resource/mRNA>
+                                                                    ]
+                                               ] ;
+                       sbm:crawlLog            [ a                     sbm:CrawlLog ;
+                                                 sbm:crawlEndTime      "2018-12-12T22:03:12+09:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                                 sbm:crawlStartTime    "2018-12-12T22:02:52+09:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                                 sbm:endpointAccesses  "26"^^<http://www.w3.org/2001/XMLSchema#long>
+                                               ] ;
+                       sd:namedGraph           [ a        sd:NamedGraph ;
+                                                 sd:name  <http://www.southgreen.fr/agrold/rapdb.mrna>
+                                               ]
+                     ] ;
+  sd:endpoint        <http://volvestre.cirad.fr:8890/sparql>
+] .

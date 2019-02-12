@@ -1,0 +1,36 @@
+SPANG additional functionalities (beta)
+
+- Querying local RDF (depending on Jena 'sparql' command)
+    spang ./data.rdf query.rq
+    spang ./data.ttl -P rdfs:label
+    cat data.ttl | spang - -P rdfs:label
+
+- Abbreviate URIs for readability
+    cat input | abbrev_prefix
+    cat input | spang -a
+
+- Other utilities (depending on Raptor 'rapper' command)
+    cat data.rdf | rdf2ttl
+    cat data.rdf | rdf2nt
+    cat data.ttl | rdf2xml
+    cat data.rdf | rdfcount
+
+- Other utilities (depending on ConvRDF and CountRDF)
+    cat data.rdf | rdf2nt-huge
+    cat data.rdf | rdfcount-huge
+
+- Simple HTTP access
+    spang chembl
+    spang skos:
+    spang mbgdl:get_ortholog
+    spang pdb:2KMF
+    spang pdb:2KMF -q
+    spang pdb:2KMF | rdf2ttl
+
+- Visualizing data structures (depending on TripleDataProfiler and Graphviz 'dot' command)
+    tdprun mbgd mbgdr:organism > out
+    tdp2img out
+
+- Other combinations
+    spang skos: | rdf2ttl | spang - -S skos:prefLabel -a
+    spang skos: | rdf2ttl | spang - count_each_class

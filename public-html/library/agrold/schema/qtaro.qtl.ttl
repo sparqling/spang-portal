@@ -1,0 +1,100 @@
+@prefix sd:    <http://www.w3.org/ns/sparql-service-description#> .
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix sbm:   <http://www.sparqlbuilder.org/2014/05/rdf-metadata-schema#> .
+
+[ a                  sd:Service ;
+  sd:defaultDataset  [ a                       sd:Dataset ;
+                       void:classPartition     [ a              void:Dataset ;
+                                                 void:class     <http://www.southgreen.fr/agrold/resource/QTL> ;
+                                                 void:entities  "17"^^<http://www.w3.org/2001/XMLSchema#long>
+                                               ] ;
+                       void:classes            "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                       void:properties         "7"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.southgreen.fr/agrold/vocabulary/is_located_on> ;
+                                                 void:triples       "17"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "17"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://www.southgreen.fr/agrold/vocabulary/> .\n\n<http://www.southgreen.fr/agrold/qtaro.qtl125>\n        ns0:is_located_on  \"8\" .\n\n<http://www.southgreen.fr/agrold/qtaro.qtl137>\n        ns0:is_located_on  \"12\" .\n\n<http://www.southgreen.fr/agrold/qtaro.qtl126>\n        ns0:is_located_on  \"5\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.southgreen.fr/agrold/resource/QTL>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.southgreen.fr/agrold/vocabulary/date> ;
+                                                 void:triples       "17"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "17"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://www.southgreen.fr/agrold/vocabulary/> .\n\n<http://www.southgreen.fr/agrold/qtaro.qtl125>\n        ns0:date  \"2006\" .\n\n<http://www.southgreen.fr/agrold/qtaro.qtl137>\n        ns0:date  \"2006\" .\n\n<http://www.southgreen.fr/agrold/qtaro.qtl126>\n        ns0:date  \"2006\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.southgreen.fr/agrold/resource/QTL>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.southgreen.fr/agrold/vocabulary/has_trait> ;
+                                                 void:triples       "51"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "51"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://www.southgreen.fr/agrold/vocabulary/> .\n\n<http://www.southgreen.fr/agrold/qtaro.qtl125>\n        ns0:has_trait  \"Relative germination vigor(RGV)\" , \"Germination/dormancy\" , \"Physiological trait\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.southgreen.fr/agrold/resource/QTL>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.southgreen.fr/agrold/vocabulary/has_end_position> ;
+                                                 void:triples       "17"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "17"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://www.southgreen.fr/agrold/vocabulary/> .\n\n<http://www.southgreen.fr/agrold/qtaro.qtl125>\n        ns0:has_end_position  \"28166213\" .\n\n<http://www.southgreen.fr/agrold/qtaro.qtl137>\n        ns0:has_end_position  \"26368115\" .\n\n<http://www.southgreen.fr/agrold/qtaro.qtl126>\n        ns0:has_end_position  \"27457701\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.southgreen.fr/agrold/resource/QTL>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.southgreen.fr/agrold/vocabulary/lod> ;
+                                                 void:triples       "17"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "17"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://www.southgreen.fr/agrold/vocabulary/> .\n\n<http://www.southgreen.fr/agrold/qtaro.qtl125>\n        ns0:lod  \"3.2\" .\n\n<http://www.southgreen.fr/agrold/qtaro.qtl137>\n        ns0:lod  \"-\" .\n\n<http://www.southgreen.fr/agrold/qtaro.qtl126>\n        ns0:lod  \"4.2\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.southgreen.fr/agrold/resource/QTL>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.southgreen.fr/agrold/vocabulary/has_start_position> ;
+                                                 void:triples       "17"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "17"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://www.southgreen.fr/agrold/vocabulary/> .\n\n<http://www.southgreen.fr/agrold/qtaro.qtl125>\n        ns0:has_start_position  \"26582935\" .\n\n<http://www.southgreen.fr/agrold/qtaro.qtl137>\n        ns0:has_start_position  \"23698130\" .\n\n<http://www.southgreen.fr/agrold/qtaro.qtl126>\n        ns0:has_start_position  \"24086072\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.southgreen.fr/agrold/resource/QTL>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.w3.org/2000/01/rdf-schema#label> ;
+                                                 void:triples       "17"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "17"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n\n<http://www.southgreen.fr/agrold/qtaro.qtl125>\n        rdfs:label  \"qRGV-8\" .\n\n<http://www.southgreen.fr/agrold/qtaro.qtl137>\n        rdfs:label  \"qSD12\" .\n\n<http://www.southgreen.fr/agrold/qtaro.qtl126>\n        rdfs:label  \"qRGR-5\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.southgreen.fr/agrold/resource/QTL>
+                                                                    ]
+                                               ] ;
+                       sbm:crawlLog            [ a                     sbm:CrawlLog ;
+                                                 sbm:crawlEndTime      "2018-12-12T22:02:46+09:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                                 sbm:crawlStartTime    "2018-12-12T22:02:33+09:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                                 sbm:endpointAccesses  "16"^^<http://www.w3.org/2001/XMLSchema#long>
+                                               ] ;
+                       sd:namedGraph           [ a        sd:NamedGraph ;
+                                                 sd:name  <http://www.southgreen.fr/agrold/qtaro.qtl>
+                                               ]
+                     ] ;
+  sd:endpoint        <http://volvestre.cirad.fr:8890/sparql>
+] .

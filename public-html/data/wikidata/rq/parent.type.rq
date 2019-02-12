@@ -1,0 +1,7 @@
+SELECT (COUNT(DISTINCT ?parent) AS ?count) ?type
+WHERE {
+    ?parent wdt:P40 ?child .
+    ?parent wdt:P31 ?type .
+}
+GROUP BY ?type
+ORDER BY DESC(?count)

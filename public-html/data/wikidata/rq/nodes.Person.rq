@@ -1,0 +1,13 @@
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+
+SELECT (?p AS ?nid) ("Person" AS ?type)
+       ("gender" AS ?P0) (SAMPLE(?g) AS ?_g)
+WHERE {
+    ?p wdt:P21 ?g .
+{    ?p wdt:P40 ?c .
+
+    ?c wdt:P21 ?g_ .}UNION{    ?p wdt:P40 ?c .
+
+    ?p_ wdt:P21 ?g__ .}
+}
+GROUP BY ?p

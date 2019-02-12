@@ -1,0 +1,6 @@
+SELECT DISTINCT ?taxon ?org
+WHERE {
+    VALUES (?taxon) { $STDIN }
+    ?org a mbgd:Genome .
+    ?org mbgd:inTaxon ?taxon .
+}

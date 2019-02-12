@@ -1,0 +1,6 @@
+SELECT ?parent ?child
+WHERE {
+    ?parent wdt:P40 ?child .
+    ?parent wdt:P31 wd:Q5 .
+    ?child  wdt:P31 wd:Q5 .
+}

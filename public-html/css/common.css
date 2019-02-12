@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800");
+
+body {
+    font-family: Muli, sans-serif;
+    color: #333333;
+}
+
+.content_wrapper_wide {
+    width: 1000px;
+    margin: 0 auto;
+    dispaly: flex;
+}
+
+.content_wrapper {
+    width: 950px;
+    margin: 0 auto;
+    dispaly: flex;
+}
+
+.content_wrapper_slim {
+    width: 850px;
+    margin: 0 auto;
+    dispaly: flex;
+}
+
+.about_description {
+    font-size: 14px;
+    line-height: 1.8em;
+    color: #333333;
+    magin-bottom: 10px;
+}
+
+.subtitle {
+    font-family: Muli, sans-serif;
+    font-size: 150%;
+    color: #004098;
+}
+
+h1 {
+    color: #004098;
+    border-bottom: solid 1px #9e9e9e;
+}
+
+h2 {
+    color: #004098;
+}
+
+h3 {
+    color: #004098;
+    border-bottom: solid 1px #9e9e9e;
+    width: 650px;
+}
+
+.colored {
+    color: #004098;
+    font-size: 14px
+}
+
+.small {
+    font-size: 14px
+}
+
+.link_title {
+    color: #333333;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #004098;
+    border-bottom: solid 1px #004098;
+}

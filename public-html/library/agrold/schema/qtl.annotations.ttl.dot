@@ -1,0 +1,51 @@
+digraph {
+    ranksep=2;
+    rankdir="LR";
+    charset="utf-8";
+
+    // Class relations with the numbers of edges
+    "rdf:Statement" -> "rdfs:Literal20" [ label="agrold:evidence\n  19"];
+    "rdf:Statement" -> "rdfs:Literal22" [ label="agrold:assigned_by\n  19"];
+    "rdf:Statement" -> "rdfs:Literal8" [ label="agrold:date\n  19"];
+    "rdf:Statement" -> "rdfs:Resource21" [ label="rdf:subject\n  19"];
+    "rdf:Statement" -> "rdfs:Resource23" [ label="rdfs:subClassOf\n  19"];
+    "rdf:Statement" -> "rdfs:Resource3" [ label="rdf:predicate\n  19"];
+    "rdf:Statement" -> "rdfs:Resource9" [ label="rdf:object\n  19"];
+    "rdfs:Resource1" -> "rdfs:Resource2" [ label="agrold:taxon\n  8"];
+    "rdfs:Resource10" -> "rdfs:Resource11" [ label="agrold:has_condition\n  4"];
+    "rdfs:Resource12" -> "rdfs:Resource13" [ label="agrold:expressed_at\n  5"];
+    "rdfs:Resource14" -> "rdfs:Literal15" [ label="rdfs:label\n  8"];
+    "rdfs:Resource16" -> "rdfs:Resource17" [ label="agrold:expressed_in\n  5"];
+    "rdfs:Resource18" -> "rdfs:Literal19" [ label="agrold:has_synonym\n  5"];
+    "rdfs:Resource24" -> "rdf:Statement" [ label="agrold:has_annotation\n  19"];
+    "rdfs:Resource4" -> "rdfs:Resource5" [ label="agrold:has_trait\n  5"];
+    "rdfs:Resource6" -> "rdfs:Literal7" [ label="agrold:description\n  8"];
+
+    // The number of entities
+    "rdf:Statement" [ label="rdf:Statement\n19" ] ;
+    "rdfs:Literal15" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Literal19" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Literal20" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Literal22" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Literal7" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Literal8" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Resource1" [ label="rdfs:Resource" ] ;
+    "rdfs:Resource10" [ label="rdfs:Resource" ] ;
+    "rdfs:Resource11" [ label="rdfs:Resource" ] ;
+    "rdfs:Resource12" [ label="rdfs:Resource" ] ;
+    "rdfs:Resource13" [ label="rdfs:Resource" ] ;
+    "rdfs:Resource14" [ label="rdfs:Resource" ] ;
+    "rdfs:Resource16" [ label="rdfs:Resource" ] ;
+    "rdfs:Resource17" [ label="rdfs:Resource" ] ;
+    "rdfs:Resource18" [ label="rdfs:Resource" ] ;
+    "rdfs:Resource2" [ label="rdfs:Resource" ] ;
+    "rdfs:Resource21" [ label="rdfs:Resource" ] ;
+    "rdfs:Resource23" [ label="rdfs:Resource" ] ;
+    "rdfs:Resource24" [ label="rdfs:Resource" ] ;
+    "rdfs:Resource3" [ label="rdfs:Resource" ] ;
+    "rdfs:Resource4" [ label="rdfs:Resource" ] ;
+    "rdfs:Resource5" [ label="rdfs:Resource" ] ;
+    "rdfs:Resource6" [ label="rdfs:Resource" ] ;
+    "rdfs:Resource9" [ label="rdfs:Resource" ] ;
+
+}

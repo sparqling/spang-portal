@@ -1,0 +1,122 @@
+@prefix sd:    <http://www.w3.org/ns/sparql-service-description#> .
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix sbm:   <http://www.sparqlbuilder.org/2014/05/rdf-metadata-schema#> .
+
+[ a                  sd:Service ;
+  sd:defaultDataset  [ a                       sd:Dataset ;
+                       void:classPartition     [ a              void:Dataset ;
+                                                 void:class     <http://www.w3.org/2002/07/owl#Class> ;
+                                                 void:entities  "426491"^^<http://www.w3.org/2001/XMLSchema#long>
+                                               ] ;
+                       void:classes            "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                       void:properties         "9"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.southgreen.fr/agrold/vocabulary/has_alternative_id> ;
+                                                 void:triples       "28723"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "28723"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://www.southgreen.fr/agrold/vocabulary/> .\n@prefix ns1:   <http://purl.uniprot.org/uniprot/> .\n\nns1:A3B9M6  ns0:has_alternative_id  ns1:Q0DDM5 .\n\nns1:B7EDK8  ns0:has_alternative_id  ns1:Q0DQX1 .\n\nns1:B7E914  ns0:has_alternative_id  ns1:Q0JE88 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Class>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.southgreen.fr/agrold/vocabulary/has_symbol> ;
+                                                 void:triples       "311357"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "311357"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://www.southgreen.fr/agrold/vocabulary/> .\n@prefix ns1:   <http://purl.uniprot.org/uniprot/> .\n\nns1:A0A089XB87  ns0:has_symbol  \"LMW-GS\" .\n\nns1:A0A075W5M3  ns0:has_symbol  \"rps18\" .\n\nns1:A0A1P7XMW8  ns0:has_symbol  \"petB\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Class>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.w3.org/2000/01/rdf-schema#label> ;
+                                                 void:triples       "426491"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "426491"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix ns1:   <http://purl.uniprot.org/uniprot/> .\n\nns1:A0A089XB87  rdfs:label  \"A0A089XB87_TRIUA\" .\n\nns1:A0A0E3UR81  rdfs:label  \"A0A0E3UR81_TRIUA\" .\n\nns1:A0A075W5M3  rdfs:label  \"A0A075W5M3_TRIUA\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Class>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.southgreen.fr/agrold/vocabulary/taxon> ;
+                                                 void:triples       "426491"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "426491"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://www.southgreen.fr/agrold/vocabulary/> .\n@prefix ns2:   <http://purl.obolibrary.org/obo/> .\n@prefix ns1:   <http://purl.uniprot.org/uniprot/> .\n\nns1:A0A089XB87  ns0:taxon  ns2:NCBITaxon_4572 .\n\nns1:A0A0E3UR81  ns0:taxon  ns2:NCBITaxon_4572 .\n\nns1:A0A075W5M3  ns0:taxon  ns2:NCBITaxon_4572 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Class>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.southgreen.fr/agrold/vocabulary/description> ;
+                                                 void:triples       "426491"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "426491"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://www.southgreen.fr/agrold/vocabulary/> .\n@prefix ns1:   <http://purl.uniprot.org/uniprot/> .\n\nns1:A0A089XB87  ns0:description  \"Low-molecular-weight glutenin subunit {ECO:0000313|EMBL:AIR77133.1}\" .\n\nns1:A0A0E3UR81  ns0:description  \"Alpha-gliadin {ECO:0000313|EMBL:AKC91167.1}\" .\n\nns1:A0A075W5M3  ns0:description  \"30S ribosomal protein S18, chloroplastic {ECO:0000256|HAMAP-Rule:MF_00270}\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Class>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.southgreen.fr/agrold/vocabulary/has_dbxref> ;
+                                                 void:triples       "6271764"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "6271764"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://www.southgreen.fr/agrold/vocabulary/> .\n@prefix ns2:   <http://purl.uniprot.org/hamap/> .\n@prefix ns1:   <http://purl.uniprot.org/uniprot/> .\n@prefix ns4:   <http://purl.uniprot.org/expressionatlas/> .\n@prefix ns3:   <http://purl.uniprot.org/interpro/> .\n\nns1:A0A075W5M3  ns0:has_dbxref  ns4:A0A075W5M3 , ns3:IPR018275 , ns2:MF_00270 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Class>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.southgreen.fr/agrold/vocabulary/classified_with> ;
+                                                 void:triples       "1571402"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1571402"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://www.southgreen.fr/agrold/vocabulary/> .\n@prefix ns1:   <http://purl.uniprot.org/uniprot/> .\n\nns1:A0A075W5M3  ns0:classified_with  \"Chloroplast\" , \"Plastid\" , \"Coiled coil\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Class>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.southgreen.fr/agrold/vocabulary/comment> ;
+                                                 void:triples       "126617"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "126617"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://www.southgreen.fr/agrold/vocabulary/> .\n@prefix ns1:   <http://purl.uniprot.org/uniprot/> .\n\nns1:A0A218M0S0  ns0:comment  \"FUNCTION: One of the primary rRNA binding proteins, it binds directly to 16S rRNA central domain where it helps coordinate assembly of the platform of the 30S subunit. {ECO:0000256|HAMAP- Rule:MF_01302}.SUBUNIT: Part of the 30S ribosomal subunit. {ECO:0000256|HAMAP- Rule:MF_01302}.SUBCELLULAR LOCATION: Plastid, chloroplast {ECO:0000256|HAMAP- Rule:MF_01302}.SIMILARITY: Belongs to the universal ribosomal protein uS8 family. {ECO:0000256|HAMAP-Rule:MF_01302, ECO:0000256|RuleBase:RU003660}.\" .\n\nns1:A0A075W5M3  ns0:comment  \"SUBUNIT: Part of the 30S ribosomal subunit. {ECO:0000256|HAMAP- Rule:MF_00270}.SUBCELLULAR LOCATION: Plastid, chloroplast {ECO:0000256|HAMAP- Rule:MF_00270}.SIMILARITY: Belongs to the bacterial ribosomal protein bS18 family. {ECO:0000256|HAMAP-Rule:MF_00270, ECO:0000256|RuleBase:RU003910}.\" .\n\nns1:A0A1P7XMW8  ns0:comment  \"FUNCTION: Component of the cytochrome b6-f complex, which mediates electron transfer between photosystem II (PSII) and photosystem I (PSI), cyclic electron flow around PSI, and state transitions. {ECO:0000256|HAMAP-Rule:MF_00633, ECO:0000256|RuleBase:RU003291}.COFACTOR: Name=heme; Xref=ChEBI:CHEBI:30413; Evidence={ECO:0000256|HAMAP-   Rule:MF_00633}; Note=Binds 2 heme groups. One heme group is bound covalently by a single cysteine link, the other one non-covalently. {ECO:0000256|HAMAP-Rule:MF_00633};SUBUNIT: The 4 large subunits of the cytochrome b6-f complex are cytochrome b6, subunit IV (17 kDa polypeptide, PetD), cytochrome f and the Rieske protein, while the 4 small subunits are PetG, PetL, PetM and PetN. The complex functions as a dimer. {ECO:0000256|HAMAP-Rule:MF_00633, ECO:0000256|RuleBase:RU003291}.SUBCELLULAR LOCATION: Plastid, chloroplast thylakoid membrane {ECO:0000256|HAMAP-Rule:MF_00633, ECO:0000256|RuleBase:RU003291}; Multi-pass membrane protein {ECO:0000256|HAMAP-Rule:MF_00633, ECO:0000256|RuleBase:RU003291}.MISCELLANEOUS: Heme 1 (or BH or b566) is high-potential and absorbs at about 566 nm, and heme 2 (or BL or b562) is low- potential and absorbs at about 562 nm. {ECO:0000256|HAMAP- Rule:MF_00633}.SIMILARITY: Belongs to the cytochrome b family. PetB subfamily. {ECO:0000256|HAMAP-Rule:MF_00633, ECO:0000256|RuleBase:RU003291}.\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Class>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.w3.org/2000/01/rdf-schema#subClassOf> ;
+                                                 void:triples       "426491"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "426491"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix ns2:   <http://purl.obolibrary.org/obo/> .\n@prefix ns1:   <http://purl.uniprot.org/uniprot/> .\n\nns1:A0A089XB87  rdfs:subClassOf  ns2:SO_0000104 .\n\nns1:A0A0E3UR81  rdfs:subClassOf  ns2:SO_0000104 .\n\nns1:A0A075W5M3  rdfs:subClassOf  ns2:SO_0000104 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Class>
+                                                                    ]
+                                               ] ;
+                       sbm:crawlLog            [ a                     sbm:CrawlLog ;
+                                                 sbm:crawlEndTime      "2018-12-12T21:48:51+09:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                                 sbm:crawlStartTime    "2018-12-12T21:48:27+09:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                                 sbm:endpointAccesses  "19"^^<http://www.w3.org/2001/XMLSchema#long>
+                                               ] ;
+                       sd:namedGraph           [ a        sd:NamedGraph ;
+                                                 sd:name  <http://www.southgreen.fr/agrold/uniprot.plants>
+                                               ]
+                     ] ;
+  sd:endpoint        <http://volvestre.cirad.fr:8890/sparql>
+] .

@@ -1,0 +1,742 @@
+@prefix sd:    <http://www.w3.org/ns/sparql-service-description#> .
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix sbm:   <http://www.sparqlbuilder.org/2014/05/rdf-metadata-schema#> .
+
+[ a                  sd:Service ;
+  sd:defaultDataset  [ a                       sd:Dataset ;
+                       void:classPartition     [ a              void:Dataset ;
+                                                 void:class     void:Dataset ;
+                                                 void:entities  "1"^^<http://www.w3.org/2001/XMLSchema#long>
+                                               ] ;
+                       void:classPartition     [ a              void:Dataset ;
+                                                 void:class     <http://purl.jp/bio/11/mbgd#Domain> ;
+                                                 void:entities  "4493226"^^<http://www.w3.org/2001/XMLSchema#long>
+                                               ] ;
+                       void:classPartition     [ a              void:Dataset ;
+                                                 void:class     <http://biohackathon.org/resource/faldo#ExactPosition> ;
+                                                 void:entities  "8986452"^^<http://www.w3.org/2001/XMLSchema#long>
+                                               ] ;
+                       void:classPartition     [ a              void:Dataset ;
+                                                 void:class     <http://purl.org/net/orth#HomologsCluster> ;
+                                                 void:entities  "108246"^^<http://www.w3.org/2001/XMLSchema#long>
+                                               ] ;
+                       void:classPartition     [ a              void:Dataset ;
+                                                 void:class     <http://purl.org/net/orth#Subgene> ;
+                                                 void:entities  "4493226"^^<http://www.w3.org/2001/XMLSchema#long>
+                                               ] ;
+                       void:classPartition     [ a              void:Dataset ;
+                                                 void:class     <http://purl.org/net/orth#OrthologyDataset> ;
+                                                 void:entities  "1"^^<http://www.w3.org/2001/XMLSchema#long>
+                                               ] ;
+                       void:classPartition     [ a              void:Dataset ;
+                                                 void:class     <http://purl.org/net/orth#OrthologsCluster> ;
+                                                 void:entities  "405161"^^<http://www.w3.org/2001/XMLSchema#long>
+                                               ] ;
+                       void:classPartition     [ a              void:Dataset ;
+                                                 void:class     <http://biohackathon.org/resource/faldo#Region> ;
+                                                 void:entities  "4493226"^^<http://www.w3.org/2001/XMLSchema#long>
+                                               ] ;
+                       void:classes            "8"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                       void:properties         "35"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "6"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.org/dc/terms/identifier> ;
+                                                 void:triples       "13993085"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4493226"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.org/dc/terms/> .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS01170/1>\n        ns0:identifier  \"1\" .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00495/0>\n        ns0:identifier  \"0\" .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00235/0>\n        ns0:identifier  \"0\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.org/net/orth#Subgene>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4493226"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.org/dc/terms/> .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS01170/1>\n        ns0:identifier  \"1\" .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00495/0>\n        ns0:identifier  \"0\" .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00235/0>\n        ns0:identifier  \"0\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://biohackathon.org/resource/faldo#Region>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "405161"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.org/dc/terms/> .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/cluster/1035>\n        ns0:identifier  \"1035\" .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/cluster/1025>\n        ns0:identifier  \"1025\" .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/cluster/10227>\n        ns0:identifier  \"10227\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.org/net/orth#OrthologsCluster>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "108246"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.org/dc/terms/> .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/homcluster/268>\n        ns0:identifier  \"268\" .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/homcluster/267>\n        ns0:identifier  \"267\" .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/homcluster/269>\n        ns0:identifier  \"269\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.org/net/orth#HomologsCluster>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4493226"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.org/dc/terms/> .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS01170/1>\n        ns0:identifier  \"1\" .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00495/0>\n        ns0:identifier  \"0\" .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00235/0>\n        ns0:identifier  \"0\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#Domain>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "3"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      void:dataDump ;
+                                                 void:triples       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix void:  <http://rdfs.org/ns/void#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/> .\n\nns1:default  void:dataDump  <http://mbgd.genome.ad.jp/rdf/archive/mbgd_2016-01/mbgd_2016-01_default.ttl.gz> .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  void:Dataset
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix void:  <http://rdfs.org/ns/void#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/> .\n\nns1:default  void:dataDump  <http://mbgd.genome.ad.jp/rdf/archive/mbgd_2016-01/mbgd_2016-01_default.ttl.gz> .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.org/net/orth#OrthologyDataset>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.jp/bio/11/mbgd#funcMbgd> ;
+                                                 void:triples       "405161"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "405161"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .\n@prefix ns1:   <http://purl.jp/bio/11/mbgd#> .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/cluster/1035>\n        ns1:funcMbgd  \"10.2\"^^xsd:string .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/cluster/1025>\n        ns1:funcMbgd  \"14\"^^xsd:string .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/cluster/10227>\n        ns1:funcMbgd  \"11.1\"^^xsd:string .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.org/net/orth#OrthologsCluster>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "4"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://biohackathon.org/resource/faldo#begin> ;
+                                                 void:triples       "13479678"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4493226"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://biohackathon.org/resource/faldo#ExactPosition> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://biohackathon.org/resource/faldo#> .\n@prefix ns2:   <http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00495/0/> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00235/0/> .\n@prefix ns3:   <http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS01170/1/> .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS01170/1>\n        ns0:begin  ns3:begin .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00495/0>\n        ns0:begin  ns2:begin .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00235/0>\n        ns0:begin  ns1:begin .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.org/net/orth#Subgene>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4493226"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://biohackathon.org/resource/faldo#ExactPosition> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://biohackathon.org/resource/faldo#> .\n@prefix ns2:   <http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00495/0/> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00235/0/> .\n@prefix ns3:   <http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS01170/1/> .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS01170/1>\n        ns0:begin  ns3:begin .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00495/0>\n        ns0:begin  ns2:begin .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00235/0>\n        ns0:begin  ns1:begin .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://biohackathon.org/resource/faldo#Region>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4493226"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://biohackathon.org/resource/faldo#ExactPosition> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://biohackathon.org/resource/faldo#> .\n@prefix ns2:   <http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00495/0/> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00235/0/> .\n@prefix ns3:   <http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS01170/1/> .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS01170/1>\n        ns0:begin  ns3:begin .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00495/0>\n        ns0:begin  ns2:begin .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00235/0>\n        ns0:begin  ns1:begin .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#Domain>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "6"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.jp/bio/11/mbgd#organism> ;
+                                                 void:triples       "13481414"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4493226"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS01170/1>\n        ns0:organism  ns1:aac .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00495/0>\n        ns0:organism  ns1:aac .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00235/0>\n        ns0:organism  ns1:aac .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.org/net/orth#Subgene>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "868"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns2:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/> .\n\nns1:default  ns0:organism  ns2:aap , ns2:aae , ns2:aac .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  void:Dataset
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4493226"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS01170/1>\n        ns0:organism  ns1:aac .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00495/0>\n        ns0:organism  ns1:aac .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00235/0>\n        ns0:organism  ns1:aac .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://biohackathon.org/resource/faldo#Region>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4493226"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS01170/1>\n        ns0:organism  ns1:aac .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00495/0>\n        ns0:organism  ns1:aac .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00235/0>\n        ns0:organism  ns1:aac .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#Domain>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "868"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns2:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/> .\n\nns1:default  ns0:organism  ns2:aap , ns2:aae , ns2:aac .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.org/net/orth#OrthologyDataset>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "6"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.org/net/orth#hasHomologous> ;
+                                                 void:triples       "18220618"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.org/net/orth#> .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/homcluster/118042>\n        ns0:hasHomologous  <http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/cluster/397084> .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.org/net/orth#HomologsCluster>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4335778"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.org/net/orth#> .\n@prefix ns2:   <http://mbgd.genome.ad.jp/rdf/resource/gene/aba:> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/gene/aci:> .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/cluster/10227>\n        ns0:hasHomologous  ns2:ACID345_RS18130 , ns2:ST2698 , ns1:ACIAD_RS15965 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.org/net/orth#OrthologsCluster>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "405161"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://purl.org/net/orth#OrthologsCluster> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.org/net/orth#> .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/homcluster/267>\n        ns0:hasHomologous  <http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/cluster/2987> , <http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/cluster/3052> , <http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/cluster/1190> .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.org/net/orth#HomologsCluster>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4493226"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://purl.org/net/orth#Subgene> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.org/net/orth#> .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/cluster/1025>\n        ns0:hasHomologous  <http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aae:AQ_082/1> , <http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aap:NT05HA_RS04855/1> , <http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS01955/1> .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.org/net/orth#OrthologsCluster>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4493226"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://biohackathon.org/resource/faldo#Region> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.org/net/orth#> .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/cluster/1025>\n        ns0:hasHomologous  <http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aae:AQ_082/1> , <http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aap:NT05HA_RS04855/1> , <http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS01955/1> .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.org/net/orth#OrthologsCluster>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4493226"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://purl.jp/bio/11/mbgd#Domain> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.org/net/orth#> .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/cluster/1025>\n        ns0:hasHomologous  <http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aae:AQ_082/1> , <http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aap:NT05HA_RS04855/1> , <http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS01955/1> .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.org/net/orth#OrthologsCluster>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "3"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.jp/bio/11/mbgd#memberCount> ;
+                                                 void:triples       "513407"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "405161"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/cluster/1035>\n        ns0:memberCount  737 .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/cluster/1025>\n        ns0:memberCount  739 .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/cluster/10227>\n        ns0:memberCount  59 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.org/net/orth#OrthologsCluster>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "108246"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/homcluster/268>\n        ns0:memberCount  1 .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/homcluster/267>\n        ns0:memberCount  4 .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/homcluster/269>\n        ns0:memberCount  6 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.org/net/orth#HomologsCluster>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "4"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      void:inDataset ;
+                                                 void:triples       "1026814"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "405161"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   void:Dataset ;
+                                                                      sbm:sample        "@prefix void:  <http://rdfs.org/ns/void#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/> .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/cluster/1035>\n        void:inDataset  ns1:default .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/cluster/1025>\n        void:inDataset  ns1:default .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/cluster/10227>\n        void:inDataset  ns1:default .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.org/net/orth#OrthologsCluster>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "405161"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://purl.org/net/orth#OrthologyDataset> ;
+                                                                      sbm:sample        "@prefix void:  <http://rdfs.org/ns/void#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/> .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/cluster/1035>\n        void:inDataset  ns1:default .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/cluster/1025>\n        void:inDataset  ns1:default .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/cluster/10227>\n        void:inDataset  ns1:default .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.org/net/orth#OrthologsCluster>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "108246"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   void:Dataset ;
+                                                                      sbm:sample        "@prefix void:  <http://rdfs.org/ns/void#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/> .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/homcluster/268>\n        void:inDataset  ns1:default .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/homcluster/267>\n        void:inDataset  ns1:default .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/homcluster/269>\n        void:inDataset  ns1:default .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.org/net/orth#HomologsCluster>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "108246"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://purl.org/net/orth#OrthologyDataset> ;
+                                                                      sbm:sample        "@prefix void:  <http://rdfs.org/ns/void#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/> .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/homcluster/268>\n        void:inDataset  ns1:default .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/homcluster/267>\n        void:inDataset  ns1:default .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/homcluster/269>\n        void:inDataset  ns1:default .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.org/net/orth#HomologsCluster>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "4"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.jp/bio/11/mbgd#gene> ;
+                                                 void:triples       "13479678"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4493226"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/gene/aac:> .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS01170/1>\n        ns0:gene  ns1:AACI_RS01170 .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00495/0>\n        ns0:gene  ns1:AACI_RS00495 .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00235/0>\n        ns0:gene  ns1:AACI_RS00235 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.org/net/orth#Subgene>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4493226"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/gene/aac:> .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS01170/1>\n        ns0:gene  ns1:AACI_RS01170 .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00495/0>\n        ns0:gene  ns1:AACI_RS00495 .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00235/0>\n        ns0:gene  ns1:AACI_RS00235 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://biohackathon.org/resource/faldo#Region>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4493226"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/gene/aac:> .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS01170/1>\n        ns0:gene  ns1:AACI_RS01170 .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00495/0>\n        ns0:gene  ns1:AACI_RS00495 .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00235/0>\n        ns0:gene  ns1:AACI_RS00235 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#Domain>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "4"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://semanticscience.org/resource/SIO_000068> ;
+                                                 void:triples       "13479678"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4493226"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://semanticscience.org/resource/> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/gene/aac:> .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS01170/1>\n        ns0:SIO_000068  ns1:AACI_RS01170 .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00495/0>\n        ns0:SIO_000068  ns1:AACI_RS00495 .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00235/0>\n        ns0:SIO_000068  ns1:AACI_RS00235 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.org/net/orth#Subgene>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4493226"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://semanticscience.org/resource/> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/gene/aac:> .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS01170/1>\n        ns0:SIO_000068  ns1:AACI_RS01170 .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00495/0>\n        ns0:SIO_000068  ns1:AACI_RS00495 .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00235/0>\n        ns0:SIO_000068  ns1:AACI_RS00235 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://biohackathon.org/resource/faldo#Region>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4493226"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://semanticscience.org/resource/> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/gene/aac:> .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS01170/1>\n        ns0:SIO_000068  ns1:AACI_RS01170 .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00495/0>\n        ns0:SIO_000068  ns1:AACI_RS00495 .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00235/0>\n        ns0:SIO_000068  ns1:AACI_RS00235 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#Domain>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.jp/bio/11/mbgd#dist> ;
+                                                 void:triples       "405161"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "405161"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/cluster/1035>\n        ns0:dist  479.981 .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/cluster/1025>\n        ns0:dist  342.012 .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/cluster/10227>\n        ns0:dist  198.689 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.org/net/orth#OrthologsCluster>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "3"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.org/dc/terms/license> ;
+                                                 void:triples       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.org/dc/terms/> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/> .\n\nns1:default  ns0:license  <http://creativecommons.org/licenses/by-sa/3.0/> .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  void:Dataset
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.org/dc/terms/> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/> .\n\nns1:default  ns0:license  <http://creativecommons.org/licenses/by-sa/3.0/> .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.org/net/orth#OrthologyDataset>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.jp/bio/11/mbgd#score> ;
+                                                 void:triples       "405161"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "405161"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/cluster/1035>\n        ns0:score  39600 .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/cluster/1025>\n        ns0:score  33400 .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/cluster/10227>\n        ns0:score  6400 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.org/net/orth#OrthologsCluster>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "3"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.jp/bio/11/mbgd#organismCount> ;
+                                                 void:triples       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/> .\n\nns1:default  ns0:organismCount  868 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  void:Dataset
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/> .\n\nns1:default  ns0:organismCount  868 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.org/net/orth#OrthologyDataset>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "4"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://xmlns.com/foaf/0.1/page> ;
+                                                 void:triples       "405163"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/> .\n@prefix foaf:  <http://xmlns.com/foaf/0.1/> .\n\nns1:default  foaf:page  <http://mbgd.genome.ad.jp/htbin/cluster_map?tabid=default&show_summary=1> .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  void:Dataset
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "405161"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix foaf:  <http://xmlns.com/foaf/0.1/> .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/cluster/1035>\n        foaf:page  <http://mbgd.genome.ad.jp/htbin/hcluster?prog=hcluster&clustid=O1035&tabid=default> .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/cluster/1025>\n        foaf:page  <http://mbgd.genome.ad.jp/htbin/hcluster?prog=hcluster&clustid=O1025&tabid=default> .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/cluster/10227>\n        foaf:page  <http://mbgd.genome.ad.jp/htbin/hcluster?prog=hcluster&clustid=O10227&tabid=default> .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.org/net/orth#OrthologsCluster>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/> .\n@prefix foaf:  <http://xmlns.com/foaf/0.1/> .\n\nns1:default  foaf:page  <http://mbgd.genome.ad.jp/htbin/cluster_map?tabid=default&show_summary=1> .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.org/net/orth#OrthologyDataset>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "3"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.org/pav/version> ;
+                                                 void:triples       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.org/pav/> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/> .\n\nns1:default  ns0:version  \"2016-01\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  void:Dataset
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.org/pav/> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/> .\n\nns1:default  ns0:version  \"2016-01\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.org/net/orth#OrthologyDataset>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "3"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.org/dc/terms/title> ;
+                                                 void:triples       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.org/dc/terms/> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/> .\n\nns1:default  ns0:title  \"MBGD ortholog groups\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  void:Dataset
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.org/dc/terms/> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/> .\n\nns1:default  ns0:title  \"MBGD ortholog groups\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.org/net/orth#OrthologyDataset>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.jp/bio/11/mbgd#funcKegg> ;
+                                                 void:triples       "405161"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "405161"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .\n@prefix ns1:   <http://purl.jp/bio/11/mbgd#> .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/cluster/1035>\n        ns1:funcKegg  \"99.2\"^^xsd:string .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/cluster/1025>\n        ns1:funcKegg  \"99.2\"^^xsd:string .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/cluster/10227>\n        ns1:funcKegg  \"3.2\"^^xsd:string .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.org/net/orth#OrthologsCluster>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "4"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://biohackathon.org/resource/faldo#end> ;
+                                                 void:triples       "13479678"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4493226"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://biohackathon.org/resource/faldo#ExactPosition> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://biohackathon.org/resource/faldo#> .\n@prefix ns2:   <http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00495/0/> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00235/0/> .\n@prefix ns3:   <http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS01170/1/> .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS01170/1>\n        ns0:end  ns3:end .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00495/0>\n        ns0:end  ns2:end .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00235/0>\n        ns0:end  ns1:end .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.org/net/orth#Subgene>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4493226"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://biohackathon.org/resource/faldo#ExactPosition> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://biohackathon.org/resource/faldo#> .\n@prefix ns2:   <http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00495/0/> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00235/0/> .\n@prefix ns3:   <http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS01170/1/> .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS01170/1>\n        ns0:end  ns3:end .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00495/0>\n        ns0:end  ns2:end .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00235/0>\n        ns0:end  ns1:end .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://biohackathon.org/resource/faldo#Region>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4493226"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://biohackathon.org/resource/faldo#ExactPosition> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://biohackathon.org/resource/faldo#> .\n@prefix ns2:   <http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00495/0/> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00235/0/> .\n@prefix ns3:   <http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS01170/1/> .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS01170/1>\n        ns0:end  ns3:end .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00495/0>\n        ns0:end  ns2:end .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00235/0>\n        ns0:end  ns1:end .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#Domain>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "4"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://semanticscience.org/resource/SIO_000028> ;
+                                                 void:triples       "13479678"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4493226"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://purl.org/net/orth#Subgene> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://semanticscience.org/resource/> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/gene/aac:> .\n\nns1:AACI_RS00495  ns0:SIO_000028  <http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00495/0> .\n\nns1:AACI_RS00235  ns0:SIO_000028  <http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00235/0> .\n\nns1:AACI_RS01170  ns0:SIO_000028  <http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS01170/1> .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2000/01/rdf-schema#Resource>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4493226"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://biohackathon.org/resource/faldo#Region> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://semanticscience.org/resource/> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/gene/aac:> .\n\nns1:AACI_RS00495  ns0:SIO_000028  <http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00495/0> .\n\nns1:AACI_RS00235  ns0:SIO_000028  <http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00235/0> .\n\nns1:AACI_RS01170  ns0:SIO_000028  <http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS01170/1> .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2000/01/rdf-schema#Resource>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4493226"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://purl.jp/bio/11/mbgd#Domain> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://semanticscience.org/resource/> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/gene/aac:> .\n\nns1:AACI_RS00495  ns0:SIO_000028  <http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00495/0> .\n\nns1:AACI_RS00235  ns0:SIO_000028  <http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00235/0> .\n\nns1:AACI_RS01170  ns0:SIO_000028  <http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS01170/1> .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2000/01/rdf-schema#Resource>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "3"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.org/pav/derivedFrom> ;
+                                                 void:triples       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.org/pav/> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/> .\n\nns1:default  ns0:derivedFrom  <http://mbgd.genome.ad.jp/dist/mbgd_2016-01/mbgd_2016-01_default.dclst.gz> .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  void:Dataset
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.org/pav/> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/> .\n\nns1:default  ns0:derivedFrom  <http://mbgd.genome.ad.jp/dist/mbgd_2016-01/mbgd_2016-01_default.dclst.gz> .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.org/net/orth#OrthologyDataset>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "3"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.org/dc/terms/source> ;
+                                                 void:triples       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.org/dc/terms/> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/> .\n\nns1:default  ns0:source  <http://mbgd.genome.ad.jp> .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  void:Dataset
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.org/dc/terms/> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/> .\n\nns1:default  ns0:source  <http://mbgd.genome.ad.jp> .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.org/net/orth#OrthologyDataset>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "5"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.w3.org/2000/01/rdf-schema#label> ;
+                                                 void:triples       "13884839"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4493226"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS01170/1>\n        rdfs:label  \"aac:AACI_RS01170(1)\" .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00495/0>\n        rdfs:label  \"aac:AACI_RS00495\" .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00235/0>\n        rdfs:label  \"aac:AACI_RS00235\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.org/net/orth#Subgene>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4493226"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS01170/1>\n        rdfs:label  \"aac:AACI_RS01170(1)\" .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00495/0>\n        rdfs:label  \"aac:AACI_RS00495\" .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00235/0>\n        rdfs:label  \"aac:AACI_RS00235\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://biohackathon.org/resource/faldo#Region>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "405161"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/cluster/1035>\n        rdfs:label  \"pqqL\" .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/cluster/1025>\n        rdfs:label  \"yeaZ\" .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/cluster/10227>\n        rdfs:label  \"rcaC\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.org/net/orth#OrthologsCluster>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4493226"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS01170/1>\n        rdfs:label  \"aac:AACI_RS01170(1)\" .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00495/0>\n        rdfs:label  \"aac:AACI_RS00495\" .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00235/0>\n        rdfs:label  \"aac:AACI_RS00235\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#Domain>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "3"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.org/dc/terms/created> ;
+                                                 void:triples       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .\n@prefix ns2:   <http://mbgd.genome.ad.jp/rdf/resource/> .\n@prefix ns1:   <http://purl.org/dc/terms/> .\n\nns2:default  ns1:created  \"2016-06-06T16:54:36+09:00\"^^xsd:dateTime .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  void:Dataset
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .\n@prefix ns2:   <http://mbgd.genome.ad.jp/rdf/resource/> .\n@prefix ns1:   <http://purl.org/dc/terms/> .\n\nns2:default  ns1:created  \"2016-06-06T16:54:36+09:00\"^^xsd:dateTime .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.org/net/orth#OrthologyDataset>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://biohackathon.org/resource/faldo#reference> ;
+                                                 void:triples       "8986452"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "8986452"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://biohackathon.org/resource/faldo#> .\n@prefix ns2:   <http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/spo:SPAC14C4.11/2/> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/spo:SPAC14C4.11/1/> .\n\nns1:end  ns0:reference  <http://mbgd.genome.ad.jp/rdf/resource/gene/spo:SPAC14C4.11> .\n\nns1:begin  ns0:reference  <http://mbgd.genome.ad.jp/rdf/resource/gene/spo:SPAC14C4.11> .\n\nns2:begin  ns0:reference  <http://mbgd.genome.ad.jp/rdf/resource/gene/spo:SPAC14C4.11> .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://biohackathon.org/resource/faldo#ExactPosition>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://biohackathon.org/resource/faldo#position> ;
+                                                 void:triples       "8986452"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "8986452"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://biohackathon.org/resource/faldo#> .\n@prefix ns2:   <http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/spo:SPAC14C4.11/2/> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/spo:SPAC14C4.11/1/> .\n\nns1:end  ns0:position  600 .\n\nns1:begin  ns0:position  1 .\n\nns2:begin  ns0:position  601 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://biohackathon.org/resource/faldo#ExactPosition>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "4"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.jp/bio/11/mbgd#domain> ;
+                                                 void:triples       "13479678"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4493226"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://purl.org/net/orth#Subgene> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/gene/aac:> .\n\nns1:AACI_RS00495  ns0:domain  <http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00495/0> .\n\nns1:AACI_RS00235  ns0:domain  <http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00235/0> .\n\nns1:AACI_RS01170  ns0:domain  <http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS01170/1> .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2000/01/rdf-schema#Resource>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4493226"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://biohackathon.org/resource/faldo#Region> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/gene/aac:> .\n\nns1:AACI_RS00495  ns0:domain  <http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00495/0> .\n\nns1:AACI_RS00235  ns0:domain  <http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00235/0> .\n\nns1:AACI_RS01170  ns0:domain  <http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS01170/1> .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2000/01/rdf-schema#Resource>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4493226"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://purl.jp/bio/11/mbgd#Domain> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/gene/aac:> .\n\nns1:AACI_RS00495  ns0:domain  <http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00495/0> .\n\nns1:AACI_RS00235  ns0:domain  <http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00235/0> .\n\nns1:AACI_RS01170  ns0:domain  <http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS01170/1> .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2000/01/rdf-schema#Resource>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.jp/bio/11/mbgd#funcTigr> ;
+                                                 void:triples       "405161"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "405161"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .\n@prefix ns1:   <http://purl.jp/bio/11/mbgd#> .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/cluster/1035>\n        ns1:funcTigr  \"16.4\"^^xsd:string .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/cluster/1025>\n        ns1:funcTigr  \"9.3\"^^xsd:string .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/cluster/10227>\n        ns1:funcTigr  \"16.4\"^^xsd:string .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.org/net/orth#OrthologsCluster>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "3"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.org/net/orth#hasSource> ;
+                                                 void:triples       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.org/net/orth#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/> .\n\nns1:default  ns0:hasSource  \"MBGD\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  void:Dataset
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.org/net/orth#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/> .\n\nns1:default  ns0:hasSource  \"MBGD\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.org/net/orth#OrthologyDataset>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "3"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.org/dc/terms/creator> ;
+                                                 void:triples       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.org/dc/terms/> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/> .\n\nns1:default  ns0:creator  <http://mbgd.genome.ad.jp> .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  void:Dataset
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.org/dc/terms/> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/> .\n\nns1:default  ns0:creator  <http://mbgd.genome.ad.jp> .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.org/net/orth#OrthologyDataset>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "3"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.org/dc/terms/publisher> ;
+                                                 void:triples       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.org/dc/terms/> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/> .\n\nns1:default  ns0:publisher  <http://www.nibb.ac.jp> .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  void:Dataset
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.org/dc/terms/> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/> .\n\nns1:default  ns0:publisher  <http://www.nibb.ac.jp> .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.org/net/orth#OrthologyDataset>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "4"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.jp/bio/11/mbgd#domainBegin> ;
+                                                 void:triples       "13479678"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4493226"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS01170/1>\n        ns0:domainBegin  1 .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00495/0>\n        ns0:domainBegin  1 .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00235/0>\n        ns0:domainBegin  1 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.org/net/orth#Subgene>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4493226"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS01170/1>\n        ns0:domainBegin  1 .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00495/0>\n        ns0:domainBegin  1 .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00235/0>\n        ns0:domainBegin  1 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://biohackathon.org/resource/faldo#Region>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4493226"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS01170/1>\n        ns0:domainBegin  1 .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00495/0>\n        ns0:domainBegin  1 .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00235/0>\n        ns0:domainBegin  1 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#Domain>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "4"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.org/dc/terms/description> ;
+                                                 void:triples       "405163"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.org/dc/terms/> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/> .\n\nns1:default  ns0:description  \"RDF representation of ortholog groups in MBGD.\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  void:Dataset
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "405161"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.org/dc/terms/> .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/cluster/1035>\n        ns0:description  \"Peptidase M16\" .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/cluster/1025>\n        ns0:description  \"Peptidase M22, glycoprotease\" .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/cluster/10227>\n        ns0:description  \"Regulator diguanylate cyclase\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.org/net/orth#OrthologsCluster>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.org/dc/terms/> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/> .\n\nns1:default  ns0:description  \"RDF representation of ortholog groups in MBGD.\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.org/net/orth#OrthologyDataset>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "4"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.jp/bio/11/mbgd#domainEnd> ;
+                                                 void:triples       "13479678"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4493226"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS01170/1>\n        ns0:domainEnd  499 .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00495/0>\n        ns0:domainEnd  193 .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00235/0>\n        ns0:domainEnd  266 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.org/net/orth#Subgene>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4493226"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS01170/1>\n        ns0:domainEnd  499 .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00495/0>\n        ns0:domainEnd  193 .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00235/0>\n        ns0:domainEnd  266 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://biohackathon.org/resource/faldo#Region>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4493226"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS01170/1>\n        ns0:domainEnd  499 .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00495/0>\n        ns0:domainEnd  193 .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/domain/aac:AACI_RS00235/0>\n        ns0:domainEnd  266 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#Domain>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.jp/bio/11/mbgd#funcCog> ;
+                                                 void:triples       "405161"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "405161"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .\n@prefix ns1:   <http://purl.jp/bio/11/mbgd#> .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/cluster/1035>\n        ns1:funcCog  \"4.1\"^^xsd:string .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/cluster/1025>\n        ns1:funcCog  \"2.5\"^^xsd:string .\n\n<http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/cluster/10227>\n        ns1:funcCog  \"3.3\"^^xsd:string .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.org/net/orth#OrthologsCluster>
+                                                                    ]
+                                               ] ;
+                       sbm:crawlLog            [ a                     sbm:CrawlLog ;
+                                                 sbm:crawlEndTime      "2018-10-17T04:06:31+09:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                                 sbm:crawlStartTime    "2018-10-17T03:44:11+09:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                                 sbm:endpointAccesses  "215"^^<http://www.w3.org/2001/XMLSchema#long>
+                                               ] ;
+                       sd:namedGraph           [ a        sd:NamedGraph ;
+                                                 sd:name  <http://mbgd.genome.ad.jp/rdf/resource/default>
+                                               ]
+                     ] ;
+  sd:endpoint        <http://sparql.nibb.ac.jp/sparql>
+] .

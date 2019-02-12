@@ -1,0 +1,39 @@
+digraph {
+    ranksep=2;
+    rankdir="LR";
+    charset="utf-8";
+
+    // Class relations with the numbers of edges
+    "agrold_resource:Chromosome" -> "rdfs:Literal7" [ label="agrold:genome_assembly_name\n  14"];
+    "agrold_resource:Chromosome" -> "rdfs:Literal9" [ label="agrold:genome_assembly_version\n  14"];
+    "agrold_resource:Chromosome" -> "rdfs:Resource3" [ label="agrold:taxon\n  14"];
+    "agrold_resource:Gene" -> "agrold_resource:Chromosome" [ label="agrold:is_located_on\n  55986"];
+    "agrold_resource:Gene" -> "rdfs:Literal1" [ label="agrold:has_annotation\n  55986"];
+    "agrold_resource:Gene" -> "rdfs:Literal10" [ label="agrold:strand\n  55986"];
+    "agrold_resource:Gene" -> "rdfs:Literal11" [ label="agrold:is_representative\n  55986"];
+    "agrold_resource:Gene" -> "rdfs:Literal12" [ label="agrold:has_start_position\n  55986"];
+    "agrold_resource:Gene" -> "rdfs:Literal13" [ label="agrold:source_project\n  55986"];
+    "agrold_resource:Gene" -> "rdfs:Literal4" [ label="rdfs:label\n  55986"];
+    "agrold_resource:Gene" -> "rdfs:Literal5" [ label="agrold:has_end_position\n  55986"];
+    "agrold_resource:Gene" -> "rdfs:Literal6" [ label="agrold:is_expressed\n  55986"];
+    "agrold_resource:Gene" -> "rdfs:Literal8" [ label="agrold:is_TE\n  55986"];
+    "agrold_resource:Gene" -> "rdfs:Resource2" [ label="agrold:taxon\n  55986"];
+
+    // The number of entities
+    "agrold_resource:Chromosome" [ label="agrold_resource:Chromosome\n14" ] ;
+    "agrold_resource:Gene" [ label="agrold_resource:Gene\n55986" ] ;
+    "rdfs:Literal1" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Literal10" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Literal11" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Literal12" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Literal13" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Literal4" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Literal5" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Literal6" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Literal7" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Literal8" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Literal9" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Resource2" [ label="rdfs:Resource" ] ;
+    "rdfs:Resource3" [ label="rdfs:Resource" ] ;
+
+}

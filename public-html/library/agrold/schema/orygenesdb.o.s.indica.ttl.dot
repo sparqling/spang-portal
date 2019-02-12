@@ -1,0 +1,27 @@
+digraph {
+    ranksep=2;
+    rankdir="LR";
+    charset="utf-8";
+
+    // Class relations with the numbers of edges
+    "owl:Class" -> "owl:Class" [ label="agrold:part_of\n  26"];
+    "owl:Class" -> "owl:Class" [ label="agrold:develops_from\n  1"];
+    "owl:Class" -> "owl:Class" [ label="agrold:derives_from\n  1"];
+    "owl:Class" -> "owl:Class" [ label="agrold:is_located_on\n  50"];
+    "owl:Class" -> "rdfs:Literal2" [ label="agrold:source_project\n  43"];
+    "owl:Class" -> "rdfs:Literal3" [ label="rdfs:label\n  12"];
+    "owl:Class" -> "rdfs:Literal4" [ label="agrold:has_end_position\n  50"];
+    "owl:Class" -> "rdfs:Literal6" [ label="agrold:has_start_position\n  50"];
+    "owl:Class" -> "rdfs:Resource1" [ label="agrold:taxon\n  57"];
+    "owl:Class" -> "rdfs:Resource5" [ label="rdfs:subClassOf\n  57"];
+
+    // The number of entities
+    "owl:Class" [ label="owl:Class\n57" ] ;
+    "rdfs:Literal2" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Literal3" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Literal4" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Literal6" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Resource1" [ label="rdfs:Resource" ] ;
+    "rdfs:Resource5" [ label="rdfs:Resource" ] ;
+
+}

@@ -1,0 +1,7 @@
+SELECT ?resource ?label
+WHERE {
+    VALUES (?resource) { $STDIN }
+    OPTIONAL {
+	?resource rdfs:label ?label .
+    }
+}

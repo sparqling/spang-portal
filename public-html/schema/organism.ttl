@@ -1,0 +1,782 @@
+@prefix sd:    <http://www.w3.org/ns/sparql-service-description#> .
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix sbm:   <http://www.sparqlbuilder.org/2014/05/rdf-metadata-schema#> .
+
+[ a                  sd:Service ;
+  sd:defaultDataset  [ a                       sd:Dataset ;
+                       void:classPartition     [ a              void:Dataset ;
+                                                 void:class     <http://purl.jp/bio/11/mbgd#Genome> ;
+                                                 void:entities  "33923"^^<http://www.w3.org/2001/XMLSchema#long>
+                                               ] ;
+                       void:classPartition     [ a              void:Dataset ;
+                                                 void:class     <http://purl.jp/bio/11/mbgd#CompleteGenome> ;
+                                                 void:entities  "4742"^^<http://www.w3.org/2001/XMLSchema#long>
+                                               ] ;
+                       void:classPartition     [ a              void:Dataset ;
+                                                 void:class     void:Dataset ;
+                                                 void:entities  "1"^^<http://www.w3.org/2001/XMLSchema#long>
+                                               ] ;
+                       void:classPartition     [ a              void:Dataset ;
+                                                 void:class     <http://purl.jp/bio/11/mbgd#DraftGenome> ;
+                                                 void:entities  "29181"^^<http://www.w3.org/2001/XMLSchema#long>
+                                               ] ;
+                       void:classes            "4"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                       void:properties         "33"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "4"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.jp/bio/11/mbgd#spid> ;
+                                                 void:triples       "67846"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "33923"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:gd18359  ns0:spid  \"gd18359\" .\n\nns1:gd18358  ns0:spid  \"gd18358\" .\n\nns1:gd18360  ns0:spid  \"gd18360\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#Genome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4742"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:aad  ns0:spid  \"gm01548\" .\n\nns1:aac  ns0:spid  \"gm00919\" .\n\nns1:aaa  ns0:spid  \"gm01313\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#CompleteGenome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "29181"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:gd18359  ns0:spid  \"gd18359\" .\n\nns1:gd18358  ns0:spid  \"gd18358\" .\n\nns1:gd18360  ns0:spid  \"gd18360\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#DraftGenome>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "4"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.jp/bio/11/mbgd#species> ;
+                                                 void:triples       "67846"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "33923"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:gd18359  ns0:species  \"\" .\n\nns1:gd18358  ns0:species  \"\" .\n\nns1:gd18360  ns0:species  \"\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#Genome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4742"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:aad  ns0:species  \"Alicyclobacillus acidocaldarius\" .\n\nns1:aac  ns0:species  \"Alicyclobacillus acidocaldarius\" .\n\nns1:aaa  ns0:species  \"Acidovorax avenae\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#CompleteGenome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "29181"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:gd18359  ns0:species  \"\" .\n\nns1:gd18358  ns0:species  \"\" .\n\nns1:gd18360  ns0:species  \"\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#DraftGenome>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "4"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://xmlns.com/foaf/0.1/page> ;
+                                                 void:triples       "67846"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "33923"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n@prefix foaf:  <http://xmlns.com/foaf/0.1/> .\n\nns1:gd18359  foaf:page  <http://mbgd.genome.ad.jp/htbin/MBGD_whole_html.pl?spec=gd18359> .\n\nns1:gd18358  foaf:page  <http://mbgd.genome.ad.jp/htbin/MBGD_whole_html.pl?spec=gd18358> .\n\nns1:gd18360  foaf:page  <http://mbgd.genome.ad.jp/htbin/MBGD_whole_html.pl?spec=gd18360> .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#Genome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4742"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n@prefix foaf:  <http://xmlns.com/foaf/0.1/> .\n\nns1:aad  foaf:page  <http://mbgd.genome.ad.jp/htbin/MBGD_whole_html.pl?spec=aad> .\n\nns1:aac  foaf:page  <http://mbgd.genome.ad.jp/htbin/MBGD_whole_html.pl?spec=aac> .\n\nns1:aaa  foaf:page  <http://mbgd.genome.ad.jp/htbin/MBGD_whole_html.pl?spec=aaa> .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#CompleteGenome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "29181"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n@prefix foaf:  <http://xmlns.com/foaf/0.1/> .\n\nns1:gd18359  foaf:page  <http://mbgd.genome.ad.jp/htbin/MBGD_whole_html.pl?spec=gd18359> .\n\nns1:gd18358  foaf:page  <http://mbgd.genome.ad.jp/htbin/MBGD_whole_html.pl?spec=gd18358> .\n\nns1:gd18360  foaf:page  <http://mbgd.genome.ad.jp/htbin/MBGD_whole_html.pl?spec=gd18360> .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#DraftGenome>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.org/dc/terms/source> ;
+                                                 void:triples       "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.org/dc/terms/> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/> .\n\nns1:organism  ns0:source  <http://mbgd.genome.ad.jp> .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  void:Dataset
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.org/dc/terms/creator> ;
+                                                 void:triples       "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.org/dc/terms/> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/> .\n\nns1:organism  ns0:creator  <http://mbgd.genome.ad.jp> .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  void:Dataset
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "5"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.jp/bio/11/mbgd#assemblyContigCount> ;
+                                                 void:triples       "67846"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "33918"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:gd18359  ns0:assemblyContigCount  71 .\n\nns1:gd18358  ns0:assemblyContigCount  77 .\n\nns1:gd18360  ns0:assemblyContigCount  90 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#Genome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "5"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns2:   <file:///home/chiba/www_spang/html/schema/#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:ath  ns0:assemblyContigCount  ns2:NULL .\n\nns1:dme  ns0:assemblyContigCount  ns2:NULL .\n\nns1:cel  ns0:assemblyContigCount  ns2:NULL .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#Genome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4737"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:aad  ns0:assemblyContigCount  0 .\n\nns1:aac  ns0:assemblyContigCount  0 .\n\nns1:aaa  ns0:assemblyContigCount  0 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#CompleteGenome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "5"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns2:   <file:///home/chiba/www_spang/html/schema/#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:ath  ns0:assemblyContigCount  ns2:NULL .\n\nns1:dme  ns0:assemblyContigCount  ns2:NULL .\n\nns1:cel  ns0:assemblyContigCount  ns2:NULL .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#CompleteGenome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "29181"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:gd18359  ns0:assemblyContigCount  71 .\n\nns1:gd18358  ns0:assemblyContigCount  77 .\n\nns1:gd18360  ns0:assemblyContigCount  90 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#DraftGenome>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "5"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.jp/bio/11/mbgd#assemblyMoleculeCount> ;
+                                                 void:triples       "67846"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "33918"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:gd18359  ns0:assemblyMoleculeCount  0 .\n\nns1:gd18358  ns0:assemblyMoleculeCount  0 .\n\nns1:gd18360  ns0:assemblyMoleculeCount  0 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#Genome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "5"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns2:   <file:///home/chiba/www_spang/html/schema/#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:ath  ns0:assemblyMoleculeCount  ns2:NULL .\n\nns1:dme  ns0:assemblyMoleculeCount  ns2:NULL .\n\nns1:cel  ns0:assemblyMoleculeCount  ns2:NULL .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#Genome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4737"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:aad  ns0:assemblyMoleculeCount  1 .\n\nns1:aac  ns0:assemblyMoleculeCount  4 .\n\nns1:aaa  ns0:assemblyMoleculeCount  1 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#CompleteGenome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "5"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns2:   <file:///home/chiba/www_spang/html/schema/#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:ath  ns0:assemblyMoleculeCount  ns2:NULL .\n\nns1:dme  ns0:assemblyMoleculeCount  ns2:NULL .\n\nns1:cel  ns0:assemblyMoleculeCount  ns2:NULL .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#CompleteGenome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "29181"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:gd18359  ns0:assemblyMoleculeCount  0 .\n\nns1:gd18358  ns0:assemblyMoleculeCount  0 .\n\nns1:gd18360  ns0:assemblyMoleculeCount  0 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#DraftGenome>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "5"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.jp/bio/11/mbgd#assemblyTopLevelCount> ;
+                                                 void:triples       "67846"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "33918"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:gd18359  ns0:assemblyTopLevelCount  71 .\n\nns1:gd18358  ns0:assemblyTopLevelCount  77 .\n\nns1:gd18360  ns0:assemblyTopLevelCount  90 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#Genome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "5"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns2:   <file:///home/chiba/www_spang/html/schema/#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:ath  ns0:assemblyTopLevelCount  ns2:NULL .\n\nns1:dme  ns0:assemblyTopLevelCount  ns2:NULL .\n\nns1:cel  ns0:assemblyTopLevelCount  ns2:NULL .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#Genome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4737"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:aad  ns0:assemblyTopLevelCount  1 .\n\nns1:aac  ns0:assemblyTopLevelCount  4 .\n\nns1:aaa  ns0:assemblyTopLevelCount  1 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#CompleteGenome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "5"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns2:   <file:///home/chiba/www_spang/html/schema/#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:ath  ns0:assemblyTopLevelCount  ns2:NULL .\n\nns1:dme  ns0:assemblyTopLevelCount  ns2:NULL .\n\nns1:cel  ns0:assemblyTopLevelCount  ns2:NULL .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#CompleteGenome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "29181"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:gd18359  ns0:assemblyTopLevelCount  71 .\n\nns1:gd18358  ns0:assemblyTopLevelCount  77 .\n\nns1:gd18360  ns0:assemblyTopLevelCount  90 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#DraftGenome>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "4"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.jp/bio/11/mbgd#strain> ;
+                                                 void:triples       "66562"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "33281"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:gd18359  ns0:strain  \"F19490\" .\n\nns1:gd18358  ns0:strain  \"F19470\" .\n\nns1:gd18360  ns0:strain  \"F29447\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#Genome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4640"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:aad  ns0:strain  \"Tc-4-1\" .\n\nns1:aac  ns0:strain  \"DSM 446\" .\n\nns1:aaa  ns0:strain  \"ATCC 19860\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#CompleteGenome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "28641"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:gd18359  ns0:strain  \"F19490\" .\n\nns1:gd18358  ns0:strain  \"F19470\" .\n\nns1:gd18360  ns0:strain  \"F29447\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#DraftGenome>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "4"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.jp/bio/11/mbgd#assembly> ;
+                                                 void:triples       "67846"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "33923"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:gd18359  ns0:assembly  <http://www.ncbi.nlm.nih.gov/assembly/GCF_000601585.1> .\n\nns1:gd18358  ns0:assembly  <http://www.ncbi.nlm.nih.gov/assembly/GCF_000601565.1> .\n\nns1:gd18360  ns0:assembly  <http://www.ncbi.nlm.nih.gov/assembly/GCF_000601605.1> .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#Genome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4742"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:aad  ns0:assembly  <http://www.ncbi.nlm.nih.gov/assembly/GCF_000219875.1> .\n\nns1:aac  ns0:assembly  <http://www.ncbi.nlm.nih.gov/assembly/GCF_000024285.1> .\n\nns1:aaa  ns0:assembly  <http://www.ncbi.nlm.nih.gov/assembly/GCF_000176855.2> .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#CompleteGenome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "29181"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:gd18359  ns0:assembly  <http://www.ncbi.nlm.nih.gov/assembly/GCF_000601585.1> .\n\nns1:gd18358  ns0:assembly  <http://www.ncbi.nlm.nih.gov/assembly/GCF_000601565.1> .\n\nns1:gd18360  ns0:assembly  <http://www.ncbi.nlm.nih.gov/assembly/GCF_000601605.1> .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#DraftGenome>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.org/dc/terms/publisher> ;
+                                                 void:triples       "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.org/dc/terms/> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/> .\n\nns1:organism  ns0:publisher  <http://www.nibb.ac.jp> .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  void:Dataset
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "5"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.jp/bio/11/mbgd#assemblyContigN50> ;
+                                                 void:triples       "67846"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "33918"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:gd18359  ns0:assemblyContigN50  83808 .\n\nns1:gd18358  ns0:assemblyContigN50  127029 .\n\nns1:gd18360  ns0:assemblyContigN50  98888 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#Genome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "5"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns2:   <file:///home/chiba/www_spang/html/schema/#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:ath  ns0:assemblyContigN50  ns2:NULL .\n\nns1:dme  ns0:assemblyContigN50  ns2:NULL .\n\nns1:cel  ns0:assemblyContigN50  ns2:NULL .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#Genome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4737"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:aad  ns0:assemblyContigN50  0 .\n\nns1:aac  ns0:assemblyContigN50  0 .\n\nns1:aaa  ns0:assemblyContigN50  0 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#CompleteGenome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "5"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns2:   <file:///home/chiba/www_spang/html/schema/#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:ath  ns0:assemblyContigN50  ns2:NULL .\n\nns1:dme  ns0:assemblyContigN50  ns2:NULL .\n\nns1:cel  ns0:assemblyContigN50  ns2:NULL .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#CompleteGenome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "29181"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:gd18359  ns0:assemblyContigN50  83808 .\n\nns1:gd18358  ns0:assemblyContigN50  127029 .\n\nns1:gd18360  ns0:assemblyContigN50  98888 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#DraftGenome>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "4"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.uniprot.org/core/organism> ;
+                                                 void:triples       "67846"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "33923"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.uniprot.org/core/> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:gd18359  ns0:organism  <http://purl.uniprot.org/taxonomy/1417137> .\n\nns1:gd18358  ns0:organism  <http://purl.uniprot.org/taxonomy/1417136> .\n\nns1:gd18360  ns0:organism  <http://purl.uniprot.org/taxonomy/1417139> .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#Genome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4742"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.uniprot.org/core/> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:aad  ns0:organism  <http://purl.uniprot.org/taxonomy/1048834> .\n\nns1:aac  ns0:organism  <http://purl.uniprot.org/taxonomy/521098> .\n\nns1:aaa  ns0:organism  <http://purl.uniprot.org/taxonomy/643561> .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#CompleteGenome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "29181"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.uniprot.org/core/> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:gd18359  ns0:organism  <http://purl.uniprot.org/taxonomy/1417137> .\n\nns1:gd18358  ns0:organism  <http://purl.uniprot.org/taxonomy/1417136> .\n\nns1:gd18360  ns0:organism  <http://purl.uniprot.org/taxonomy/1417139> .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#DraftGenome>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.org/dc/terms/description> ;
+                                                 void:triples       "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.org/dc/terms/> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/> .\n\nns1:organism  ns0:description  \"RDF representation of organisms in MBGD.\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  void:Dataset
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "4"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.w3.org/2000/01/rdf-schema#label> ;
+                                                 void:triples       "67846"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "33923"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:gd18359  rdfs:label  \"Staphylococcus aureus F19490\" .\n\nns1:gd18358  rdfs:label  \"Staphylococcus aureus F19470\" .\n\nns1:gd18360  rdfs:label  \"Staphylococcus aureus F29447\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#Genome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4742"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:aad  rdfs:label  \"Alicyclobacillus acidocaldarius subsp. acidocaldarius Tc-4-1\" .\n\nns1:aac  rdfs:label  \"Alicyclobacillus acidocaldarius DSM 446\" .\n\nns1:aaa  rdfs:label  \"Acidovorax avenae subsp. avenae ATCC 19860\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#CompleteGenome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "29181"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:gd18359  rdfs:label  \"Staphylococcus aureus F19490\" .\n\nns1:gd18358  rdfs:label  \"Staphylococcus aureus F19470\" .\n\nns1:gd18360  rdfs:label  \"Staphylococcus aureus F29447\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#DraftGenome>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "5"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.jp/bio/11/mbgd#unlocalizedUngappedLength> ;
+                                                 void:triples       "67846"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "33918"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:gd18359  ns0:unlocalizedUngappedLength\n                2741150 .\n\nns1:gd18358  ns0:unlocalizedUngappedLength\n                2882210 .\n\nns1:gd18360  ns0:unlocalizedUngappedLength\n                2850578 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#Genome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "5"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns2:   <file:///home/chiba/www_spang/html/schema/#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:ath  ns0:unlocalizedUngappedLength  ns2:NULL .\n\nns1:dme  ns0:unlocalizedUngappedLength  ns2:NULL .\n\nns1:cel  ns0:unlocalizedUngappedLength  ns2:NULL .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#Genome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4737"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:aad  ns0:unlocalizedUngappedLength  0 .\n\nns1:aac  ns0:unlocalizedUngappedLength  0 .\n\nns1:aaa  ns0:unlocalizedUngappedLength  0 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#CompleteGenome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "5"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns2:   <file:///home/chiba/www_spang/html/schema/#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:ath  ns0:unlocalizedUngappedLength  ns2:NULL .\n\nns1:dme  ns0:unlocalizedUngappedLength  ns2:NULL .\n\nns1:cel  ns0:unlocalizedUngappedLength  ns2:NULL .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#CompleteGenome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "29181"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:gd18359  ns0:unlocalizedUngappedLength\n                2741150 .\n\nns1:gd18358  ns0:unlocalizedUngappedLength\n                2882210 .\n\nns1:gd18360  ns0:unlocalizedUngappedLength\n                2850578 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#DraftGenome>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "5"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.jp/bio/11/mbgd#assemblyTotalLength> ;
+                                                 void:triples       "67846"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "33918"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:gd18359  ns0:assemblyTotalLength  2741150 .\n\nns1:gd18358  ns0:assemblyTotalLength  2882210 .\n\nns1:gd18360  ns0:assemblyTotalLength  2850578 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#Genome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "5"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns2:   <file:///home/chiba/www_spang/html/schema/#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:ath  ns0:assemblyTotalLength  ns2:NULL .\n\nns1:dme  ns0:assemblyTotalLength  ns2:NULL .\n\nns1:cel  ns0:assemblyTotalLength  ns2:NULL .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#Genome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4737"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:aad  ns0:assemblyTotalLength  3124048 .\n\nns1:aac  ns0:assemblyTotalLength  3205686 .\n\nns1:aaa  ns0:assemblyTotalLength  5482170 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#CompleteGenome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "5"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns2:   <file:///home/chiba/www_spang/html/schema/#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:ath  ns0:assemblyTotalLength  ns2:NULL .\n\nns1:dme  ns0:assemblyTotalLength  ns2:NULL .\n\nns1:cel  ns0:assemblyTotalLength  ns2:NULL .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#CompleteGenome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "29181"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:gd18359  ns0:assemblyTotalLength  2741150 .\n\nns1:gd18358  ns0:assemblyTotalLength  2882210 .\n\nns1:gd18360  ns0:assemblyTotalLength  2850578 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#DraftGenome>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.org/dc/terms/license> ;
+                                                 void:triples       "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.org/dc/terms/> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/> .\n\nns1:organism  ns0:license  <http://creativecommons.org/licenses/by-sa/3.0/> .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  void:Dataset
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "4"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.jp/bio/11/mbgd#assemblyLevel> ;
+                                                 void:triples       "67846"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "33923"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:gd18359  ns0:assemblyLevel  \"Contig\" .\n\nns1:gd18358  ns0:assemblyLevel  \"Contig\" .\n\nns1:gd18360  ns0:assemblyLevel  \"Contig\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#Genome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4742"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:aad  ns0:assemblyLevel  \"Complete Genome\" .\n\nns1:aac  ns0:assemblyLevel  \"Complete Genome\" .\n\nns1:aaa  ns0:assemblyLevel  \"Complete Genome\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#CompleteGenome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "29181"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:gd18359  ns0:assemblyLevel  \"Contig\" .\n\nns1:gd18358  ns0:assemblyLevel  \"Contig\" .\n\nns1:gd18360  ns0:assemblyLevel  \"Contig\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#DraftGenome>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "4"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.jp/bio/11/mbgd#family> ;
+                                                 void:triples       "67846"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "33923"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:gd18359  ns0:family  \"\" .\n\nns1:gd18358  ns0:family  \"\" .\n\nns1:gd18360  ns0:family  \"\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#Genome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4742"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:aad  ns0:family  \"Alicyclobacillaceae\" .\n\nns1:aac  ns0:family  \"Alicyclobacillaceae\" .\n\nns1:aaa  ns0:family  \"Comamonadaceae\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#CompleteGenome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "29181"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:gd18359  ns0:family  \"\" .\n\nns1:gd18358  ns0:family  \"\" .\n\nns1:gd18360  ns0:family  \"\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#DraftGenome>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.org/dc/terms/title> ;
+                                                 void:triples       "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.org/dc/terms/> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/> .\n\nns1:organism  ns0:title  \"MBGD organisms\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  void:Dataset
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.org/pav/version> ;
+                                                 void:triples       "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.org/pav/> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/> .\n\nns1:organism  ns0:version  \"2016-01\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  void:Dataset
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "4"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.org/dc/terms/references> ;
+                                                 void:triples       "18162"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "9081"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.org/dc/terms/> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:gd18446  ns0:references  <http://www.ncbi.nlm.nih.gov/pubmed/24732280> .\n\nns1:gd18445  ns0:references  <http://www.ncbi.nlm.nih.gov/pubmed/24732280> .\n\nns1:gd18444  ns0:references  <http://www.ncbi.nlm.nih.gov/pubmed/24732280> .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#Genome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1951"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.org/dc/terms/> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:aad  ns0:references  <http://www.ncbi.nlm.nih.gov/pubmed/21914900> .\n\nns1:aae  ns0:references  <http://www.ncbi.nlm.nih.gov/pubmed/9537320> .\n\nns1:aan  ns0:references  <http://www.ncbi.nlm.nih.gov/pubmed/20348265> .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#CompleteGenome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "7130"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.org/dc/terms/> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:gd18446  ns0:references  <http://www.ncbi.nlm.nih.gov/pubmed/24732280> .\n\nns1:gd18445  ns0:references  <http://www.ncbi.nlm.nih.gov/pubmed/24732280> .\n\nns1:gd18444  ns0:references  <http://www.ncbi.nlm.nih.gov/pubmed/24732280> .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#DraftGenome>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "4"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.jp/bio/11/mbgd#taxon> ;
+                                                 void:triples       "67846"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "33923"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:gd18359  ns0:taxon  <http://identifiers.org/taxonomy/1417137> .\n\nns1:gd18358  ns0:taxon  <http://identifiers.org/taxonomy/1417136> .\n\nns1:gd18360  ns0:taxon  <http://identifiers.org/taxonomy/1417139> .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#Genome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4742"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:aad  ns0:taxon  <http://identifiers.org/taxonomy/1048834> .\n\nns1:aac  ns0:taxon  <http://identifiers.org/taxonomy/521098> .\n\nns1:aaa  ns0:taxon  <http://identifiers.org/taxonomy/643561> .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#CompleteGenome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "29181"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:gd18359  ns0:taxon  <http://identifiers.org/taxonomy/1417137> .\n\nns1:gd18358  ns0:taxon  <http://identifiers.org/taxonomy/1417136> .\n\nns1:gd18360  ns0:taxon  <http://identifiers.org/taxonomy/1417139> .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#DraftGenome>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "4"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.obolibrary.org/obo/RO_0002162> ;
+                                                 void:triples       "67846"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "33923"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.obolibrary.org/obo/> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:gd18359  ns0:RO_0002162  <http://identifiers.org/taxonomy/1417137> .\n\nns1:gd18358  ns0:RO_0002162  <http://identifiers.org/taxonomy/1417136> .\n\nns1:gd18360  ns0:RO_0002162  <http://identifiers.org/taxonomy/1417139> .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#Genome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4742"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.obolibrary.org/obo/> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:aad  ns0:RO_0002162  <http://identifiers.org/taxonomy/1048834> .\n\nns1:aac  ns0:RO_0002162  <http://identifiers.org/taxonomy/521098> .\n\nns1:aaa  ns0:RO_0002162  <http://identifiers.org/taxonomy/643561> .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#CompleteGenome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "29181"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.obolibrary.org/obo/> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:gd18359  ns0:RO_0002162  <http://identifiers.org/taxonomy/1417137> .\n\nns1:gd18358  ns0:RO_0002162  <http://identifiers.org/taxonomy/1417136> .\n\nns1:gd18360  ns0:RO_0002162  <http://identifiers.org/taxonomy/1417139> .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#DraftGenome>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "4"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.jp/bio/11/mbgd#genus> ;
+                                                 void:triples       "67846"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "33923"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:gd18359  ns0:genus  \"\" .\n\nns1:gd18358  ns0:genus  \"\" .\n\nns1:gd18360  ns0:genus  \"\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#Genome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4742"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:aad  ns0:genus  \"Alicyclobacillus\" .\n\nns1:aac  ns0:genus  \"Alicyclobacillus\" .\n\nns1:aaa  ns0:genus  \"Acidovorax\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#CompleteGenome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "29181"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:gd18359  ns0:genus  \"\" .\n\nns1:gd18358  ns0:genus  \"\" .\n\nns1:gd18360  ns0:genus  \"\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#DraftGenome>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.org/dc/terms/created> ;
+                                                 void:triples       "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .\n@prefix ns2:   <http://mbgd.genome.ad.jp/rdf/resource/> .\n@prefix ns1:   <http://purl.org/dc/terms/> .\n\nns2:organism  ns1:created  \"2016-06-06T17:06:33+09:00\"^^xsd:dateTime .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  void:Dataset
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "4"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.org/dc/terms/identifier> ;
+                                                 void:triples       "67846"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "33923"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.org/dc/terms/> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:gd18359  ns0:identifier  \"gd18359\" .\n\nns1:gd18358  ns0:identifier  \"gd18358\" .\n\nns1:gd18360  ns0:identifier  \"gd18360\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#Genome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4742"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.org/dc/terms/> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:aad  ns0:identifier  \"aad\" .\n\nns1:aac  ns0:identifier  \"aac\" .\n\nns1:aaa  ns0:identifier  \"aaa\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#CompleteGenome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "29181"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.org/dc/terms/> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:gd18359  ns0:identifier  \"gd18359\" .\n\nns1:gd18358  ns0:identifier  \"gd18358\" .\n\nns1:gd18360  ns0:identifier  \"gd18360\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#DraftGenome>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "4"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.org/dc/terms/issued> ;
+                                                 void:triples       "67846"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "33923"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .\n@prefix ns2:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n@prefix ns1:   <http://purl.org/dc/terms/> .\n\nns2:gd18359  ns1:issued  \"0000-00-00\"^^xsd:date .\n\nns2:gd18358  ns1:issued  \"0000-00-00\"^^xsd:date .\n\nns2:gd18360  ns1:issued  \"0000-00-00\"^^xsd:date .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#Genome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4742"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .\n@prefix ns2:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n@prefix ns1:   <http://purl.org/dc/terms/> .\n\nns2:aad  ns1:issued  \"2011-07-05+09:00\"^^xsd:date .\n\nns2:aac  ns1:issued  \"2009-09-09+09:00\"^^xsd:date .\n\nns2:aaa  ns1:issued  \"2009-12-08+09:00\"^^xsd:date .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#CompleteGenome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "29181"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .\n@prefix ns2:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n@prefix ns1:   <http://purl.org/dc/terms/> .\n\nns2:gd18359  ns1:issued  \"0000-00-00\"^^xsd:date .\n\nns2:gd18358  ns1:issued  \"0000-00-00\"^^xsd:date .\n\nns2:gd18360  ns1:issued  \"0000-00-00\"^^xsd:date .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#DraftGenome>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      void:dataDump ;
+                                                 void:triples       "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix void:  <http://rdfs.org/ns/void#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/> .\n\nns1:organism  void:dataDump  <http://mbgd.genome.ad.jp/rdf/archive/mbgd_2016-01/mbgd_2016-01_organism.ttl.gz> .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  void:Dataset
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "4"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.jp/bio/11/mbgd#abbrev> ;
+                                                 void:triples       "67846"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "33923"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:gd18359  ns0:abbrev  \"S.aureus\" .\n\nns1:gd18358  ns0:abbrev  \"S.aureus\" .\n\nns1:gd18360  ns0:abbrev  \"S.aureus\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#Genome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4742"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:aad  ns0:abbrev  \"A.acidocaldarius\" .\n\nns1:aac  ns0:abbrev  \"A.acidocaldarius\" .\n\nns1:aaa  ns0:abbrev  \"A.avenae\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#CompleteGenome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "29181"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:gd18359  ns0:abbrev  \"S.aureus\" .\n\nns1:gd18358  ns0:abbrev  \"S.aureus\" .\n\nns1:gd18360  ns0:abbrev  \"S.aureus\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#DraftGenome>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "5"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.jp/bio/11/mbgd#assemblyTotalGapLength> ;
+                                                 void:triples       "67846"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "33918"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:gd18359  ns0:assemblyTotalGapLength\n                0 .\n\nns1:gd18358  ns0:assemblyTotalGapLength\n                0 .\n\nns1:gd18360  ns0:assemblyTotalGapLength\n                0 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#Genome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "5"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns2:   <file:///home/chiba/www_spang/html/schema/#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:ath  ns0:assemblyTotalGapLength  ns2:NULL .\n\nns1:dme  ns0:assemblyTotalGapLength  ns2:NULL .\n\nns1:cel  ns0:assemblyTotalGapLength  ns2:NULL .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#Genome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4737"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:aad  ns0:assemblyTotalGapLength  0 .\n\nns1:aac  ns0:assemblyTotalGapLength  0 .\n\nns1:aaa  ns0:assemblyTotalGapLength  0 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#CompleteGenome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "5"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns2:   <file:///home/chiba/www_spang/html/schema/#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:ath  ns0:assemblyTotalGapLength  ns2:NULL .\n\nns1:dme  ns0:assemblyTotalGapLength  ns2:NULL .\n\nns1:cel  ns0:assemblyTotalGapLength  ns2:NULL .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#CompleteGenome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "29181"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:gd18359  ns0:assemblyTotalGapLength\n                0 .\n\nns1:gd18358  ns0:assemblyTotalGapLength\n                0 .\n\nns1:gd18360  ns0:assemblyTotalGapLength\n                0 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#DraftGenome>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "5"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.jp/bio/11/mbgd#unlocalizedTotalLength> ;
+                                                 void:triples       "67846"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "33918"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:gd18359  ns0:unlocalizedTotalLength\n                2741150 .\n\nns1:gd18358  ns0:unlocalizedTotalLength\n                2882210 .\n\nns1:gd18360  ns0:unlocalizedTotalLength\n                2850578 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#Genome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "5"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns2:   <file:///home/chiba/www_spang/html/schema/#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:ath  ns0:unlocalizedTotalLength  ns2:NULL .\n\nns1:dme  ns0:unlocalizedTotalLength  ns2:NULL .\n\nns1:cel  ns0:unlocalizedTotalLength  ns2:NULL .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#Genome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4737"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:aad  ns0:unlocalizedTotalLength  0 .\n\nns1:aac  ns0:unlocalizedTotalLength  0 .\n\nns1:aaa  ns0:unlocalizedTotalLength  0 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#CompleteGenome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "5"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns2:   <file:///home/chiba/www_spang/html/schema/#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:ath  ns0:unlocalizedTotalLength  ns2:NULL .\n\nns1:dme  ns0:unlocalizedTotalLength  ns2:NULL .\n\nns1:cel  ns0:unlocalizedTotalLength  ns2:NULL .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#CompleteGenome>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "29181"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://mbgd.genome.ad.jp/rdf/resource/organism/> .\n\nns1:gd18359  ns0:unlocalizedTotalLength\n                2741150 .\n\nns1:gd18358  ns0:unlocalizedTotalLength\n                2882210 .\n\nns1:gd18360  ns0:unlocalizedTotalLength\n                2850578 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://purl.jp/bio/11/mbgd#DraftGenome>
+                                                                    ]
+                                               ] ;
+                       sbm:crawlLog            [ a                     sbm:CrawlLog ;
+                                                 sbm:crawlEndTime      "2018-10-17T09:49:53+09:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                                 sbm:crawlStartTime    "2018-10-17T09:48:59+09:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                                 sbm:endpointAccesses  "140"^^<http://www.w3.org/2001/XMLSchema#long>
+                                               ] ;
+                       sd:namedGraph           [ a        sd:NamedGraph ;
+                                                 sd:name  <http://mbgd.genome.ad.jp/rdf/resource/organism>
+                                               ]
+                     ] ;
+  sd:endpoint        <http://sparql.nibb.ac.jp/sparql>
+] .

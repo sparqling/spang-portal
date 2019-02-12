@@ -1,0 +1,25 @@
+digraph {
+    ranksep=2;
+    rankdir="LR";
+    charset="utf-8";
+
+    // Class relations with the numbers of edges
+    "agrold_resource:QTL" -> "rdfs:Literal1" [ label="agrold:is_located_on\n  17"];
+    "agrold_resource:QTL" -> "rdfs:Literal2" [ label="agrold:date\n  17"];
+    "agrold_resource:QTL" -> "rdfs:Literal3" [ label="agrold:has_trait\n  51"];
+    "agrold_resource:QTL" -> "rdfs:Literal4" [ label="agrold:has_end_position\n  17"];
+    "agrold_resource:QTL" -> "rdfs:Literal5" [ label="agrold:lod\n  17"];
+    "agrold_resource:QTL" -> "rdfs:Literal6" [ label="agrold:has_start_position\n  17"];
+    "agrold_resource:QTL" -> "rdfs:Literal7" [ label="rdfs:label\n  17"];
+
+    // The number of entities
+    "agrold_resource:QTL" [ label="agrold_resource:QTL\n17" ] ;
+    "rdfs:Literal1" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Literal2" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Literal3" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Literal4" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Literal5" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Literal6" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Literal7" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+
+}

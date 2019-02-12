@@ -1,0 +1,17 @@
+wd:Q837867	"male"@en	"Matsudaira Tadateru"@en	"松平忠輝"@ja		"son of Tokugawa Ieyasu"@en	"1592-02-16T00:00:00Z"^^xsd:dateTime	"1683-08-24T00:00:00Z"^^xsd:dateTime
+wd:Q1133267	"male"@en	"Takeda Nobuyoshi"@en	"武田信吉"@ja		"son of Tokugawa Ieyasu. nominal successor of Takeda clan"@en	"1583-10-18T00:00:00Z"^^xsd:dateTime	"1603-10-15T00:00:00Z"^^xsd:dateTime
+wd:Q1136186	"male"@en	"Tokugawa Yoshinao"@en	"徳川義直"@ja		"daimyo"@en	"1601-01-02T00:00:00Z"^^xsd:dateTime	"1650-06-05T00:00:00Z"^^xsd:dateTime
+wd:Q1188704	"male"@en	"Matsudaira Nobuyasu"@en	"松平信康"@ja		"Japanese noble"@en	"1559-04-13T00:00:00Z"^^xsd:dateTime	"1579-10-05T00:00:00Z"^^xsd:dateTime
+wd:Q4489936	"male"@en	"Matsudaira Matsuchiyo"@en	"松平松千代"@ja		"son of Tokugawa Ieyasu"@en	"1594-01-01T00:00:00Z"^^xsd:dateTime	"1599-02-07T00:00:00Z"^^xsd:dateTime
+wd:Q4489943	"male"@en	"Matsudaira Senchiyo"@en	"松平仙千代"@ja		"son of Tokugawa Ieyasu"@en	"1595-04-22T00:00:00Z"^^xsd:dateTime	"1600-03-21T00:00:00Z"^^xsd:dateTime
+wd:Q10345259	"female"@en	"Mate-hime"@en	"満天姫"@ja		"adopted daughter of Tokugawa Ieyasu"@en		"1638-05-05T00:00:00Z"^^xsd:dateTime
+wd:Q11418573	"female"@en	"Tobai-in"@en	"唐梅院"@ja		"Wife of Ii Naomasa"@en		"1639-08-02T00:00:00Z"^^xsd:dateTime
+wd:Q314464	"male"@en	"Tokugawa Hidetada"@en	"徳川秀忠"@ja	"江戸幕府の第2代征夷大将軍"@ja	"Japanese shogun"@en	"1579-05-12T00:00:00Z"^^xsd:dateTime	"1632-03-14T00:00:00Z"^^xsd:dateTime
+wd:Q1045763	"male"@en	"Tokugawa Yorinobu"@en	"徳川頼宣"@ja	"日本の江戸時代の大名"@ja	"daimyo of the ealy Edo period; 1st lord of Kishu, founder of Kii branch"@en	"1602-04-28T00:00:00Z"^^xsd:dateTime	"1671-02-19T00:00:00Z"^^xsd:dateTime
+wd:Q1130929	"male"@en	"Yūki Hideyasu"@en	"結城秀康"@ja	"安土桃山時代から江戸時代前期にかけての武将、大名"@ja	"Japanese daimyo who lived during the Azuchi-Momoyama and early Edo periods"@en	"1574-03-11T00:00:00Z"^^xsd:dateTime	"1607-06-02T00:00:00Z"^^xsd:dateTime
+wd:Q1133215	"male"@en	"Matsudaira Tadayoshi"@en	"松平忠吉"@ja	"徳川家康の四男"@ja	"[松平忠吉] son of Tokugawa Ieyasu"@en	"1580-10-28T00:00:00Z"^^xsd:dateTime	"1607-04-01T00:00:00Z"^^xsd:dateTime
+wd:Q1133680	"male"@en	"Tokugawa Yorifusa"@en	"徳川頼房"@ja	"日本の江戸時代の大名"@ja	"daimyo of the ealy Edo period; 1st lord of Mito, founder of Mito branch"@en	"1603-09-15T00:00:00Z"^^xsd:dateTime	"1661-08-23T00:00:00Z"^^xsd:dateTime
+wd:Q3276029	"female"@en	"Toku-hime"@en	"督姫"@ja	"徳川家康の娘。北条氏直、池田輝政室"@ja	"[督姫] daughter of Tokugawa Ieyasu; wife of Hōjō Ujinao, Ikeda Terumasa"@en	"1565-01-01T00:00:00Z"^^xsd:dateTime	"1615-03-03T00:00:00Z"^^xsd:dateTime
+wd:Q4489959	"female"@en	"Kame-hime"@en	"亀姫"@ja	"徳川家康の長女"@ja	"eldest daughter of Tokugawa Ieyasu"@en		
+wd:Q4489975	"female"@en	"Furi-hime"@en	"正清院"@ja	"徳川家康の娘。蒲生秀行・浅野長晟室"@ja	"daughter of Tokugawa Ieyasu"@en	"1580-01-01T00:00:00Z"^^xsd:dateTime	"1617-09-27T00:00:00Z"^^xsd:dateTime
+wd:Q5367216	"female"@en	"Ichi-hime"@en	"市姫"@ja	"徳川家康の娘"@ja	"daughter of Tokugawa Ieyasu"@en	"1607-01-28T00:00:00Z"^^xsd:dateTime	"1610-03-07T00:00:00Z"^^xsd:dateTime

@@ -1,0 +1,564 @@
+"Q10296516"	:"Person"	"gender":"male"	"name":"Tokugawa Iechiyo"	"name_ja":"徳川家千代"	"birthDate":1707	"deathDate":1707	
+"Q10345259"	:"Person"	"gender":"female"	"name":"Mate-hime"	"name_ja":"満天姫"	"deathDate":1638	
+"Q1036482"	:"Person"	"gender":"male"	"name":"Ikeda Tsuneoki"	"name_ja":"池田恒興"	"birthDate":1536	"deathDate":1584	
+"Q10389076"	:"Person"	"gender":"female"	"name":"Jōkō-in"	"name_ja":"浄光院 (保科正之生母)"	"birthDate":1584	"deathDate":1635	
+"Q1040026"	:"Person"	"gender":"female"	"name":"Toku-hime"	"name_ja":"徳姫"	"birthDate":1559	"deathDate":1636	"description":"織田信長の娘、松平信康の正室"
+"Q1041434"	:"Person"	"gender":"male"	"name":"Matsudaira Kiyoyasu"	"name_ja":"松平清康"	"birthDate":1511	"deathDate":1535	"description":"日本の戦国時代の武将"
+"Q10436552"	:"Person"	"gender":"female"	"name":"Kame no kata"	"name_ja":"お亀の方"	"birthDate":1573	"deathDate":1642	
+"Q1045763"	:"Person"	"gender":"male"	"name":"Tokugawa Yorinobu"	"name_ja":"徳川頼宣"	"birthDate":1602	"deathDate":1671	"description":"日本の江戸時代の大名"
+"Q1045995"	:"Person"	"gender":"female"	"name":"Saigō"	"name_ja":"西郷局"	"birthDate":1552	"deathDate":1589	
+"Q1046230"	:"Person"	"gender":"male"	"name":"Tokugawa Mitsusada"	"name_ja":"徳川光貞"	"birthDate":1627	"deathDate":1705	"description":"日本の江戸時代の大名"
+"Q10502504"	:"Person"	"gender":"female"	"name":"Okaji no Kata"	"name_ja":"英勝院"	"birthDate":1578	"deathDate":1642	"description":"江戸時代の女性、徳川家康の側室"
+"Q1064935"	:"Person"	"gender":"male"	"name":"Matsudaira Hirotada"	"name_ja":"松平広忠"	"birthDate":1526	"deathDate":1549	"description":"日本の戦国時代の武将"
+"Q10729352"	:"Person"	"gender":"male"	"name":"Matsudaira Yasumoto"	"name_ja":"松平康元"	"birthDate":1552	"deathDate":1603	"description":"戦国武将・大名。徳川家康の異父弟"
+"Q10729401"	:"Person"	"gender":"female"	"name":"Jitsujōin"	"name_ja":"実成院"	"birthDate":1821	"deathDate":1904	
+"Q10791105"	:"Person"	"gender":"male"	"name":"Matsudaira Yasuchika"	"name_ja":"松平康親"	"birthDate":1521	"deathDate":1583	
+"Q10856577"	:"Person"	"gender":"female"	"name":"Toku-hime"	"name_ja":"登久姫"	"birthDate":1576	"deathDate":1607	"description":"松平信康の長女。母は徳姫（織田信長の娘）"
+"Q10860048"	:"Person"	"gender":"female"	"name":"Kaishun'in"	"name_ja":"皆春院"	"deathDate":1843	
+"Q11071637"	:"Person"	"gender":"female"	"name":"Kiyo-hime"	"name_ja":"喜代姫"	"birthDate":1818	"deathDate":1868	"description":"姫路藩主・酒井忠学の正室。徳川家斉の娘"
+"Q11071642"	:"Person"	"gender":"female"	"name":"Tamaki"	"name_ja":"珠姫"	"birthDate":1599	"deathDate":1622	"description":"日本の江戸時代の人物"
+"Q11093357"	:"Person"	"gender":"female"	"name":"Honju-in"	"name_ja":"本寿院"	"birthDate":1807	"deathDate":1885	"description":"徳川家慶の側室"
+"Q11239108"	:"Person"	"gender":"male"	"name":"Matsudaira Nagachika"	"name_ja":"松平長親"	"birthDate":1473	"deathDate":1544	"description":"日本の戦国武将。松平家第5代当主（安祥松平家当主）。徳川家康の高祖父"
+"Q11239114"	:"Person"	"gender":"male"	"name":"Matsudaira Nobumitsu"	"name_ja":"松平信光"	"birthDate":1500	"description":"日本の室町時代の武将"
+"Q11239118"	:"Person"	"gender":"male"	"name":"Matsudaira Nobutada"	"name_ja":"松平信忠"	"birthDate":1490	"deathDate":1531	"description":"日本の戦国時代の武将、松平氏第6代当主"
+"Q11239151"	:"Person"	"gender":"male"	"name":"Matsudaira Yasuchika"	"name_ja":"松平泰親"	
+"Q11239169"	:"Person"	"gender":"male"	"name":"Matsudaira Chikauji"	"name_ja":"松平親氏"	"birthDate":1400	
+"Q11239171"	:"Person"	"gender":"male"	"name":"Matsudaira Chikatada"	"name_ja":"松平親忠"	"deathDate":1501	"description":"日本の戦国時代の大名"
+"Q11245729"	:"Person"	"gender":"female"	"name":"Yasu-hime"	"name_ja":"保姫"	"birthDate":1747	"deathDate":1769	"description":"島津重豪の正室"
+"Q11263072"	:"Person"	"gender":"female"	"name":"O-tomi no kata"	"name_ja":"お富の方"	"deathDate":1817	
+"Q1130929"	:"Person"	"gender":"male"	"name":"Yūki Hideyasu"	"name_ja":"結城秀康"	"birthDate":1574	"deathDate":1607	"description":"安土桃山時代から江戸時代前期にかけての武将、大名"
+"Q1133215"	:"Person"	"gender":"male"	"name":"Matsudaira Tadayoshi"	"name_ja":"松平忠吉"	"birthDate":1580	"deathDate":1607	"description":"徳川家康の四男"
+"Q1133267"	:"Person"	"gender":"male"	"name":"Takeda Nobuyoshi"	"name_ja":"武田信吉"	"birthDate":1583	"deathDate":1603	
+"Q1133680"	:"Person"	"gender":"male"	"name":"Tokugawa Yorifusa"	"name_ja":"徳川頼房"	"birthDate":1603	"deathDate":1661	"description":"日本の江戸時代の大名"
+"Q11354388"	:"Person"	"gender":"female"	"name_ja":"三保姫"	"birthDate":1603	"deathDate":1632	
+"Q1135700"	:"Person"	"gender":"male"	"name":"Tokugawa Tadanaga"	"name_ja":"徳川忠長"	"birthDate":1606	"deathDate":1634	
+"Q1136186"	:"Person"	"gender":"male"	"name":"Tokugawa Yoshinao"	"name_ja":"徳川義直"	"birthDate":1601	"deathDate":1650	
+"Q11369398"	:"Person"	"gender":"female"	"name":"Kyūshō-in"	"name_ja":"久昌院"	"birthDate":1604	"deathDate":1662	
+"Q11369424"	:"Person"	"gender":"male"	"name":"Hisamatsu Toshikatsu"	"name_ja":"久松俊勝"	"birthDate":1526	"deathDate":1587	
+"Q11371041"	:"Person"	"gender":"female"	"name":"Kametsuru-hime"	"name_ja":"亀鶴姫"	"birthDate":1613	"deathDate":1630	"description":"加賀藩主前田利常の長女。森忠広の正室"
+"Q11396808"	:"Person"	"gender":"male"	"name":"Bessho Shigemune"	"name_ja":"別所重宗"	"birthDate":1529	"deathDate":1591	
+"Q11397439"	:"Person"	"gender":"male"	"name":"Maeda Toshitsugu"	"name_ja":"前田利次"	"birthDate":1617	"deathDate":1674	"description":"日本の江戸時代の大名、越中富山藩の初代藩主"
+"Q11397442"	:"Person"	"gender":"male"	"name_ja":"前田利治"	"birthDate":1618	"deathDate":1660	
+"Q11397453"	:"Person"	"gender":"male"	"name_ja":"前田利興"	"birthDate":1678	"deathDate":1733	
+"Q11397465"	:"Person"	"gender":"male"	"name_ja":"前田利隆"	"birthDate":1690	"deathDate":1745	
+"Q11397628"	:"Person"	"gender":"male"	"name":"Maeda Masatoshi"	"name_ja":"前田正甫"	"birthDate":1649	"deathDate":1706	"description":"日本の江戸時代の大名、越中富山藩の第2代藩主"
+"Q11408990"	:"Person"	"gender":"female"	"name":"Tokugawa Tsuneko"	"name_ja":"博恭王妃経子"	"birthDate":1882	"deathDate":1939	
+"Q11418573"	:"Person"	"gender":"female"	"name":"Tobai-in"	"name_ja":"唐梅院"	"deathDate":1639	
+"Q1142446"	:"Person"	"gender":"male"	"name":"Azai Nagamasa"	"name_ja":"浅井長政"	"birthDate":1545	"deathDate":1573	"description":"日本の戦国時代の武将"
+"Q11431978"	:"Person"	"gender":"male"	"name":"Okubo Tadanao"	"name_ja":"大久保忠直 (紀州藩士)"	"deathDate":1726	
+"Q11439375"	:"Person"	"gender":"male"	"name":"Daidōji Naohide II"	"name_ja":"大道寺直秀"	"birthDate":1606	"deathDate":1636	
+"Q11439376"	:"Person"	"gender":"male"	"name":"Daidōji Naohide I"	"name_ja":"大道寺直英"	"birthDate":1552	"deathDate":1642	
+"Q11446903"	:"Person"	"gender":"female"	"name":"Myōsōin"	"name_ja":"妙操院"	"deathDate":1832	
+"Q11458352"	:"Person"	"gender":"female"	"name":"Jufukuin"	"name_ja":"寿福院"	"birthDate":1570	"deathDate":1631	"description":"日本の江戸時代の人物"
+"Q1147080"	:"Person"	"gender":"female"	"name":"Senhime"	"name_ja":"千姫"	"birthDate":1597	"deathDate":1666	
+"Q11488736"	:"Person"	"gender":"male"	"name":"Tokugawa Arichika"	"name_ja":"得川有親"	
+"Q11490284"	:"Person"	"gender":"male"	"name":"Tokugawa Narinori"	"name_ja":"徳川斉明"	"birthDate":1810	"deathDate":1827	"description":"清水徳川家第4代当主"
+"Q11490288"	:"Person"	"gender":"male"	"name":"Tokugawa Harukuni"	"name_ja":"徳川治国"	"birthDate":1776	"deathDate":1793	"description":"一橋徳川家の世子"
+"Q11490290"	:"Person"	"gender":"male"	"name":"Tokugawa Harusada"	"name_ja":"徳川治済"	"birthDate":1751	"deathDate":1827	"description":"一橋家第2代当主"
+"Q11502538"	:"Person"	"gender":"female"	"name":"Shinmura Nobu"	"name_ja":"新村信"	"deathDate":1905	"description":"徳川慶喜の側室"
+"Q11514165"	:"Person"	"gender":"female"	"name":"Akiko-naishinnō"	"name_ja":"昭子内親王"	"birthDate":1629	"deathDate":1675	"description":"後水尾天皇の皇女"
+"Q11516505"	:"Person"	"gender":"male"	"name":"Arisugawa-no-miya Orihito-shinnō"	"name_ja":"有栖川宮織仁親王"	"birthDate":1754	"deathDate":1820	"description":"日本の江戸時代の皇族"
+"Q11519670"	:"Person"	"gender":"female"	"name":"Sue-hime"	"name_ja":"末姫"	"birthDate":1817	"deathDate":1872	"description":"徳川家斉の娘、浅野斉粛の正室"
+"Q11520258"	:"Person"	"gender":"male"	"name":"Honjō Munemasa"	"name_ja":"本庄宗正"	"birthDate":1580	"deathDate":1639	
+"Q11520348"	:"Person"	"gender":"female"	"name":"Hontokuin"	"name_ja":"本徳院"	"birthDate":1696	"deathDate":1723	
+"Q11530459"	:"Person"	"gender":"male"	"name":"Matsudaira Narikoto"	"name_ja":"松平斉宣"	"birthDate":1825	"deathDate":1844	
+"Q11530462"	:"Person"	"gender":"male"	"name":"Matsudaira Naritami"	"name_ja":"松平斉民"	"birthDate":1814	"deathDate":1891	"description":"江戸時代幕末期の大名。津山藩主"
+"Q11530463"	:"Person"	"gender":"male"	"name":"Matsudaira Nariyoshi"	"name_ja":"松平斉良"	"birthDate":1819	"deathDate":1839	
+"Q11530464"	:"Person"	"gender":"male"	"name":"Matsudaira Narisada"	"name_ja":"松平斉省"	"birthDate":1823	"deathDate":1841	
+"Q11530566"	:"Person"	"gender":"male"	"name":"Matsudaira Yoshikazu"	"name_ja":"松平義和"	"birthDate":1776	"deathDate":1832	
+"Q11530567"	:"Person"	"gender":"male"	"name":"Matsudaira Yoshisue"	"name_ja":"松平義居"	"birthDate":1785	"deathDate":1804	
+"Q11530619"	:"Person"	"gender":"male"	"name":"Matsudaira Shigetomi"	"name_ja":"松平重富"	"birthDate":1748	"deathDate":1809	"description":"江戸時代後期の大名。福井藩第12代藩主"
+"Q11530629"	:"Person"	"gender":"male"	"name":"Matsudaira Yoritoshi"	"name_ja":"松平頼侯"	"birthDate":1661	"deathDate":1687	"description":"日本の江戸時代の武士"
+"Q11530633"	:"Person"	"gender":"male"	"name":"Matsudaira Yoritsune"	"name_ja":"松平頼常"	"birthDate":1652	"deathDate":1704	"description":"江戸時代前期の大名。高松藩第2代藩主"
+"Q11530635"	:"Person"	"gender":"male"	"name":"Matsudaira Yorihiro"	"name_ja":"松平頼恕"	"birthDate":1798	"deathDate":1842	"description":"江戸時代後期の大名。高松藩第9代藩主"
+"Q11530640"	:"Person"	"gender":"male"	"name":"Matsudaira Yoritake"	"name_ja":"松平頼桓"	"birthDate":1720	"deathDate":1739	"description":"江戸時代中期の大名。高松藩第4代藩主"
+"Q11530641"	:"Person"	"gender":"male"	"name":"Matsudaira Yoriharu"	"name_ja":"松平頼治"	"birthDate":1711	"deathDate":1730	
+"Q11530645"	:"Person"	"gender":"male"	"name":"Matsudaira Yorihiro"	"name_ja":"松平頼煕"	"birthDate":1700	"deathDate":1737	"description":"日本の江戸時代の人物、松平大膳家の初代当主"
+"Q11530652"	:"Person"	"gender":"male"	"name":"Matsudaira Yoriyoshi"	"name_ja":"松平頼芳"	"birthDate":1667	"deathDate":1706	"description":"江戸時代初期の武士。高松藩主松平頼重の子"
+"Q11530657"	:"Person"	"gender":"male"	"name":"Matsudaira Yoritoyo"	"name_ja":"松平頼豊"	"birthDate":1680	"deathDate":1735	"description":"日本の江戸時代の大名。高松藩第3代藩主"
+"Q11530664"	:"Person"	"gender":"male"	"name":"Matsudaira Yorikatsu"	"name_ja":"松平頼雄"	"birthDate":1668	"deathDate":1718	"description":"江戸時代中期の武士。西条藩嫡子"
+"Q11545523"	:"Person"	"gender":"male"	"name":"Masaki Yoritada"	"name_ja":"正木頼忠"	"birthDate":1551	"deathDate":1622	"description":"日本の戦国時代の武将"
+"Q11551695"	:"Person"	"gender":"male"	"name_ja":"池田仲政"	"birthDate":1632	"deathDate":1649	
+"Q11551720"	:"Person"	"gender":"male"	"name_ja":"池田光仲"	"birthDate":1630	"deathDate":1693	
+"Q11551880"	:"Person"	"gender":"male"	"name":"Ikeda Tadakatsu"	"name_ja":"池田忠雄"	"birthDate":1602	"deathDate":1632	
+"Q11551950"	:"Person"	"gender":"male"	"name":"Ikeda Narihiro"	"name_ja":"池田斉衆"	"birthDate":1812	"deathDate":1826	
+"Q11560037"	:"Person"	"gender":"female"	"name":"Shinshin'in"	"name_ja":"深心院"	"birthDate":1700	"deathDate":1721	
+"Q11564521"	:"Person"	"gender":"female"	"name":"Yasu-hime"	"name_ja":"溶姫"	"birthDate":1813	"deathDate":1868	"description":"徳川家斉の娘、前田斉泰の正室"
+"Q11593146"	:"Person"	"gender":"male"	"name":"Fukushima Masayuki"	"name_ja":"福島正之"	"birthDate":1585	"deathDate":1608	
+"Q11610928"	:"Person"	"gender":"female"	"name":"Shōkō-in"	"name_ja":"聖光院"	"birthDate":1620	"deathDate":1691	
+"Q11612770"	:"Person"	"gender":"female"	"name_ja":"自昌院"	"birthDate":1620	"deathDate":1700	
+"Q11625675"	:"Person"	"gender":"female"	"name":"Toshiko Hachisuka"	"name_ja":"蜂須賀年子"	"birthDate":1896	"deathDate":1970	"description":"日本のデザイナー"
+"Q11625682"	:"Person"	"gender":"female"	"name":"Masako Hachisuka"	"name_ja":"蜂須賀正子"	"birthDate":1941	"description":"日本の英語学者"
+"Q11625683"	:"Person"	"gender":"male"	"name":"Masaaki Hachisuka"	"name_ja":"蜂須賀正韶"	"birthDate":1871	"deathDate":1932	"description":"日本の政治家"
+"Q11625684"	:"Person"	"gender":"male"	"name":"Masauji Hachisuka"	"name_ja":"蜂須賀正氏"	"birthDate":1903	"deathDate":1953	"description":"日本の華族"
+"Q11625699"	:"Person"	"gender":"female"	"name":"Yoriko Hachisuka"	"name_ja":"蜂須賀随子"	
+"Q11651545"	:"Person"	"gender":"female"	"name":"Chōshō-in"	"name_ja":"長勝院"	"birthDate":1548	"deathDate":1620	"description":"徳川家康の側室。結城秀康の生母"
+"Q11653022"	:"Person"	"gender":"female"	"name":"Chō Shōin"	"name_ja":"長昌院"	"birthDate":1637	"deathDate":1664	
+"Q11667688"	:"Person"	"gender":"female"	"name":"Kōrin'in"	"name_ja":"香琳院"	"deathDate":1810	
+"Q11668744"	:"Person"	"gender":"male"	"name":"Sukehito-shinnō"	"name_ja":"高仁親王"	"birthDate":1626	"deathDate":1628	"description":"後水尾天皇の皇子"
+"Q11678606"	:"Person"	"gender":"male"	"name":"Kuroda Hitoshi Takashi"	"name_ja":"黒田斉隆"	"birthDate":1777	"deathDate":1795	
+"Q11678625"	:"Person"	"gender":"male"	"name_ja":"黒田治之"	"birthDate":1753	"deathDate":1781	
+"Q1188498"	:"Person"	"gender":"male"	"name":"Mizuno Tadamasa"	"name_ja":"水野忠政"	"birthDate":1493	"deathDate":1543	"description":"日本の戦国時代の武将、大名"
+"Q1188704"	:"Person"	"gender":"male"	"name":"Matsudaira Nobuyasu"	"name_ja":"松平信康"	"birthDate":1559	"deathDate":1579	
+"Q1194944"	:"Person"	"gender":"male"	"name":"Tokugawa Mitsukuni"	"name_ja":"徳川光圀"	"birthDate":1628	"deathDate":1701	"description":"江戸時代前期の大名。水戸藩第2代藩主"
+"Q1194995"	:"Person"	"gender":"male"	"name":"Fukushima Masanori"	"name_ja":"福島正則"	"birthDate":1561	"deathDate":1624	
+"Q1196817"	:"Person"	"gender":"male"	"name":"Maeda Toshiie"	"name_ja":"前田利家"	"birthDate":1539	"deathDate":1599	"description":"日本の安土桃山時代の武将、大名"
+"Q120564"	:"Person"	"gender":"female"	"name":"Meishō"	"name_ja":"明正天皇"	"birthDate":1624	"deathDate":1696	"description":"日本の第109代天皇"
+"Q1323770"	:"Person"	"gender":"male"	"name":"Tokugawa Nariaki"	"name_ja":"徳川斉昭"	"birthDate":1800	"deathDate":1860	"description":"日本の江戸時代の大名"
+"Q1325288"	:"Person"	"gender":"female"	"name":"Oeyo"	"name_ja":"崇源院"	"birthDate":1573	"deathDate":1626	"description":"浅井長政の娘、徳川秀忠の正室"
+"Q1334437"	:"Person"	"gender":"male"	"name":"Ii Naomasa"	"name_ja":"井伊直政"	"birthDate":1561	"deathDate":1602	
+"Q1385927"	:"Person"	"gender":"male"	"name":"Ikeda Terumasa"	"name_ja":"池田輝政"	"birthDate":1565	"deathDate":1613	"description":"安土桃山時代の武将、大名"
+"Q171411"	:"Person"	"gender":"male"	"name":"Oda Nobunaga"	"name_ja":"織田信長"	"birthDate":1534	"deathDate":1582	"description":"日本の戦国時代の武将、戦国大名"
+"Q171977"	:"Person"	"gender":"male"	"name":"Tokugawa Ieyasu"	"name_ja":"徳川家康"	"birthDate":1543	"deathDate":1616	"description":"江戸幕府の初代征夷大将軍"
+"Q17230021"	:"Person"	"gender":"female"	"name":"Tomi-hime"	"name_ja":"富姫"	"birthDate":1621	"deathDate":1662	"description":"日本の江戸時代の人物、八条宮智忠親王の妃"
+"Q18002854"	:"Person"	"gender":"male"	"name":"Tokugawa Atsunosuke"	"name_ja":"徳川敦之助"	"birthDate":1796	"deathDate":1799	"description":"清水徳川家第2代当主。徳川家斉の五男"
+"Q187550"	:"Person"	"gender":"male"	"name":"Toyotomi Hideyoshi"	"name_ja":"豊臣秀吉"	"birthDate":1536	"deathDate":1598	"description":"日本の戦国時代の武将"
+"Q2258118"	:"Person"	"gender":"male"	"name":"Daidōji Masashige"	"name_ja":"大道寺政繁"	"birthDate":1533	"deathDate":1590	
+"Q2439046"	:"Person"	"gender":"male"	"name":"Tokugawa Munetake"	"name_ja":"徳川宗武"	"birthDate":1716	"deathDate":1771	
+"Q247408"	:"Person"	"gender":"female"	"name":"Yodo-dono"	"name_ja":"淀殿"	"birthDate":1567	"deathDate":1615	"description":"豊臣秀吉の側室"
+"Q26964642"	:"Person"	"gender":"male"	"name":"Toneri Tsunetada"	
+"Q27948151"	:"Person"	"gender":"female"	"name":"Haruhime"	"birthDate":1641	"deathDate":1658	
+"Q2814515"	:"Person"	"gender":"male"	"name":"Matsudaira Tadamasa"	"name_ja":"松平忠昌"	"birthDate":1598	"deathDate":1645	
+"Q285846"	:"Person"	"gender":"male"	"name":"Fushimi Hiroyasu"	"name_ja":"伏見宮博恭王"	"birthDate":1875	"deathDate":1946	"description":"日本の皇族"
+"Q28690189"	:"Person"	"gender":"female"	"name":"Hiyo Okuyama"	"name_ja":"奥山ひよ"	
+"Q287657"	:"Person"	"gender":"male"	"name":"Tokugawa Yoshinobu"	"name_ja":"徳川慶喜"	"birthDate":1837	"deathDate":1913	"description":"江戸幕府の第15代征夷大将軍にして最後の征夷大将軍"
+"Q3073063"	:"Person"	"gender":"male"	"name":"Nijō Nariyuki"	"name_ja":"二条斉敬"	"birthDate":1816	"deathDate":1878	"description":"日本の江戸時代の公家"
+"Q3125462"	:"Person"	"gender":"male"	"name":"Hachisuka Muneshige"	"name_ja":"蜂須賀宗鎮"	"birthDate":1721	"deathDate":1780	"description":"日本の江戸時代の大名、松平大膳家の第2代当主、阿波徳島藩の第8代藩主"
+"Q3125466"	:"Person"	"gender":"male"	"name":"Hachisuka Narihiro"	"name_ja":"蜂須賀斉裕"	"birthDate":1821	"deathDate":1868	"description":"日本の江戸時代の大名"
+"Q3125473"	:"Person"	"gender":"male"	"name":"Hachisuka Yoshihisa"	"name_ja":"蜂須賀至央"	"birthDate":1737	"deathDate":1754	"description":"日本の江戸時代の大名、松平大膳家の第3代当主、阿波徳島藩の第9代藩主"
+"Q3125481"	:"Person"	"gender":"male"	"name":"Hachisuka Yoshishige"	"name_ja":"蜂須賀至鎮"	"birthDate":1586	"deathDate":1620	
+"Q313641"	:"Person"	"gender":"male"	"name":"Toyotomi Hideyori"	"name_ja":"豊臣秀頼"	"birthDate":1593	"deathDate":1615	
+"Q313745"	:"Person"	"gender":"male"	"name":"Tokugawa Tsunayoshi"	"name_ja":"徳川綱吉"	"birthDate":1646	"deathDate":1709	"description":"江戸幕府の第5代征夷大将軍"
+"Q314464"	:"Person"	"gender":"male"	"name":"Tokugawa Hidetada"	"name_ja":"徳川秀忠"	"birthDate":1579	"deathDate":1632	"description":"江戸幕府の第2代征夷大将軍"
+"Q314481"	:"Person"	"gender":"male"	"name":"Tokugawa Iemitsu"	"name_ja":"徳川家光"	"birthDate":1604	"deathDate":1651	"description":"江戸幕府の第3代征夷大将軍"
+"Q319664"	:"Person"	"gender":"male"	"name":"Tokugawa Yoshimune"	"name_ja":"徳川吉宗"	"birthDate":1684	"deathDate":1751	"description":"江戸幕府の第8代征夷大将軍"
+"Q320229"	:"Person"	"gender":"male"	"name":"Go-Mizunoo"	"name_ja":"後水尾天皇"	"birthDate":1596	"deathDate":1680	"description":"日本の第108代天皇"
+"Q323422"	:"Person"	"gender":"male"	"name":"Tokugawa Ietsuna"	"name_ja":"徳川家綱"	"birthDate":1641	"deathDate":1680	"description":"江戸幕府の第4代征夷大将軍"
+"Q323443"	:"Person"	"gender":"male"	"name":"Tokugawa Ieshige"	"name_ja":"徳川家重"	"birthDate":1712	"deathDate":1761	"description":"江戸幕府の第9代征夷大将軍"
+"Q3276029"	:"Person"	"gender":"female"	"name":"Toku-hime"	"name_ja":"督姫"	"birthDate":1565	"deathDate":1615	"description":"徳川家康の娘。北条氏直、池田輝政室"
+"Q3299364"	:"Person"	"gender":"male"	"name":"Matsudaira Yorishige"	"name_ja":"松平頼重"	"birthDate":1622	"deathDate":1695	"description":"日本の江戸時代初期の大名。高松藩初代藩主"
+"Q3336095"	:"Person"	"gender":"male"	"name":"Tokugawa Nariharu"	"name_ja":"徳川斉温"	"birthDate":1819	"deathDate":1839	
+"Q3341471"	:"Person"	"gender":"male"	"name":"Nijō Masamaro"	"name_ja":"二条正麿"	"birthDate":1872	"deathDate":1929	
+"Q3341486"	:"Person"	"gender":"male"	"name":"Nijō Narinobu"	"name_ja":"二条斉信"	"birthDate":1788	"deathDate":1847	"description":"日本の江戸時代の公家"
+"Q336383"	:"Person"	"gender":"male"	"name":"Tokugawa Iesada"	"name_ja":"徳川家定"	"birthDate":1824	"deathDate":1858	"description":"江戸幕府の第13代征夷大将軍"
+"Q348466"	:"Person"	"gender":"male"	"name":"Tokugawa Iemochi"	"name_ja":"徳川家茂"	"birthDate":1846	"deathDate":1866	"description":"江戸幕府の第14代征夷大将軍"
+"Q349440"	:"Person"	"gender":"male"	"name":"Go-Yōzei"	"name_ja":"後陽成天皇"	"birthDate":1572	"deathDate":1617	"description":"日本の第107代天皇"
+"Q3530485"	:"Person"	"gender":"male"	"name":"Tokugawa Akitake"	"name_ja":"徳川昭武"	"birthDate":1853	"deathDate":1910	
+"Q3530490"	:"Person"	"gender":"male"	"name":"Tokugawa Munetada"	"name_ja":"徳川宗尹"	"birthDate":1721	"deathDate":1765	
+"Q3530491"	:"Person"	"gender":"male"	"name":"Tokugawa Narimasa"	"name_ja":"徳川斉匡"	"birthDate":1779	"deathDate":1848	
+"Q3530492"	:"Person"	"gender":"male"	"name":"Tokugawa Naritaka"	"name_ja":"徳川斉荘"	"birthDate":1810	"deathDate":1845	
+"Q3530495"	:"Person"	"gender":"male"	"name":"Tokugawa Shigeyoshi"	"name_ja":"徳川重好"	"birthDate":1745	"deathDate":1795	"description":"清水徳川家初代当主"
+"Q366722"	:"Person"	"gender":"male"	"name":"Tokugawa Ietsugu"	"name_ja":"徳川家継"	"birthDate":1709	"deathDate":1716	"description":"江戸幕府の第7代征夷大将軍"
+"Q366734"	:"Person"	"gender":"male"	"name":"Tokugawa Ienobu"	"name_ja":"徳川家宣"	"birthDate":1662	"deathDate":1712	"description":"江戸幕府の第6代征夷大将軍"
+"Q4327464"	:"Person"	"gender":"female"	"name":"Kitsuno"	"name_ja":"生駒吉乃"	"birthDate":1528	"deathDate":1566	
+"Q437518"	:"Person"	"gender":"male"	"name":"Tokugawa Ieharu"	"name_ja":"徳川家治"	"birthDate":1737	"deathDate":1786	"description":"江戸幕府の第10代征夷大将軍"
+"Q439675"	:"Person"	"gender":"male"	"name":"Tokugawa Ieyoshi"	"name_ja":"徳川家慶"	"birthDate":1793	"deathDate":1853	"description":"江戸幕府の第12代征夷大将軍"
+"Q439717"	:"Person"	"gender":"male"	"name":"Tokugawa Ienari"	"name_ja":"徳川家斉"	"birthDate":1773	"deathDate":1841	"description":"江戸幕府の第11代征夷大将軍"
+"Q4415657"	:"Person"	"gender":"female"	"name":"Tsukiyama-dono"	"name_ja":"築山殿"	"birthDate":1542	"deathDate":1579	
+"Q4489936"	:"Person"	"gender":"male"	"name":"Matsudaira Matsuchiyo"	"name_ja":"松平松千代"	"birthDate":1594	"deathDate":1599	
+"Q4489943"	:"Person"	"gender":"male"	"name":"Matsudaira Senchiyo"	"name_ja":"松平仙千代"	"birthDate":1595	"deathDate":1600	
+"Q4489959"	:"Person"	"gender":"female"	"name":"Kame-hime"	"name_ja":"亀姫"	"description":"徳川家康の長女"
+"Q4489975"	:"Person"	"gender":"female"	"name":"Furi-hime"	"name_ja":"正清院"	"birthDate":1580	"deathDate":1617	"description":"徳川家康の娘。蒲生秀行・浅野長晟室"
+"Q466326"	:"Person"	"gender":"male"	"name":"Prince Fushimi Sadanaru"	"name_ja":"伏見宮貞愛親王"	"birthDate":1858	"deathDate":1923	"description":"日本の皇族"
+"Q467655"	:"Person"	"gender":"female"	"name":"Princess Takamatsu"	"name_ja":"宣仁親王妃喜久子"	"birthDate":1911	"deathDate":2004	
+"Q4921309"	:"Person"	"gender":"male"	"name":"Nijō Harutaka"	"name_ja":"二条治孝"	"birthDate":1754	"deathDate":1826	"description":"日本の江戸時代の公家"
+"Q4925461"	:"Person"	"gender":"female"	"name":"Shintokuin"	"name_ja":"深徳院"	"birthDate":1688	"deathDate":1713	
+"Q5324802"	:"Person"	"gender":"male"	"name":"Matsudaira Naomasa"	"name_ja":"松平直政"	"birthDate":1601	"deathDate":1666	"description":"江戸時代前期の大名"
+"Q5324923"	:"Person"	"gender":"male"	"name":"Matsudaira Naomoto"	"name_ja":"松平直基"	"birthDate":1604	"deathDate":1648	"description":"江戸時代前期の大名"
+"Q5324971"	:"Person"	"gender":"male"	"name":"Matsudaira Naoyoshi"	"name_ja":"松平直良"	"birthDate":1605	"deathDate":1678	"description":"江戸時代初期の大名"
+"Q5325011"	:"Person"	"gender":"female"	"name":"Kisahime"	"name_ja":"喜佐姫"	"birthDate":1598	"deathDate":1655	"description":"江戸時代初期の女性"
+"Q5360150"	:"Person"	"gender":"female"	"name":"Keyouin"	"name_ja":"華陽院"	"birthDate":1492	"deathDate":1560	
+"Q5362031"	:"Person"	"gender":"female"	"name":"Takatsukasa Takako"	"name_ja":"順性院"	"birthDate":1622	"deathDate":1683	
+"Q5362219"	:"Person"	"gender":"female"	"name":"Gekkōin"	"name_ja":"月光院"	"birthDate":1685	"deathDate":1752	
+"Q5362720"	:"Person"	"gender":"female"	"name":"Hōju-in"	"name_ja":"宝樹院"	"birthDate":1621	"deathDate":1653	
+"Q5365056"	:"Person"	"gender":"female"	"name":"Tsuru-hime"	"name_ja":"鶴姫"	"birthDate":1677	"deathDate":1704	"description":"徳川綱吉の長女"
+"Q5366163"	:"Person"	"gender":"female"	"name":"Odai no kata"	"name_ja":"於大の方"	"birthDate":1528	"deathDate":1602	"description":"徳川家康の母"
+"Q5367216"	:"Person"	"gender":"female"	"name":"Ichi-hime"	"name_ja":"市姫"	"birthDate":1607	"deathDate":1610	"description":"徳川家康の娘"
+"Q5369704"	:"Person"	"gender":"female"	"name":"Keishōin"	"name_ja":"桂昌院"	"birthDate":1627	"deathDate":1705	
+"Q5510023"	:"Person"	"gender":"male"	"name":"Fushimi Hiroaki"	"name_ja":"伏見宮博明王"	"birthDate":1932	"description":"日本の皇族"
+"Q587204"	:"Person"	"gender":"male"	"name":"Maeda Toshitsune"	"name_ja":"前田利常"	"birthDate":1594	"deathDate":1658	"description":"日本の江戸時代の大名、加賀藩の第2代藩主"
+"Q594626"	:"Person"	"gender":"male"	"name":"Takatsukasa Masamichi"	"name_ja":"鷹司政通"	"birthDate":1789	"deathDate":1868	"description":"日本の江戸時代の公家"
+"Q5994890"	:"Person"	"gender":"male"	"name":"Ii Naochika"	"name_ja":"井伊直親"	"birthDate":1506	"deathDate":1563	
+"Q5994900"	:"Person"	"gender":"male"	"name":"Ii Naokatsu"	"name_ja":"井伊直勝"	"birthDate":1590	"deathDate":1662	
+"Q6139376"	:"Person"	"gender":"female"	"name":"Konoe Sakiko"	"name_ja":"近衛前子"	"birthDate":1575	"deathDate":1630	"description":"後陽成天皇の女御。後水尾天皇の母"
+"Q6273839"	:"Person"	"gender":"male"	"name":"Saneteru Ichijō"	"name_ja":"一条実輝"	"birthDate":1866	"deathDate":1924	
+"Q6277425"	:"Person"	"gender":"male"	"name":"Prince Fushimi Hiroyoshi"	"name_ja":"博義王"	"birthDate":1897	"deathDate":1938	"description":"日本の皇族"
+"Q635214"	:"Person"	"gender":"female"	"name":"Oichi"	"name_ja":"お市の方"	"birthDate":1547	"deathDate":1583	
+"Q6470026"	:"Person"	"gender":"female"	"name":"Chaa no Tsubone"	"name_ja":"茶阿局"	"deathDate":1621	
+"Q656008"	:"Person"	"gender":"male"	"name":"Hachisuka Mochiaki"	"name_ja":"蜂須賀茂韶"	"birthDate":1846	"deathDate":1918	"description":"日本の政治家"
+"Q6637910"	:"Person"	"gender":"male"	"name":"Matsudaira Akikuni"	"name_ja":"松平昭訓"	"birthDate":1849	"deathDate":1864	
+"Q6638076"	:"Person"	"gender":"male"	"name":"Matsudaira Yorio"	"name_ja":"松平頼雄"	"birthDate":1630	"deathDate":1697	"description":"江戸時代前期の大名。宍戸藩初代藩主"
+"Q6638084"	:"Person"	"gender":"male"	"name":"Matsudaira Yorikata"	"name_ja":"松平頼筠"	"birthDate":1801	"deathDate":1839	"description":"江戸時代後期の大名。宍戸藩第7代藩主"
+"Q6638123"	:"Person"	"gender":"male"	"name":"Matsudaira Yorisuke"	"name_ja":"松平頼救"	"birthDate":1756	"deathDate":1830	"description":"江戸時代中期～後期の大名。宍戸藩第5代藩主"
+"Q6638189"	:"Person"	"gender":"male"	"name":"Matsudaira Yoritaka"	"name_ja":"松平頼隆"	"birthDate":1630	"deathDate":1707	"description":"江戸時代前期～中期の大名。常陸府中藩初代藩主"
+"Q6638460"	:"Person"	"gender":"male"	"name":"Matsudaira Yorimoto"	"name_ja":"松平頼元"	"birthDate":1629	"deathDate":1693	"description":"江戸時代初期の大名。額田藩初代藩主"
+"Q6638511"	:"Person"	"gender":"male"	"name":"Matsudaira Yoriyuki"	"name_ja":"松平頼之"	"birthDate":1858	"deathDate":1873	"description":"江戸時代後期～明治時代の大名。守山藩第7代藩主、松川藩知事"
+"Q6638562"	:"Person"	"gender":"male"	"name":"Matsudaira Yoriyuki"	"name_ja":"松平頼順"	"birthDate":1727	"deathDate":1774	"description":"水戸藩主・徳川宗堯の子"
+"Q6729106"	:"Person"	"gender":"male"	"name":"Maeda Mitsutaka"	"name_ja":"前田光高"	"birthDate":1616	"deathDate":1645	
+"Q6788045"	:"Person"	"gender":"male"	"name":"Matsudaira Narisawa"	"name_ja":"松平斉善"	"birthDate":1820	"deathDate":1838	
+"Q6788062"	:"Person"	"gender":"male"	"name":"Matsudaira Shigemasa"	"name_ja":"松平重昌"	"birthDate":1743	"deathDate":1758	"description":"江戸時代中期の大名。福井藩第11代藩主"
+"Q6788070"	:"Person"	"gender":"male"	"name":"Matsudaira Tadakazu"	"name_ja":"松平忠和 (島原藩主)"	"birthDate":1851	"deathDate":1917	
+"Q6992748"	:"Person"	"gender":"female"	"name":"Jōen-in"	"name_ja":"浄円院"	"birthDate":1655	"deathDate":1726	"description":"徳川吉宗の生母"
+"Q6992849"	:"Person"	"gender":"male"	"name":"Tokugawa Tsunanori"	"name_ja":"徳川綱教"	"birthDate":1665	"deathDate":1705	
+"Q6992886"	:"Person"	"gender":"male"	"name":"Tokugawa Torachiyo"	"name_ja":"徳川虎千代"	"birthDate":1806	"deathDate":1810	
+"Q6993155"	:"Person"	"gender":"male"	"name":"Tokugawa Narikatsu"	"name_ja":"徳川斉彊"	"birthDate":1820	"deathDate":1849	
+"Q6993203"	:"Person"	"gender":"male"	"name":"Tokugawa Nariyuki"	"name_ja":"徳川斉順"	"birthDate":1801	"deathDate":1846	"description":"日本の江戸時代の大名"
+"Q6993507"	:"Person"	"gender":"female"	"name":"Yōju-in"	"name_ja":"養珠院"	"birthDate":1580	"deathDate":1653	"description":"徳川家康の側室"
+"Q6993673"	:"Person"	"gender":"male"	"name":"Matsudaira Yorizumi"	"name_ja":"松平頼純"	"birthDate":1641	"deathDate":1711	"description":"江戸時代前期～中期の大名。西条藩初代藩主"
+"Q6993725"	:"Person"	"gender":"male"	"name":"Tokugawa Yorimoto"	"name_ja":"徳川頼職"	"birthDate":1680	"deathDate":1705	
+"Q6997367"	:"Person"	"gender":"male"	"name":"Ikeda Mochimasa"	"name_ja":"池田茂政"	"birthDate":1839	"deathDate":1899	
+"Q6997412"	:"Person"	"gender":"male"	"name":"Ikeda Yoshinori"	"name_ja":"池田慶徳"	"birthDate":1837	"deathDate":1877	
+"Q6997436"	:"Person"	"gender":"male"	"name":"Kitsuregawa Tsunauji"	"name_ja":"喜連川縄氏"	"birthDate":1844	"deathDate":1874	
+"Q6997477"	:"Person"	"gender":"female"	"name":"Tokugawa Sadako"	"name_ja":"徳川貞子"	"birthDate":1850	"deathDate":1872	
+"Q6997513"	:"Person"	"gender":"female"	"name":"Tokugawa Jūko"	"name_ja":"徳川従子"	"birthDate":1796	"deathDate":1844	"description":"日本の江戸時代の公家、二条斉信の正室"
+"Q6997553"	:"Person"	"gender":"male"	"name":"Suzuki Shigeyoshi"	"name_ja":"鈴木重義"	"birthDate":1634	"deathDate":1668	
+"Q6997589"	:"Person"	"gender":"female"	"name":"Seitai-in"	"name_ja":"清泰院"	"birthDate":1627	"deathDate":1656	
+"Q6997690"	:"Person"	"gender":"male"	"name":"Matsudaira Takeakira"	"name_ja":"松平武聰"	"birthDate":1842	"deathDate":1882	"description":"江戸時代幕末期の大名。浜田藩主、のち鶴田藩主・藩知事"
+"Q6997808"	:"Person"	"gender":"male"	"name":"Tsuchiya Shigenao"	"name_ja":"土屋挙直"	"birthDate":1852	"deathDate":1892	
+"Q6997853"	:"Person"	"gender":"male"	"name":"Tsuchiya Yoshinao"	"name_ja":"土屋彦直"	"birthDate":1798	"deathDate":1847	
+"Q6997897"	:"Person"	"gender":"male"	"name":"Tokugawa Tsunaeda"	"name_ja":"徳川綱條"	"birthDate":1656	"deathDate":1718	
+"Q6997950"	:"Person"	"gender":"male"	"name":"Tokugawa Tsunakata"	"name_ja":"徳川綱方"	"birthDate":1648	"deathDate":1670	
+"Q6997990"	:"Person"	"gender":"male"	"name":"Matsudaira Naoyoshi"	"name_ja":"松平直侯"	"birthDate":1839	"deathDate":1862	
+"Q6998037"	:"Person"	"gender":"male"	"name":"Nakayama Nobutaka"	"name_ja":"中山信敬"	"birthDate":1765	"deathDate":1820	
+"Q6998088"	:"Person"	"gender":"male"	"name":"Tokugawa Narinobu"	"name_ja":"徳川斉脩"	"birthDate":1797	"deathDate":1829	
+"Q6998193"	:"Person"	"gender":"male"	"name":"Tokugawa Harumori"	"name_ja":"徳川治保"	"birthDate":1751	"deathDate":1805	"description":"日本の江戸時代の大名"
+"Q6998305"	:"Person"	"gender":"female"	"name":"Mine-hime"	"name_ja":"峰姫"	"birthDate":1800	"deathDate":1853	"description":"徳川家斉の娘、徳川斉脩の正室"
+"Q6998366"	:"Person"	"gender":"male"	"name":"Tokugawa Munetaka"	"name_ja":"徳川宗堯"	"birthDate":1705	"deathDate":1730	"description":"日本の江戸時代の大名"
+"Q6998470"	:"Person"	"gender":"male"	"name":"Tokugawa Yoshiatsu"	"name_ja":"徳川慶篤"	"birthDate":1832	"deathDate":1868	
+"Q7004063"	:"Person"	"gender":"male"	"name":"Tokugawa Atsushi"	"name_ja":"徳川厚"	"birthDate":1874	"deathDate":1930	
+"Q7004151"	:"Person"	"gender":"male"	"name":"Tokugawa Iemoto"	"name_ja":"徳川家基"	"birthDate":1762	"deathDate":1779	
+"Q7004178"	:"Person"	"gender":"male"	"name":"Ikeda Nakahiro"	"name_ja":"池田仲博"	"birthDate":1877	"deathDate":1948	
+"Q7004218"	:"Person"	"gender":"male"	"name":"Katsu Kuwashi"	"name_ja":"勝精"	"birthDate":1888	"deathDate":1932	
+"Q7004236"	:"Person"	"gender":"male"	"name":"Matsudaira Kiyotake"	"name_ja":"松平清武"	"birthDate":1663	"deathDate":1724	
+"Q7004311"	:"Person"	"gender":"female"	"name":"Shishin'in"	"name_ja":"至心院"	"deathDate":1748	
+"Q7004392"	:"Person"	"gender":"female"	"name":"Zuishun'in"	"name_ja":"瑞春院"	"birthDate":1658	"deathDate":1738	
+"Q7004427"	:"Person"	"gender":"male"	"name":"Tokugawa Daigorō"	"name_ja":"徳川大五郎"	"birthDate":1709	"deathDate":1710	
+"Q7004484"	:"Person"	"gender":"male"	"name":"Tokugawa Tsunashige"	"name_ja":"徳川綱重"	"birthDate":1644	"deathDate":1678	"description":"日本の江戸時代の大名"
+"Q7004531"	:"Person"	"gender":"female"	"name":"Teruhime"	"name_ja":"暉姫"	"birthDate":1826	"deathDate":1840	
+"Q7004583"	:"Person"	"gender":"female"	"name":"Tensūin"	"name_ja":"天崇院"	"birthDate":1601	"deathDate":1672	
+"Q7004625"	:"Person"	"gender":"male"	"name":"Tokugawa Tokumatsu"	"name_ja":"徳川徳松"	"birthDate":1679	"deathDate":1683	
+"Q7004676"	:"Person"	"gender":"female"	"name":"Toyo-hime"	"name_ja":"豊姫"	"birthDate":1681	"deathDate":1681	"description":"徳川家宣の長女"
+"Q7004729"	:"Person"	"gender":"male"	"name":"Tokugawa Torakichi"	"name_ja":"徳川虎吉"	"birthDate":1711	"deathDate":1711	
+"Q7004785"	:"Person"	"gender":"female"	"name":"Hatsu-hime"	"name_ja":"初姫"	"birthDate":1602	"deathDate":1630	"description":"徳川秀忠の娘、京極忠高の室"
+"Q7004882"	:"Person"	"gender":"female"	"name":"Hachisuka Fudeko"	"name_ja":"蜂須賀筆子"	"birthDate":1876	"deathDate":1907	"description":"日本の歌人"
+"Q7004928"	:"Person"	"gender":"male"	"name":"Tokugawa Makoto"	"name_ja":"徳川誠"	"birthDate":1887	"deathDate":1968	
+"Q7005051"	:"Person"	"gender":"male"	"name":"Mugetsuin"	"name_ja":"夢月院"	"birthDate":1699	"deathDate":1699	
+"Q7005143"	:"Person"	"gender":"male"	"name":"Yoshihisa Tokugawa"	"name_ja":"徳川慶久"	"birthDate":1884	"deathDate":1922	"description":"公爵。徳川慶喜の子"
+"Q7005186"	:"Person"	"gender":"male"	"name":"Tokugawa Yoshimasa"	"name_ja":"徳川慶昌"	"birthDate":1825	"deathDate":1838	
+"Q7005290"	:"Person"	"gender":"female"	"name":"Reisen'in"	"name_ja":"霊仙院"	"birthDate":1637	"deathDate":1699	
+"Q7138891"	:"Person"	"gender":"female"	"name":"Fushimi Tokiko"	"name_ja":"伏見朝子"	"birthDate":1902	"deathDate":1971	"description":"日本の元皇族"
+"Q7140507"	:"Person"	"gender":"female"	"name":"Takatsukasa Shinako"	"name_ja":"鷹司標子"	"birthDate":1820	"deathDate":1858	
+"Q7141957"	:"Person"	"gender":"female"	"name":"Nijō Hiroko"	"name_ja":"二条広子"	"birthDate":1819	"deathDate":1875	"description":"日本の江戸時代の公家"
+"Q728162"	:"Person"	"gender":"male"	"name":"Tokugawa Harutoshi"	"name_ja":"徳川治紀"	"birthDate":1773	"deathDate":1816	"description":"日本の江戸時代の大名"
+"Q7813722"	:"Person"	"gender":"male"	"name":"Tokugawa Nariatsu"	"name_ja":"徳川斉敦"	"birthDate":1780	"deathDate":1816	"description":"一橋徳川家第3代当主"
+"Q837236"	:"Person"	"gender":"male"	"name":"Hoshina Masayuki"	"name_ja":"保科正之"	"birthDate":1611	"deathDate":1673	
+"Q837867"	:"Person"	"gender":"male"	"name":"Matsudaira Tadateru"	"name_ja":"松平忠輝"	"birthDate":1592	"deathDate":1683	
+"Q839124"	:"Person"	"gender":"male"	"name":"Matsudaira Tadanao"	"name_ja":"松平忠直"	"birthDate":1595	"deathDate":1650	"description":"江戸時代初期の大名。福井藩主"
+"Q841837"	:"Person"	"gender":"male"	"name":"Maeda Tsunanori"	"name_ja":"前田綱紀"	"birthDate":1643	"deathDate":1724	
+"Q843627"	:"Person"	"gender":"male"	"name":"Tokugawa Munemoto"	"name_ja":"徳川宗翰"	"birthDate":1728	"deathDate":1766	"description":"日本の江戸時代の大名"
+"Q8944971"	:"Person"	"gender":"female"	"name":"Yoshiko-joō"	"name_ja":"吉子女王"	"birthDate":1804	"deathDate":1893	"description":"水戸藩主徳川斉昭の正室"
+"Q909985"	:"Person"	"gender":"male"	"name":"Toyotomi Kunimatsu"	"name_ja":"豊臣国松"	"birthDate":1608	"deathDate":1615	
+"Q911334"	:"Person"	"gender":"female"	"name":"Tokugawa Masako"	"name_ja":"徳川和子"	"birthDate":1607	"deathDate":1678	"description":"後水尾天皇の中宮。徳川秀忠の娘"
+"Q930282"	:"Person"	"gender":"male"	"name":"Matsudaira Nobunori"	"name_ja":"松平喜徳"	"birthDate":1855	"deathDate":1891	"description":"江戸時代幕末期の大名。会津藩第10代藩主"
+"Q11239118"	"Q1041434"	:"hasChild"
+"Q1041434"	"Q1064935"	:"hasChild"
+"Q11239171"	"Q11239108"	:"hasChild"
+"Q11239151"	"Q11239114"	:"hasChild"
+"Q11239108"	"Q11239118"	:"hasChild"
+"Q11239169"	"Q11239151"	:"hasChild"
+"Q11488736"	"Q11239169"	:"hasChild"
+"Q11239114"	"Q11239171"	:"hasChild"
+"Q1064935"	"Q171977"	:"hasChild"
+"Q5366163"	"Q171977"	:"hasChild"
+"Q1188498"	"Q5366163"	:"hasChild"
+"Q5360150"	"Q5366163"	:"hasChild"
+"Q10345259"	"Q11439375"	:"hasChild"
+"Q1045763"	"Q1046230"	:"hasChild"
+"Q1045763"	"Q6993673"	:"hasChild"
+"Q1046230"	"Q319664"	:"hasChild"
+"Q1046230"	"Q6992849"	:"hasChild"
+"Q1046230"	"Q6993725"	:"hasChild"
+"Q11071642"	"Q6729106"	:"hasChild"
+"Q11071642"	"Q11397442"	:"hasChild"
+"Q11071642"	"Q11612770"	:"hasChild"
+"Q11071642"	"Q11371041"	:"hasChild"
+"Q11071642"	"Q11397439"	:"hasChild"
+"Q11071642"	"Q17230021"	:"hasChild"
+"Q1130929"	"Q2814515"	:"hasChild"
+"Q1130929"	"Q839124"	:"hasChild"
+"Q1130929"	"Q5324802"	:"hasChild"
+"Q1130929"	"Q5324923"	:"hasChild"
+"Q1130929"	"Q5324971"	:"hasChild"
+"Q1130929"	"Q5325011"	:"hasChild"
+"Q1133680"	"Q6997553"	:"hasChild"
+"Q1133680"	"Q6997589"	:"hasChild"
+"Q1133680"	"Q1194944"	:"hasChild"
+"Q1133680"	"Q3299364"	:"hasChild"
+"Q1133680"	"Q6638076"	:"hasChild"
+"Q1133680"	"Q6638189"	:"hasChild"
+"Q1133680"	"Q6638460"	:"hasChild"
+"Q11397439"	"Q11397628"	:"hasChild"
+"Q11397628"	"Q11397453"	:"hasChild"
+"Q11397628"	"Q11397465"	:"hasChild"
+"Q11408990"	"Q6277425"	:"hasChild"
+"Q11418573"	"Q5994900"	:"hasChild"
+"Q1147080"	"Q909985"	:"hasChild"
+"Q11490290"	"Q439717"	:"hasChild"
+"Q11490290"	"Q7813722"	:"hasChild"
+"Q11490290"	"Q11490288"	:"hasChild"
+"Q11490290"	"Q3530491"	:"hasChild"
+"Q11490290"	"Q11530567"	:"hasChild"
+"Q11490290"	"Q11678606"	:"hasChild"
+"Q11530629"	"Q11530657"	:"hasChild"
+"Q11530645"	"Q3125462"	:"hasChild"
+"Q11530645"	"Q3125473"	:"hasChild"
+"Q11530645"	"Q11530640"	:"hasChild"
+"Q11530652"	"Q3125462"	:"hasChild"
+"Q11530652"	"Q3125473"	:"hasChild"
+"Q11530652"	"Q11530645"	:"hasChild"
+"Q11530657"	"Q6998366"	:"hasChild"
+"Q11530657"	"Q11530641"	:"hasChild"
+"Q11551880"	"Q11551695"	:"hasChild"
+"Q11551880"	"Q11551720"	:"hasChild"
+"Q11625683"	"Q11625675"	:"hasChild"
+"Q11625683"	"Q11625682"	:"hasChild"
+"Q11625683"	"Q11625684"	:"hasChild"
+"Q11625684"	"Q11625682"	:"hasChild"
+"Q1188704"	"Q10856577"	:"hasChild"
+"Q1194944"	"Q11530633"	:"hasChild"
+"Q1323770"	"Q287657"	:"hasChild"
+"Q1323770"	"Q930282"	:"hasChild"
+"Q1323770"	"Q6638511"	:"hasChild"
+"Q1323770"	"Q6997690"	:"hasChild"
+"Q1323770"	"Q3530485"	:"hasChild"
+"Q1323770"	"Q6637910"	:"hasChild"
+"Q1323770"	"Q6788070"	:"hasChild"
+"Q1323770"	"Q6997367"	:"hasChild"
+"Q1323770"	"Q6997412"	:"hasChild"
+"Q1323770"	"Q6997436"	:"hasChild"
+"Q1323770"	"Q6997477"	:"hasChild"
+"Q1323770"	"Q6997808"	:"hasChild"
+"Q1323770"	"Q6997990"	:"hasChild"
+"Q1323770"	"Q6998470"	:"hasChild"
+"Q171977"	"Q837867"	:"hasChild"
+"Q171977"	"Q1133267"	:"hasChild"
+"Q171977"	"Q1136186"	:"hasChild"
+"Q171977"	"Q1188704"	:"hasChild"
+"Q171977"	"Q4489936"	:"hasChild"
+"Q171977"	"Q4489943"	:"hasChild"
+"Q171977"	"Q10345259"	:"hasChild"
+"Q171977"	"Q11418573"	:"hasChild"
+"Q171977"	"Q314464"	:"hasChild"
+"Q171977"	"Q1045763"	:"hasChild"
+"Q171977"	"Q1130929"	:"hasChild"
+"Q171977"	"Q1133215"	:"hasChild"
+"Q171977"	"Q1133680"	:"hasChild"
+"Q171977"	"Q3276029"	:"hasChild"
+"Q171977"	"Q4489959"	:"hasChild"
+"Q171977"	"Q4489975"	:"hasChild"
+"Q171977"	"Q5367216"	:"hasChild"
+"Q287657"	"Q7004882"	:"hasChild"
+"Q287657"	"Q7005143"	:"hasChild"
+"Q287657"	"Q7004063"	:"hasChild"
+"Q287657"	"Q7004178"	:"hasChild"
+"Q287657"	"Q7004218"	:"hasChild"
+"Q287657"	"Q7004928"	:"hasChild"
+"Q287657"	"Q11408990"	:"hasChild"
+"Q3073063"	"Q3341471"	:"hasChild"
+"Q3125466"	"Q656008"	:"hasChild"
+"Q313745"	"Q7004625"	:"hasChild"
+"Q313745"	"Q5365056"	:"hasChild"
+"Q314464"	"Q314481"	:"hasChild"
+"Q314464"	"Q911334"	:"hasChild"
+"Q314464"	"Q7004785"	:"hasChild"
+"Q314464"	"Q11071642"	:"hasChild"
+"Q314464"	"Q837236"	:"hasChild"
+"Q314464"	"Q1135700"	:"hasChild"
+"Q314464"	"Q1147080"	:"hasChild"
+"Q314464"	"Q7004583"	:"hasChild"
+"Q314481"	"Q7005290"	:"hasChild"
+"Q314481"	"Q313745"	:"hasChild"
+"Q314481"	"Q323422"	:"hasChild"
+"Q314481"	"Q7004484"	:"hasChild"
+"Q319664"	"Q323443"	:"hasChild"
+"Q319664"	"Q2439046"	:"hasChild"
+"Q319664"	"Q3530490"	:"hasChild"
+"Q323443"	"Q437518"	:"hasChild"
+"Q323443"	"Q3530495"	:"hasChild"
+"Q3276029"	"Q11551880"	:"hasChild"
+"Q3299364"	"Q6997897"	:"hasChild"
+"Q3299364"	"Q6997950"	:"hasChild"
+"Q3299364"	"Q11530629"	:"hasChild"
+"Q3299364"	"Q11530652"	:"hasChild"
+"Q3530490"	"Q11678625"	:"hasChild"
+"Q3530490"	"Q6788062"	:"hasChild"
+"Q3530490"	"Q11245729"	:"hasChild"
+"Q3530490"	"Q11490290"	:"hasChild"
+"Q3530490"	"Q11530619"	:"hasChild"
+"Q366734"	"Q366722"	:"hasChild"
+"Q366734"	"Q7004676"	:"hasChild"
+"Q366734"	"Q7004427"	:"hasChild"
+"Q366734"	"Q7004729"	:"hasChild"
+"Q366734"	"Q7005051"	:"hasChild"
+"Q366734"	"Q10296516"	:"hasChild"
+"Q437518"	"Q7004151"	:"hasChild"
+"Q439675"	"Q336383"	:"hasChild"
+"Q439675"	"Q7004531"	:"hasChild"
+"Q439675"	"Q7005186"	:"hasChild"
+"Q439717"	"Q3336095"	:"hasChild"
+"Q439717"	"Q3530492"	:"hasChild"
+"Q439717"	"Q6788045"	:"hasChild"
+"Q439717"	"Q6992886"	:"hasChild"
+"Q439717"	"Q6993155"	:"hasChild"
+"Q439717"	"Q11530459"	:"hasChild"
+"Q439717"	"Q11530463"	:"hasChild"
+"Q439717"	"Q11530464"	:"hasChild"
+"Q439717"	"Q11551950"	:"hasChild"
+"Q439717"	"Q439675"	:"hasChild"
+"Q439717"	"Q3125466"	:"hasChild"
+"Q439717"	"Q6993203"	:"hasChild"
+"Q439717"	"Q6998305"	:"hasChild"
+"Q439717"	"Q11071637"	:"hasChild"
+"Q439717"	"Q11490284"	:"hasChild"
+"Q439717"	"Q11519670"	:"hasChild"
+"Q439717"	"Q11530462"	:"hasChild"
+"Q439717"	"Q11564521"	:"hasChild"
+"Q439717"	"Q18002854"	:"hasChild"
+"Q6277425"	"Q5510023"	:"hasChild"
+"Q656008"	"Q11625683"	:"hasChild"
+"Q6729106"	"Q841837"	:"hasChild"
+"Q6993203"	"Q348466"	:"hasChild"
+"Q6993673"	"Q11530664"	:"hasChild"
+"Q6997513"	"Q3073063"	:"hasChild"
+"Q6997513"	"Q7141957"	:"hasChild"
+"Q6997589"	"Q841837"	:"hasChild"
+"Q6998193"	"Q728162"	:"hasChild"
+"Q6998193"	"Q6997853"	:"hasChild"
+"Q6998193"	"Q11530566"	:"hasChild"
+"Q6998366"	"Q843627"	:"hasChild"
+"Q6998366"	"Q6638562"	:"hasChild"
+"Q7004484"	"Q366734"	:"hasChild"
+"Q7004484"	"Q7004236"	:"hasChild"
+"Q7004882"	"Q11625675"	:"hasChild"
+"Q7004882"	"Q11625684"	:"hasChild"
+"Q7005143"	"Q467655"	:"hasChild"
+"Q728162"	"Q6998088"	:"hasChild"
+"Q728162"	"Q1323770"	:"hasChild"
+"Q728162"	"Q6638084"	:"hasChild"
+"Q728162"	"Q6997513"	:"hasChild"
+"Q728162"	"Q11530635"	:"hasChild"
+"Q837236"	"Q27948151"	:"hasChild"
+"Q843627"	"Q6998037"	:"hasChild"
+"Q843627"	"Q6638123"	:"hasChild"
+"Q843627"	"Q6998193"	:"hasChild"
+"Q911334"	"Q120564"	:"hasChild"
+"Q911334"	"Q11514165"	:"hasChild"
+"Q911334"	"Q11668744"	:"hasChild"
+"Q10729352"	"Q10345259"	:"hasChild"
+"Q171411"	"Q1040026"	:"hasChild"
+"Q4327464"	"Q1040026"	:"hasChild"
+"Q6993507"	"Q1045763"	:"hasChild"
+"Q5366163"	"Q10729352"	:"hasChild"
+"Q11369424"	"Q10729352"	:"hasChild"
+"Q1040026"	"Q10856577"	:"hasChild"
+"Q10860048"	"Q11071637"	:"hasChild"
+"Q1325288"	"Q11071642"	:"hasChild"
+"Q11651545"	"Q1130929"	:"hasChild"
+"Q1045995"	"Q1133215"	:"hasChild"
+"Q6993507"	"Q1133680"	:"hasChild"
+"Q3125481"	"Q11354388"	:"hasChild"
+"Q1325288"	"Q1135700"	:"hasChild"
+"Q10436552"	"Q1136186"	:"hasChild"
+"Q587204"	"Q11371041"	:"hasChild"
+"Q587204"	"Q11397439"	:"hasChild"
+"Q587204"	"Q11397442"	:"hasChild"
+"Q11502538"	"Q11408990"	:"hasChild"
+"Q10791105"	"Q11418573"	:"hasChild"
+"Q11439376"	"Q11439375"	:"hasChild"
+"Q11593146"	"Q11439375"	:"hasChild"
+"Q2258118"	"Q11439376"	:"hasChild"
+"Q26964642"	"Q11439376"	:"hasChild"
+"Q1325288"	"Q1147080"	:"hasChild"
+"Q10860048"	"Q11490284"	:"hasChild"
+"Q11263072"	"Q11490288"	:"hasChild"
+"Q320229"	"Q11514165"	:"hasChild"
+"Q10860048"	"Q11530462"	:"hasChild"
+"Q10860048"	"Q11530463"	:"hasChild"
+"Q11354388"	"Q11551695"	:"hasChild"
+"Q11354388"	"Q11551720"	:"hasChild"
+"Q1385927"	"Q11551880"	:"hasChild"
+"Q10860048"	"Q11551950"	:"hasChild"
+"Q1194995"	"Q11593146"	:"hasChild"
+"Q11396808"	"Q11593146"	:"hasChild"
+"Q587204"	"Q11612770"	:"hasChild"
+"Q11625699"	"Q11625683"	:"hasChild"
+"Q320229"	"Q11668744"	:"hasChild"
+"Q11263072"	"Q11678606"	:"hasChild"
+"Q4415657"	"Q1188704"	:"hasChild"
+"Q11369398"	"Q1194944"	:"hasChild"
+"Q320229"	"Q120564"	:"hasChild"
+"Q1142446"	"Q1325288"	:"hasChild"
+"Q635214"	"Q1325288"	:"hasChild"
+"Q5994890"	"Q1334437"	:"hasChild"
+"Q28690189"	"Q1334437"	:"hasChild"
+"Q1036482"	"Q1385927"	:"hasChild"
+"Q587204"	"Q17230021"	:"hasChild"
+"Q11520348"	"Q2439046"	:"hasChild"
+"Q11610928"	"Q27948151"	:"hasChild"
+"Q466326"	"Q285846"	:"hasChild"
+"Q8944971"	"Q287657"	:"hasChild"
+"Q3341486"	"Q3073063"	:"hasChild"
+"Q10860048"	"Q3125466"	:"hasChild"
+"Q187550"	"Q313641"	:"hasChild"
+"Q247408"	"Q313641"	:"hasChild"
+"Q5369704"	"Q313745"	:"hasChild"
+"Q1045995"	"Q314464"	:"hasChild"
+"Q1325288"	"Q314481"	:"hasChild"
+"Q6992748"	"Q319664"	:"hasChild"
+"Q349440"	"Q320229"	:"hasChild"
+"Q6139376"	"Q320229"	:"hasChild"
+"Q5362720"	"Q323422"	:"hasChild"
+"Q4925461"	"Q323443"	:"hasChild"
+"Q11369398"	"Q3299364"	:"hasChild"
+"Q4921309"	"Q3341486"	:"hasChild"
+"Q11093357"	"Q336383"	:"hasChild"
+"Q10729401"	"Q348466"	:"hasChild"
+"Q11560037"	"Q3530490"	:"hasChild"
+"Q5362219"	"Q366722"	:"hasChild"
+"Q11653022"	"Q366734"	:"hasChild"
+"Q7004311"	"Q437518"	:"hasChild"
+"Q11667688"	"Q439675"	:"hasChild"
+"Q11263072"	"Q439717"	:"hasChild"
+"Q6470026"	"Q4489936"	:"hasChild"
+"Q10436552"	"Q4489943"	:"hasChild"
+"Q4415657"	"Q4489959"	:"hasChild"
+"Q11431978"	"Q4925461"	:"hasChild"
+"Q7004392"	"Q5365056"	:"hasChild"
+"Q10502504"	"Q5367216"	:"hasChild"
+"Q11520258"	"Q5369704"	:"hasChild"
+"Q7138891"	"Q5510023"	:"hasChild"
+"Q1196817"	"Q587204"	:"hasChild"
+"Q11458352"	"Q587204"	:"hasChild"
+"Q1334437"	"Q5994900"	:"hasChild"
+"Q285846"	"Q6277425"	:"hasChild"
+"Q7140507"	"Q656008"	:"hasChild"
+"Q587204"	"Q6729106"	:"hasChild"
+"Q11446903"	"Q6993203"	:"hasChild"
+"Q11545523"	"Q6993507"	:"hasChild"
+"Q8944971"	"Q6998470"	:"hasChild"
+"Q11502538"	"Q7004178"	:"hasChild"
+"Q11502538"	"Q7004218"	:"hasChild"
+"Q5362031"	"Q7004484"	:"hasChild"
+"Q1325288"	"Q7004583"	:"hasChild"
+"Q7004392"	"Q7004625"	:"hasChild"
+"Q1325288"	"Q7004785"	:"hasChild"
+"Q11502538"	"Q7005143"	:"hasChild"
+"Q6273839"	"Q7138891"	:"hasChild"
+"Q594626"	"Q7140507"	:"hasChild"
+"Q3341486"	"Q7141957"	:"hasChild"
+"Q11263072"	"Q7813722"	:"hasChild"
+"Q10389076"	"Q837236"	:"hasChild"
+"Q6470026"	"Q837867"	:"hasChild"
+"Q11516505"	"Q8944971"	:"hasChild"
+"Q313641"	"Q909985"	:"hasChild"
+"Q1325288"	"Q911334"	:"hasChild"

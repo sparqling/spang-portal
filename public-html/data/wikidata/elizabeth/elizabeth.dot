@@ -1,0 +1,204 @@
+digraph {
+charset="utf-8";
+ranksep=2;
+
+Q10479 [shape=box, color=red, style=dashed, fontcolor="#666666", label="Catherine, Duchess of Cambridge
+(1982-)
+"] ;
+
+Q10633 [shape=box, color=red, style=dashed, fontcolor="#666666", label="Queen Elizabeth The Queen Mother
+(1900-2002)
+イギリス王妃およびインド皇后"] ;
+
+Q116062 [shape=box, color=red, style=dashed, fontcolor="#666666", label="Princess Alice of Battenberg
+(1885-1969)
+"] ;
+
+Q13590412 [shape=box, color=blue, label="Prince George of Cambridge
+(2013-)
+ケンブリッジ公ウィリアム王子とキャサリン妃の第1子"] ;
+
+Q1386944 [shape=box, color=blue, style=dashed, fontcolor="#666666", label="Mike Tindall
+(1978-)
+"] ;
+
+Q14244505 [shape=box, color=blue, style=dashed, fontcolor="#666666", label="Michael Middleton
+(1949-)
+"] ;
+
+Q14244952 [shape=box, color=red, style=dashed, fontcolor="#666666", label="Carole Middleton
+(1955-)
+"] ;
+
+Q147663 [shape=box, color=red, label="Zara Tindall
+(1981-)
+"] ;
+
+Q151754 [shape=box, color=red, label="Anne, Princess Royal
+(1950-)
+"] ;
+
+Q152316 [shape=box, color=blue, label="Prince Harry, Duke of Sussex
+(1984-)
+ウェールズ公チャールズとダイアナ妃の次男"] ;
+
+Q153330 [shape=box, color=blue, label="Prince Andrew, Duke of York
+(1960-)
+"] ;
+
+Q15397819 [shape=box, color=red, style=dashed, fontcolor="#666666", label="Sandbox 3
+(1929-1989)
+"] ;
+
+Q154920 [shape=box, color=blue, label="Prince Edward, Earl of Wessex
+(1964-)
+"] ;
+
+Q155203 [shape=box, color=red, style=dashed, fontcolor="#666666", label="Sophie, Countess of Wessex
+(1965-)
+"] ;
+
+Q156531 [shape=box, color=blue, style=dashed, fontcolor="#666666", label="Prince Andrew of Greece and Denmark
+(1882-1944)
+"] ;
+
+Q165657 [shape=box, color=red, label="Princess Beatrice of York
+(1988-)
+"] ;
+
+Q165709 [shape=box, color=red, label="Princess Eugenie of York
+(1990-)
+イギリスの王族"] ;
+
+Q18002970 [shape=box, color=red, label="Princess Charlotte of Cambridge
+(2015-)
+ケンブリッジ公ウィリアムと同妃キャサリンの長女"] ;
+
+Q256893 [shape=box, color=red, style=dashed, fontcolor="#666666", label="Frances Shand Kydd
+(1936-2004)
+"] ;
+
+Q280856 [shape=box, color=blue, style=dashed, fontcolor="#666666", label="George VI
+(1895-1952)
+イギリス王"] ;
+
+Q28536747 [shape=box, color=red, label="Mia Tindall
+(2014-)
+"] ;
+
+Q3077944 [shape=box, color=red, label="Savannah Phillips
+(2010-)
+"] ;
+
+Q344908 [shape=box, color=blue, label="Peter Phillips
+(1977-)
+"] ;
+
+Q36812 [shape=box, color=blue, label="Prince William, Duke of Cambridge
+(1982-)
+ウェールズ公チャールズとダイアナ妃の長男"] ;
+
+Q38668629 [shape=box, color=blue, label="Prince Louis of Cambridge
+(2018-)
+ケンブリッジ公ウィリアム王子と同妃キャサリンの第3子"] ;
+
+Q4165785 [shape=box, color=red, style=dashed, fontcolor="#666666", label="Susan Barrantes
+(1937-1998)
+セーラ・ファガーソンの母親"] ;
+
+Q43274 [shape=box, color=blue, label="Charles, Prince of Wales
+(1948-)
+"] ;
+
+Q455160 [shape=box, color=red, style=dashed, fontcolor="#666666", label="Autumn Phillips
+(1978-)
+"] ;
+
+Q547893 [shape=box, color=blue, style=dashed, fontcolor="#666666", label="Mark Phillips
+(1948-)
+"] ;
+
+Q550183 [shape=box, color=blue, label="James, Viscount Severn
+(2007-)
+"] ;
+
+Q55720 [shape=box, color=red, style=dashed, fontcolor="#666666", label="Sarah, Duchess of York
+(1959-)
+"] ;
+
+Q5921597 [shape=box, color=red, label="Isla Phillips
+(2012-)
+"] ;
+
+Q593671 [shape=box, color=blue, style=dashed, fontcolor="#666666", label="John Spencer, 8th Earl Spencer
+(1924-1992)
+"] ;
+
+Q680304 [shape=box, color=red, label="Lady Louise Windsor
+(2003-)
+"] ;
+
+Q775665 [shape=box, color=blue, style=dashed, fontcolor="#666666", label="Ronald Ferguson
+(1931-2003)
+イギリスの近衛騎兵連隊隊員"] ;
+
+Q80976 [shape=box, color=blue, style=dashed, fontcolor="#666666", label="Prince Philip, Duke of Edinburgh
+(1921-)
+"] ;
+
+Q9682 [shape=box, color=red, label="Elizabeth II
+(1926-)
+"] ;
+
+Q9685 [shape=box, color=red, style=dashed, fontcolor="#666666", label="Diana, Princess of Wales
+(1961-1997)
+ウェールズ公チャールズ皇太子の最初の妃"] ;
+
+Q147663 -> Q28536747 ;
+Q151754 -> Q147663 ;
+Q151754 -> Q344908 ;
+Q153330 -> Q165709 ;
+Q153330 -> Q165657 ;
+Q154920 -> Q550183 ;
+Q154920 -> Q680304 ;
+Q344908 -> Q3077944 ;
+Q344908 -> Q5921597 ;
+Q36812 -> Q13590412 ;
+Q36812 -> Q18002970 ;
+Q36812 -> Q38668629 ;
+Q43274 -> Q36812 ;
+Q43274 -> Q152316 ;
+Q9682 -> Q43274 ;
+Q9682 -> Q151754 ;
+Q9682 -> Q153330 ;
+Q9682 -> Q154920 ;
+Q14244505 -> Q10479 [style=dotted] ;
+Q14244952 -> Q10479 [style=dotted] ;
+Q10479 -> Q13590412 [style=dotted] ;
+Q547893 -> Q147663 [style=dotted] ;
+Q80976 -> Q151754 [style=dotted] ;
+Q9685 -> Q152316 [style=dotted] ;
+Q80976 -> Q153330 [style=dotted] ;
+Q80976 -> Q154920 [style=dotted] ;
+Q55720 -> Q165657 [style=dotted] ;
+Q55720 -> Q165709 [style=dotted] ;
+Q10479 -> Q18002970 [style=dotted] ;
+Q1386944 -> Q28536747 [style=dotted] ;
+Q455160 -> Q3077944 [style=dotted] ;
+Q547893 -> Q344908 [style=dotted] ;
+Q9685 -> Q36812 [style=dotted] ;
+Q10479 -> Q38668629 [style=dotted] ;
+Q15397819 -> Q38668629 [style=dotted] ;
+Q80976 -> Q43274 [style=dotted] ;
+Q155203 -> Q550183 [style=dotted] ;
+Q775665 -> Q55720 [style=dotted] ;
+Q4165785 -> Q55720 [style=dotted] ;
+Q455160 -> Q5921597 [style=dotted] ;
+Q155203 -> Q680304 [style=dotted] ;
+Q116062 -> Q80976 [style=dotted] ;
+Q156531 -> Q80976 [style=dotted] ;
+Q10633 -> Q9682 [style=dotted] ;
+Q280856 -> Q9682 [style=dotted] ;
+Q256893 -> Q9685 [style=dotted] ;
+Q593671 -> Q9685 [style=dotted] ;
+}

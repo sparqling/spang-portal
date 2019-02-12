@@ -1,0 +1,83 @@
+#!/usr/bin/perl
+use strict;
+use File::Basename;
+
+my $CONTENT = "";
+my $EXECUTABLE = 0;
+
+my $FILE = "library$ENV{PATH_INFO}";
+if (-f $FILE) {
+    $CONTENT = `/home/chiba/etc/spang/bin/spang mbgd /home/chiba/www_spang/html/$FILE -r /home/chiba/etc/spang/etc/prefix,/home/chiba/.spang/prefix -q`;
+    my $comment = "";
+    if ($CONTENT =~ s/^(# .*\n)//m) {
+	$CONTENT = $1 . "\n" . $CONTENT;
+    }
+    $CONTENT =~ s/^#\S.*\n//mg;
+    # $CONTENT =~ s/^#.*\n//mg;
+    $EXECUTABLE = 1;
+} elsif (-f "$FILE.rq") {
+    $CONTENT = `cat $FILE.rq`;
+    $EXECUTABLE = 0;
+}
+
+my $DIR = dirname $FILE;
+my %KEY_VAL = ();
+parse_ini_file("$DIR/index.ini", \%KEY_VAL);
+
+if ($ENV{HTTP_ACCEPT} =~ /^text\/html/) {
+    print "Content-type: text/html\n\n";
+    print "<html>\n";
+    
+    print "<head>\n";
+    print "<title>SPARQL query</title>";
+    print '<link rel="stylesheet" href="/codemirror-5.30.0/lib/codemirror.css">';
+    print '<script src="/codemirror-5.30.0/lib/codemirror.js"></script>';
+    print '<script src="/codemirror-5.30.0/mode/sparql/sparql.js"></script>';
+    print '<style>.CodeMirror {border-top: 1px solid black; border-bottom: 1px solid black;}</style>';
+    print "</head>\n";
+    
+    print '<body>';
+    if ($EXECUTABLE) {
+	print '<form>';
+	# print "Server: $KEY_VAL{title} ( $KEY_VAL{endpoint} ) ";
+	print "Server: $KEY_VAL{title} ( <a href='$KEY_VAL{endpoint}'>$KEY_VAL{endpoint}</a> ) ";
+	print '<br><br>';
+    }
+    print '<textarea id="code" name="code">';
+    print $CONTENT;
+    print '</textarea>';
+    if ($EXECUTABLE) {
+	print '</form>';
+	print '<button type="button" onclick="iq();">Exec</button> ';
+    }
+
+    print '<script>';
+    print 'var editor = CodeMirror.fromTextArea(document.getElementById("code"), {mode: "application/sparql-query"});';
+    # print 'var iq=function(){ window.location.assign(document.getElementById("epuri").value+"?query="+encodeURIComponent(editor.getValue())); }';
+    print "var iq=function(){ window.location.assign('$KEY_VAL{endpoint}?query='+encodeURIComponent(editor.getValue())); }";
+    print '</script>';
+    print '</body>';
+    print '</html>';
+} else {
+    print "Content-type: text/plain\n\n";
+    print $CONTENT;
+}
+
+################################################################################
+### Function ###################################################################
+################################################################################
+sub parse_ini_file {
+    my ($ini_file, $r_val) = @_;
+
+    if (-f $ini_file) {
+	open(FILE, $ini_file) || die;
+	while (<FILE>) {
+	    chomp;
+	    if (/^(\S+)\s+(\S.+)/) {
+		my ($key, $val) = ($1, $2);
+		${$r_val}{$key} = $val;
+	    }
+	}
+	close(FILE);
+    }
+}

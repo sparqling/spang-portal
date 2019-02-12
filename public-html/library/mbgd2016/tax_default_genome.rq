@@ -1,0 +1,15 @@
+#param 2
+#param 29
+#param 1117
+SELECT ?code ?organism ?length ?date
+WHERE {
+    mbgdr:default
+         mbgd:organism ?genome .
+    ?genome
+        mbgd:inTaxon taxid:$1 ;
+        rdfs:label ?organism ;
+        dct:identifier ?code ;
+        mbgd:assemblyTotalLength ?length ;
+        dct:issued ?date .
+}
+ORDER BY ?date
