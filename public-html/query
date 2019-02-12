@@ -8,7 +8,7 @@ my $EXECUTABLE = 0;
 
 my $FILE = "library$ENV{PATH_INFO}";
 if (-f $FILE) {
-    $CONTENT = `/home/chiba/etc/spang/bin/spang mbgd /home/chiba/www_spang/html/$FILE -r /home/chiba/etc/spang/etc/prefix,/home/chiba/.spang/prefix -q`;
+    $CONTENT = `/opt/spang/bin/spang mbgd ./$FILE -r /opt/spang/etc/prefix,/opt/user_prefix -q`;
     if ($CONTENT =~ s/^(# .*\n)//m) {
     # if ($CONTENT =~ s/^# (.*\n)//m) {
 	$COMMENT = $1;

@@ -1,0 +1,203 @@
+PREFIX format: <http://www.w3.org/ns/formats/>
+PREFIX sp: <http://spinrdf.org/sp#>
+PREFIX cc: <http://creativecommons.org/ns#>
+
+PREFIX event: <http://purl.org/NET/c4dm/event.owl#>
+PREFIX time: <http://www.w3.org/2006/time#>
+PREFIX vcard: <http://www.w3.org/2006/vcard/ns#>
+PREFIX wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+
+# MBGD
+# PREFIX : <http://mbgd.genome.ad.jp/owl/mbgd.owl#>
+PREFIX goa: <http://purl.jp/bio/11/goa#>
+PREFIX mgfo: <http://purl.jp/bio/11/mgfo#>
+PREFIX gold: <http://mbgd.genome.ad.jp/ontology/gold#>
+
+PREFIX q: <http://wiki.lifesciencedb.jp/mw/index.php/BH12.12/MBGD/Queries#>
+
+PREFIX org: <http://mbgd.genome.ad.jp/rdf/resource/organism/>
+PREFIX mbgdc: <http://mbgd.genome.ad.jp/rdf/resource/default/cluster/>
+PREFIX cluster2015: <http://mbgd.genome.ad.jp/rdf/resource/default/cluster/>
+PREFIX cluster2016: <http://mbgd.genome.ad.jp/rdf/resource/2016-01_default/cluster/>
+PREFIX cluster2017: <http://mbgd.genome.ad.jp/rdf/resource/2017-01_default/cluster/>
+PREFIX cluster: <http://mbgd.genome.ad.jp/rdf/resource/cluster/>
+PREFIX motif: <http://mbgd.genome.ad.jp/rdf/resource/motif/>
+
+PREFIX eco: <http://mbgd.genome.ad.jp/rdf/resource/gene/eco:>
+PREFIX cog02: <http://mbgd.genome.ad.jp/rdf/dataset/2002_COGs/cluster/>
+PREFIX cog03: <http://mbgd.genome.ad.jp/rdf/dataset/2003_COGs/cluster/>
+PREFIX eggnog3: <http://mbgd.genome.ad.jp/rdf/dataset/eggNOG_3.0/>
+
+PREFIX ogo: <http://miuras.inf.um.es/ontologies/OGO.owl#>
+# PREFIX orthology: <http://miuras.inf.um.es/ontologies/orthology.owl#>
+PREFIX oo_j: <http://www.semanticweb.org/jfernand/ontologies/orthology#>
+PREFIX switNCBI: <http://miuras.inf.um.es/ontologies/swit/ncbi.owl#>
+PREFIX pfam: <http://pfam.sanger.ac.uk/family/>
+PREFIX OMA: <http://miuras.inf.um.es/ontologies/orthology.owl/OMA#>
+PREFIX Oma: <http://miuras.inf.um.es/ontologies/orthology.owl/oma#>
+PREFIX oo: <http://purl.org/net/orth#>
+PREFIX orth: <http://purl.jp/bio/11/orth#>
+PREFIX purl_oma: <http://purl.org/net/orth/oma#>
+PREFIX orthordf: <http://purl.org/net/orthordf/resource/>
+
+# UniProt
+PREFIX go: <http://purl.uniprot.org/go/>
+PREFIX updisease: <http://purl.uniprot.org/diseases/>
+# PREFIX uniprot_purl: <http://purl.uniprot.org/>
+# PREFIX uniprot_sparql: <http://beta.sparql.uniprot.org/uniprot/>
+
+# NCBI
+PREFIX ncbi: <http://www.ncbi.nlm.nih.gov/>
+PREFIX ncbigene: <http://www.ncbi.nlm.nih.gov/gene/>
+PREFIX ncbiprotein: <http://www.ncbi.nlm.nih.gov/protein/>
+PREFIX nuccore: <http://www.ncbi.nlm.nih.gov/nuccore/>
+PREFIX pubmed: <http://www.ncbi.nlm.nih.gov/pubmed/>
+PREFIX bioproject: <http://www.ncbi.nlm.nih.gov/bioproject/>
+PREFIX taxonomy: <http://www.ncbi.nlm.nih.gov/taxonomy/>
+PREFIX assembly: <http://www.ncbi.nlm.nih.gov/assembly/>
+
+# OBO
+PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
+PREFIX oboOwl: <http://purl.org/obo/owl/>
+PREFIX oboOwlTax: <http://purl.org/obo/owl/NCBITaxon#NCBITaxon_>
+PREFIX oboTax: <http://purl.obolibrary.org/obo/NCBITaxon_>
+PREFIX obotax: <http://purl.obolibrary.org/obo/ncbitaxon#>
+PREFIX po: <http://purl.obolibrary.org/obo/po.owl#>
+PREFIX pr: <http://purl.obolibrary.org/obo/pr#>
+
+# Microbe
+PREFIX meo: <http://purl.jp/bio/11/meo/>
+PREFIX mpo: <http://purl.jp/bio/01/mpo#>
+PREFIX mccv: <http://purl.jp/bio/01/mccv#>
+PREFIX csso: <http://purl.jp/bio/11/csso/>
+PREFIX pdo: <http://purl.jp/bio/11/pdo/>
+PREFIX gtpsgene: <http://gtps.ddbj.nig.ac.jp/feature/>
+PREFIX gtps: <http://gtps.ddbj.nig.ac.jp/core/qualifier/>
+
+# DBCLS
+PREFIX lsdb: <http://purl.jp/bio/lsdb/>
+PREFIX genomedb: <http://genome.db/sw/>
+PREFIX uuid: <http://genome.db/uuid/>
+PREFIX togo: <http://togogenome.org/graph/>
+PREFIX ddbj: <http://ddbj.nig.ac.jp/ontologies/>
+PREFIX ddbjt: <http://ddbj.nig.ac.jp/ontologies/taxonomy/>
+PREFIX ncbit: <http://ddbj.nig.ac.jp/ontologies/taxonomy/>
+PREFIX taxont: <http://ddbj.nig.ac.jp/ontologies/taxonomy/>
+PREFIX taxo: <http://ddbj.nig.ac.jp/ontologies/taxonomy/>
+PREFIX allie: <http://purl.org/allie/ontology/201108#>
+PREFIX shortform: <http://purl.org/allie/id/shortform/>
+
+PREFIX biohack: <http://biohackathon.org/>
+PREFIX bh: <http://purl.jp/bio/10/bh/>
+PREFIX bho: <http://purl.jp/bio/10/bh/ontology#>
+PREFIX togowiki: <http://wiki.lifesciencedb.jp/mw/>
+
+PREFIX refexo: <http://purl.jp/bio/01/refexo#>
+PREFIX refex: <http://purl.jp/bio/01/refex/>
+PREFIX refexs: <http://refex.dbcls.jp/sample/>
+
+# identifiers.org
+PREFIX idot: <http://identifiers.org/idot/>
+PREFIX idotRefseq: <http://identifiers.org/refseq/>
+PREFIX idotNcbigene: <http://identifiers.org/ncbigene/>
+PREFIX ncbigeneId: <http://identifiers.org/ncbigene/>
+PREFIX geneId: <http://identifiers.org/ncbigene/>
+PREFIX geneid: <http://identifiers.org/ncbigene/>
+PREFIX idotNcbiprotein: <http://identifiers.org/ncbiprotein/>
+PREFIX idotUniprot: <http://identifiers.org/uniprot/>
+PREFIX uniprotId: <http://identifiers.org/uniprot/>
+PREFIX idotEnsembl: <http://identifiers.org/ensembl/>
+PREFIX ensemblId: <http://identifiers.org/ensembl/>
+PREFIX idotBiomod: <http://identifiers.org/biomodels.vocabulary#>
+PREFIX idotBiomodDB: <http://identifiers.org/biomodels.db/>
+PREFIX protid: <http://identifiers.org/ncbiprotein/>
+PREFIX pmid: <http://identifiers.org/pubmed/>
+
+# Virtuoso
+PREFIX dav: <http://www.openlinksw.com/schemas/DAV#>
+PREFIX virt: <http://www.openlinksw.com/schemas/virtrdf#>
+PREFIX virtdata: <http://www.openlinksw.com/virtrdf-data-formats#>
+
+# EBI
+PREFIX ebi: <http://rdf.ebi.ac.uk/terms/>
+PREFIX ebiDat: <http://rdf.ebi.ac.uk/dataset/>
+
+PREFIX atlas: <http://rdf.ebi.ac.uk/terms/atlas/>
+PREFIX atlasRes: <http://rdf.ebi.ac.uk/resource/atlas/>
+PREFIX atlasr: <http://rdf.ebi.ac.uk/resource/atlas/>
+PREFIX ebiatlas: <http://rdf.ebi.ac.uk/resource/atlas/>
+PREFIX atlasDat: <http://rdf.ebi.ac.uk/dataset/atlas/>
+PREFIX ensembl: <http://rdf.ebi.ac.uk/terms/ensembl/>
+PREFIX ens: <http://rdf.ebi.ac.uk/resource/ensembl/>
+
+PREFIX chemblDat: <http://rdf.ebi.ac.uk/dataset/chembl/>
+PREFIX chemblMol: <http://rdf.ebi.ac.uk/resource/chembl/molecule/>
+PREFIX chemAct: <http://rdf.ebi.ac.uk/resource/chembl/activity/>
+PREFIX chemAssay: <http://rdf.ebi.ac.uk/resource/chembl/assay/>
+PREFIX chemDoc: <http://rdf.ebi.ac.uk/resource/chembl/document/>
+PREFIX chemTarget: <http://rdf.ebi.ac.uk/resource/chembl/target/>
+PREFIX chemblSource: <http://rdf.ebi.ac.uk/resource/chembl/source/>
+
+PREFIX biosamplesDat: <http://rdf.ebi.ac.uk/dataset/biosamples/>
+PREFIX biomodelsDat: <http://rdf.ebi.ac.uk/dataset/biomodels/>
+PREFIX reactomeDat: <http://rdf.ebi.ac.uk/dataset/reactome/>
+
+PREFIX efo: <http://www.ebi.ac.uk/efo/>
+
+# Others
+PREFIX yago: <http://yago-knowledge.org/resource/>
+PREFIX dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wikidatao: <http://www.wikidata.org/ontology#>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+PREFIX wp: <http://vocabularies.wikipathways.org/wp/>
+PREFIX wp: <http://vocabularies.wikipathways.org/wp#>
+PREFIX gpml: <http://vocabularies.wikipathways.org/gpml/>
+PREFIX gpml: <http://vocabularies.wikipathways.org/gpml#>
+PREFIX biomodMod: <http://biomodels.net/model-qualifiers#>
+PREFIX biomodBio: <http://biomodels.net/biology-qualifiers#>
+PREFIX bao: <http://www.bioassayontology.org/bao#>
+PREFIX ldb: <http://www.w2.org/ns/ldp#>
+PREFIX hop: <http://purl.org/net/orthordf/hOP/ontology#>
+PREFIX umls: <http://linkedlifedata.com/resource/umls/id/>
+PREFIX disgenet_dataset: <http://rdf.disgenet.org/v4.0.0/void/>
+PREFIX wi: <http://purl.org/ontology/wi/core#>
+PREFIX agro: <http://www.southgreen.fr/agrold/>
+PREFIX agrold: <http://www.southgreen.fr/agrold/vocabulary/>
+PREFIX agrold_resource: <http://www.southgreen.fr/agrold/resource/>
+
+# TPP
+# PREFIX cog: <http://purl.jp/11/cog/>
+PREFIX cog: <http://purl.jp/bio/11/cog#>
+PREFIX pgdbj: <http://pgdbj.jp/ortholog-db/resource/>
+PREFIX pdbj: <http://pdbj.org/pdb/>
+
+PREFIX atted: <http://atted.jp/rdf/def/0.1/>
+PREFIX coxpresdb: <http://coxpresdb.jp/rdf/def/0.1/>
+
+# Tprof
+PREFIX bibo: <http://purl.org/ontology/bibo/>
+PREFIX mdb: <http://genome.microbedb.jp/terms/>
+PREFIX alfred: <http://bioinformatics.med.yale.edu/owl/alfred.owl#>
+PREFIX biopax: <http://www.biopax.org/release/biopax-level3.owl#>
+PREFIX bio2rdf: <http://bio2rdf.org/>
+PREFIX bio2rdf_v: <http://bio2rdf.org/bio2rdf_vocabulary:>
+# PREFIX bio2rdf_uniprot: <http://bio2rdf.org/uniprot_vocabulary:>
+# PREFIX bio2rdf_affy: <http://bio2rdf.org/affymetrix_vocabulary:>
+
+#OMA
+# PREFIX oma: <http://mbgd.genome.ad.jp/rdf/resource/oma/>
+PREFIX oma_group: <http://mbgd.genome.ad.jp/rdf/resource/oma/group/>
+PREFIX oma_hog: <http://mbgd.genome.ad.jp/rdf/resource/oma/hog/>
+PREFIX oma_sp: <http://mbgd.genome.ad.jp/rdf/resource/oma/species/>
+PREFIX oma_prot: <http://mbgd.genome.ad.jp/rdf/resource/oma/protein/>
+PREFIX oma_protein: <http://mbgd.genome.ad.jp/rdf/resource/oma/protein/>
+
+PREFIX oma: <http://omabrowser.org/ontology/oma#>
+PREFIX omabrowser: <http://omabrowser.org/cgi-bin/gateway.pl\?f=DisplayEntry&p1=>
+
+PREFIX lib: <http://purl.org/net/spang/library/>
+PREFIX spang: <http://purl.org/net/spang/library/>
+
+PREFIX speckledband: <http://kgc.knowledge-graph.jp/data/SpeckledBand/>
