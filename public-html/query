@@ -45,6 +45,7 @@ print <<HERE;
 <script type="text/javascript" src="/codemirror-5.30.0/addon/edit/matchbrackets.js"></script>
 <script type="text/javascript" src="/codemirror-5.30.0/addon/edit/closebrackets.js"></script>
 <script type="text/javascript" src="/js/sparql-support.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/base.css">
 <style>.CodeMirror {border-top: 1px solid black; border-bottom: 1px solid black;}</style>
 </head>
 
@@ -70,13 +71,13 @@ HERE
     print $CONTENT;
     print '</textarea>';
     if ($EXECUTABLE) {
-	print '</form>';
-	print '<br>';
-	print '<button type="button" onclick="iq();">Exec</button> ';
+        print '<br>';
+        print '<button type="button" onclick="iq();", id="submit_button_query">Exec</button> ';
+        print '</form>';
     }
 
     print '<script>';
-    print 'var editor = CodeMirror.fromTextArea(document.getElementById("code"), { mode: "application/sparql-query", matchBrackets: true,  autoCloseBrackets: true, lineNumbers: true, sparqlSupportAutoComp: true,  sparqlSupportQueries: true, sparqlSupportInnerMode: true, extraKeys: {"Tab": function(instance) { return false; }, "Ctrl-Space": function(instance) { return false; }}});';
+    print 'var editor = CodeMirror.fromTextArea(document.getElementById("code"), { mode: "application/sparql-query", matchBrackets: true,  autoCloseBrackets: true, lineNumbers: true, sparqlSupportAutoComp: true, scrollbarStyle: "null", extraKeys: {"Tab": function(instance) { return false; }, "Ctrl-Space": function(instance) { return false; }}});';
     # print 'var iq=function(){ window.location.assign(document.getElementById("epuri").value+"?query="+encodeURIComponent(editor.getValue())); }';
     if ($KEY_VAL{endpoint} =~ "https://query.wikidata.org/") {
         print "var iq=function(){ window.location.assign('$KEY_VAL{endpoint}#'+encodeURIComponent(editor.getValue())); }";
