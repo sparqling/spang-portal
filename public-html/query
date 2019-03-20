@@ -42,6 +42,9 @@ print <<HERE;
 <link rel="stylesheet" href="/codemirror-5.30.0/lib/codemirror.css">
 <script src="/codemirror-5.30.0/lib/codemirror.js"></script>
 <script src="/codemirror-5.30.0/mode/sparql/sparql.js"></script>
+<script type="text/javascript" src="/codemirror-5.30.0/addon/edit/matchbrackets.js"></script>
+<script type="text/javascript" src="/codemirror-5.30.0/addon/edit/closebrackets.js"></script>
+<script type="text/javascript" src="/js/sparql-support.js"></script>
 <style>.CodeMirror {border-top: 1px solid black; border-bottom: 1px solid black;}</style>
 </head>
 
@@ -73,7 +76,7 @@ HERE
     }
 
     print '<script>';
-    print 'var editor = CodeMirror.fromTextArea(document.getElementById("code"), {mode: "application/sparql-query"});';
+    print 'var editor = CodeMirror.fromTextArea(document.getElementById("code"), { mode: "application/sparql-query", matchBrackets: true,  autoCloseBrackets: true, lineNumbers: true, sparqlSupportAutoComp: true,  sparqlSupportQueries: true, sparqlSupportInnerMode: true, extraKeys: {"Tab": function(instance) { return false; }, "Ctrl-Space": function(instance) { return false; }}});';
     # print 'var iq=function(){ window.location.assign(document.getElementById("epuri").value+"?query="+encodeURIComponent(editor.getValue())); }';
     if ($KEY_VAL{endpoint} =~ "https://query.wikidata.org/") {
         print "var iq=function(){ window.location.assign('$KEY_VAL{endpoint}#'+encodeURIComponent(editor.getValue())); }";
