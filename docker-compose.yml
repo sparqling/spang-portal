@@ -3,6 +3,8 @@ services:
   app:
     build: .
     ports:
-      - "8080:80"
+      - "8082:80"
+      - "3002:3000"
     volumes: 
       - ./public-html:/usr/local/apache2/htdocs/
+      - ./spang-api:/usr/local/app
