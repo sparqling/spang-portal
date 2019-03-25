@@ -37,4 +37,6 @@ RUN apt install -y nodejs
 
 RUN apt install -y libsqlite3-dev libcurl4-openssl-dev ruby-dev
 
-RUN bash -c 'gem install passenger && passenger-install-apache2-module'
+RUN bash -c 'source ~/.bashrc && gem install passenger --no-ri --no-rdoc'
+
+RUN bash -c 'source ~/.bashrc && passenger-install-apache2-module'
