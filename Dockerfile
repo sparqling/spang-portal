@@ -10,11 +10,6 @@ RUN sed -ri 's/#LoadModule cgid_module/LoadModule cgid_module/g; \
              s/Options Indexes FollowSymLinks/Options Indexes FollowSymLinks ExecCGI/g; \
              s/#AddHandler cgi-script .cgi/AddHandler cgi-script .pl .cgi/g' /usr/local/apache2/conf/httpd.conf
 
-
-RUN echo '<FilesMatch "^[^\.]+$"> \n \
-             SetHandler cgi-script \n \
-          </FilesMatch>' >> /usr/local/apache2/conf/httpd.conf
-
 COPY ./spang /opt/spang
 COPY ./user_prefix /opt/user_prefix
 COPY ./conf/passenger.conf /tmp/passenger.conf
@@ -40,3 +35,7 @@ RUN apt install -y libsqlite3-dev libcurl4-openssl-dev ruby-dev
 RUN bash -c 'source ~/.bashrc && gem install passenger --no-ri --no-rdoc'
 
 RUN bash -c 'source ~/.bashrc && passenger-install-apache2-module'
+
+RUN apt install -y procps
+
+RUN chmod a+rx /root

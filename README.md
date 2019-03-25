@@ -8,6 +8,11 @@ Copyright (c) 2019 Hirokazu Chiba
 
 ## Getting Started
 
-    $ docker-compose up
-
+    $ docker-compose up --build -d
+    $ docker-compose exec app bash
+    (in the container)
+    $ cd ../app
+    $ bundle
+    $ exit
+        
 After the container started, access localhost:8080 by a web browser.
