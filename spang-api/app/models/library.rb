@@ -8,7 +8,7 @@ class Library
         nil
       else
         {
-          uri: "#{ Settings.root_url }/#{dir}",
+          uri: "#{ Settings.root_url }/library/#{dir}",
           name: name,
           description: config[:title],
           endpoint: config[:endpoint],
@@ -24,5 +24,46 @@ class Library
       tokens = line.gsub(/^.*#.+$/, '').split
       tokens[0..1] if tokens.length == 2
     end.compact.to_h
+  end
+  
+  def self.parse_template(path)
+    return nil unless File.exists?(path)
+    params = []
+    contents = File.read(path)
+    contents.each_line do |line|
+      if matched = line.strip.match(/^#(param|args|ARGS)\s+(.*)$/)
+        params << matched[2].split
+      end
+    end
+
+    description = nil
+    if matched = contents.lines.first.match(/^# (.*)$/)
+      description = matched[1]
+    end
+    {
+      params: params.flatten,
+      description: description.to_s,
+    }
+  end
+  
+  def self.find(name)
+    config = parse_config(File.join(Settings.library_root, name, 'index.ini')).symbolize_keys
+    templates = Dir.glob(File.join(Settings.library_root, name, '*.rq')).select{ |file| File.file?(file) }.map do |file|
+      file_name = File.basename(file, '.*')
+      parsed = parse_template(file)
+      {
+        uri: "#{ Settings.root_url }/templates/#{file_name}", # TODO: assign unique ID
+        name: file_name,
+        description: parsed[:description],
+        parameters: parsed[:params],
+        endpoint: config[:endpoint] #TODO: There may be specific endpoints for each sparql 
+      }
+    end.compact
+    {
+      name: name,
+      description: config[:title],
+      endpoint: config[:endpoint],
+      templates: templates
+    }
   end
 end
