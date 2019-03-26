@@ -1,0 +1,232 @@
+@prefix sd:    <http://www.w3.org/ns/sparql-service-description#> .
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix sbm:   <http://www.sparqlbuilder.org/2014/05/rdf-metadata-schema#> .
+
+[ a                  sd:Service ;
+  sd:defaultDataset  [ a                       sd:Dataset ;
+                       void:classPartition     [ a              void:Dataset ;
+                                                 void:class     <http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement> ;
+                                                 void:entities  "50"^^<http://www.w3.org/2001/XMLSchema#long>
+                                               ] ;
+                       void:classes            "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                       void:properties         "19"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.southgreen.fr/agrold/vocabulary/date> ;
+                                                 void:triples       "50"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "50"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .\n@prefix ns2:   <http://www.southgreen.fr/agrold/go.association/> .\n@prefix ns1:   <http://www.southgreen.fr/agrold/vocabulary/> .\n\nns2:A0AQW4_GO_0003700\n        ns1:date  \"2003-06-06\"^^xsd:date .\n\nns2:A0AQW4_GO_0003677\n        ns1:date  \"2014-07-05\"^^xsd:date .\n\nns2:A0AQW4_GO_0005634\n        ns1:date  \"2007-03-26\"^^xsd:date .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.southgreen.fr/agrold/vocabulary/assigned_by> ;
+                                                 void:triples       "50"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "50"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://www.southgreen.fr/agrold/vocabulary/> .\n@prefix ns1:   <http://www.southgreen.fr/agrold/go.association/> .\n\nns1:A0AQW4_GO_0003700\n        ns0:assigned_by  \"TAIR\" .\n\nns1:A0AQW4_GO_0003677\n        ns0:assigned_by  \"UniProt\" .\n\nns1:A0AQW4_GO_0005634\n        ns0:assigned_by  \"TAIR\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.southgreen.fr/agrold/vocabulary/taxon> ;
+                                                 void:triples       "25"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "25"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://www.southgreen.fr/agrold/vocabulary/> .\n@prefix ns2:   <http://purl.obolibrary.org/obo/> .\n@prefix ns1:   <http://purl.uniprot.org/uniprot/> .\n\nns1:Q1MSJ1  ns0:taxon  ns2:NCBITaxon_4538 .\n\nns1:Q42968  ns0:taxon  ns2:NCBITaxon_4538 .\n\nns1:A9ZMI0  ns0:taxon  ns2:NCBITaxon_4538 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2000/01/rdf-schema#Resource>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.w3.org/2000/01/rdf-schema#label> ;
+                                                 void:triples       "25"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "25"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix ns1:   <http://purl.uniprot.org/uniprot/> .\n\nns1:A1IGU8  rdfs:label  \"OsF5HL\" .\n\nns1:A1A6F0  rdfs:label  \"OsAHL2\" .\n\nns1:B6F2C5  rdfs:label  \"ADH1\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2000/01/rdf-schema#Resource>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.obolibrary.org/obo/BFO_0000082> ;
+                                                 void:triples       "6"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "6"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.obolibrary.org/obo/> .\n@prefix ns1:   <http://purl.uniprot.org/uniprot/> .\n\nns1:Q1MSJ1  ns0:BFO_0000082  ns0:GO_0005634 .\n\nns1:A0AQW4  ns0:BFO_0000082  ns0:GO_0005634 .\n\nns1:A0JJX5  ns0:BFO_0000082  ns0:GO_0016021 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2000/01/rdf-schema#Resource>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.southgreen.fr/agrold/vocabulary/expressed_at> ;
+                                                 void:triples       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://www.southgreen.fr/agrold/vocabulary/> .\n@prefix ns2:   <http://purl.obolibrary.org/obo/> .\n@prefix ns1:   <http://purl.uniprot.org/uniprot/> .\n\nns1:B6RRX3  ns0:expressed_at  ns2:PO_0001012 .\n\nns1:B6RRX4  ns0:expressed_at  ns2:PO_0001012 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2000/01/rdf-schema#Resource>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.obolibrary.org/obo/BFO_0000056> ;
+                                                 void:triples       "17"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "17"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.obolibrary.org/obo/> .\n@prefix ns1:   <http://purl.uniprot.org/uniprot/> .\n\nns1:A0AQW4  ns0:BFO_0000056  ns0:GO_0006351 , ns0:GO_0006355 , ns0:GO_2000032 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2000/01/rdf-schema#Resource>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.southgreen.fr/agrold/vocabulary/has_synonym> ;
+                                                 void:triples       "63"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "63"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://www.southgreen.fr/agrold/vocabulary/> .\n@prefix ns1:   <http://purl.uniprot.org/uniprot/> .\n\nns1:A1A6F0  ns0:has_synonym  \"OsAHL2\" , \"A1A6F0_ORYSJ\" , \"Os09g0491708\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2000/01/rdf-schema#Resource>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.southgreen.fr/agrold/vocabulary/description> ;
+                                                 void:triples       "25"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "25"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://www.southgreen.fr/agrold/vocabulary/> .\n@prefix ns1:   <http://purl.uniprot.org/uniprot/> .\n\nns1:Q5NB25  ns0:description  \"Auxin-responsive protein IAA3\" .\n\nns1:Q9ZWT3  ns0:description  \"Probable inorganic phosphate transporter 1-6\" .\n\nns1:A0JJX5  ns0:description  \"Synaptotagmin-4\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2000/01/rdf-schema#Resource>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.w3.org/2000/01/rdf-schema#subClassOf> ;
+                                                 void:triples       "50"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "50"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix ns2:   <http://semanticscience.org/resource/> .\n@prefix ns1:   <http://www.southgreen.fr/agrold/go.association/> .\n\nns1:A0AQW4_GO_0003700\n        rdfs:subClassOf  ns2:SIO_000897 .\n\nns1:A0AQW4_GO_0003677\n        rdfs:subClassOf  ns2:SIO_000897 .\n\nns1:A0AQW4_GO_0005634\n        rdfs:subClassOf  ns2:SIO_000897 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.southgreen.fr/agrold/vocabulary/has_trait> ;
+                                                 void:triples       "5"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "5"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://www.southgreen.fr/agrold/vocabulary/> .\n@prefix ns2:   <http://purl.obolibrary.org/obo/> .\n@prefix ns1:   <http://purl.uniprot.org/uniprot/> .\n\nns1:B6RRX2  ns0:has_trait  ns2:TO_0000053 .\n\nns1:Q6ESF8  ns0:has_trait  ns2:TO_0000137 .\n\nns1:Q9AWX3  ns0:has_trait  ns2:TO_0000053 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2000/01/rdf-schema#Resource>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.southgreen.fr/agrold/vocabulary/has_annotation> ;
+                                                 void:triples       "50"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "50"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://www.southgreen.fr/agrold/vocabulary/> .\n@prefix ns2:   <http://www.southgreen.fr/agrold/go.association/> .\n@prefix ns1:   <http://purl.uniprot.org/uniprot/> .\n\nns1:A0AQW4  ns0:has_annotation  ns2:A0AQW4_GO_0005634 , ns2:A0AQW4_GO_0003700 , ns2:A0AQW4_GO_0003677 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2000/01/rdf-schema#Resource>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate> ;
+                                                 void:triples       "50"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "50"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix ns2:   <http://purl.obolibrary.org/obo/> .\n@prefix ns1:   <http://www.southgreen.fr/agrold/go.association/> .\n\nns1:A0AQW4_GO_0003700\n        rdf:predicate  ns2:BFO_0000085 .\n\nns1:A0AQW4_GO_0003677\n        rdf:predicate  ns2:BFO_0000085 .\n\nns1:A0AQW4_GO_0005634\n        rdf:predicate  ns2:BFO_0000082 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.obolibrary.org/obo/BFO_0000085> ;
+                                                 void:triples       "14"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "14"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.obolibrary.org/obo/> .\n@prefix ns1:   <http://purl.uniprot.org/uniprot/> .\n\nns1:Q1MSJ1  ns0:BFO_0000085  ns0:GO_0003743 .\n\nns1:A0AQW4  ns0:BFO_0000085  ns0:GO_0003677 .\n\nns1:A1A6F0  ns0:BFO_0000085  ns0:GO_0003677 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2000/01/rdf-schema#Resource>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.southgreen.fr/agrold/vocabulary/evidence> ;
+                                                 void:triples       "50"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "50"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://www.southgreen.fr/agrold/vocabulary/> .\n@prefix ns1:   <http://www.southgreen.fr/agrold/go.association/> .\n\nns1:A0AQW4_GO_0003700\n        ns0:evidence  \"ISS\" .\n\nns1:A0AQW4_GO_0003677\n        ns0:evidence  \"IEA\" .\n\nns1:A0AQW4_GO_0005634\n        ns0:evidence  \"IDA\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.w3.org/1999/02/22-rdf-syntax-ns#subject> ;
+                                                 void:triples       "50"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "50"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix ns2:   <http://purl.uniprot.org/uniprot/> .\n@prefix ns1:   <http://www.southgreen.fr/agrold/go.association/> .\n\nns1:A0AQW4_GO_0003700\n        rdf:subject  ns2:A0AQW4 .\n\nns1:A0AQW4_GO_0003677\n        rdf:subject  ns2:A0AQW4 .\n\nns1:A0AQW4_GO_0005634\n        rdf:subject  ns2:A0AQW4 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.w3.org/1999/02/22-rdf-syntax-ns#object> ;
+                                                 void:triples       "50"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "50"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix ns2:   <http://purl.obolibrary.org/obo/> .\n@prefix ns1:   <http://www.southgreen.fr/agrold/go.association/> .\n\nns1:A0AQW4_GO_0003700\n        rdf:object  ns2:GO_0003700 .\n\nns1:A0AQW4_GO_0003677\n        rdf:object  ns2:GO_0003677 .\n\nns1:A0AQW4_GO_0005634\n        rdf:object  ns2:GO_0005634 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.southgreen.fr/agrold/vocabulary/expressed_in> ;
+                                                 void:triples       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://www.southgreen.fr/agrold/vocabulary/> .\n@prefix ns2:   <http://purl.obolibrary.org/obo/> .\n@prefix ns1:   <http://purl.uniprot.org/uniprot/> .\n\nns1:Q5NTH4  ns0:expressed_in  ns2:PO_0009049 .\n\nns1:Q5NTH3  ns0:expressed_in  ns2:PO_0009049 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2000/01/rdf-schema#Resource>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.southgreen.fr/agrold/vocabulary/has_condition> ;
+                                                 void:triples       "4"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://www.southgreen.fr/agrold/vocabulary/> .\n@prefix ns2:   <http://purl.obolibrary.org/obo/> .\n@prefix ns1:   <http://purl.uniprot.org/uniprot/> .\n\nns1:Q6K2Y8  ns0:has_condition  ns2:EO_0007265 .\n\nns1:Q6ESF8  ns0:has_condition  ns2:EO_0007199 , ns2:EO_0007200 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2000/01/rdf-schema#Resource>
+                                                                    ]
+                                               ] ;
+                       sbm:crawlLog            [ a                     sbm:CrawlLog ;
+                                                 sbm:crawlEndTime      "2018-12-11T16:50:13+09:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                                 sbm:crawlStartTime    "2018-12-11T16:49:48+09:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                                 sbm:endpointAccesses  "32"^^<http://www.w3.org/2001/XMLSchema#long>
+                                               ] ;
+                       sd:namedGraph           [ a        sd:NamedGraph ;
+                                                 sd:name  <http://www.southgreen.fr/agrold/protein.annotations>
+                                               ]
+                     ] ;
+  sd:endpoint        <http://volvestre.cirad.fr:8890/sparql>
+] .

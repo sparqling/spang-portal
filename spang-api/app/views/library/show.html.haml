@@ -2,6 +2,31 @@
 %p
   .content_wrapper_wide
     .small
-    %h2
+    %h1
       = "SPARQL library for #{@library[:name]}"
     .content_wrapper
+      - if @library[:schema]
+        %a.link_title{ href:  @library[:schema] }
+          = "#{@library[:name]} RDF schema"
+        %br
+      - if @library[:endpoint]
+        %br
+        %a.link_title{ href:  @library[:endpoint] }
+          = "#{@library[:name]} RDF endpoint"
+        %br
+      %h2
+        Select SPARQL template
+
+      - @library[:templates].each do |template|
+        %a{ href: template[:uri] }
+          = template[:name]
+        %br
+        - if template[:description]
+          .indented
+            = "Description: #{template[:description]}"
+        - if template[:parameters].length > 0
+          .indented
+            = "(ex: #{template[:parameters].join(', ')})"
+        %br
+
+

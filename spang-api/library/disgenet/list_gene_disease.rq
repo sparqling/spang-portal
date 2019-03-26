@@ -1,0 +1,13 @@
+# List gene disease associations
+#param 10
+SELECT ?disease_label ?gene_label ?protein
+WHERE {
+    ?gda sio:SIO_000628 ?gene ,
+                        ?disease .
+    ?gene a ncit:C16612 ;
+          rdfs:label ?gene_label ;
+          sio:SIO_010078 ?protein .
+    ?disease a ncit:C7057 ;
+          rdfs:label ?disease_label .
+}
+LIMIT $1

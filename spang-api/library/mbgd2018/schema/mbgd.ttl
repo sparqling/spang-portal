@@ -1,0 +1,348 @@
+@prefix sd:    <http://www.w3.org/ns/sparql-service-description#> .
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix sbm:   <http://www.sparqlbuilder.org/2014/05/rdf-metadata-schema#> .
+
+[ a                  sd:Service ;
+  sd:defaultDataset  [ a                       sd:Dataset ;
+                       void:classPartition     [ a              void:Dataset ;
+                                                 void:class     <http://www.w3.org/2002/07/owl#Restriction> ;
+                                                 void:entities  "3"^^<http://www.w3.org/2001/XMLSchema#long>
+                                               ] ;
+                       void:classPartition     [ a              void:Dataset ;
+                                                 void:class     <http://www.w3.org/2002/07/owl#SymmetricProperty> ;
+                                                 void:entities  "3"^^<http://www.w3.org/2001/XMLSchema#long>
+                                               ] ;
+                       void:classPartition     [ a              void:Dataset ;
+                                                 void:class     <http://www.w3.org/2002/07/owl#Class> ;
+                                                 void:entities  "32"^^<http://www.w3.org/2001/XMLSchema#long>
+                                               ] ;
+                       void:classPartition     [ a              void:Dataset ;
+                                                 void:class     <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+                                                 void:entities  "19"^^<http://www.w3.org/2001/XMLSchema#long>
+                                               ] ;
+                       void:classPartition     [ a              void:Dataset ;
+                                                 void:class     <http://www.w3.org/2002/07/owl#Ontology> ;
+                                                 void:entities  "2"^^<http://www.w3.org/2001/XMLSchema#long>
+                                               ] ;
+                       void:classPartition     [ a              void:Dataset ;
+                                                 void:class     <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
+                                                 void:entities  "26"^^<http://www.w3.org/2001/XMLSchema#long>
+                                               ] ;
+                       void:classes            "6"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                       void:properties         "19"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.w3.org/2002/07/owl#versionInfo> ;
+                                                 void:triples       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix owl:   <http://www.w3.org/2002/07/owl#> .\n@prefix ns1:   <http://purl.jp/bio/11/> .\n\nns1:mbgd  owl:versionInfo  \"2014-10-16\" .\n\nns1:orth  owl:versionInfo  \"2016-01-18\" .\n" ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Ontology>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.w3.org/2000/01/rdf-schema#comment> ;
+                                                 void:triples       "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix ns1:   <http://purl.jp/bio/11/orth#> .\n\nns1:taxon  rdfs:comment  \"This property is intended to be used for specifying URI representing NCBI taxonomy ID.\" .\n" ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#ObjectProperty>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.w3.org/2002/07/owl#priorVersion> ;
+                                                 void:triples       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix owl:   <http://www.w3.org/2002/07/owl#> .\n@prefix ns1:   <http://purl.jp/bio/11/> .\n\nns1:mbgd  owl:priorVersion  <http://mbgd.genome.ad.jp/ontology/mbgd.20130812.owl> .\n\nns1:orth  owl:priorVersion  <http://mbgd.genome.ad.jp/ontology/orth.2014-10-16.ttl> .\n" ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Ontology>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.w3.org/2002/07/owl#imports> ;
+                                                 void:triples       "3"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix owl:   <http://www.w3.org/2002/07/owl#> .\n@prefix ns1:   <http://purl.jp/bio/11/> .\n\nns1:mbgd  owl:imports  <http://purl.uniprot.org/core/> .\n\nns1:orth  owl:imports  <http://miuras.inf.um.es/ontologies/OGO.owl> .\n" ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Ontology>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2002/07/owl#Ontology> ;
+                                                                      sbm:sample        "@prefix owl:   <http://www.w3.org/2002/07/owl#> .\n@prefix ns1:   <http://purl.jp/bio/11/> .\n\nns1:mbgd  owl:imports  ns1:orth .\n" ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Ontology>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.w3.org/2002/07/owl#unionOf> ;
+                                                 void:triples       "4"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix owl:   <http://www.w3.org/2002/07/owl#> .\n\n[ owl:unionOf  []  ] .\n\n[ owl:unionOf  []  ] .\n\n[ owl:unionOf  []  ] .\n" ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Class>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.org/dc/terms/title> ;
+                                                 void:triples       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.org/dc/terms/> .\n@prefix ns1:   <http://purl.jp/bio/11/> .\n\nns1:mbgd  ns0:title  \"An ontology for MBGD\" .\n\nns1:orth  ns0:title  \"Ortholog Ontology (OrthO)\" .\n" ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Ontology>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "3"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.w3.org/2000/01/rdf-schema#subClassOf> ;
+                                                 void:triples       "16"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix void:  <http://rdfs.org/ns/void#> .\n@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix ns2:   <http://purl.org/dc/dcmitype/> .\n@prefix dc:    <http://purl.org/dc/elements/1.1/> .\n@prefix ns3:   <http://purl.org/net/orth#> .\n\nns3:hasSource  rdfs:subClassOf  dc:source .\n\nvoid:Dataset  rdfs:subClassOf  ns2:Dataset .\n" ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2000/01/rdf-schema#Resource>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "11"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix void:  <http://rdfs.org/ns/void#> .\n@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix ns1:   <http://purl.jp/bio/11/orth#> .\n@prefix ns4:   <http://purl.org/dc/dcmitype/> .\n@prefix ns3:   <http://purl.obolibrary.org/obo/> .\n\nns1:Group  rdfs:subClassOf  ns4:Collection .\n\nns1:Gene  rdfs:subClassOf  ns3:SO_0000704 .\n\nns1:Dataset  rdfs:subClassOf  void:Dataset .\n" ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Class>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "3"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2002/07/owl#Restriction> ;
+                                                                      sbm:sample        "@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix ns1:   <http://purl.jp/bio/11/orth#> .\n\nns1:Group  rdfs:subClassOf  []  ;\n        rdfs:subClassOf  []  .\n\nns1:Dataset  rdfs:subClassOf  []  .\n" ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Class>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.w3.org/2002/07/owl#versionIRI> ;
+                                                 void:triples       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix owl:   <http://www.w3.org/2002/07/owl#> .\n@prefix ns1:   <http://purl.jp/bio/11/> .\n\nns1:mbgd  owl:versionIRI  <http://mbgd.genome.ad.jp/ontology/mbgd.2014-10-16.ttl> .\n\nns1:orth  owl:versionIRI  <http://mbgd.genome.ad.jp/ontology/orth.2016-01-18.ttl> .\n" ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Ontology>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.w3.org/2002/07/owl#equivalentClass> ;
+                                                 void:triples       "11"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "11"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix owl:   <http://www.w3.org/2002/07/owl#> .\n@prefix ns2:   <http://purl.org/net/orth#> .\n@prefix ns1:   <http://purl.jp/bio/11/orth#> .\n@prefix ns3:   <http://miuras.inf.um.es/ontologies/OGO.owl#> .\n\nns1:Gene  owl:equivalentClass  ns2:Gene , ns3:Gene .\n\nns1:Dataset  owl:equivalentClass  ns2:OrthologyDataset .\n" ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Class>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "4"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> ;
+                                                 void:triples       "63"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "18"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+                                                                      sbm:sample        "@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix ns1:   <http://purl.jp/bio/11/orth#> .\n\nns1:gene  rdfs:subPropertyOf  ns1:crossReference .\n\nns1:transcript  rdfs:subPropertyOf  ns1:crossReference .\n\nns1:protein  rdfs:subPropertyOf  ns1:crossReference .\n" ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#ObjectProperty>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "7"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix void:  <http://rdfs.org/ns/void#> .\n@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix ns1:   <http://purl.jp/bio/11/orth#> .\n@prefix ns3:   <http://purl.org/dc/terms/> .\n\nns1:member  rdfs:subPropertyOf  rdfs:member .\n\nns1:inDataset  rdfs:subPropertyOf  ns3:isPartOf , void:inDataset .\n" ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#ObjectProperty>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "6"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix ns1:   <http://purl.jp/bio/11/orth#> .\n@prefix ns4:   <http://semanticscience.org/resource/> .\n@prefix ns3:   <http://purl.jp/bio/11/mbgd#> .\n\nns3:aaLength  rdfs:subPropertyOf  ns4:SIO_000041 .\n\nns3:domainBegin  rdfs:subPropertyOf  ns4:SIO_000791 .\n\nns1:value  rdfs:subPropertyOf  rdf:value .\n" ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#DatatypeProperty>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "25"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
+                                                                      sbm:sample        "@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix ns2:   <http://purl.jp/bio/11/mbgd#> .\n@prefix ns1:   <http://purl.jp/bio/11/orth#> .\n\nns2:score  rdfs:subPropertyOf  ns1:groupScore .\n\nns2:dist  rdfs:subPropertyOf  ns1:groupScore .\n\nns1:groupScore  rdfs:subPropertyOf  ns1:groupValue .\n" ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#DatatypeProperty>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "3"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+                                                                      sbm:sample        "@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix ns1:   <http://purl.jp/bio/11/orth#> .\n\nns1:ortholog  rdfs:subPropertyOf  ns1:homolog .\n\nns1:homolog  rdfs:subPropertyOf  ns1:pairwiseRelation .\n\nns1:paralog  rdfs:subPropertyOf  ns1:homolog .\n" ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#SymmetricProperty>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2002/07/owl#SymmetricProperty> ;
+                                                                      sbm:sample        "@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix ns1:   <http://purl.jp/bio/11/orth#> .\n\nns1:ortholog  rdfs:subPropertyOf  ns1:homolog .\n\nns1:paralog  rdfs:subPropertyOf  ns1:homolog .\n" ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#ObjectProperty>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2002/07/owl#SymmetricProperty> ;
+                                                                      sbm:sample        "@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix ns1:   <http://purl.jp/bio/11/orth#> .\n\nns1:ortholog  rdfs:subPropertyOf  ns1:homolog .\n\nns1:paralog  rdfs:subPropertyOf  ns1:homolog .\n" ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#SymmetricProperty>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "5"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> ;
+                                                 void:triples       "76"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "19"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2002/07/owl#Ontology> ;
+                                                                      sbm:sample        "@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix ns2:   <http://purl.jp/bio/11/> .\n@prefix ns1:   <http://purl.jp/bio/11/orth#> .\n\nns1:pairwiseRelation  rdfs:isDefinedBy  ns2:orth .\n\nns1:inDataset  rdfs:isDefinedBy  ns2:orth .\n\nns1:relation  rdfs:isDefinedBy  ns2:orth .\n" ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#ObjectProperty>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "28"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2002/07/owl#Ontology> ;
+                                                                      sbm:sample        "@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix ns2:   <http://purl.jp/bio/11/> .\n@prefix ns1:   <http://purl.jp/bio/11/orth#> .\n\nns1:Taxon  rdfs:isDefinedBy  ns2:orth .\n\nns1:Gene  rdfs:isDefinedBy  ns2:orth .\n\nns1:Dataset  rdfs:isDefinedBy  ns2:orth .\n" ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Class>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "26"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2002/07/owl#Ontology> ;
+                                                                      sbm:sample        "@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix ns2:   <http://purl.jp/bio/11/> .\n@prefix ns1:   <http://purl.jp/bio/11/orth#> .\n\nns1:groupValue  rdfs:isDefinedBy  ns2:orth .\n\nns1:memberScore  rdfs:isDefinedBy  ns2:orth .\n\nns1:groupScore  rdfs:isDefinedBy  ns2:orth .\n" ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#DatatypeProperty>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "3"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2002/07/owl#Ontology> ;
+                                                                      sbm:sample        "@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix ns2:   <http://purl.jp/bio/11/> .\n@prefix ns1:   <http://purl.jp/bio/11/orth#> .\n\nns1:ortholog  rdfs:isDefinedBy  ns2:orth .\n\nns1:homolog  rdfs:isDefinedBy  ns2:orth .\n\nns1:paralog  rdfs:isDefinedBy  ns2:orth .\n" ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#SymmetricProperty>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.w3.org/2000/01/rdf-schema#seeAlso> ;
+                                                 void:triples       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix ns1:   <http://purl.jp/bio/11/> .\n\nns1:mbgd  rdfs:seeAlso  <http://mbgd.genome.ad.jp/ontology/> .\n\nns1:orth  rdfs:seeAlso  <http://mbgd.genome.ad.jp/ontology/> .\n" ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Ontology>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> ;
+                                                 void:triples       "8"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "8"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n\n[ rdf:rest  [ rdf:rest  () ] ] .\n\n[ rdf:rest  []  ] .\n" ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2000/01/rdf-schema#Resource>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.w3.org/2002/07/owl#onProperty> ;
+                                                 void:triples       "3"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "3"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+                                                                      sbm:sample        "@prefix owl:   <http://www.w3.org/2002/07/owl#> .\n@prefix ns1:   <http://purl.jp/bio/11/orth#> .\n\n[ owl:onProperty  ns1:organism ] .\n\n[ owl:onProperty  ns1:member ] .\n\n[ owl:onProperty  ns1:inDataset ] .\n" ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Restriction>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.w3.org/2002/07/owl#equivalentProperty> ;
+                                                 void:triples       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix owl:   <http://www.w3.org/2002/07/owl#> .\n@prefix ns2:   <http://purl.org/net/orth#> .\n@prefix ns1:   <http://purl.jp/bio/11/orth#> .\n@prefix ns3:   <http://miuras.inf.um.es/ontologies/OGO.owl#> .\n\nns1:member  owl:equivalentProperty  ns3:hasOrthologous , ns2:hasHomologous .\n" ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#ObjectProperty>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "5"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.w3.org/2000/01/rdf-schema#label> ;
+                                                 void:triples       "76"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "19"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix ns1:   <http://purl.jp/bio/11/orth#> .\n\nns1:gene  rdfs:label  \"gene\" .\n\nns1:groupMembershipRelation\n        rdfs:label  \"groupMembershipRelation\" .\n\nns1:crossReference  rdfs:label  \"crossReference\" .\n" ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#ObjectProperty>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "28"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix ns1:   <http://purl.jp/bio/11/orth#> .\n\nns1:Taxon  rdfs:label  \"Taxon\" .\n\nns1:Gene  rdfs:label  \"Gene\" .\n\nns1:Dataset  rdfs:label  \"Dataset\" .\n" ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Class>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "26"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix ns1:   <http://purl.jp/bio/11/orth#> .\n\nns1:groupValue  rdfs:label  \"groupValue\" .\n\nns1:memberScore  rdfs:label  \"memberScore\" .\n\nns1:groupScore  rdfs:label  \"groupScore\" .\n" ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#DatatypeProperty>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "3"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix ns1:   <http://purl.jp/bio/11/orth#> .\n\nns1:ortholog  rdfs:label  \"ortholog\" .\n\nns1:homolog  rdfs:label  \"homolog\" .\n\nns1:paralog  rdfs:label  \"paralog\" .\n" ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#SymmetricProperty>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://purl.org/dc/terms/description> ;
+                                                 void:triples       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://purl.org/dc/terms/> .\n@prefix ns1:   <http://purl.jp/bio/11/> .\n\nns1:mbgd  ns0:description  \"An ontology for describing MBGD data.\" .\n\nns1:orth  ns0:description  \"An ontology for describing ortholog information.\" .\n" ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Ontology>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> ;
+                                                 void:triples       "8"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "8"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2002/07/owl#Class> ;
+                                                                      sbm:sample        "@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix ns1:   <http://purl.jp/bio/11/orth#> .\n\n[ rdf:first  ns1:Group ] .\n\n[ rdf:first  ns1:Group ] .\n\n[ rdf:first  ns1:Group ] .\n" ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2000/01/rdf-schema#Resource>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "3"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.w3.org/2000/01/rdf-schema#range> ;
+                                                 void:triples       "26"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "1"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix ns2:   <http://purl.uniprot.org/core/> .\n@prefix ns1:   <http://purl.jp/bio/11/mbgd#> .\n\nns1:uniprot  rdfs:range  ns2:Protein .\n" ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#ObjectProperty>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "25"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix ns1:   <http://purl.jp/bio/11/orth#> .\n\nns1:groupValue  rdfs:range  rdfs:Literal .\n\nns1:memberScore  rdfs:range  rdfs:Literal .\n\nns1:groupScore  rdfs:range  rdfs:Literal .\n" ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#DatatypeProperty>
+                                                                    ]
+                                               ] ;
+                       sbm:crawlLog            [ a                     sbm:CrawlLog ;
+                                                 sbm:crawlEndTime      "2018-12-13T22:16:25+09:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                                 sbm:crawlStartTime    "2018-12-13T22:15:28+09:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                                 sbm:endpointAccesses  "79"^^<http://www.w3.org/2001/XMLSchema#long>
+                                               ] ;
+                       sd:namedGraph           [ a        sd:NamedGraph ;
+                                                 sd:name  <file:///SetOfGraphs>
+                                               ]
+                     ] ;
+  sd:endpoint        <http://sparql.nibb.ac.jp/sparql>
+] .

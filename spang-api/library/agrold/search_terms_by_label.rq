@@ -1,0 +1,8 @@
+# Search terms by label
+SELECT DISTINCT ?term_id ?term_name ?graph
+WHERE { 
+    GRAPH ?graph { 
+	?term_id rdfs:label ?term_name . 
+	FILTER regex(str(?term_name), 'plant growth') 
+    } 
+}

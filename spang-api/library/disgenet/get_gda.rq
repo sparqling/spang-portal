@@ -1,0 +1,12 @@
+# Get specific type of gene-disease association
+#param SIO_001120 10
+SELECT DISTINCT ?title ?dataset
+WHERE {
+    ?gda a sio:$1 ;
+	 dct:identifier ?id ;
+	 dct:title ?title ;
+         rdfs:label ?label ;
+	 rdfs:comment ?comment ;
+	 void:inDataset ?dataset .
+}
+LIMIT $2

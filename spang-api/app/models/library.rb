@@ -21,7 +21,7 @@ class Library
   def self.parse_config(path)
     return nil unless File.exists?(path)
     File.read(path).each_line.map do |line|
-      tokens = line.gsub(/^.*#.+$/, '').split
+      tokens = line.gsub(/^#.*$/, '').split
       tokens[0..1] if tokens.length == 2
     end.compact.to_h
   end
@@ -52,7 +52,7 @@ class Library
       file_name = File.basename(file, '.*')
       parsed = parse_template(file)
       {
-        uri: "#{ Settings.root_url }/templates/#{file_name}", # TODO: assign unique ID
+        uri: "#{ Settings.root_url }/#{name}/#{file_name}", # TODO: assign unique ID
         name: file_name,
         description: parsed[:description],
         parameters: parsed[:params],
@@ -63,6 +63,7 @@ class Library
       name: name,
       description: config[:title],
       endpoint: config[:endpoint],
+      schema: config[:schema],
       templates: templates
     }
   end

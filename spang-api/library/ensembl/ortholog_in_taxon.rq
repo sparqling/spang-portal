@@ -1,0 +1,7 @@
+# Get ortholog in specific taxon from Ensembl gene ID
+#param ENSG00000139618 10090
+SELECT ?ortholog
+WHERE {
+    ens:$1 sio:SIO_000558 ?ortholog .
+    ?ortholog obo:RO_0002162 taxid:$2 .
+}

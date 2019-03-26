@@ -1,0 +1,60 @@
+digraph {
+    ranksep=2;
+    rankdir="LR";
+    charset="utf-8";
+
+    // Class relations with the numbers of edges
+    "rdf:Statement" -> "rdfs:Literal1" [ label="agrold:date\n  50"];
+    "rdf:Statement" -> "rdfs:Literal2" [ label="agrold:assigned_by\n  50"];
+    "rdf:Statement" -> "rdfs:Literal24" [ label="agrold:evidence\n  50"];
+    "rdf:Statement" -> "rdfs:Resource17" [ label="rdfs:subClassOf\n  50"];
+    "rdf:Statement" -> "rdfs:Resource21" [ label="rdf:predicate\n  50"];
+    "rdf:Statement" -> "rdfs:Resource25" [ label="rdf:subject\n  50"];
+    "rdf:Statement" -> "rdfs:Resource26" [ label="rdf:object\n  50"];
+    "rdfs:Resource11" -> "rdfs:Resource12" [ label="obo:BFO_0000056\n  17"];
+    "rdfs:Resource13" -> "rdfs:Literal14" [ label="agrold:has_synonym\n  63"];
+    "rdfs:Resource15" -> "rdfs:Literal16" [ label="agrold:description\n  25"];
+    "rdfs:Resource18" -> "rdfs:Resource19" [ label="agrold:has_trait\n  5"];
+    "rdfs:Resource20" -> "rdf:Statement" [ label="agrold:has_annotation\n  50"];
+    "rdfs:Resource22" -> "rdfs:Resource23" [ label="obo:BFO_0000085\n  14"];
+    "rdfs:Resource27" -> "rdfs:Resource28" [ label="agrold:expressed_in\n  2"];
+    "rdfs:Resource29" -> "rdfs:Resource30" [ label="agrold:has_condition\n  4"];
+    "rdfs:Resource3" -> "rdfs:Resource4" [ label="agrold:taxon\n  25"];
+    "rdfs:Resource5" -> "rdfs:Literal6" [ label="rdfs:label\n  25"];
+    "rdfs:Resource7" -> "rdfs:Resource8" [ label="obo:BFO_0000082\n  6"];
+    "rdfs:Resource9" -> "rdfs:Resource10" [ label="agrold:expressed_at\n  2"];
+
+    // The number of entities
+    "rdf:Statement" [ label="rdf:Statement\n50" ] ;
+    "rdfs:Literal1" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Literal14" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Literal16" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Literal2" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Literal24" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Literal6" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Resource10" [ label="rdfs:Resource" ] ;
+    "rdfs:Resource11" [ label="rdfs:Resource" ] ;
+    "rdfs:Resource12" [ label="rdfs:Resource" ] ;
+    "rdfs:Resource13" [ label="rdfs:Resource" ] ;
+    "rdfs:Resource15" [ label="rdfs:Resource" ] ;
+    "rdfs:Resource17" [ label="rdfs:Resource" ] ;
+    "rdfs:Resource18" [ label="rdfs:Resource" ] ;
+    "rdfs:Resource19" [ label="rdfs:Resource" ] ;
+    "rdfs:Resource20" [ label="rdfs:Resource" ] ;
+    "rdfs:Resource21" [ label="rdfs:Resource" ] ;
+    "rdfs:Resource22" [ label="rdfs:Resource" ] ;
+    "rdfs:Resource23" [ label="rdfs:Resource" ] ;
+    "rdfs:Resource25" [ label="rdfs:Resource" ] ;
+    "rdfs:Resource26" [ label="rdfs:Resource" ] ;
+    "rdfs:Resource27" [ label="rdfs:Resource" ] ;
+    "rdfs:Resource28" [ label="rdfs:Resource" ] ;
+    "rdfs:Resource29" [ label="rdfs:Resource" ] ;
+    "rdfs:Resource3" [ label="rdfs:Resource" ] ;
+    "rdfs:Resource30" [ label="rdfs:Resource" ] ;
+    "rdfs:Resource4" [ label="rdfs:Resource" ] ;
+    "rdfs:Resource5" [ label="rdfs:Resource" ] ;
+    "rdfs:Resource7" [ label="rdfs:Resource" ] ;
+    "rdfs:Resource8" [ label="rdfs:Resource" ] ;
+    "rdfs:Resource9" [ label="rdfs:Resource" ] ;
+
+}

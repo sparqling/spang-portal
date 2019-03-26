@@ -1,0 +1,210 @@
+@prefix sd:    <http://www.w3.org/ns/sparql-service-description#> .
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix sbm:   <http://www.sparqlbuilder.org/2014/05/rdf-metadata-schema#> .
+
+[ a                  sd:Service ;
+  sd:defaultDataset  [ a                       sd:Dataset ;
+                       void:classPartition     [ a              void:Dataset ;
+                                                 void:class     <http://www.southgreen.fr/agrold/vocabulary/Reaction> ;
+                                                 void:entities  "31"^^<http://www.w3.org/2001/XMLSchema#long>
+                                               ] ;
+                       void:classPartition     [ a              void:Dataset ;
+                                                 void:class     <http://www.southgreen.fr/agrold/vocabulary/Gene> ;
+                                                 void:entities  "7"^^<http://www.w3.org/2001/XMLSchema#long>
+                                               ] ;
+                       void:classPartition     [ a              void:Dataset ;
+                                                 void:class     <http://www.southgreen.fr/agrold/vocabulary/Protein> ;
+                                                 void:entities  "19"^^<http://www.w3.org/2001/XMLSchema#long>
+                                               ] ;
+                       void:classPartition     [ a              void:Dataset ;
+                                                 void:class     <http://www.w3.org/2002/07/owl#Class> ;
+                                                 void:entities  "52"^^<http://www.w3.org/2001/XMLSchema#long>
+                                               ] ;
+                       void:classPartition     [ a              void:Dataset ;
+                                                 void:class     <http://www.southgreen.fr/agrold/vocabulary/Metabolic_Pathway> ;
+                                                 void:entities  "21"^^<http://www.w3.org/2001/XMLSchema#long>
+                                               ] ;
+                       void:classes            "5"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                       void:properties         "9"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.southgreen.fr/agrold/vocabulary/has_ec_code> ;
+                                                 void:triples       "25"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "25"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://www.southgreen.fr/agrold/vocabulary/> .\n@prefix ns1:   <http://www.southgreen.fr/agrold/reaction/> .\n\nns1:3.6.3.3-RXN  ns0:has_ec_code  <http://identifiers.org/ec-code/3.6.3.3> .\n\nns1:ETHYL-RXN  ns0:has_ec_code  <http://identifiers.org/ec-code/1.14.17.4> .\n\nns1:MALATE-DEH-RXN  ns0:has_ec_code  <http://identifiers.org/ec-code/1.1.1.37> .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.southgreen.fr/agrold/vocabulary/Reaction>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.southgreen.fr/agrold/vocabulary/is_agent_in> ;
+                                                 void:triples       "57"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "15"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2002/07/owl#Class> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://www.southgreen.fr/agrold/vocabulary/> .\n@prefix ns1:   <http://www.southgreen.fr/agrold/biocyc.pathway/> .\n\n<http://www.southgreen.fr/agrold/tigr.locus/LOC_Os11g05110.1>\n        ns0:is_agent_in  ns1:PWY-1042 , ns1:FERMENTATION-PWY .\n\n<http://www.southgreen.fr/agrold/tigr.locus/LOC_Os09g31506.1>\n        ns0:is_agent_in  ns1:GALACTMETAB-PWY .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.southgreen.fr/agrold/vocabulary/Gene>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "42"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2002/07/owl#Class> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://www.southgreen.fr/agrold/vocabulary/> .\n@prefix ns1:   <http://www.southgreen.fr/agrold/biocyc.pathway/> .\n\n<http://identifiers.org/ensembl.plant/Sb01g025590.1>\n        ns0:is_agent_in  ns1:FERMENTATION-PWY .\n\n<http://www.southgreen.fr/agrold/tigr.locus/LOC_Os11g05110.1>\n        ns0:is_agent_in  ns1:FERMENTATION-PWY .\n\n<http://www.southgreen.fr/agrold/tigr.locus/LOC_Os09g31506.1>\n        ns0:is_agent_in  ns1:GALACTMETAB-PWY .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Class>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.southgreen.fr/agrold/vocabulary/encoded_by> ;
+                                                 void:triples       "19"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "19"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://www.southgreen.fr/agrold/vocabulary/> .\n@prefix ns2:   <http://identifiers.org/tair.locus/> .\n@prefix ns1:   <http://www.southgreen.fr/agrold/aracyc.protein/> .\n\nns1:AT1G73250-MONOMER\n        ns0:encoded_by  ns2:AT1G73250 .\n\nns1:AT1G51490-MONOMER\n        ns0:encoded_by  ns2:AT1G51490 .\n\nns1:AT1G32200-MONOMER\n        ns0:encoded_by  ns2:AT1G32200 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.southgreen.fr/agrold/vocabulary/Protein>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "6"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.w3.org/2000/01/rdf-schema#label> ;
+                                                 void:triples       "105"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "19"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix ns1:   <http://www.southgreen.fr/agrold/aracyc.protein/> .\n\nns1:AT1G73250-MONOMER\n        rdfs:label  \"indole-3-acetyl-myo-inositol hydrolase\" .\n\nns1:AT1G51490-MONOMER\n        rdfs:label  \"thioglucosidase\" .\n\nns1:AT1G32200-MONOMER\n        rdfs:label  \"glycerol-3-phosphate O-oleoyltransferase\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.southgreen.fr/agrold/vocabulary/Protein>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "8"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n\n<http://www.southgreen.fr/agrold/tigr.locus/LOC_Os07g42970.1>\n        rdfs:label  \"UDP-glucoronosyl and UDP-glucosyl transferase domain containing protein\" .\n\n<http://www.southgreen.fr/agrold/tigr.locus/LOC_Os05g08490.1>\n        rdfs:label  \"UDP-glycosyltransferase\" .\n\n<http://www.southgreen.fr/agrold/tigr.locus/LOC_Os04g12950.1>\n        rdfs:label  \"UDP-glycosyltransferase\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.southgreen.fr/agrold/vocabulary/Gene>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "4"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix ns1:   <http://www.southgreen.fr/agrold/reaction/> .\n\nns1:TREHALOSE6PSYN-RXN\n        rdfs:label  \"&alpha;,&alpha;-trehalose-phosphate synthase (UDP-forming)\" .\n\nns1:TREHALOSEPHOSPHA-RXN\n        rdfs:label  \"Trehalose-phosphatase\" .\n\nns1:PEPDEPHOS-RXN  rdfs:label  \"Pyruvate kinase\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.southgreen.fr/agrold/vocabulary/Reaction>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "21"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix ns1:   <http://www.southgreen.fr/agrold/aracyc.pathway/> .\n\nns1:PWY-1822  rdfs:label  \"indole-3-acetate activation I\" .\n\nns1:ETHYL-PWY  rdfs:label  \"ethylene biosynthesis I (plants)\" .\n\nns1:PWY-1921  rdfs:label  \"indole-3-acetate activation II\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.southgreen.fr/agrold/vocabulary/Metabolic_Pathway>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "53"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                                                                      sbm:sample        "@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix ns1:   <http://identifiers.org/ensembl.plant/> .\n\nns1:GRMZM5G875287  rdfs:label  \"H(+)-transporting two-sector ATPase\" .\n\nns1:AT1G22340  rdfs:label  \"trans-zeatin-O-beta-D-glycosyltransferase\" .\n\nns1:GRMZM5G800980  rdfs:label  \"NADH dehydrogenase (ubiquinone)\" .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Class>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "3"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.southgreen.fr/agrold/vocabulary/develops_from> ;
+                                                 void:triples       "19"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "7"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://www.southgreen.fr/agrold/vocabulary/> .\n@prefix ns1:   <http://identifiers.org/ricegap/> .\n\n<http://www.southgreen.fr/agrold/tigr.locus/LOC_Os07g42970.1>\n        ns0:develops_from  ns1:LOC_Os07g42970 .\n\n<http://www.southgreen.fr/agrold/tigr.locus/LOC_Os05g08490.1>\n        ns0:develops_from  ns1:LOC_Os05g08490 .\n\n<http://www.southgreen.fr/agrold/tigr.locus/LOC_Os04g12950.1>\n        ns0:develops_from  ns1:LOC_Os04g12950 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.southgreen.fr/agrold/vocabulary/Gene>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "12"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://www.southgreen.fr/agrold/vocabulary/> .\n@prefix ns1:   <http://identifiers.org/ricegap/> .\n\n<http://www.southgreen.fr/agrold/tigr.locus/LOC_Os07g42970.1>\n        ns0:develops_from  ns1:LOC_Os07g42970 .\n\n<http://www.southgreen.fr/agrold/tigr.locus/LOC_Os05g08490.1>\n        ns0:develops_from  ns1:LOC_Os05g08490 .\n\n<http://www.southgreen.fr/agrold/tigr.locus/LOC_Os04g12950.1>\n        ns0:develops_from  ns1:LOC_Os04g12950 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Class>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "4"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.southgreen.fr/agrold/vocabulary/has_agent> ;
+                                                 void:triples       "51"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "21"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.southgreen.fr/agrold/vocabulary/Protein> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://www.southgreen.fr/agrold/vocabulary/> .\n@prefix ns2:   <http://www.southgreen.fr/agrold/aracyc.protein/> .\n@prefix ns1:   <http://www.southgreen.fr/agrold/aracyc.pathway/> .\n\nns1:PWY-1921  ns0:has_agent  ns2:AT1G73250-MONOMER .\n\nns1:PWY-5267  ns0:has_agent  ns2:AT1G51490-MONOMER .\n\nns1:PWYQT-4482  ns0:has_agent  ns2:AT1G32200-MONOMER .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.southgreen.fr/agrold/vocabulary/Metabolic_Pathway>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "15"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.southgreen.fr/agrold/vocabulary/Gene> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://www.southgreen.fr/agrold/vocabulary/> .\n@prefix ns1:   <http://www.southgreen.fr/agrold/ricecyc.pathway/> .\n\nns1:PWY-1042  ns0:has_agent  <http://www.southgreen.fr/agrold/tigr.locus/LOC_Os11g05110.1> .\n\nns1:FERMENTATION-PWY  ns0:has_agent  <http://www.southgreen.fr/agrold/tigr.locus/LOC_Os11g05110.1> .\n\nns1:GALACTMETAB-PWY  ns0:has_agent  <http://www.southgreen.fr/agrold/tigr.locus/LOC_Os09g31506.1> .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.southgreen.fr/agrold/vocabulary/Metabolic_Pathway>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "15"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2002/07/owl#Class> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://www.southgreen.fr/agrold/vocabulary/> .\n@prefix ns1:   <http://www.southgreen.fr/agrold/ricecyc.pathway/> .\n\nns1:PWY-2902  ns0:has_agent  <http://www.southgreen.fr/agrold/tigr.locus/LOC_Os04g12950.1> .\n\nns1:PWY-2881  ns0:has_agent  <http://www.southgreen.fr/agrold/tigr.locus/LOC_Os04g12950.1> .\n\nns1:PWY-2901  ns0:has_agent  <http://www.southgreen.fr/agrold/tigr.locus/LOC_Os04g12950.1> .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.southgreen.fr/agrold/vocabulary/Metabolic_Pathway>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "3"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.southgreen.fr/agrold/vocabulary/taxon> ;
+                                                 void:triples       "34"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "7"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://www.southgreen.fr/agrold/vocabulary/> .\n@prefix ns1:   <http://purl.obolibrary.org/obo/> .\n\n<http://www.southgreen.fr/agrold/tigr.locus/LOC_Os07g42970.1>\n        ns0:taxon  ns1:NCBITaxon_39947 .\n\n<http://www.southgreen.fr/agrold/tigr.locus/LOC_Os05g08490.1>\n        ns0:taxon  ns1:NCBITaxon_39947 .\n\n<http://www.southgreen.fr/agrold/tigr.locus/LOC_Os04g12950.1>\n        ns0:taxon  ns1:NCBITaxon_39947 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.southgreen.fr/agrold/vocabulary/Gene>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "27"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://www.southgreen.fr/agrold/vocabulary/> .\n@prefix ns2:   <http://purl.obolibrary.org/obo/> .\n@prefix ns1:   <http://identifiers.org/ensembl.plant/> .\n\nns1:GRMZM5G875287  ns0:taxon  ns2:NCBITaxon_4577 .\n\nns1:AT1G22340  ns0:taxon  ns2:NCBITaxon_3702 .\n\nns1:GRMZM5G800980  ns0:taxon  ns2:NCBITaxon_4577 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Class>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "2"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.southgreen.fr/agrold/vocabulary/has_reaction> ;
+                                                 void:triples       "33"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "33"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.southgreen.fr/agrold/vocabulary/Reaction> ;
+                                                                      sbm:sample        "@prefix ns0:   <http://www.southgreen.fr/agrold/vocabulary/> .\n@prefix ns2:   <http://www.southgreen.fr/agrold/reaction/> .\n@prefix ns1:   <http://www.southgreen.fr/agrold/aracyc.pathway/> .\n\nns1:ETHYL-PWY  ns0:has_reaction  ns2:ETHYL-RXN .\n\nns1:PWY-7048  ns0:has_reaction  ns2:MALATE-DEH-RXN .\n\nns1:PWY-6213  ns0:has_reaction  ns2:3.6.3.3-RXN .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.southgreen.fr/agrold/vocabulary/Metabolic_Pathway>
+                                                                    ]
+                                               ] ;
+                       void:propertyPartition  [ a                  void:Dataset ;
+                                                 void:classes       "5"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 void:property      <http://www.w3.org/2000/01/rdf-schema#subClassOf> ;
+                                                 void:triples       "129"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "7"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix ns1:   <http://purl.obolibrary.org/obo/> .\n\n<http://www.southgreen.fr/agrold/tigr.locus/LOC_Os07g42970.1>\n        rdfs:subClassOf  ns1:SO_0000234 .\n\n<http://www.southgreen.fr/agrold/tigr.locus/LOC_Os05g08490.1>\n        rdfs:subClassOf  ns1:SO_0000234 .\n\n<http://www.southgreen.fr/agrold/tigr.locus/LOC_Os04g12950.1>\n        rdfs:subClassOf  ns1:SO_0000234 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.southgreen.fr/agrold/vocabulary/Gene>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "14"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix ns2:   <http://edamontology.org/> .\n@prefix ns1:   <http://www.southgreen.fr/agrold/reaction/> .\n\nns1:RXN-4722  rdfs:subClassOf  ns2:data_2106 .\n\nns1:RXN-4721  rdfs:subClassOf  ns2:data_2106 .\n\nns1:PEPDEPHOS-RXN  rdfs:subClassOf  ns2:data_2106 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.southgreen.fr/agrold/vocabulary/Reaction>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "31"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix ns2:   <http://semanticscience.org/resource/> .\n@prefix ns1:   <http://www.southgreen.fr/agrold/aracyc.pathway/> .\n\nns1:PWY-1822  rdfs:subClassOf  ns2:SIO_010532 .\n\nns1:ETHYL-PWY  rdfs:subClassOf  ns2:SIO_010532 .\n\nns1:PWY-1921  rdfs:subClassOf  ns2:SIO_010532 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.southgreen.fr/agrold/vocabulary/Metabolic_Pathway>
+                                                                    ] ;
+                                                 sbm:classRelation  [ a                 sbm:ClassRelation ;
+                                                                      void:triples      "77"^^<http://www.w3.org/2001/XMLSchema#long> ;
+                                                                      sbm:objectClass   <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+                                                                      sbm:sample        "@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix ns2:   <http://purl.obolibrary.org/obo/> .\n@prefix ns1:   <http://identifiers.org/ensembl.plant/> .\n\nns1:GRMZM5G875287  rdfs:subClassOf  ns2:SO_0000704 .\n\nns1:AT1G22340  rdfs:subClassOf  ns2:SO_0000704 .\n\nns1:GRMZM5G800980  rdfs:subClassOf  ns2:SO_0000704 .\n"^^<http://www.w3.org/2001/XMLSchema#string> ;
+                                                                      sbm:subjectClass  <http://www.w3.org/2002/07/owl#Class>
+                                                                    ]
+                                               ] ;
+                       sbm:crawlLog            [ a                     sbm:CrawlLog ;
+                                                 sbm:crawlEndTime      "2018-12-12T21:54:39+09:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                                 sbm:crawlStartTime    "2018-12-12T21:53:36+09:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+                                                 sbm:endpointAccesses  "85"^^<http://www.w3.org/2001/XMLSchema#long>
+                                               ] ;
+                       sd:namedGraph           [ a        sd:NamedGraph ;
+                                                 sd:name  <http://www.southgreen.fr/agrold/gramene.cyc>
+                                               ]
+                     ] ;
+  sd:endpoint        <http://volvestre.cirad.fr:8890/sparql>
+] .

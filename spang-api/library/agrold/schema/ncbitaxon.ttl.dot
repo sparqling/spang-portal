@@ -1,0 +1,57 @@
+digraph {
+    ranksep=2;
+    rankdir="LR";
+    charset="utf-8";
+
+    // Class relations with the numbers of edges
+    "owl:AnnotationProperty" -> "owl:AnnotationProperty" [ label="rdfs:subPropertyOf\n  15"];
+    "owl:AnnotationProperty" -> "rdfs:Literal10" [ label="rdfs:label\n  27"];
+    "owl:AnnotationProperty" -> "rdfs:Literal15" [ label="obo:IAO_0000115\n  1"];
+    "owl:AnnotationProperty" -> "rdfs:Literal3" [ label="rdfs:comment\n  1"];
+    "owl:AnnotationProperty" -> "rdfs:Literal7" [ label="oboInOwl:hasOBONamespace\n  1"];
+    "owl:AnnotationProperty" -> "rdfs:Literal8" [ label="oboInOwl:hasScope\n  15"];
+    "owl:Axiom" -> "owl:AnnotationProperty" [ label="owl:annotatedProperty\n  293308"];
+    "owl:Axiom" -> "owl:AnnotationProperty" [ label="oboInOwl:hasSynonymType\n  293308"];
+    "owl:Axiom" -> "owl:Class" [ label="owl:annotatedSource\n  293308"];
+    "owl:Axiom" -> "rdfs:Literal5" [ label="owl:annotatedTarget\n  293308"];
+    "owl:Class" -> "owl:Class" [ label="rdfs:subClassOf\n  1826935"];
+    "owl:Class" -> "owl:Class" [ label="obotax:has_rank\n  1598813"];
+    "owl:Class" -> "rdfs:Literal1" [ label="rdfs:comment\n  1"];
+    "owl:Class" -> "rdfs:Literal12" [ label="oboInOwl:hasBroadSynonym\n  1661"];
+    "owl:Class" -> "rdfs:Literal14" [ label="oboInOwl:hasExactSynonym\n  75886"];
+    "owl:Class" -> "rdfs:Literal16" [ label="oboInOwl:hasRelatedSynonym\n  215760"];
+    "owl:Class" -> "rdfs:Literal19" [ label="oboInOwl:hasAlternativeId\n  50715"];
+    "owl:Class" -> "rdfs:Literal4" [ label="oboInOwl:hasDbXref\n  1863538"];
+    "owl:Class" -> "rdfs:Literal6" [ label="oboInOwl:hasOBONamespace\n  1826937"];
+    "owl:Class" -> "rdfs:Literal9" [ label="rdfs:label\n  1826937"];
+    "owl:Class" -> "rdfs:Resource13" [ label="obotax:has_rank\n  716"];
+    "owl:Ontology" -> "rdfs:Literal2" [ label="rdfs:comment\n  1"];
+    "owl:Ontology" -> "rdfs:Resource11" [ label="owl:versionIRI\n  1"];
+    "rdfs:Resource17" -> "rdfs:Literal18" [ label="oboInOwl:hasAlternativeId\n  3"];
+
+    // The number of entities
+    "owl:AnnotationProperty" [ label="owl:AnnotationProperty\n27" ] ;
+    "owl:Axiom" [ label="owl:Axiom\n293308" ] ;
+    "owl:Class" [ label="owl:Class\n1826937" ] ;
+    "owl:Ontology" [ label="owl:Ontology\n1" ] ;
+    "rdfs:Literal1" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Literal10" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Literal12" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Literal14" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Literal15" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Literal16" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Literal18" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Literal19" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Literal2" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Literal3" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Literal4" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Literal5" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Literal6" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Literal7" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Literal8" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Literal9" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Resource11" [ label="rdfs:Resource" ] ;
+    "rdfs:Resource13" [ label="rdfs:Resource" ] ;
+    "rdfs:Resource17" [ label="rdfs:Resource" ] ;
+
+}

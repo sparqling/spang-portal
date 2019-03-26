@@ -1,0 +1,51 @@
+digraph {
+    ranksep=2;
+    rankdir="LR";
+    charset="utf-8";
+
+    // Class relations with the numbers of edges
+    "agrold:Gene" -> "owl:Class" [ label="agrold:is_agent_in\n  15"];
+    "agrold:Gene" -> "rdfs:Literal4" [ label="rdfs:label\n  8"];
+    "agrold:Gene" -> "rdfs:Resource10" [ label="agrold:taxon\n  7"];
+    "agrold:Gene" -> "rdfs:Resource12" [ label="rdfs:subClassOf\n  7"];
+    "agrold:Gene" -> "rdfs:Resource8" [ label="agrold:develops_from\n  7"];
+    "agrold:Metabolic_Pathway" -> "agrold:Gene" [ label="agrold:has_agent\n  15"];
+    "agrold:Metabolic_Pathway" -> "agrold:Protein" [ label="agrold:has_agent\n  21"];
+    "agrold:Metabolic_Pathway" -> "agrold:Reaction" [ label="agrold:has_reaction\n  33"];
+    "agrold:Metabolic_Pathway" -> "owl:Class" [ label="agrold:has_agent\n  15"];
+    "agrold:Metabolic_Pathway" -> "rdfs:Literal6" [ label="rdfs:label\n  21"];
+    "agrold:Metabolic_Pathway" -> "rdfs:Resource14" [ label="rdfs:subClassOf\n  31"];
+    "agrold:Protein" -> "rdfs:Literal3" [ label="rdfs:label\n  19"];
+    "agrold:Protein" -> "rdfs:Resource2" [ label="agrold:encoded_by\n  19"];
+    "agrold:Reaction" -> "rdfs:Literal5" [ label="rdfs:label\n  4"];
+    "agrold:Reaction" -> "rdfs:Resource1" [ label="agrold:has_ec_code\n  25"];
+    "agrold:Reaction" -> "rdfs:Resource13" [ label="rdfs:subClassOf\n  14"];
+    "owl:Class" -> "owl:Class" [ label="agrold:is_agent_in\n  42"];
+    "owl:Class" -> "rdfs:Literal7" [ label="rdfs:label\n  53"];
+    "owl:Class" -> "rdfs:Resource11" [ label="agrold:taxon\n  27"];
+    "owl:Class" -> "rdfs:Resource15" [ label="rdfs:subClassOf\n  77"];
+    "owl:Class" -> "rdfs:Resource9" [ label="agrold:develops_from\n  12"];
+
+    // The number of entities
+    "agrold:Gene" [ label="agrold:Gene\n7" ] ;
+    "agrold:Metabolic_Pathway" [ label="agrold:Metabolic_Pathway\n21" ] ;
+    "agrold:Protein" [ label="agrold:Protein\n19" ] ;
+    "agrold:Reaction" [ label="agrold:Reaction\n31" ] ;
+    "owl:Class" [ label="owl:Class\n52" ] ;
+    "rdfs:Literal3" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Literal4" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Literal5" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Literal6" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Literal7" [ label="rdfs:Literal", shape=box, height=0.3 ] ;
+    "rdfs:Resource1" [ label="rdfs:Resource" ] ;
+    "rdfs:Resource10" [ label="rdfs:Resource" ] ;
+    "rdfs:Resource11" [ label="rdfs:Resource" ] ;
+    "rdfs:Resource12" [ label="rdfs:Resource" ] ;
+    "rdfs:Resource13" [ label="rdfs:Resource" ] ;
+    "rdfs:Resource14" [ label="rdfs:Resource" ] ;
+    "rdfs:Resource15" [ label="rdfs:Resource" ] ;
+    "rdfs:Resource2" [ label="rdfs:Resource" ] ;
+    "rdfs:Resource8" [ label="rdfs:Resource" ] ;
+    "rdfs:Resource9" [ label="rdfs:Resource" ] ;
+
+}

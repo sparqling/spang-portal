@@ -1,0 +1,9 @@
+#param psbA
+SELECT ?taxon
+WHERE {
+    ?cluster a orthology:OrthologsCluster ;
+        void:inDataset mbgdr:default ;
+	rdfs:label "$1" ;
+	orthology:hasHomologous ?member .
+    ?member mbgd:organism/mbgd:taxon ?taxon .
+}

@@ -1,0 +1,12 @@
+#param Escherichia Species
+SELECT ?label ?taxon (COUNT(?genome) AS ?count)
+WHERE {
+    ?taxid_new taxont:merged* ?taxid .
+    ?taxid taxont:scientificName "$1" .
+    ?taxon rdfs:subClassOf+ ?taxid_new ;
+           taxont:rank taxont:$2 ;
+           rdfs:label ?label .
+    ?genome a mbgd:CompleteGenome ;
+            mbgd:inTaxon ?taxon .
+}
+ORDER BY DESC(?count)

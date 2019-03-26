@@ -1,0 +1,6 @@
+SELECT ?s ?annotation
+WHERE {
+    ?s agrold:has_annotation ?annotation ;
+       a owl:Class .
+}
+ORDER BY ?s
