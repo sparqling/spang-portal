@@ -98,3 +98,138 @@ a:hover {
 .indented {
     text-indent: 1.5em;
 }
+
+ul.cm-ss_query_tab_list {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    margin: 0px;
+    padding: 0px;
+    line-height: 14px;
+    z-index: 2;
+    display: inline;
+}
+
+ul.cm-ss_query_tab_confirm {
+    position: absolute;
+    top: 15px;
+    right: 5px;
+    z-index: 2;
+}
+
+li.query_tab {
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    width: 50px;
+    margin-right: 2px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(127, 127, 127, 0.5);
+    border-color: rgba(127, 127, 127, 0.5);
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    cursor: default;
+    border-radius: 5px 5px 5px 5px / 5px 5px 5px 5px;
+    font-size: 12px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+div.cm-ss_result {
+    background-color: #f8f8f8;
+    height: 300px;
+    border: solid 3px #dddddd;
+    border-radius: 5px;
+    overflow: scroll;
+    resize: both;
+    z-index: 2;
+}
+
+div.cm-ss_subres {
+    background-color: #f0f0f0;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+span.cm-ss_debug_comment {
+    color: rosybrown;
+}
+
+div#inner_mode_div {
+    position: relative;
+}
+
+div#inner_result {
+    margin-left: 5px;
+}
+
+table#inner_result_table td {
+    font-size: 14px;
+    padding: 0px 10px 0px 10px;
+}
+
+table#inner_result_table td a{
+    text-decoration: none;
+    color: #4886ad;
+}
+
+table#inner_result_table th {
+    text-align: left;
+    padding: 0px 10px 0px 10px;
+}
+
+pre#inner_result_table {
+    background-color: transparent;
+}
+
+td.inner_result_selected_td {
+    color: #d95270;
+}
+
+p.inner_result_time {
+    margin: 0px 0px 0px 10px;
+    font-size: 12px;
+    color: #888888;
+}
+
+p.inner_result_sub_title {
+    margin: 6px 0px 0px 10px;
+    color: #888888;
+    font-weight: bold;
+}
+
+ul.cm-ss_subres_button {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    margin: 0px;
+    padding: 0px;
+}
+
+li.cm-ss_subres_li {
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    margin-right: 2px;
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    font-size: 12px;
+    text-align: center;
+    cursor: default;
+    border: solid 1px #888888;
+    border-radius: 5px 5px 5px 5px / 5px 5px 5px 5px;
+}
+li.cm-ss_subres_li_valid {
+    color: #888888;
+    background-color: #ffffff;
+}
+
+li.cm-ss_subres_li_invalid {
+    color: #ffffff;
+    background-color: #c0c0c0;
+}

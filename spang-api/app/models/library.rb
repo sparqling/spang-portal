@@ -67,4 +67,19 @@ class Library
       templates: templates
     }
   end
+
+  def self.find_template(library_id, template_id)
+    config = parse_config(File.join(Settings.library_root, library_id, 'index.ini')).symbolize_keys
+    file_path = File.join(Settings.library_root, library_id, "#{template_id}.rq")
+    parsed = parse_template(file_path).symbolize_keys
+    {
+        name: template_id,
+        library_name: library_id,
+        description: parsed[:description],
+        parameters: parsed[:params],
+        query: `spang/bin/spang mbgd #{file_path} -r spang/etc/prefix,spang/user_prefix -q`,
+        endpoint: config[:endpoint]
+    }
+
+  end
 end

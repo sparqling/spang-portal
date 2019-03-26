@@ -6,4 +6,8 @@ class LibraryController < ApplicationController
   def show
     @library = Library.find(params[:id])
   end
+
+  def show_template
+    @template = Library.find_template(params[:library_id], params[:template_id])
+  end
 end

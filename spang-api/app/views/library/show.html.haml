@@ -2,6 +2,10 @@
 %p
   .content_wrapper_wide
     .small
+      %a{ href: root_path }
+        TOP
+      >>
+      = @library[:name]
     %h1
       = "SPARQL library for #{@library[:name]}"
     .content_wrapper
@@ -18,7 +22,7 @@
         Select SPARQL template
 
       - @library[:templates].each do |template|
-        %a{ href: template[:uri] }
+        %a{ href: File.join(@library[:name], template[:name]) }
           = template[:name]
         %br
         - if template[:description]
@@ -28,5 +32,3 @@
           .indented
             = "(ex: #{template[:parameters].join(', ')})"
         %br
-
-
