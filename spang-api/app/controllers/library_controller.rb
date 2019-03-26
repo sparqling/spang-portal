@@ -1,9 +1,9 @@
 class LibraryController < ApplicationController
-  def index 
-    render json: Library.all
+  def index
+    @libraries = Library.all
   end
-  
+
   def show
-    render json: Library.find(params[:id])
+    @library = Library.find(params[:id])
   end
 end

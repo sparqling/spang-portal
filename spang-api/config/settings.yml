@@ -1,2 +1,2 @@
-library_root: /usr/local/apache2/htdocs/library/
-root_url: http://localhost:8082/api
+library_root: library
+root_url: http://localhost:3000/api

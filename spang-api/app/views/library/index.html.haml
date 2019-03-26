@@ -1,0 +1,11 @@
+!!!
+%p
+  .content_wrapper_wide
+    .small
+    %h2 Select the target SPARQL endpoint
+    .content_wrapper
+      - @libraries.each do |library|
+        %a.link_title{ href: library_path(library[:name]) }
+          = library[:name]
+        %br
+        %br
