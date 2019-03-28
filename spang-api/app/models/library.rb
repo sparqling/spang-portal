@@ -87,12 +87,13 @@ class Library
   def self.search_template(query)
     results = []
     entries = parse_config(File.join(Settings.library_root,'index.ini'))
+    keywords = query.split.map(&:downcase)
     entries.map do |dir, lib_name|
       config = parse_config(File.join(Settings.library_root, dir, 'index.ini')).symbolize_keys
       Dir.glob(File.join(Settings.library_root, dir, '*.rq')).select{ |file| File.file?(file) }.each do |template|
         parsed = parse_template(template).symbolize_keys
         file_name = File.basename(template, '.*')
-        if [lib_name, parsed[:description]].any?{ |txt| txt&.include?(query) }
+        if keywords.all?{ |keyword| [lib_name, parsed[:description]].any?{ |txt| txt&.downcase.include?(keyword) } }
           results << {
               name: file_name,
               path: Rails.application.routes.url_helpers.library_show_template_path(dir, file_name),
