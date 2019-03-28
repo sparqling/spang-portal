@@ -10,4 +10,5 @@
     = yield :header
   %body
     -#%script#common-header-and-footer__script{:src => "https://dbcls.rois.ac.jp/DBCLS-common-header-footer/common-header-and-footer/script/common-header-and-footer.js", :style => "display: block", :type => "text/javascript"}
+    = render partial: 'layouts/search_template'
     = yield

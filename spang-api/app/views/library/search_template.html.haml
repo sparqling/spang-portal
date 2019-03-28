@@ -1,0 +1,15 @@
+!!!
+%p
+  .content_wrapper_wide
+    .small
+      %a{ href: root_path }
+        TOP
+      >>
+      = "Search Result"
+    %h1
+      = "Search Result for #{@query}"
+    .content_wrapper
+      - @templates.each do |template|
+        %a{ href: template[:path] }
+          = template[:name]
+        %br

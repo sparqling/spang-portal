@@ -80,6 +80,31 @@ class Library
         query: `spang/bin/spang mbgd #{file_path} -r spang/etc/prefix,spang/user_prefix -q`,
         endpoint: config[:endpoint]
     }
+  end
 
+
+
+  def self.search_template(query)
+    results = []
+    entries = parse_config(File.join(Settings.library_root,'index.ini'))
+    entries.map do |dir, lib_name|
+      config = parse_config(File.join(Settings.library_root, dir, 'index.ini')).symbolize_keys
+      Dir.glob(File.join(Settings.library_root, dir, '*.rq')).select{ |file| File.file?(file) }.each do |template|
+        parsed = parse_template(template).symbolize_keys
+        file_name = File.basename(template, '.*')
+        if [lib_name, parsed[:description]].any?{ |txt| txt&.include?(query) }
+          results << {
+              name: file_name,
+              path: Rails.application.routes.url_helpers.library_show_template_path(dir, file_name),
+              # library_name: library_id,
+              # description: parsed[:description],
+              parameters: parsed[:params],
+              # query: `spang/bin/spang mbgd #{file_path} -r spang/etc/prefix,spang/user_prefix -q`,
+              # endpoint: config[:endpoint]
+          }
+        end
+      end
+    end.compact
+    results
   end
 end

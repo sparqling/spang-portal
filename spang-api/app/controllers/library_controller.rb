@@ -10,4 +10,9 @@ class LibraryController < ApplicationController
   def show_template
     @template = Library.find_template(params[:library_id], params[:template_id])
   end
+
+  def search_template
+    @query = params[:search]
+    @templates = Library.search_template(@query)
+  end
 end
