@@ -4,11 +4,11 @@ class LibraryController < ApplicationController
   end
 
   def show
-    @library = Library.find(params[:id])
+    @library = Library.new(params[:id])
   end
 
   def show_template
-    @template = Library.find(params[:library_id]).templatesparams[:template_id])
+    @template = Library.new(params[:library_id]).templates.select{ |template| template.name == params[:template_id]}.first
   end
 
   def search_template

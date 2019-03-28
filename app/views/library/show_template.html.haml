@@ -16,19 +16,19 @@
     %a{ href: root_path }
       = Settings.site_name
     >>
-    %a{ href: library_path(@template[:library_name]) }
-      = @template[:library_name]
+    %a{ href: library_path(@template.library.name) }
+      = @template.library.title
     >>
-    = @template[:name]
+    = @template.name
 
 
 %h2 Execute SPARQL query
 %form
-  = "Server: #{@template[:library_name]} ( "
-  %a{ href: @template[:endpoint] }
-    =  @template[:endpoint]
+  = "Endpoint: #{@template.library.title} ( "
+  %a{ href: @template.endpoint }
+    =  @template.endpoint
   )
-  %textarea#code{ name: 'code', 'data-endpoint': @template[:endpoint] }
-    = @template[:query]
+  %textarea#code{ name: 'code', 'data-endpoint': @template.endpoint }
+    = @template.query
 %button#submit_button_query{ type: "button" }
   Exec

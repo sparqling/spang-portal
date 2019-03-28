@@ -14,17 +14,17 @@
         No results found
     - @template_groups.each do |lib, templates|
       %h2
-        %a{ href: lib }
-          = "#{lib}/"
+        %a{ href: lib.endpoint }
+          = "#{lib.title}/"
       .indented
         - templates.each do |template|
-          %a{ href: template[:path] }
-            = template[:name]
+          %a{ href: '/' + template.file_path }
+            = template.name
           %br
-          - if template[:description]
+          - if template.description
             .indented
-              = "Description: #{template[:description]}"
-          - if template[:parameters].length > 0
+              = "Description: #{template.description}"
+          - if template.parameters.length > 0
             .indented
-              = "(ex: #{template[:parameters].join(', ')})"
+              = "(ex: #{template.parameters.join(', ')})"
           %br

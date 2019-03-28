@@ -4,7 +4,7 @@
   %h2 Select the target SPARQL endpoint
   .content_wrapper
     - @libraries.each do |library|
-      %a.link_title{ href: library_path(library[:name]) }
-        = library[:name]
+      %a.link_title{ href: library_path(library.name) }
+        = library.title
       %br
       %br
