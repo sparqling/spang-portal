@@ -14,5 +14,5 @@
 
     .content_wrapper_wide
       = yield :path
-      = render partial: 'layouts/search_template'
+      = render partial: 'layouts/search_template', locals: { query: @query }
       = yield
