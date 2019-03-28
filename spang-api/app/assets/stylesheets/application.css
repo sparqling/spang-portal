@@ -96,7 +96,7 @@ a:hover {
 }
 
 .indented {
-    text-indent: 1.5em;
+    margin-left: 1.5em;
 }
 
 ul.cm-ss_query_tab_list {

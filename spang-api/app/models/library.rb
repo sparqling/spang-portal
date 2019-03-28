@@ -96,15 +96,14 @@ class Library
           results << {
               name: file_name,
               path: Rails.application.routes.url_helpers.library_show_template_path(dir, file_name),
-              # library_name: library_id,
-              # description: parsed[:description],
+              library_name: lib_name,
+              description: parsed[:description],
               parameters: parsed[:params],
               # query: `spang/bin/spang mbgd #{file_path} -r spang/etc/prefix,spang/user_prefix -q`,
-              # endpoint: config[:endpoint]
           }
         end
       end
     end.compact
-    results
+    results.group_by{ |r| r[:library_name] }
   end
 end

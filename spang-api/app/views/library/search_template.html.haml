@@ -9,7 +9,19 @@
     %h1
       = "Search Result for #{@query}"
     .content_wrapper
-      - @templates.each do |template|
-        %a{ href: template[:path] }
-          = template[:name]
-        %br
+      - @template_groups.each do |lib, templates|
+        %h2
+          %a{ href: lib }
+            = "#{lib}/"
+        .indented
+          - templates.each do |template|
+            %a{ href: template[:path] }
+              = template[:name]
+            %br
+            - if template[:description]
+              .indented
+                = "Description: #{template[:description]}"
+            - if template[:parameters].length > 0
+              .indented
+                = "(ex: #{template[:parameters].join(', ')})"
+            %br
