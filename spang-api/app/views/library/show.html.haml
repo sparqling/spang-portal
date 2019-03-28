@@ -1,34 +1,34 @@
 !!!
+= content_for :path do
+  .small
+    %a{ href: root_path }
+      = Settings.site_name
+    >>
+    = @library[:name]
 %p
-  .content_wrapper_wide
-    .small
-      %a{ href: root_path }
-        = Settings.site_name
-      >>
-      = @library[:name]
-    %h1
-      = "SPARQL library for #{@library[:name]}"
-    .content_wrapper
-      - if @library[:schema]
-        %a.link_title{ href:  @library[:schema] }
-          = "#{@library[:name]} RDF schema"
-        %br
-      - if @library[:endpoint]
-        %br
-        %a.link_title{ href:  @library[:endpoint] }
-          = "#{@library[:name]} RDF endpoint"
-        %br
-      %h2
-        Select SPARQL template
+  %h1
+    = "SPARQL library for #{@library[:name]}"
+  .content_wrapper
+    - if @library[:schema]
+      %a.link_title{ href:  @library[:schema] }
+        = "#{@library[:name]} RDF schema"
+      %br
+    - if @library[:endpoint]
+      %br
+      %a.link_title{ href:  @library[:endpoint] }
+        = "#{@library[:name]} RDF endpoint"
+      %br
+    %h2
+      Select SPARQL template
 
-      - @library[:templates].each do |template|
-        %a{ href: File.join(@library[:name], template[:name]) }
-          = template[:name]
-        %br
-        - if template[:description]
-          .indented
-            = "Description: #{template[:description]}"
-        - if template[:parameters].length > 0
-          .indented
-            = "(ex: #{template[:parameters].join(', ')})"
-        %br
+    - @library[:templates].each do |template|
+      %a{ href: File.join(@library[:name], template[:name]) }
+        = template[:name]
+      %br
+      - if template[:description]
+        .indented
+          = "Description: #{template[:description]}"
+      - if template[:parameters].length > 0
+        .indented
+          = "(ex: #{template[:parameters].join(', ')})"
+      %br

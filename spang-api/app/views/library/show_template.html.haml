@@ -11,7 +11,7 @@
   :css
     .CodeMirror {border-top: 1px solid black; border-bottom: 1px solid black;}
 
-.content_wrapper_wide
+- content_for :path do
   .small
     %a{ href: root_path }
       = Settings.site_name
@@ -21,13 +21,14 @@
     >>
     = @template[:name]
 
-  %h2 Execute SPARQL query
-  %form
-    = "Server: #{@template[:library_name]} ( "
-    %a{ href: @template[:endpoint] }
-      =  @template[:endpoint]
-    )
-    %textarea#code{ name: 'code', 'data-endpoint': @template[:endpoint] }
-      = @template[:query]
-  %button#submit_button_query{ type: "button" }
-    Exec
+
+%h2 Execute SPARQL query
+%form
+  = "Server: #{@template[:library_name]} ( "
+  %a{ href: @template[:endpoint] }
+    =  @template[:endpoint]
+  )
+  %textarea#code{ name: 'code', 'data-endpoint': @template[:endpoint] }
+    = @template[:query]
+%button#submit_button_query{ type: "button" }
+  Exec

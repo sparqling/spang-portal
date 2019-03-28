@@ -1,27 +1,27 @@
 !!!
+= content_for :path do
+  .small
+    %a{ href: root_path }
+      = Settings.site_name
+    >>
+    = "Search Results"
 %p
-  .content_wrapper_wide
-    .small
-      %a{ href: root_path }
-        = Settings.site_name
-      >>
-      = "Search Results"
-    %h1
-      = "Search Results for #{@query}"
-    .content_wrapper
-      - @template_groups.each do |lib, templates|
-        %h2
-          %a{ href: lib }
-            = "#{lib}/"
-        .indented
-          - templates.each do |template|
-            %a{ href: template[:path] }
-              = template[:name]
-            %br
-            - if template[:description]
-              .indented
-                = "Description: #{template[:description]}"
-            - if template[:parameters].length > 0
-              .indented
-                = "(ex: #{template[:parameters].join(', ')})"
-            %br
+  %h1
+    = "Search Results for #{@query}"
+  .content_wrapper
+    - @template_groups.each do |lib, templates|
+      %h2
+        %a{ href: lib }
+          = "#{lib}/"
+      .indented
+        - templates.each do |template|
+          %a{ href: template[:path] }
+            = template[:name]
+          %br
+          - if template[:description]
+            .indented
+              = "Description: #{template[:description]}"
+          - if template[:parameters].length > 0
+            .indented
+              = "(ex: #{template[:parameters].join(', ')})"
+          %br
