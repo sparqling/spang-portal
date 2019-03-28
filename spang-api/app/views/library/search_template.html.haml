@@ -3,11 +3,11 @@
   .content_wrapper_wide
     .small
       %a{ href: root_path }
-        TOP
+        = Settings.site_name
       >>
-      = "Search Result"
+      = "Search Results"
     %h1
-      = "Search Result for #{@query}"
+      = "Search Results for #{@query}"
     .content_wrapper
       - @template_groups.each do |lib, templates|
         %h2
