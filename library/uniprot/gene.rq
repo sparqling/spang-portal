@@ -1,8 +1,10 @@
-# From UniProt ID to gene name
-#param K9Z723
+# @title From UniProt ID to gene name
+# @param arg0=K9Z723 
+
 SELECT ?property ?value
 WHERE {
     uniprot:$1 up:encodedBy ?gene .
     ?gene ?property ?value .
     FILTER (?property != rdf:type)
 }
+

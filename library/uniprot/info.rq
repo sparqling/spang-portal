@@ -1,4 +1,6 @@
-#param K9Z723
+# @title 
+# @param arg0=K9Z723 
+
 SELECT ?protein ?gene ?function
 WHERE {
     uniprot:$1 rdfs:label ?protein ;
@@ -7,3 +9,4 @@ WHERE {
    ?annot a up:Function_Annotation ;
    	  rdfs:comment ?function .
 }
+

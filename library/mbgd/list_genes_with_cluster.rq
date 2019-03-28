@@ -1,5 +1,6 @@
-# Cluster IDs for each gene of
-#param syn
+# @title Cluster IDs for each gene of
+# @param arg0=syn 
+
 SELECT DISTINCT ?gene_id ?cluster_id
 WHERE {
     ?group a orth:OrthologGroup ;
@@ -10,3 +11,4 @@ WHERE {
           dct:identifier ?gene_id .
 }
 ORDER BY ?gene_id
+

@@ -1,3 +1,5 @@
+# @title 
+
 SELECT (COUNT(?uniprot) AS ?count) ?go ?go_label
 WHERE {
     ?uniprot up:classifiedWith ?go ;
@@ -5,3 +7,4 @@ WHERE {
     ?go up:database <http://purl.uniprot.org/database/go> ;
         rdfs:label ?go_label .
 }
+

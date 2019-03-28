@@ -1,4 +1,5 @@
-# List sources of gene-disease association
+# @title List sources of gene-disease association
+
 SELECT ?source (COUNT(?source) AS ?count)
 WHERE {
     ?gda sio:SIO_000628 ?gene ,
@@ -8,3 +9,4 @@ WHERE {
     ?disease a ncit:C7057 .
 }
 ORDER BY DESC(?count)
+

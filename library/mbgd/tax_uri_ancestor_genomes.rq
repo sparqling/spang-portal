@@ -1,5 +1,7 @@
-# Genomes above TaxID
-#param tax:511145 Complete
+# @title Genomes above TaxID
+# @param arg0=tax:511145 
+# @param arg1=Complete 
+
 SELECT ?genome ?description ?taxid ?rank ?name ?date ?reference
 {
     $1 orth:taxon? ?tax_org .
@@ -18,3 +20,4 @@ SELECT ?genome ?description ?taxid ?rank ?name ?date ?reference
     }
 }
 ORDER BY DESC(?level)
+

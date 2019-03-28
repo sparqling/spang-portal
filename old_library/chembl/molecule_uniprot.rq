@@ -1,0 +1,7 @@
+#param CHEMBL941
+SELECT DISTINCT ?uniprot
+WHERE {
+    ?act chembl:hasMolecule chemblMol:$1 .
+    ?act chembl:hasAssay/chembl:hasTarget/chembl:hasTargetComponent/chembl:targetCmptXref ?uniprot .
+    ?uniprot a chembl:UniprotRef .
+}

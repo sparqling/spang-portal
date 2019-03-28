@@ -1,4 +1,6 @@
-#param Q9Y2J0
+# @title 
+# @param arg0=Q9Y2J0 
+
 SELECT DISTINCT ?go ?go_label
 WHERE {
     uniprot:$1 up:classifiedWith ?go .
@@ -6,3 +8,4 @@ WHERE {
         rdfs:label ?go_label .
 }
 ORDER BY ?go_label
+

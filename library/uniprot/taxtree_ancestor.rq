@@ -1,5 +1,6 @@
-# Higher taxa of a NCBI taxonomy ID (ordered by taxonomic levels; only for Virtuoso)
-#param 511145
+# @title Higher taxa of a NCBI taxonomy ID (ordered by taxonomic levels; only for Virtuoso)
+# @param arg0=511145 
+
 SELECT ?taxon ?name ?rank
 {
     tax:$1 up:replacedBy* ?taxid . # taxid can be replaced with a new one.
@@ -11,3 +12,4 @@ SELECT ?taxon ?name ?rank
     # FILTER (?taxon != tax:131567) # Omit the top level "cellular organisms"
 }
 ORDER BY DESC(?level)
+

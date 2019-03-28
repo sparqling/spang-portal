@@ -1,0 +1,9 @@
+# Get orthologs in UniProt IDs
+#param K9Z723
+SELECT ?uniprot
+WHERE {
+    ?group a orthology:OrthologsCluster ;
+           orthology:hasHomologous/mbgd:gene/mbgd:uniprot uniprot:$1 ;
+           orthology:hasHomologous/mbgd:gene/mbgd:uniprot ?uniprot ;
+           void:inDataset mbgdr:default .
+}

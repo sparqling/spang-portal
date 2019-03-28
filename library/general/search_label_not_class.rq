@@ -1,4 +1,5 @@
-# Free text search in Virtuoso (count instances of each class)
+# @title Free text search in Virtuoso (count instances of each class)
+
 SELECT ?instance ?text
 WHERE {
     ?instance rdfs:label ?text .
@@ -8,3 +9,4 @@ WHERE {
     }
 }
 ORDER BY ?instance
+

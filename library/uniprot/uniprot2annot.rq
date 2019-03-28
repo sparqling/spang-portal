@@ -1,6 +1,7 @@
+# @title ?organism
+
 #stdin uniprot:K9Z723
 SELECT ?uniprot ?gene ?protein_label
-# ?organism
 ?function
 WHERE {
     ?uniprot up:encodedBy/skos:prefLabel ?gene ;
@@ -11,3 +12,4 @@ WHERE {
    	  rdfs:comment ?function .
     VALUES (?uniprot) { $STDIN }
 }
+

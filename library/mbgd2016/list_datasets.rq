@@ -1,4 +1,5 @@
-# Datasets and their basic information
+# @title Datasets and their basic information
+
 define input:inference "mbgd"
 SELECT ?dataset (str(?created) AS ?date_time_created) ?title ?description ?data_dump ?derived_from
 WHERE {
@@ -20,3 +21,4 @@ WHERE {
     }
 }
 ORDER BY ?dataset
+

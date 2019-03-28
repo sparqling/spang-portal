@@ -1,5 +1,9 @@
-# Gene content comparison (between 2 taxa)
-#param 543 186817 0.8 0.2
+# @title Gene content comparison (between 2 taxa)
+# @param arg0=543 
+# @param arg1=186817 
+# @param arg2=0.8 
+# @param arg3=0.2 
+
 PREFIX mgfo: <http://purl.jp/bio/11/mgfo#>
 SELECT ?ref_gene_id ?begin ?end ?chrom_label ?chrom_id ?func_cat ?func_label
 WHERE {
@@ -61,3 +65,4 @@ WHERE {
     FILTER (?ratio2 <= $4)
 }
 ORDER BY ?func
+

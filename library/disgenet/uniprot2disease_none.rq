@@ -1,4 +1,5 @@
-# Get diseases associated with given UniProt IDs
+# @title Get diseases associated with given UniProt IDs
+
 #stdin uniprot:P05067
 
 SELECT DISTINCT ?uniprot ?gene ?gene_label
@@ -12,3 +13,4 @@ WHERE {
     VALUES (?uniprot) { $STDIN }
     FILTER (! bound(?gda))
 }
+

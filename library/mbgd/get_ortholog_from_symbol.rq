@@ -1,5 +1,6 @@
-# Get ortholog GO annotation from gene symbol
-#param rpoB
+# @title Get ortholog GO annotation from gene symbol
+# @param arg0=rpoB 
+
 SELECT ?cluster ?gene_id ?organism ?go ?comment
 WHERE {
     ?cluster a orth:OrthologGroup ;
@@ -14,3 +15,4 @@ WHERE {
          rdfs:subPropertyOf+ goa:goaExperimental .
     ?go_id skos:prefLabel ?go .
 }
+

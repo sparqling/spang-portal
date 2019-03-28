@@ -1,4 +1,5 @@
-# Default organisms list
+# @title Default organisms list
+
 SELECT DISTINCT ?organisms_id ?superkingdom ?phylum ?name ?taxid ?date ?reference
 WHERE {
     mbgdr:default orth:organism ?organisms_id .
@@ -18,3 +19,4 @@ WHERE {
     }
 }
 ORDER BY ?superkingdom ?phylum ?organism_name
+

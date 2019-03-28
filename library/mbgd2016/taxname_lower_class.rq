@@ -1,4 +1,7 @@
-#param Escherichia Species
+# @title 
+# @param arg0=Escherichia 
+# @param arg1=Species 
+
 SELECT ?label ?taxon (COUNT(?genome) AS ?count)
 WHERE {
     ?taxid_new taxont:merged* ?taxid .
@@ -10,3 +13,4 @@ WHERE {
             mbgd:inTaxon ?taxon .
 }
 ORDER BY DESC(?count)
+

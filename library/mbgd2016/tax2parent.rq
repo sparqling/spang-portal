@@ -1,3 +1,5 @@
+# @title 
+
 SELECT ?taxid ?parent
 WHERE {
     VALUES (?taxid) { $STDIN }
@@ -6,3 +8,4 @@ WHERE {
     ?taxid rdfs:subClassOf ?parent .
     FILTER (?parent != taxid:1) # Omit the top level "root"
 }
+

@@ -1,5 +1,6 @@
-# List gene disease associations
-#param 10
+# @title List gene disease associations
+# @param arg0=10 
+
 SELECT ?disease_label ?gene_label ?protein
 WHERE {
     ?gda sio:SIO_000628 ?gene ,
@@ -11,3 +12,4 @@ WHERE {
           rdfs:label ?disease_label .
 }
 LIMIT $1
+

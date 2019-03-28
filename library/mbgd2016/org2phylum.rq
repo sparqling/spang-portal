@@ -1,4 +1,6 @@
-#param Phylum
+# @title 
+# @param arg0=Phylum 
+
 SELECT DISTINCT ?org ?org_label ?tax ?tax_label
 WHERE {
     ?org rdfs:label ?org_label
@@ -9,3 +11,4 @@ WHERE {
     }
     VALUES (?org) { $STDIN }
 }
+

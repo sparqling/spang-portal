@@ -1,5 +1,6 @@
-# Get ortholog in specific taxa from Ensembl gene ID
-#param ENSG00000139618
+# @title Get ortholog in specific taxa from Ensembl gene ID
+# @param arg0=ENSG00000139618 
+
 #stdin taxid:10090
 #stdin taxid:10116
 SELECT ?query ?query_label ?label ?altLabel ?taxon ?ensgene ?ensgene_label ?gene
@@ -16,3 +17,4 @@ WHERE {
     VALUES (?query) { (ens:$1) }
     VALUES (?taxon) { $STDIN }
 }
+

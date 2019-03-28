@@ -1,8 +1,10 @@
-# Search the NCI Thesaurus for specific diseases
-#param breast
+# @title Search the NCI Thesaurus for specific diseases
+# @param arg0=breast 
+
 SELECT *
 WHERE {
     ?disease a ncit:C7057 ;
         dct:title ?disease_name .
     FILTER (regex(?disease_name, "$1", "i"))
 }
+

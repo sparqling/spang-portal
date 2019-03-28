@@ -1,5 +1,6 @@
-# Selected genomes within taxon range
-#param tax1117
+# @title Selected genomes within taxon range
+# @param arg0=tax1117 
+
 SELECT ?order_name ?organism ?organism_id
 WHERE {
     # ?taxid rdfs:subClassOf* tax:1117 .
@@ -15,3 +16,4 @@ WHERE {
     }
 }
 ORDER BY ?order_name ?organism
+

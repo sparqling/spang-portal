@@ -1,5 +1,6 @@
-# Get disease associated with NCBI gene ID
-#param 675
+# @title Get disease associated with NCBI gene ID
+# @param arg0=675 
+
 SELECT ?disease_name ?score ?publication ?date
 WHERE {
     ?association sio:SIO_000628 geneid:$1 , # refers_to
@@ -16,3 +17,4 @@ WHERE {
     }
 }
 ORDER BY DESC(?score) DESC(?date) ?disease_name
+

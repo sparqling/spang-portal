@@ -1,5 +1,7 @@
-#param 543
-#param Escherichia
+# @title 
+# @param arg0=543 
+# @param arg1=Escherichia 
+
 SELECT ?rank ?label ?taxon ?entry_name ?label_local
 WHERE {
     # ?taxid_new taxont:merged* taxid:$1 . # taxid can be replaced with a new ID
@@ -16,3 +18,4 @@ WHERE {
     }
 }
 ORDER BY DESC(?level)
+

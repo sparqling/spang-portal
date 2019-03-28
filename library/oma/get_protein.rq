@@ -1,5 +1,6 @@
-# Get proteins having specific label
-#param INS
+# @title Get proteins having specific label
+# @param arg0=INS 
+
 PREFIX lscr: <http://purl.org/lscr#>
 SELECT *
 WHERE {
@@ -8,3 +9,4 @@ WHERE {
         rdfs:label '$1' .
     ?proteinOMA lscr:xrefUniprot ?UniProt_URI .
 }
+

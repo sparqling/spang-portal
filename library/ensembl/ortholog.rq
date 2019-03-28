@@ -1,5 +1,6 @@
-# Get ortholog from Ensembl gene ID
-#param ENSG00000139618
+# @title Get ortholog from Ensembl gene ID
+# @param arg0=ENSG00000139618 
+
 SELECT ?label ?altLabel ?taxon ?ortholog
 WHERE {
     ens:$1 sio:SIO_000558 ?ortholog .
@@ -7,3 +8,4 @@ WHERE {
     ?taxon rdfs:label ?label ;
            skos:altLabel ?altLabel .
 }
+

@@ -1,5 +1,7 @@
-# Get specific type of gene-disease association
-#param SIO_001120 10
+# @title Get specific type of gene-disease association
+# @param arg0=SIO_001120 
+# @param arg1=10 
+
 SELECT DISTINCT ?title ?dataset
 WHERE {
     ?gda a sio:$1 ;
@@ -10,3 +12,4 @@ WHERE {
 	 void:inDataset ?dataset .
 }
 LIMIT $2
+

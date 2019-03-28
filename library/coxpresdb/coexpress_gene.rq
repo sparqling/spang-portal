@@ -1,5 +1,7 @@
-# Get genes that co-express with gene (NCBI Gene ID)
-#param 10001 coxpresdb
+# @title Get genes that co-express with gene (NCBI Gene ID)
+# @param arg0=10001 
+# @param arg1=coxpresdb 
+
 SELECT ?gene ?rank ?cor
 WHERE {
     <http://coxpresdb.jp/rdf/db/Hsa.v12>
@@ -10,3 +12,4 @@ WHERE {
           $2:pcc ?cor .
 }
 ORDER BY ?rank
+

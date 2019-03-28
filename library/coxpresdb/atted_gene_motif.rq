@@ -1,5 +1,6 @@
-# Get genes which highly co-express with gene
-#param 818614
+# @title Get genes which highly co-express with gene
+# @param arg0=818614 
+
 SELECT ?gene ?rank ?cor ?protein ?motif
 WHERE {
     <http://atted.jp/rdf/db/Ath.c5-0>
@@ -24,3 +25,4 @@ WHERE {
 }
 ORDER BY ?rank
 LIMIT 20
+

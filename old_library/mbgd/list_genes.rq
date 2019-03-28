@@ -1,0 +1,15 @@
+# List genes of a MBGD organism
+#param eco
+SELECT ?gene ?label ?type ?description
+{
+    ?type rdfs:subClassOf orth:Gene .
+    ?gene a ?type ;
+          orth:organism org:$1 .
+    OPTIONAL {
+	?gene rdfs:label ?label .
+    }
+    OPTIONAL {
+	?gene dct:description ?description .
+    }
+}
+ORDER BY ?gene

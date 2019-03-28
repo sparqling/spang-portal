@@ -1,4 +1,6 @@
-#param CompleteGenome
+# @title    FILTER(?count >= 2)
+# @param arg0=CompleteGenome 
+
 SELECT ?rank ?name ?taxid ?count
 WHERE {
     {   
@@ -11,8 +13,8 @@ WHERE {
     }
     ?taxid rdfs:label ?name . 
     ?taxid taxont:rank ?rank .
-#    FILTER(?count >= 2)
     VALUES ?rank { taxont:Superkingdom taxont:Kingdom taxont:Phylum taxont:Class taxont:Order taxont:Family taxont:Genus taxont:Species }
 }
 #ORDER BY ?name
 ORDER BY DESC(?count) ?name
+

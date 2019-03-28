@@ -1,5 +1,6 @@
-# GO annotation for orthologs of
-#param uniprot:K9Z723
+# @title GO annotation for orthologs of
+# @param arg0=uniprot:K9Z723 
+
 define input:inference "mbgd"
 SELECT DISTINCT ?organism ?gene ?go_term ?evidence
 WHERE {
@@ -16,3 +17,4 @@ WHERE {
     ?go_id skos:prefLabel ?go_term .
 }
 ORDER BY ?gene
+

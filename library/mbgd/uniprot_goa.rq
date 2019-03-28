@@ -1,6 +1,7 @@
-# GO annotation for UniProt IDs
+# @title GO annotation for UniProt IDs
+# @param arg0=goa 
+
 #stdin uniprot:K9Z723
-#param goa
 SELECT DISTINCT ?uniprot ?go_id ?go_label ?comment
 WHERE {
     VALUES (?uniprot) { $STDIN }
@@ -10,3 +11,4 @@ WHERE {
     ?go_id skos:prefLabel ?go_label .
 }
 ORDER BY ?uniprot ?go_label ?comment
+

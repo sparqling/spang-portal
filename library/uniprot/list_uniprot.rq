@@ -1,4 +1,5 @@
-# List of UniProt IDs
+# @title List of UniProt IDs
+
 SELECT ?uniprot ?mnemonic ?label
 WHERE {
     ?uniprot a up:Protein .
@@ -9,3 +10,4 @@ WHERE {
 	?uniprot rdfs:label ?label .
     }
 }
+

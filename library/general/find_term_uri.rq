@@ -1,5 +1,6 @@
-# Find classes or properties (regex search for URIs or labels)
-#param homolo
+# @title Find classes or properties (regex search for URIs or labels)
+# @param arg0=homolo 
+
 SELECT DISTINCT ?term_type ?term_uri ?term_label
 WHERE {
     VALUES (?term_type) { (owl:Class)
@@ -21,3 +22,4 @@ WHERE {
     }
 }
 ORDER BY ?term_type ?term_uri
+

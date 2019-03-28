@@ -1,5 +1,6 @@
-# Basic information of cluster
-#param 2000
+# @title Basic information of cluster
+# @param arg0=2000 
+
 SELECT ?label ?description ?member_count ?page
 WHERE {
     ?cluster a orth:OrthologGroup ;
@@ -10,3 +11,4 @@ WHERE {
              mbgd:memberCount ?member_count ;
              foaf:page ?page .
 }
+

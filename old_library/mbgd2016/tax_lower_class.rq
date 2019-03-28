@@ -1,0 +1,10 @@
+#param 543 Species
+SELECT ?label ?taxon (COUNT(?genome) AS ?count)
+WHERE {
+    ?taxon rdfs:subClassOf+ taxid:$1 ;
+           taxont:rank taxont:$2 ;
+           rdfs:label ?label .
+    ?genome a mbgd:CompleteGenome ;
+            mbgd:inTaxon ?taxon .
+}
+ORDER BY DESC(?count)

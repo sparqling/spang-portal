@@ -1,4 +1,6 @@
-#param Salmonella
+# @title 
+# @param arg0=Salmonella 
+
 SELECT ?label ?abst
 WHERE {
     dbpedia:$1 rdfs:label ?label .
@@ -10,3 +12,4 @@ WHERE {
     VALUES (?lang) { ("en") ("ja") }
     VALUES (?abst_lang) { ("en") ("ja") }
 }
+

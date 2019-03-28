@@ -1,4 +1,5 @@
 class Library
+
   def self.all
     entries = parse_config(File.join(Settings.library_root,'index.ini'))
     entries.map do |dir, name|
@@ -25,27 +26,7 @@ class Library
       tokens[0..1] if tokens.length == 2
     end.compact.to_h
   end
-  
-  def self.parse_template(path)
-    return nil unless File.exists?(path)
-    params = []
-    contents = File.read(path)
-    contents.each_line do |line|
-      if matched = line.strip.match(/^#(param|args|ARGS)\s+(.*)$/)
-        params << matched[2].split
-      end
-    end
 
-    description = nil
-    if matched = contents.lines.first.match(/^# (.*)$/)
-      description = matched[1]
-    end
-    {
-      params: params.flatten,
-      description: description.to_s,
-    }
-  end
-  
   def self.find(name)
     config = parse_config(File.join(Settings.library_root, name, 'index.ini')).symbolize_keys
     templates = Dir.glob(File.join(Settings.library_root, name, '*.rq')).select{ |file| File.file?(file) }.map do |file|
@@ -81,8 +62,6 @@ class Library
         endpoint: config[:endpoint]
     }
   end
-
-
 
   def self.search_template(query)
     results = []

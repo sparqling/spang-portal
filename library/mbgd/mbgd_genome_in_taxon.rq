@@ -1,7 +1,9 @@
-# MBGD complete genomes in taxon
+# @title MBGD complete genomes in taxon
+
 SELECT ?genome mbgd:inTaxon ?taxon
 WHERE {
     ?genome a mbgd:CompleteGenome .
     ?genome orth:taxon ?taxid .
     ?taxid rdfs:subClassOf* ?taxon . 
 }
+

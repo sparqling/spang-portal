@@ -1,5 +1,6 @@
-# List predicates in a graph
-#param gramene.genes
+# @title List predicates in a graph
+# @param arg0=gramene.genes 
+
 SELECT ?p count(?p) as ?count
 WHERE {
     GRAPH <http://www.southgreen.fr/agrold/$1> {
@@ -7,3 +8,4 @@ WHERE {
     }
 }
 ORDER BY DESC(?count)
+

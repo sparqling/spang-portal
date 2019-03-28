@@ -1,5 +1,6 @@
-# Get pathway from gene name
-#param cyp
+# @title Get pathway from gene name
+# @param arg0=cyp 
+
 # SELECT ?source (COUNT(?gene) AS ?count)
 # SELECT ?type (COUNT(?pathway) AS ?count)
 SELECT ?gene ?gene_label ?organism_name ?pathway_label ?pathway
@@ -15,3 +16,4 @@ WHERE {
 }
 # ORDER BY DESC(?count)
 ORDER BY ?organism_name ?gene_label
+

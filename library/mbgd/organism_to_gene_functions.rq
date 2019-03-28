@@ -1,5 +1,6 @@
-# Cluster IDs for each gene of
-#param syn
+# @title Cluster IDs for each gene of
+# @param arg0=syn 
+
 SELECT ?function ?color ?label (COUNT(?function) AS ?count)
 WHERE {
     ?cluster a orth:OrthologGroup ;
@@ -12,3 +13,4 @@ WHERE {
           mgfo:colorCode ?color .
 }
 ORDER BY DESC(?count)
+

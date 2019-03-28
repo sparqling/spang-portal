@@ -1,3 +1,5 @@
+# @title 
+
 SELECT ?resource ?label
 WHERE {
     VALUES (?resource) { $STDIN }
@@ -5,3 +7,4 @@ WHERE {
 	?resource rdfs:label ?label .
     }
 }
+

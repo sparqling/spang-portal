@@ -1,6 +1,8 @@
-#param 2
-#param 29
-#param 1117
+# @title 
+# @param arg0=2 
+# @param arg1=29 
+# @param arg2=1117 
+
 SELECT ?code ?organism ?length ?date
 WHERE {
     mbgdr:default
@@ -13,3 +15,4 @@ WHERE {
         dct:issued ?date .
 }
 ORDER BY ?date
+

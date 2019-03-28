@@ -1,4 +1,6 @@
-#param GO_0045202
+# @title 
+# @param arg0=GO_0045202 
+
 SELECT DISTINCT ?uniprot ?gene ?uniprot_label ?go ?go_label
 WHERE {
     ?uniprot up:classifiedWith ?go ;
@@ -8,3 +10,4 @@ WHERE {
     ?go rdfs:label ?go_label
     VALUES (?uniprot) { $STDIN }
 }
+

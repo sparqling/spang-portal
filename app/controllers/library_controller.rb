@@ -8,11 +8,11 @@ class LibraryController < ApplicationController
   end
 
   def show_template
-    @template = Library.find_template(params[:library_id], params[:template_id])
+    @template = Library.find(params[:library_id]).templatesparams[:template_id])
   end
 
   def search_template
     @query = params[:search]
-    @template_groups = Library.search_template(@query)
+    @template_groups = Template.search(@query)
   end
 end

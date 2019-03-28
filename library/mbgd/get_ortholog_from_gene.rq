@@ -1,5 +1,6 @@
-# Get ortholog GO annotation from gene ID
-#param eco:B0002
+# @title Get ortholog GO annotation from gene ID
+# @param arg0=eco:B0002 
+
 SELECT ?cluster ?gene_id ?organism ?go ?comment
 WHERE {
     ?cluster a orth:OrthologGroup ;
@@ -14,3 +15,4 @@ WHERE {
          rdfs:subPropertyOf+ goa:goaExperimental .
     ?go_id skos:prefLabel ?go .
 }
+

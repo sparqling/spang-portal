@@ -1,3 +1,5 @@
+# @title 
+
 #stdin org:eco
 #stdin org:bsu
 SELECT ?organism GROUP_CONCAT(?cluster_id; separator=" ")
@@ -11,3 +13,4 @@ WHERE {
     VALUES (?organism) { $STDIN }
     VALUES (?cluster_id) { ("1025") ("1") ("10") }
 }
+

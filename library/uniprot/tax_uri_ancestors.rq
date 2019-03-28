@@ -1,5 +1,6 @@
-# Taxonomic hierarchy for
-#param tax:511145
+# @title Taxonomic hierarchy for
+# @param arg0=tax:511145 
+
 SELECT ?taxon ?name ?rank
 {
     $1 orth:taxon? ?tax_org .
@@ -12,3 +13,4 @@ SELECT ?taxon ?name ?rank
     # FILTER (?taxon != tax:131567) # Omit the top level "cellular organisms"
 }
 ORDER BY DESC(?level)
+

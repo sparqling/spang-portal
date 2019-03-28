@@ -1,5 +1,6 @@
-# Get differentially expressed human genes for a specific experimental condition, e.g. EFO_0002618 ("pancreatic carcinoma"), converted to UniProt IDs
-#param EFO_0002618
+# @title Get differentially expressed human genes for a specific experimental condition, e.g. EFO_0002618 ("pancreatic carcinoma"), converted to UniProt IDs
+# @param arg0=EFO_0002618 
+
 PREFIX uniprot: <http://purl.uniprot.org/uniprot/>
 
 SELECT DISTINCT ?uniprot
@@ -10,3 +11,4 @@ WHERE {
               atlas:isMeasurementOf/atlas:dbXref ?uniprot .
     ?uniprot a atlas:UniprotDatabaseReference .
 }
+

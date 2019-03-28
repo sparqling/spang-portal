@@ -1,4 +1,5 @@
-# Alzheimer's disease-related genes with curated evidences
+# @title Alzheimer's disease-related genes with curated evidences
+
 PREFIX upid: <http://identifiers.org/uniprot/>
 PREFIX pmid: <http://identifiers.org/pubmed/>
 PREFIX disgenet_source: <http://rdf.disgenet.org/v4.0.0/void/>
@@ -25,3 +26,4 @@ WHERE {
     }
 }
 ORDER BY DESC(?score) ?source ?pmid
+

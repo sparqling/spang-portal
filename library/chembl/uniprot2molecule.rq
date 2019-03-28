@@ -1,4 +1,5 @@
-# Get molecule from target UniProt ID
+# @title Get molecule from target UniProt ID
+
 #stdin uniprot:Q05397
 SELECT DISTINCT ?uniprot ?molecule ?molecule_label
 WHERE {
@@ -7,3 +8,4 @@ WHERE {
     ?molecule rdfs:label ?molecule_label .
     VALUES (?uniprot) { $STDIN }
 }
+

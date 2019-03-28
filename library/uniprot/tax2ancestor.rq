@@ -1,5 +1,6 @@
-# TaxID to ancestor
-#param Phylum
+# @title TaxID to ancestor
+# @param arg0=Phylum 
+
 SELECT ?taxon (COUNT(DISTINCT ?taxid) AS ?num)
 WHERE {
     VALUES (?taxid) { $STDIN }
@@ -9,3 +10,4 @@ WHERE {
               up:scientificName ?taxon .
 }
 ORDER BY ?taxon
+

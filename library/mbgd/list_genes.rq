@@ -1,5 +1,6 @@
-# List genes of a MBGD organism
-#param eco
+# @title List genes of a MBGD organism
+# @param arg0=eco 
+
 SELECT ?gene ?label ?type ?description
 {
     ?type rdfs:subClassOf orth:Gene .
@@ -13,3 +14,4 @@ SELECT ?gene ?label ?type ?description
     }
 }
 ORDER BY ?gene
+

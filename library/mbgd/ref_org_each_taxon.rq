@@ -1,5 +1,9 @@
-#param extended defaultOrganism
-#param default null
+# @title 
+# @param arg0=extended 
+# @param arg1=defaultOrganism 
+# @param arg2=default 
+# @param arg3=null 
+
 SELECT ?taxon ?ref_org_code
 WHERE {
     ?ref_org ^orth:organism mbgdr:$1 ;
@@ -22,3 +26,4 @@ WHERE {
         }
     }
 }
+

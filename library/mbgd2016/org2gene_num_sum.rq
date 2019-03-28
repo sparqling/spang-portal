@@ -1,3 +1,5 @@
+# @title ORDER BY DESC(?sum_length)
+
 #stdin org:eco
 #stdin org:bsu
 SELECT ?code ?phylum ?organism ?sum_genes ?sum_length ?date ?pubmed
@@ -22,6 +24,6 @@ WHERE {
 	}
     }
 }
-# ORDER BY DESC(?sum_length)
 # ORDER BY DESC(?sum_genes)
 ORDER BY ?phylum ?organism
+

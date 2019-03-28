@@ -1,5 +1,6 @@
-# Taxonomic hierarchy for
-#param 511145
+# @title Taxonomic hierarchy for
+# @param arg0=511145 
+
 SELECT ?taxon ?name ?rank
 {
     ?taxid_new taxont:merged* taxid:$1 . # taxid can be replaced with a new ID
@@ -9,3 +10,4 @@ SELECT ?taxon ?name ?rank
     # FILTER (?taxon != taxid:1 && ?taxon != taxid:131567) # Omit the top level "root" and "cellular organisms"
 }
 ORDER BY DESC(?level)
+

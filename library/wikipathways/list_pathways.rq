@@ -1,4 +1,5 @@
-# List of pathways
+# @title List of pathways
+
 SELECT ?pathway ?organism ?name ?title
 WHERE {
     ?pathway wp:organism ?organism ;
@@ -6,3 +7,4 @@ WHERE {
              dc:title ?title .
 }
 ORDER BY ?organism
+

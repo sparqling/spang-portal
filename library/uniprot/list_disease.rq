@@ -1,3 +1,5 @@
+# @title 
+
 SELECT ?protein ?gene
 ?protein_label
 ?disease_label
@@ -13,3 +15,4 @@ WHERE {
     ?disease skos:prefLabel ?disease_label ;
              rdfs:comment ?disease_comment .
 }
+

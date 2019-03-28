@@ -1,5 +1,6 @@
-# Get complex from gene name
-#param cyp
+# @title Get complex from gene name
+# @param arg0=cyp 
+
 # SELECT ?source (COUNT(?gene) AS ?count)
 # SELECT ?type (COUNT(?complex) AS ?count)
 SELECT ?gene ?gene_label ?organism_name ?complex
@@ -23,3 +24,4 @@ WHERE {
     # }
 }
 # ORDER BY DESC(?count)
+

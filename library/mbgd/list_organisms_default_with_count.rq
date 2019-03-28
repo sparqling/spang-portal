@@ -1,4 +1,5 @@
-# MBGD default organisms (count for each phylum)
+# @title MBGD default organisms (count for each phylum)
+
 # Default organisms summary (phylum)
 SELECT ?superkingdom ?phylum (COUNT(?organism) AS ?count)
 WHERE {
@@ -17,3 +18,4 @@ WHERE {
     }
 }
 ORDER BY ?superkingdom ?phylum
+

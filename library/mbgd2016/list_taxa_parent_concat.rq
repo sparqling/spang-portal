@@ -1,4 +1,6 @@
-#param CompleteGenome
+# @title 
+# @param arg0=CompleteGenome 
+
 SELECT ?taxid GROUP_CONCAT(?taxon_id; separator=",") AS ?taxa
 WHERE {
     {
@@ -17,3 +19,4 @@ WHERE {
 	ORDER BY ?taxid ?level
     }
 }
+

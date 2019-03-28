@@ -1,7 +1,9 @@
-# Regex search for URIs (subjects of triples)
+# @title Regex search for URIs (subjects of triples)
+
 SELECT DISTINCT ?resource
 WHERE {
     ?resource ?p ?o .
     FILTER (regex(str(?resource), "$1", "i"))
 }
 ORDER BY ?resource
+

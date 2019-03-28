@@ -1,5 +1,7 @@
-#param 543
-#param Escherichia
+# @title 
+# @param arg0=543 
+# @param arg1=Escherichia 
+
 SELECT ?rank ?label ?taxon
 WHERE {
     # ?taxid_new taxont:merged* taxid:$1 . # taxid can be replaced with a new ID
@@ -11,3 +13,4 @@ WHERE {
     VALUES ?rank { taxont:Superkingdom taxont:Kingdom taxont:Phylum taxont:Class taxont:Order taxont:Family taxont:Genus taxont:Species }
 }
 ORDER BY DESC(?level)
+

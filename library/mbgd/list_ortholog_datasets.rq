@@ -1,4 +1,5 @@
-# Ortholog datasets
+# @title Ortholog datasets
+
 # Ortholog datasets with sizes
 SELECT ?dataset ?title ?organisms ?orthogroups
 WHERE {
@@ -27,3 +28,4 @@ WHERE {
     }
 }
 ORDER BY ?dataset
+

@@ -1,4 +1,5 @@
-# Set of UniProt IDs to GO annotations with ratio
+# @title Set of UniProt IDs to GO annotations with ratio
+
 SELECT ?count ?count_all ((xsd:decimal(?count)/?count_all) AS ?ratio) ?go ?go_label
 WHERE {
     ?go skos:prefLabel ?go_label .
@@ -19,3 +20,4 @@ WHERE {
     }
 }
 ORDER BY DESC(?ratio)
+

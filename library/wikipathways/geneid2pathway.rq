@@ -1,4 +1,5 @@
-# Get pathway from gene name
+# @title Get pathway from gene name
+
 #stdin geneid:1577
 # SELECT ?source (COUNT(?gene) AS ?count)
 # SELECT ?type (COUNT(?pathway) AS ?count)
@@ -12,3 +13,4 @@ WHERE {
     VALUES (?gene) { $STDIN }
 }
 # ORDER BY DESC(?count)
+

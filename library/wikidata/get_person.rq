@@ -1,5 +1,6 @@
-# Get information of a specific person
-#param wd:Q171977
+# @title Get information of a specific person
+# @param arg0=wd:Q171977 
+
 SELECT ($1 AS ?person) ?gender_en ?label_en ?descr_en ?birth_date ?death_date ?img
 WHERE {
     OPTIONAL {
@@ -25,3 +26,4 @@ WHERE {
         $1 wdt:P18 ?img .
     }
 }
+

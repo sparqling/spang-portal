@@ -1,4 +1,5 @@
-# Count genes and proteins for each organism
+# @title Count genes and proteins for each organism
+
 SELECT ?taxid ?taxid_label ?gene_count ?protein_count
 WHERE {
     {
@@ -28,3 +29,4 @@ WHERE {
     }
 }
 ORDER BY DESC(?gene_count)
+

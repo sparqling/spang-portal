@@ -1,4 +1,6 @@
-#param psbA
+# @title 
+# @param arg0=psbA 
+
 SELECT ?taxon
 WHERE {
     ?cluster a orthology:OrthologsCluster ;
@@ -7,3 +9,4 @@ WHERE {
 	orthology:hasHomologous ?member .
     ?member mbgd:organism/mbgd:taxon ?taxon .
 }
+

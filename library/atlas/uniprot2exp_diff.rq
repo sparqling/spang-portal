@@ -1,4 +1,5 @@
-# Get differential gene expression of given UniProt IDs
+# @title Get differential gene expression of given UniProt IDs
+
 #STDIN uniprot:Q15848
 PREFIX ebiatlas: <http://rdf.ebi.ac.uk/resource/atlas/>
 
@@ -16,3 +17,4 @@ WHERE {
     ?probe atlas:dbXref ?uniprot .
     VALUES (?uniprot) { $STDIN }
 }
+

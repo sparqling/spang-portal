@@ -1,5 +1,6 @@
-# GO annotation for cluster
-#param 2000
+# @title GO annotation for cluster
+# @param arg0=2000 
+
 define input:inference "mbgd"
 SELECT ?go_id (COUNT (?go_id) AS ?go_count) (xsd:decimal(?go_count) / ?member_count AS ?go_ratio) ?go_label
 WHERE {
@@ -12,3 +13,4 @@ WHERE {
     ?go_id skos:prefLabel ?go_label .
 }
 ORDER BY DESC(?go_count)
+

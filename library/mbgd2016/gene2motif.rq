@@ -1,7 +1,8 @@
-#param TIGR
+# @title SELECT DISTINCT ?gene_id ?begin ?end ?motif_name ?e_value
+# @param arg0=TIGR 
+
 #stdin <http://mbgd.genome.ad.jp/rdf/resource/gene/puf:UFO1_RS15575>
 SELECT DISTINCT ?gene_id ?begin ?end ?motif_id ?e_value
-# SELECT DISTINCT ?gene_id ?begin ?end ?motif_name ?e_value
 WHERE {
     VALUES (?gene) { $STDIN }
     ?motif_hit mbgd:motifType "$1";
@@ -15,3 +16,4 @@ WHERE {
         dct:identifier ?gene_id .
 }
 ORDER BY ?gene ?begin ?end
+

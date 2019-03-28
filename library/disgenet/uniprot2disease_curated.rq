@@ -1,4 +1,5 @@
-# Get diseases associated with given UniProt IDs
+# @title Get diseases associated with given UniProt IDs
+
 #stdin uniprot:P05067
 PREFIX disgenet_source: <http://rdf.disgenet.org/v4.0.0/void/>
 
@@ -27,3 +28,4 @@ WHERE {
                        (disgenet_source:gwascat-2016) }
 }
 ORDER BY DESC(?score) ?source ?pmid
+

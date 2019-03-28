@@ -1,5 +1,6 @@
-# UniProt information
-#param P0C127
+# @title UniProt information
+# @param arg0=P0C127 
+
 SELECT ?p ?o ?label
 WHERE {
     uniprot:$1 ?p ?o
@@ -7,3 +8,4 @@ WHERE {
 	?o rdfs:label ?label
     }
 }
+

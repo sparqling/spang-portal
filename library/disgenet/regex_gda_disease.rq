@@ -1,5 +1,6 @@
-# Regex seach for specific diseases that have gene-disease association information
-#param alzheimer
+# @title Regex seach for specific diseases that have gene-disease association information
+# @param arg0=alzheimer 
+
 PREFIX umls: <http://linkedlifedata.com/resource/umls/id/>
 
 SELECT ?disease ?disease_name (COUNT(?disease) AS ?count)
@@ -12,3 +13,4 @@ WHERE {
     FILTER regex(?disease_name, "$1", "i")
 }
 ORDER BY DESC(?count)
+

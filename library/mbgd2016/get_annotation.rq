@@ -1,3 +1,5 @@
+# @title 
+
 #stdin eco:B0002
 SELECT DISTINCT ?s ?label ?descr
 WHERE {
@@ -5,3 +7,4 @@ WHERE {
     ?s rdfs:label ?label ;
        dct:description ?descr .
 }
+

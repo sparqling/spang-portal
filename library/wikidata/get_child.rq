@@ -1,5 +1,6 @@
-# Get children of a specific person
-#param wd:Q171977
+# @title Get children of a specific person
+# @param arg0=wd:Q171977 
+
 SELECT ?child ?gender_en ?label_en ?descr_en ?birth_date ?death_date ?img
 WHERE {
     $1 wdt:P40 ?child .
@@ -26,3 +27,4 @@ WHERE {
         ?child wdt:P18 ?img .
     }
 }
+

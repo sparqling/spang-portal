@@ -1,4 +1,6 @@
-#param CompleteGenome
+# @title 
+# @param arg0=CompleteGenome 
+
 SELECT DISTINCT ?taxid ?taxon
 WHERE {
     ?genome a mbgd:$1 ;
@@ -11,3 +13,4 @@ WHERE {
     VALUES ?upper_rank { taxont:Superkingdom taxont:Kingdom taxont:Phylum taxont:Class taxont:Order taxont:Family taxont:Genus }
 }
 ORDER BY ?taxid ?level
+

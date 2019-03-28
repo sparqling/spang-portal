@@ -1,5 +1,6 @@
-# Get parents of a specific person
-#param wd:Q171977
+# @title Get parents of a specific person
+# @param arg0=wd:Q171977 
+
 SELECT ?parent ?gender_en ?label_en ?descr_en ?birth_date ?death_date ?img
 WHERE {
     # $1 wdt:P22|wdt:P25 ?parent .
@@ -26,3 +27,4 @@ WHERE {
         ?parent wdt:P18 ?img .
     }
 }
+

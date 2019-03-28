@@ -1,8 +1,9 @@
-# eggNOG cluster corresponding to cluster
-#param 2969
-#param 32062
-#param 6390
-#param 4971
+# @title eggNOG cluster corresponding to cluster
+# @param arg0=2969 
+# @param arg1=32062 
+# @param arg2=6390 
+# @param arg3=4971 
+
 define input:inference "mbgd"
 SELECT ?gene ?reference ?mbgd_begin ?mbgd_end ?eggnog_begin ?eggnog_end ?eggnog
 WHERE {
@@ -27,3 +28,4 @@ WHERE {
             ?eggnog_begin <= ?mbgd_end)
 }
 ORDER BY ?gene
+

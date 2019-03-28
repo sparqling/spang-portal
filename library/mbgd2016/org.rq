@@ -1,5 +1,6 @@
-# Taxonomic hierarchy for
-#param eco
+# @title Taxonomic hierarchy for
+# @param arg0=eco 
+
 SELECT ?taxon ?name ?rank
 {
     org:$1 mbgd:taxon ?taxid .
@@ -11,3 +12,4 @@ SELECT ?taxon ?name ?rank
     # FILTER (?taxon != taxid:131567) # Omit the top level "cellular organisms"
 }
 ORDER BY DESC(?level)
+

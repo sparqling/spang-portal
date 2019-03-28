@@ -1,3 +1,5 @@
+# @title 
+
 SELECT DISTINCT ?taxon ?org ?org_label
 WHERE {
     VALUES (?taxon) { $STDIN }
@@ -6,3 +8,4 @@ WHERE {
     ?org mbgd:inTaxon ?taxon .
     ?org rdfs:label ?org_label .
 }
+

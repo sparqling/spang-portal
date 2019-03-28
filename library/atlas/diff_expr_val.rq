@@ -1,5 +1,6 @@
-# Get differentially expressed genes for a specific experimental condition, e.g. EFO_0002618 ("pancreatic carcinoma"), with P-values
-#param EFO_0002618
+# @title Get differentially expressed genes for a specific experimental condition, e.g. EFO_0002618 ("pancreatic carcinoma"), with P-values
+# @param arg0=EFO_0002618 
+
 PREFIX uniprot: <http://purl.uniprot.org/uniprot/>
 
 SELECT ?p_value
@@ -26,3 +27,4 @@ WHERE {
     # ?probe atlas:dbXref ?uniprot .
     # ?uniprot a atlas:UniprotDatabaseReference .
 }
+

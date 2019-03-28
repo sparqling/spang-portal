@@ -1,4 +1,5 @@
-# Count triples for each graph
+# @title Count triples for each graph
+
 SELECT ?graph (COUNT(?graph) AS ?triples)
 WHERE {
     GRAPH ?graph {
@@ -7,3 +8,4 @@ WHERE {
 }
 GROUP BY ?graph
 ORDER BY DESC(?triples)
+

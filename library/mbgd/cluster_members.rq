@@ -1,5 +1,6 @@
-# Members of cluster
-#param 2000
+# @title Members of cluster
+# @param arg0=2000 
+
 SELECT ?superkingdom ?phylum ?organism_name ?domain ?gene_description
 WHERE {
     ?cluster a orth:OrthologGroup ;
@@ -22,3 +23,4 @@ WHERE {
     }
 }
 ORDER BY ?superkingdom ?phylum ?organism_name ?domain
+

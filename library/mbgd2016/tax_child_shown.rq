@@ -1,4 +1,6 @@
-#param 2
+# @title 
+# @param arg0=2 
+
 SELECT ?rank ?name (COUNT(?organism) AS ?count)
 WHERE {
     ?taxid mbgd:parentTaxonShown taxid:$1 ;
@@ -8,3 +10,4 @@ WHERE {
 	   a mbgd:CompleteGenome .   
 }
 ORDER BY ?name
+

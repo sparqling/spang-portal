@@ -1,5 +1,6 @@
-# Names in a specific taxonomic rank for MBGD organisms
-#args Superkingdom
+# @title Names in a specific taxonomic rank for MBGD organisms
+# @param arg0=Superkingdom 
+
 SELECT DISTINCT ?organism ?name
 WHERE {
     VALUES (?organism) { $STDIN }
@@ -9,3 +10,4 @@ WHERE {
     ?ancestor taxont:rank taxont:$1 .
     ?ancestor rdfs:label ?name .
 }
+

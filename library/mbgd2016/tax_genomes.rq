@@ -1,8 +1,12 @@
-#param 2 CompleteGenome
-#param 29 CompleteGenome
-#param 1117 CompleteGenome
+# @title SELECT ?taxid ?code ?organism ?sum_genes ?sum_length ?date ?pubmed
+# @param arg0=2 
+# @param arg1=CompleteGenome 
+# @param arg2=29 
+# @param arg3=CompleteGenome 
+# @param arg4=1117 
+# @param arg5=CompleteGenome 
+
 SELECT DISTINCT ?taxid ?code ?organism ?sum_genes ?sum_length ?date ?pubmed
-# SELECT ?taxid ?code ?organism ?sum_genes ?sum_length ?date ?pubmed
 # SELECT ?taxid ?code ?organism ?sum_genes ?sum_length ?assembly_len ?date ?pubmed
 # SELECT ?taxid ?code ?organism ?sum_genes ?sum_length ?date ?pubmed (GROUP_CONCAT(?dataset ; separator=" ") AS ?datasets)
 WHERE {
@@ -33,3 +37,4 @@ WHERE {
 # ORDER BY DESC(?sum_length)
 # ORDER BY DESC(?sum_genes)
 ORDER BY ?organism
+

@@ -1,4 +1,5 @@
-# Search terms by label
+# @title Search terms by label
+
 SELECT DISTINCT ?term_id ?term_name ?graph
 WHERE { 
     GRAPH ?graph { 
@@ -6,3 +7,4 @@ WHERE {
 	FILTER regex(str(?term_name), 'plant growth') 
     } 
 }
+
