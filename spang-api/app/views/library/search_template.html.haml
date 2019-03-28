@@ -9,6 +9,9 @@
   %h1
     = "Search Results for #{@query}"
   .content_wrapper
+    - if @template_groups.empty?
+      %h2
+        No results found
     - @template_groups.each do |lib, templates|
       %h2
         %a{ href: lib }
