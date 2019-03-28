@@ -1,8 +1,0 @@
-# Search the NCI Thesaurus for specific diseases
-#param breast
-SELECT *
-WHERE {
-    ?disease a ncit:C7057 ;
-        dct:title ?disease_name .
-    FILTER (regex(?disease_name, "$1", "i"))
-}

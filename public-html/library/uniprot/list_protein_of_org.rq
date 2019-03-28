@@ -1,6 +1,0 @@
-#param tax:511145
-SELECT *
-WHERE {
-    ?protein a up:Protein ;
-             up:organism $1 .
-}

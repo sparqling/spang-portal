@@ -1,9 +1,0 @@
-#param Actinobacteria
-SELECT ?taxid ?rank (COUNT(?organism) AS ?count)
-WHERE {
-    ?taxid taxont:scientificName "$1" ;
-           taxont:rank ?rank .
-    ?organism mbgd:inTaxon ?taxid ;
-           a mbgd:CompleteGenome .
-}
-ORDER BY DESC(?count)

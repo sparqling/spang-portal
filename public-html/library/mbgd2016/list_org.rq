@@ -1,8 +1,0 @@
-#param Crenarchaeota
-SELECT ?org ?label
-WHERE {
-    ?org a mbgd:Genome .
-    ?org rdfs:label ?label .
-    ?org mbgd:inTaxon ?taxid .
-    ?taxid rdfs:label "$1" .
-}

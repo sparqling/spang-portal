@@ -1,9 +1,0 @@
-SELECT *
-WHERE {
-    ?s wdt:P106 wd:Q177220 . # occupation singer
-    ?s wdt:P463 ?g . # member_of
-    ?s rdfs:label ?s_label .
-    ?g rdfs:label ?g_label .
-    FILTER (lang(?s_label) = "en")
-    FILTER (lang(?g_label) = "en")
-}

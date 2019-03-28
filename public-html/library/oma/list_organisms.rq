@@ -1,6 +1,0 @@
-# List available species
-SELECT * WHERE {
-    ?taxid a up:Taxon ;
-           up:scientificName ?name ;
-           up:rank up:Species .
-} 

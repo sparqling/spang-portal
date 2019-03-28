@@ -1,9 +1,0 @@
-# List predicates in a graph
-#param gramene.genes
-SELECT ?p count(?p) as ?count
-WHERE {
-    GRAPH <http://www.southgreen.fr/agrold/$1> {
-	?s ?p ?o .
-    }
-}
-ORDER BY DESC(?count)

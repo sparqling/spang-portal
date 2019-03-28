@@ -1,9 +1,0 @@
-SELECT *
-WHERE {
-    ?category wdt:P279* wd:Q639669 .
-    ?category rdfs:label ?category_label .
-    ?musician wdt:P106 ?category . # occupation
-    ?musician rdfs:label ?musician_label
-    FILTER (lang(?category_label) = "en")
-    FILTER (lang(?musician_label) = "en")
-}

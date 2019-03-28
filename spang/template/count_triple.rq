@@ -1,5 +1,0 @@
-# Count all triples
-SELECT (COUNT(*) AS ?triples)
-WHERE {
-    ?s ?p ?o .
-}
