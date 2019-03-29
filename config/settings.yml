@@ -1,3 +1,3 @@
 site_name: Spang Portal
 library_root: library
-root_url: http://localhost:3000/api
+root_url: http://localhost:8080/api

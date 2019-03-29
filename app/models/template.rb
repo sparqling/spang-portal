@@ -63,7 +63,6 @@ class Template
       instance_variable_set("@#{k}", []) if v[:multi]
     end
     parse_sparql_doc(file_path)
-
   end
 
   def file_path
@@ -95,6 +94,13 @@ class Template
           `spang/bin/spang mbgd #{file.path} -r spang/etc/prefix,spang/user_prefix -q`
         end
     @cached_query
+  end
+
+
+  def to_h
+    %w[name title uri endpoint param].map do |prop|
+      [prop, send(prop)]
+    end.to_h
   end
 
   private

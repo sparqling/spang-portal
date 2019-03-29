@@ -53,6 +53,7 @@ class Library
   def templates
     @cached_templates ||= Dir.glob(File.join(Settings.library_root, @name, '*.rq')).select{ |file| File.file?(file) }.map do |file|
       file_name = File.basename(file, '.*')
+      puts "name: #{file_name}"
       Template.new(self, file_name)
     end.compact
     @cached_templates
@@ -64,5 +65,14 @@ class Library
 
   def count
     Dir.glob(File.join(Settings.library_root, @name, '*.rq')).select{ |file| File.file?(file) }.size
+  end
+
+  def to_h(with_templates = false)
+    hash = instance_variables.map{ |v| [v[1..-1], instance_variable_get(v)] }.to_h
+    hash['uri'] = uri
+    hash['count'] = count
+    hash['templates'] = templates.map(&:to_h) if with_templates
+    puts "hash: #{hash}"
+    hash
   end
 end
