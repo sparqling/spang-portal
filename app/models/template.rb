@@ -41,22 +41,6 @@ class Template
     }
   end
 
-  def self.find_template(library_id, template_id)
-    config = parse_config(File.join(Settings.library_root, library_id, 'index.ini')).symbolize_keys
-    file_path = File.join(Settings.library_root, library_id, "#{template_id}.rq")
-    parsed = parse_template(file_path).symbolize_keys
-    {
-        name: template_id,
-        library_name: library_id,
-        description: parsed[:description],
-        parameters: parsed[:params],
-        query: `spang/bin/spang mbgd #{file_path} -r spang/etc/prefix,spang/user_prefix -q`,
-        endpoint: config[:endpoint]
-    }
-  end
-
-
-
   def self.search(query)
     results = []
     keywords = query.split.map(&:downcase)
@@ -70,15 +54,16 @@ class Template
     results.group_by(&:library)
   end
 
-
-  attr_accessor :library, :name, :description, :parameters
+  attr_accessor :library, :name, :title, :param
 
   def initialize(library, template_name)
     @library = library
     @name = template_name
-    parsed = self.class.parse_template(file_path)
-    @description = parsed[:description]
-    @parameters = parsed[:params]
+    ANNOTATIONS.each do |k, v|
+      instance_variable_set("@#{k}", []) if v[:multi]
+    end
+    parse_sparql_doc(file_path)
+
   end
 
   def file_path
@@ -94,12 +79,27 @@ class Template
   end
 
   def query
-    `spang/bin/spang mbgd #{file_path} -r spang/etc/prefix,spang/user_prefix -q`
+    @cached_query ||=
+        Tempfile.create do |file|
+          tmp_query = @raw_query
+          while matched = tmp_query.match(/\$(\d+)/)
+            i = matched[1].to_i
+            if @param[i-1][:default]
+              tmp_query = tmp_query.gsub(/\$#{i}/, @param[i-1][:default])
+            else
+              break
+            end
+          end
+          file.write(tmp_query)
+          file.rewind
+          `spang/bin/spang mbgd #{file.path} -r spang/etc/prefix,spang/user_prefix -q`
+        end
+    @cached_query
   end
 
   private
 
-  def self.parse_sparql_doc(file_path)
+  def parse_sparql_doc(file_path)
     query_lines = []
     header = true
     description = false
@@ -112,7 +112,13 @@ class Template
           if config
             if config[:multi]
               val = instance_variable_get("@#{annotation}")
-              val << matches[2].strip
+              if annotation == 'param'
+                name, default = matches[2].strip.split('=')
+                val << { name: name, default: default }
+              else
+                val << matches[2].strip
+              end
+              instance_variable_set("@#{annotation}", val)
             else
               instance_variable_set("@#{annotation}", matches[2].strip)
             end
@@ -126,19 +132,11 @@ class Template
         end
       else
         header = false
-        query_lines << line
+        query_lines << line.gsub("\n", '')
       end
     end
     @description = description_lines.join("\n") unless description_lines.empty?
-    @query = query_lines.join("\n") unless query_lines.empty?
-    @query.strip!
-    query_lines.each do |line|
-      if (matches = line.match(/^ *PREFIX *([a-zA-Z_-]+) *: *<(.+)>$/i) )
-        @prefixes[ matches[1] ] = matches[2]
-      end
-      if (matches = line.match(/^ *(SELECT|CONSTRUCT|DESCRIBE|ASK) */i) )
-        @type = matches[1].upcase
-      end
-    end
+    @raw_query = query_lines.join("\n") unless query_lines.empty?
+    @raw_query.strip!
   end
 end

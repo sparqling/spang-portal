@@ -25,10 +25,10 @@
       %a{ href: '/' + template.file_path}
         = template.name
       %br
-      - if template.description
+      - if template.title
         .indented
-          = "#{template.description}"
-      - if template.parameters.length > 0
+          = "#{template.title}"
+      - if template.param.length > 0
         .indented
-          = "(ex: #{template.parameters.join(', ')})"
+          = "(ex: #{template.param.map{ |p| p[:default] }.join(', ')})"
       %br
