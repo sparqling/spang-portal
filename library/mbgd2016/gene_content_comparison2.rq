@@ -1,8 +1,8 @@
 # @title Gene content comparison (between 2 taxa)
-# @param arg0=543 
-# @param arg1=186817 
-# @param arg2=0.8 
-# @param arg3=0.2 
+# @param arg1=543 
+# @param arg2=186817 
+# @param arg3=0.8 
+# @param arg4=0.2 
 
 PREFIX mgfo: <http://purl.jp/bio/11/mgfo#>
 SELECT ?group ?ratio ?ratio2 ?ref_gene
@@ -19,19 +19,19 @@ WHERE {
             ?group a oo:OrthologsCluster ;
                    void:inDataset mbgdr:default ;
                    oo:hasHomologous/mbgd:gene ?ref_gene .
-            ?ref_gene mbgd:organism/^mbgd:defaultOrganism taxid:$1 .
+            ?ref_gene mbgd:organism/^mbgd:defaultOrganism taxid:$arg1 .
             OPTIONAL
             {
                 SELECT ?group (COUNT(DISTINCT ?organism) AS ?count)
                 WHERE {
                     ?group oo:hasHomologous/mbgd:organism ?organism .
-                    ?organism mbgd:inTaxon taxid:$1 .
+                    ?organism mbgd:inTaxon taxid:$arg1 .
                 }
             }
             {
                 SELECT (COUNT(?organism_all) AS ?count_organism_all)
                 WHERE {
-                    ?organism_all mbgd:inTaxon taxid:$1 ;
+                    ?organism_all mbgd:inTaxon taxid:$arg1 ;
                                  ^mbgd:organism mbgdr:default .
                 }
             }
@@ -40,13 +40,13 @@ WHERE {
                 SELECT ?group (COUNT(DISTINCT ?organism2) AS ?count2)
                 WHERE {
                     ?group oo:hasHomologous/mbgd:organism ?organism2 .
-                    ?organism2 mbgd:inTaxon taxid:$2 .
+                    ?organism2 mbgd:inTaxon taxid:$arg2 .
                 }
             }
             {
                 SELECT (COUNT(?organism_all2) AS ?count_organism_all2)
                 WHERE {
-                    ?organism_all2 mbgd:inTaxon taxid:$2 ;
+                    ?organism_all2 mbgd:inTaxon taxid:$arg2 ;
                                   ^mbgd:organism mbgdr:default .
                 }
             }
@@ -57,7 +57,7 @@ WHERE {
         }
         ORDER BY ?ratio2 DESC(?ratio)
     }
-    FILTER (?ratio >= $3)
-    FILTER (?ratio2 <= $4)
+    FILTER (?ratio >= $arg3)
+    FILTER (?ratio2 <= $arg4)
 }
 

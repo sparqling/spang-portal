@@ -1,10 +1,10 @@
 # @title SELECT ?sub_tax ?sub_tax_label
-# @param arg0=Crenarchaeota 
+# @param arg1=Crenarchaeota 
 
 SELECT ?tax ?sub_tax ?sub_tax_label
 WHERE {
     ?sub_tax rdfs:subClassOf ?tax .
     ?sub_tax rdfs:label ?sub_tax_label .
-    ?tax rdfs:label "$1" .
+    ?tax rdfs:label "$arg1" .
 }
 

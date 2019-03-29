@@ -1,5 +1,5 @@
 # @title Names in a specific taxonomic rank for MBGD organisms
-# @param arg0=Superkingdom 
+# @param arg1=Superkingdom 
 
 SELECT DISTINCT ?organism ?name
 WHERE {

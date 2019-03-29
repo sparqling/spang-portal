@@ -1,10 +1,10 @@
 # @title Count TaxIDs under a given TaxID
-# @param arg0=511145 
+# @param arg1=511145 
 
 SELECT COUNT(?taxon)
 # SELECT ?taxon
 {
-    ?taxon rdfs:subClassOf+ tax:$1 .
+    ?taxon rdfs:subClassOf+ tax:$arg1 .
     # MINUS {
     # 	?child rdfs:subClassOf ?taxon .
     # }

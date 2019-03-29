@@ -1,5 +1,5 @@
 # @title 
-# @param arg0=P00918 
+# @param arg1=P00918 
 
 SELECT ?gene
 ?protein_label
@@ -7,7 +7,7 @@ SELECT ?gene
 ?disease_label
 ?disease_comment
 WHERE {
-    uniprot:$1 up:encodedBy/skos:prefLabel ?gene ;
+    uniprot:$arg1 up:encodedBy/skos:prefLabel ?gene ;
 	     rdfs:label ?protein_label ;
 	     up:annotation ?annot .
     ?annot a up:Disease_Annotation ;

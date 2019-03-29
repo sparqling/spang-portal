@@ -1,11 +1,11 @@
 # @title Get ortholog in specific taxa from Ensembl gene ID
-# @param arg0=ENSG00000139618 
+# @param arg1=ENSG00000139618 
 
 #stdin taxid:10090
 #stdin taxid:10116
 SELECT ?query ?query_label ?label ?altLabel ?taxon ?ensgene ?ensgene_label ?gene
 WHERE {
-    # ens:$1 sio:SIO_000558 ?ensgene .
+    # ens:$arg1 sio:SIO_000558 ?ensgene .
     ?query sio:SIO_000558 ?ensgene .
     ?query rdfs:label ?query_label .
     ?ensgene obo:RO_0002162 ?taxon .
@@ -14,7 +14,7 @@ WHERE {
     ?gene a <http://identifiers.org/ncbigene> .
     ?taxon rdfs:label ?label ;
            skos:altLabel ?altLabel .
-    VALUES (?query) { (ens:$1) }
+    VALUES (?query) { (ens:$arg1) }
     VALUES (?taxon) { $STDIN }
 }
 

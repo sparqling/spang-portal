@@ -1,11 +1,11 @@
 # @title Get ortholog GO annotation from gene symbol
-# @param arg0=rpoB 
+# @param arg1=rpoB 
 
 SELECT ?cluster ?gene_id ?organism ?go ?comment
 WHERE {
     ?cluster a orth:OrthologGroup ;
              orth:inDataset mbgdr:default ;
-             rdfs:label "$1" ;
+             rdfs:label "$arg1" ;
              orth:member/orth:gene ?gene .
     ?gene mbgd:uniprot ?uniprot ;
           dct:identifier ?gene_id ;

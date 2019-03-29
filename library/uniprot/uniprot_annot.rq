@@ -1,9 +1,9 @@
 # @title Get UniProt annotations
-# @param arg0=P02649 
+# @param arg1=P02649 
 
 SELECT ?gene ?organism ?function
 WHERE {
-    uniprot:$1 up:encodedBy/skos:prefLabel ?gene ;
+    uniprot:$arg1 up:encodedBy/skos:prefLabel ?gene ;
                up:organism/up:scientificName ?organism ;
                up:annotation ?annot .
     ?annot a up:Function_Annotation ;

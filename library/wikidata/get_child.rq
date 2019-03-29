@@ -1,9 +1,9 @@
 # @title Get children of a specific person
-# @param arg0=wd:Q171977 
+# @param arg1=wd:Q171977 
 
 SELECT ?child ?gender_en ?label_en ?descr_en ?birth_date ?death_date ?img
 WHERE {
-    $1 wdt:P40 ?child .
+    $arg1 wdt:P40 ?child .
     OPTIONAL {
         ?child wdt:P21 ?gender .
         ?gender rdfs:label ?gender_en .

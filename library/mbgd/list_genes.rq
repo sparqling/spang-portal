@@ -1,11 +1,11 @@
 # @title List genes of a MBGD organism
-# @param arg0=eco 
+# @param arg1=eco 
 
 SELECT ?gene ?label ?type ?description
 {
     ?type rdfs:subClassOf orth:Gene .
     ?gene a ?type ;
-          orth:organism org:$1 .
+          orth:organism org:$arg1 .
     OPTIONAL {
 	?gene rdfs:label ?label .
     }

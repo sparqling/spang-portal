@@ -1,11 +1,11 @@
 # @title 
-# @param arg0=543 
-# @param arg1=Species 
+# @param arg1=543 
+# @param arg2=Species 
 
 SELECT ?label ?taxon (COUNT(?genome) AS ?count)
 WHERE {
-    ?taxon rdfs:subClassOf+ taxid:$1 ;
-           taxont:rank taxont:$2 ;
+    ?taxon rdfs:subClassOf+ taxid:$arg1 ;
+           taxont:rank taxont:$arg2 ;
            rdfs:label ?label .
     ?genome a mbgd:CompleteGenome ;
             mbgd:inTaxon ?taxon .

@@ -1,12 +1,12 @@
 # @title 
-# @param arg0=CompleteGenome 
+# @param arg1=CompleteGenome 
 
 SELECT ?taxid GROUP_CONCAT(?taxon_id; separator=",") AS ?taxa
 WHERE {
     {
 	SELECT DISTINCT ?taxid ?taxon_id
 	WHERE {
-	    ?genome a mbgd:$1 ;
+	    ?genome a mbgd:$arg1 ;
                    mbgd:inTaxon ?taxid . 
 	    ?taxid rdfs:label ?name ;
                    taxont:rank ?rank .

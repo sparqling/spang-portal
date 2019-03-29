@@ -1,9 +1,9 @@
 # @title Taxonomic hierarchy for
-# @param arg0=tax:511145 
+# @param arg1=tax:511145 
 
 SELECT ?taxon ?name ?rank
 {
-    $1 orth:taxon? ?tax_org .
+    $arg1 orth:taxon? ?tax_org .
     ?tax_org up:replacedBy* ?taxid . # taxid can be replaced with a new ID
     ?taxid rdfs:subClassOf ?taxon option(transitive, t_direction 1, t_min 0, t_step("step_no") as ?level) . # only for Virtuoso
     ?taxon up:scientificName ?name .

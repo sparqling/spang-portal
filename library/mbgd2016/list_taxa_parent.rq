@@ -1,9 +1,9 @@
 # @title 
-# @param arg0=CompleteGenome 
+# @param arg1=CompleteGenome 
 
 SELECT DISTINCT ?taxid ?taxon
 WHERE {
-    ?genome a mbgd:$1 ;
+    ?genome a mbgd:$arg1 ;
             mbgd:inTaxon ?taxid . 
     ?taxid rdfs:label ?name ;
            taxont:rank ?rank .

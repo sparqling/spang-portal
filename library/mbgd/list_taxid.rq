@@ -1,9 +1,9 @@
 # @title List of TaxIDs
-# @param arg0=10 
+# @param arg1=10 
 
 SELECT ?taxid
 WHERE {
     ?organism orth:taxon ?taxid .
 }
-LIMIT $1
+LIMIT $arg1
 

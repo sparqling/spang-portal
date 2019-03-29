@@ -1,5 +1,5 @@
 # @title Get pathway from gene name
-# @param arg0=cyp 
+# @param arg1=cyp 
 
 # SELECT ?source (COUNT(?gene) AS ?count)
 # SELECT ?type (COUNT(?pathway) AS ?count)
@@ -12,7 +12,7 @@ WHERE {
     ?pathway a wp:Pathway .
     ?pathway dc:title ?pathway_label .
     ?pathway wp:organismName ?organism_name .
-    FILTER regex(str(?gene_label), "$1", "i")
+    FILTER regex(str(?gene_label), "$arg1", "i")
 }
 # ORDER BY DESC(?count)
 ORDER BY ?organism_name ?gene_label

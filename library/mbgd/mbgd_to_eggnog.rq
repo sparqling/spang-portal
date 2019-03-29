@@ -1,15 +1,15 @@
 # @title eggNOG cluster corresponding to cluster
-# @param arg0=2969 
-# @param arg1=32062 
-# @param arg2=6390 
-# @param arg3=4971 
+# @param arg1=2969 
+# @param arg2=32062 
+# @param arg3=6390 
+# @param arg4=4971 
 
 define input:inference "mbgd"
 SELECT ?gene ?reference ?mbgd_begin ?mbgd_end ?eggnog_begin ?eggnog_end ?eggnog
 WHERE {
     ?mbgd_grp a orth:OrthologGroup ;
               orth:inDataset mbgdr:default ;
-              dct:identifier "$1";
+              dct:identifier "$arg1";
               orth:member ?mbgd_mbr .
     ?mbgd_mbr orth:gene/dct:identifier ?gene ;
               orth:gene/orth:crossReference ?reference ;

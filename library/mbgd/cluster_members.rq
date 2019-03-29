@@ -1,11 +1,11 @@
 # @title Members of cluster
-# @param arg0=2000 
+# @param arg1=2000 
 
 SELECT ?superkingdom ?phylum ?organism_name ?domain ?gene_description
 WHERE {
     ?cluster a orth:OrthologGroup ;
             orth:inDataset mbgdr:default ;
-            dct:identifier "$1";
+            dct:identifier "$arg1";
             orth:member ?member .
     ?member orth:gene ?gene ;
             orth:organism ?organism ;

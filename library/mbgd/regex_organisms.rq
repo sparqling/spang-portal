@@ -1,5 +1,5 @@
 # @title Search for organism names (regex)
-# @param arg0=Halobacter 
+# @param arg1=Halobacter 
 
 SELECT ?org ?org_label ?org_descr ?tax_id ?tax_name
 WHERE {
@@ -8,7 +8,7 @@ WHERE {
          dct:description ?org_descr ;
          orth:taxon ?tax_id .
     ?tax_id up:scientificName ?tax_name .
-    FILTER (regex(?tax_name, "$1"))
+    FILTER (regex(?tax_name, "$arg1"))
 }
 ORDER BY ?tax_name
 

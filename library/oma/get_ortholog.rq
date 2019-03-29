@@ -1,5 +1,5 @@
 # @title Get orthologs of a specific protein
-# @param arg0=ENSLACG00000002497 
+# @param arg1=ENSLACG00000002497 
 
 PREFIX lscr: <http://purl.org/lscr#>
 PREFIX ens: <http://rdf.ebi.ac.uk/resource/ensembl/>
@@ -11,7 +11,7 @@ WHERE {
     ?node1 oo:hasHomologousMember* ?query_protein .
     ?node2 oo:hasHomologousMember* ?ortholog_protein .
     FILTER(?node1 != ?node2) 
-    ?query_protein sio:SIO_010079/lscr:xrefEnsemblGene ens:$1 .
+    ?query_protein sio:SIO_010079/lscr:xrefEnsemblGene ens:$arg1 .
     ?ortholog_protein rdfs:seeAlso ?OMA_link . 
 }
 

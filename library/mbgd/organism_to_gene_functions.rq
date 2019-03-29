@@ -1,11 +1,11 @@
 # @title Cluster IDs for each gene of
-# @param arg0=syn 
+# @param arg1=syn 
 
 SELECT ?function ?color ?label (COUNT(?function) AS ?count)
 WHERE {
     ?cluster a orth:OrthologGroup ;
           orth:inDataset mbgdr:default ;
-          orth:member/orth:gene/orth:organism org:$1 ;
+          orth:member/orth:gene/orth:organism org:$arg1 ;
     	  mgfo:funcMBGD ?mbgd_func .
     ?mbgd_func
           rdfs:label ?label ;

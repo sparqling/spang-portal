@@ -1,5 +1,5 @@
 # @title Get UniProt IDs for a specific disease, e.g. C0751955 ("Brain Infarction")
-# @param arg0=C0751955 
+# @param arg1=C0751955 
 
 PREFIX uniprot: <http://purl.uniprot.org/uniprot/>
 PREFIX disgenet_source: <http://rdf.disgenet.org/v4.0.0/void/>
@@ -9,7 +9,7 @@ SELECT DISTINCT ?uniprot ?score ?gene_label ?source
 # ?gda
 # ?pmid ?description
 WHERE {
-    ?gda sio:SIO_000628 umls:$1 ,
+    ?gda sio:SIO_000628 umls:$arg1 ,
                         ?gene ;
           a ?type ;
           sio:SIO_000253 ?source ;

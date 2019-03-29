@@ -1,9 +1,9 @@
 # @title 
-# @param arg0=K9Z723 
+# @param arg1=K9Z723 
 
 SELECT ?annot_type ?begin_pos ?end_pos ?property ?val ?conflict_seq
 WHERE {
-    uniprot:$1 up:annotation ?annot .
+    uniprot:$arg1 up:annotation ?annot .
     ?annot a ?type ;
            ?property ?val .
     ?type rdfs:label ?annot_type .

@@ -1,9 +1,9 @@
 # @title 
-# @param arg0=tax:511145 
+# @param arg1=tax:511145 
 
 SELECT *
 WHERE {
     ?protein a up:Protein ;
-             up:organism $1 .
+             up:organism $arg1 .
 }
 

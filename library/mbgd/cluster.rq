@@ -1,11 +1,11 @@
 # @title Basic information of cluster
-# @param arg0=2000 
+# @param arg1=2000 
 
 SELECT ?label ?description ?member_count ?page
 WHERE {
     ?cluster a orth:OrthologGroup ;
              orth:inDataset mbgdr:default ;
-             dct:identifier "$1";
+             dct:identifier "$arg1";
              rdfs:label ?label ;
              dct:description ?description ;
              mbgd:memberCount ?member_count ;

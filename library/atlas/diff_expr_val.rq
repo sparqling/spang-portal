@@ -1,5 +1,5 @@
 # @title Get differentially expressed genes for a specific experimental condition, e.g. EFO_0002618 ("pancreatic carcinoma"), with P-values
-# @param arg0=EFO_0002618 
+# @param arg1=EFO_0002618 
 
 PREFIX uniprot: <http://purl.uniprot.org/uniprot/>
 
@@ -21,7 +21,7 @@ WHERE {
             atlas:tStatistic ?t ;
             atlas:pValue ?p_value ;
             atlas:isMeasurementOf ?probe .
-    ?factor a efo:$1 ;
+    ?factor a efo:$arg1 ;
             atlas:propertyType ?condition_type ;
             atlas:propertyValue ?condition .
     # ?probe atlas:dbXref ?uniprot .

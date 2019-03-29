@@ -81,12 +81,9 @@ class Template
     @cached_query ||=
         Tempfile.create do |file|
           tmp_query = @raw_query
-          while matched = tmp_query.match(/\$(\d+)/)
-            i = matched[1].to_i
-            if @param[i-1][:default]
-              tmp_query = tmp_query.gsub(/\$#{i}/, @param[i-1][:default])
-            else
-              break
+          @param.each do |par|
+            if par[:default]
+              tmp_query = tmp_query.gsub(par[:name], par[:default])
             end
           end
           file.write(tmp_query)

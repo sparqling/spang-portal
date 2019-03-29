@@ -17,15 +17,17 @@ def replace_format(path)
     end
   end
   params = params.flatten
+  query_part = query_lines.join('')
 
   params_part = params.each_with_index.map do |param, i|
-    "# @param arg#{i}=#{param} \n"
+    query_part = query_part.gsub(/\$#{i+1}/, "$arg#{i+1}")
+    "# @param arg#{i+1}=#{param} \n"
   end.join('')
 
   <<~QUERY
     # @title #{description}
     #{params_part}
-    #{query_lines.join('')}
+    #{query_part}
   QUERY
 end
 
@@ -37,10 +39,12 @@ Dir.glob(File.join(ARGV[0]  , '*')).select{ |file| !File.file?(file) }.each do |
   Dir.glob(File.join(dir, '*')).select{ |file| File.file?(file) }.each do |template|
     puts "temp: #{template}"
     dst_path = File.join(base_dir, File.basename(template))
-    if(template.end_with?('.rq'))
-      File.write(dst_path, replace_format(template))
-    else
-      File.write(dst_path, File.read(template))
+    File.open(dst_path, 'w') do |file|
+      if(template.end_with?('.rq'))
+        file.write(replace_format(template))
+      else
+        file.write(File.read(template))
+      end
     end
   end
 end

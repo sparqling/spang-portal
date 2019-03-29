@@ -1,5 +1,5 @@
 # @title 
-# @param arg0=Phylum 
+# @param arg1=Phylum 
 
 SELECT DISTINCT ?org ?org_label ?tax ?tax_label
 WHERE {
@@ -7,7 +7,7 @@ WHERE {
     OPTIONAL {
 	?org mbgd:inTaxon ?tax .
 	?tax rdfs:label ?tax_label .
-    	?tax taxont:rank taxont:$1 .
+    	?tax taxont:rank taxont:$arg1 .
     }
     VALUES (?org) { $STDIN }
 }

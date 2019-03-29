@@ -1,5 +1,5 @@
 # @title Find classes or properties (regex search for URIs or labels)
-# @param arg0=homolo 
+# @param arg1=homolo 
 
 SELECT DISTINCT ?term_type ?term_uri ?term_label
 WHERE {
@@ -14,11 +14,11 @@ WHERE {
         ?term_uri rdfs:label ?term_label .
     }
     {
-	FILTER (regex(str(?term_label), "$1", "i"))
+	FILTER (regex(str(?term_label), "$arg1", "i"))
     }
     UNION
     {
-	FILTER (regex(str(?class), "$1", "i"))
+	FILTER (regex(str(?class), "$arg1", "i"))
     }
 }
 ORDER BY ?term_type ?term_uri
