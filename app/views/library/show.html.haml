@@ -22,7 +22,7 @@
       Select SPARQL template
 
     - @library.templates.each do |template|
-      %a{ href: File.join(@library.name, template.name) }
+      %a{ href: '/' + template.file_path}
         = template.name
       %br
       - if template.description

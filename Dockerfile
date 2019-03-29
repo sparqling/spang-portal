@@ -14,6 +14,10 @@ RUN mkdir /app
 WORKDIR /app
 ADD docker-entrypoint.sh /
 
+RUN apt-get update \
+  && apt-get install -y cpanminus make \
+  && cpanm Getopt::Std LWP::UserAgent
+
 RUN gem install bundler
 
 EXPOSE 3000
