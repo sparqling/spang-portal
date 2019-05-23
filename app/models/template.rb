@@ -46,7 +46,7 @@ class Template
     keywords = query.split.map(&:downcase)
     Library.all.map do |library|
       library.templates.each do |template|
-        if keywords.all?{ |keyword| [library.name, template.description].any?{ |txt| txt&.downcase.include?(keyword) } }
+        if keywords.all?{ |keyword| [library.name, template.description].any?{ |txt| txt&.downcase&.include?(keyword) } }
           results << template
         end
       end
@@ -54,7 +54,7 @@ class Template
     results.group_by(&:library)
   end
 
-  attr_accessor :library, :name, :title, :param
+  attr_accessor :library, :name, :title, :param, :description
 
   def initialize(library, template_name)
     @library = library
@@ -83,7 +83,7 @@ class Template
           tmp_query = @raw_query
           @param.each do |par|
             if par[:default]
-              tmp_query = tmp_query.gsub(par[:name], par[:default])
+              tmp_query = tmp_query.gsub("$#{par[:name]}", par[:default])
             end
           end
           file.write(tmp_query)
