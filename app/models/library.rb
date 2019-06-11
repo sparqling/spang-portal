@@ -53,7 +53,6 @@ class Library
   def templates
     @cached_templates ||= Dir.glob(File.join(Settings.library_root, @name, '*.rq')).select{ |file| File.file?(file) }.map do |file|
       file_name = File.basename(file, '.*')
-      puts "name: #{file_name}"
       Template.new(self, file_name)
     end.compact
     @cached_templates

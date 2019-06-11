@@ -12,6 +12,10 @@
     - if @template_groups.empty?
       %h2
         No results found
+    - else
+      -# Somewhy if we use href directly, the page does not change on brower back
+      %a{ href: '#', onclick: "window.location='#{api_library_search_template_path(keyword: @query)}';return false;"}
+        Get JSON
     - @template_groups.each do |lib, templates|
       %h2
         %a{ href: lib.endpoint }
