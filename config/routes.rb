@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   resources :library, only: [:index, :show]
   get "library/:library_id/:template_id", to: 'library#show_template', as: 'library_show_template'
   namespace :api do
+    get 'search', to: 'library#search_template', as: 'api_library_search_template'
     resources :library, only: [:index, :show]
   end
 end
