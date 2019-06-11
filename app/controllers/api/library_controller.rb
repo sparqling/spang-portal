@@ -9,7 +9,7 @@ module Api
     end
 
     def search_template
-      @query = params[:search]
+      @query = params[:keyword]
       @template_groups = Template.search(@query)
       puts @template_groups.map{ |l, t| t.map(&:to_h) }
       render json: @template_groups.map{ |l, t| [l.name, t.map(&:to_h)] }.to_h

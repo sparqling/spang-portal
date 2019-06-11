@@ -12,7 +12,7 @@ class LibraryController < ApplicationController
   end
 
   def search_template
-    @query = params[:search]
+    @query = params[:keyword]
     @template_groups = Template.search(@query)
   end
 end

@@ -1,4 +1,4 @@
 .searchbox
   = form_tag(library_search_template_path,:method => 'get') do
-    = text_field_tag :search, "", placeholder: "Search Templates...", value: query
+    = text_field_tag :keyword, "", placeholder: "Search Templates...", value: query
     = submit_tag 'Search', :name => nil
