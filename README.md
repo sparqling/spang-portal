@@ -4,8 +4,6 @@ The SPANG Portal is an integrated web service including SPANG libraries and a we
 
 It will include SPANG repository as a sub-module in the future.
 
-Copyright (c) 2019 Hirokazu Chiba 
-
 ## Getting Started
 ### With Docker
     $ docker-compose up --build -d
@@ -21,3 +19,6 @@ After the container started, access localhost:8080 by a web browser.
     $ bundle 
     $ bundle exec rails s
 
+Copyright (c) 2019 Hirokazu Chiba <br>
+Released under the MIT license <br>
+http://opensource.org/licenses/mit-license.php
