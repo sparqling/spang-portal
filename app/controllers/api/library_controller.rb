@@ -13,5 +13,10 @@ module Api
       @template_groups = Template.search(@query)
       render json: @template_groups.map{ |l, t| [l.name, t.map(&:to_h)] }.to_h
     end
+    
+    def query_template
+      @template = Template.new(Library.new(params[:library_id]), params[:template_id])
+      render plain: @template.query_to_endpoint(params.reject{|k, _| k == :template_id || k == :library_id}.permit!)
+    end
   end
 end

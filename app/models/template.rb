@@ -76,22 +76,37 @@ class Template
   def endpoint
     library.endpoint
   end
+  
+  def create_sparql_file(file, external_params=nil)
+    tmp_query = @raw_query
+    params = @param.map{ |pair| [pair[:name], pair[:default]] }.to_h
+    params = params.merge(external_params) if external_params
+    params.each do |k, v|
+      if v
+        tmp_query = tmp_query.gsub("$#{k}", v)
+      end
+    end 
+    puts tmp_query
+    file.write(tmp_query)
+    file.rewind
+  end
 
   def query
     @cached_query ||=
         Tempfile.create do |file|
-          tmp_query = @raw_query
-          @param.each do |par|
-            if par[:default]
-              tmp_query = tmp_query.gsub("$#{par[:name]}", par[:default])
-            end
-          end
-          file.write(tmp_query)
-          file.rewind
+          create_sparql_file(file)
           `spang/bin/spang mbgd #{file.path} -r spang/etc/prefix,spang/user_prefix -q`
         end
     @cached_query
   end
+
+  def query_to_endpoint(external_params)
+      Tempfile.create do |file|
+        create_sparql_file(file, external_params)
+        `spang/bin/spang #{endpoint} #{file.path} -r spang/etc/prefix,spang/user_prefix`
+      end
+  end
+
 
 
   def to_h
