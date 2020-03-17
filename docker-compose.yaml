@@ -3,7 +3,7 @@ services:
   app:
     build: .
     ports:
-      - "8080:3000"
+      - "7070:3000"
     volumes: 
       - .:/app:cached
       - bundle:/usr/local/bundle:cached
