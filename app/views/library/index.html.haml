@@ -1,6 +1,11 @@
 !!!
-%p
+= content_for :path do
   .small
+    %a{ href: Settings.spang_home }
+      = Settings.site_name
+    >>
+    = "Library"
+%p
   %h2 Select the target SPARQL endpoint
   .content_wrapper
     - @libraries.each do |library|
