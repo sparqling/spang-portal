@@ -21,7 +21,8 @@ After the container started, access localhost:8080 by a web browser.
 
 ### Deploy in subdirectory
 In config/application.rb, add a line like the following.
-    $ config.relative_url_root = "/subdirectory_name"
+
+    config.relative_url_root = "/subdirectory_name"
 
 Copyright (c) 2019 Hirokazu Chiba <br>
 Released under the MIT license <br>
