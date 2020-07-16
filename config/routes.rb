@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root to: 'library#index'
   get 'library/search', to: 'library#search_template', as: 'library_search_template'
   resources :library, only: [:index, :show]
-  get "library/:library_id/:template_id", to: 'library#show_template', as: 'library_show_template'
+  get "library/:library_id/:template_id", to: 'library#show_template', as: 'library_show_template', constraints: { template_id: /[^\/]+/ }
   namespace :api do
     get 'search', to: 'library#search_template', as: 'library_search_template'
     resources :library, only: [:index, :show]

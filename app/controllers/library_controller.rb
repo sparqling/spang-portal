@@ -8,7 +8,7 @@ class LibraryController < ApplicationController
   end
 
   def show_template
-    @template = Library.new(params[:library_id]).templates.select{ |template| template.name == params[:template_id]}.first
+    @template = Library.new(params[:library_id]).templates.select{ |template| template.name == File.basename(params[:template_id], '.*')}.first
     respond_to do |format|
       format.all { render action: 'show_template.html.haml', content_type: "text/html" }
       format.text { render plain: @template.query }
