@@ -10,8 +10,8 @@ class LibraryController < ApplicationController
   def show_template
     @template = Library.new(params[:library_id]).templates.select{ |template| template.name == File.basename(params[:template_id], '.*')}.first
     respond_to do |format|
-      format.all { render action: 'show_template.html.haml', content_type: "text/html" }
-      format.text { render plain: @template.query }
+      format.all { render plain: @template.query }
+      format.html { render action: 'show_template.html.haml', content_type: "text/html" }
       format.json { render json: { query: @template.query } }
     end
   end
