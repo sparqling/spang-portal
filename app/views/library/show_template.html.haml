@@ -13,8 +13,11 @@
 
 - content_for :path do
   .small
-    %a{ href: root_path }
+    %a{ href: Settings.spang_home }
       = Settings.site_name
+    >>
+    %a{ href: "#{root_path}library" }
+      = "Library"
     >>
     %a{ href: library_path(@template.library.name) }
       = @template.library.title

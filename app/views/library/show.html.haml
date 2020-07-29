@@ -1,10 +1,13 @@
 !!!
 = content_for :path do
   .small
-    %a{ href: root_path }
+    %a{ href: Settings.spang_home }
       = Settings.site_name
     >>
-    = @library.name
+    %a{ href: "#{root_path}library" }
+      = "Library"
+    >>
+    = @library.title
 %p
   %h1
     = "SPARQL library for #{@library.title}"
@@ -16,7 +19,7 @@
     - if @library.endpoint
       %br
       %a.link_title{ href:  @library.endpoint }
-        = "#{@library.title} RDF endpoint"
+        = "#{@library.title} SPARQL endpoint"
       %br
     %h2
       Select SPARQL template

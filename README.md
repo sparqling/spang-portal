@@ -19,6 +19,11 @@ After the container started, access localhost:8080 by a web browser.
     $ bundle 
     $ bundle exec rails s
 
+### Deploy in subdirectory
+In config/application.rb, add a line like the following.
+
+    config.relative_url_root = "/subdirectory_name"
+
 Copyright (c) 2019 Hirokazu Chiba <br>
 Released under the MIT license <br>
 http://opensource.org/licenses/mit-license.php
