@@ -1,4 +1,10 @@
 .searchbox
   = form_tag(library_search_template_path,:method => 'get') do
-    = text_field_tag :keyword, "", placeholder: "Search Templates...", value: query
+    = text_field_tag :keyword, "", placeholder: "Search Templates...", value: query, id: 'search_input', autocomplete: true, list: 'search_keyword_list'
     = submit_tag 'Search', :name => nil
+    = javascript_include_tag 'library/search_template', 'data-turbolinks-track': 'reload'
+    %datalist#search_keyword_list
+      %option
+        candidate1
+      %option
+        candidate2

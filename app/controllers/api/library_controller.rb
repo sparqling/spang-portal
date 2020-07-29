@@ -7,6 +7,12 @@ module Api
     def show
       render json: Library.new(params[:id]).to_h(true)
     end
+    
+    def incremental_search
+      @query = params[:keyword]
+      @template_groups = Template.search(@query)
+      render json: @template_groups.map{ |_, t| t.map(&:name) }.flatten
+    end
 
     def search_template
       @query = params[:keyword]

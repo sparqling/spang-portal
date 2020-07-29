@@ -46,7 +46,7 @@ class Template
     keywords = query.split.map(&:downcase)
     Library.all.map do |library|
       library.templates.each do |template|
-        if keywords.all?{ |keyword| [library.name, template.description].any?{ |txt| txt&.downcase&.include?(keyword) } }
+        if keywords.all?{ |keyword| [library.name, template.description, template.name].any?{ |txt| txt&.downcase&.include?(keyword) } }
           results << template
         end
       end
