@@ -1,7 +1,7 @@
 # @title 
 
-#stdin org:eco
-#stdin org:bsu
+# @input org:eco
+# input org:bsu
 SELECT ?organism GROUP_CONCAT(?cluster_id; separator=" ")
 WHERE {
     ?cluster a oo:OrthologsCluster ;
@@ -10,7 +10,7 @@ WHERE {
              oo:hasHomologous ?gene .
     ?gene a oo:Gene ;
           mbgd:organism ?organism .
-    VALUES (?organism) { $STDIN }
+    VALUES (?organism) { {{INPUT}} }
     VALUES (?cluster_id) { ("1025") ("1") ("10") }
 }
 

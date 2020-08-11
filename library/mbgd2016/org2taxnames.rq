@@ -3,7 +3,7 @@
 
 SELECT DISTINCT ?organism ?name
 WHERE {
-    VALUES (?organism) { $STDIN }
+    VALUES (?organism) { {{INPUT}} }
     ?organism mbgd:taxon ?taxid .
     ?taxid_new taxont:merged* ?taxid .
     ?taxid_new rdfs:subClassOf* ?ancestor .

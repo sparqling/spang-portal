@@ -2,7 +2,7 @@
 
 SELECT ?resource ?label
 WHERE {
-    VALUES (?resource) { $STDIN }
+    VALUES (?resource) { {{INPUT}} }
     OPTIONAL {
 	?resource rdfs:label ?label .
     }

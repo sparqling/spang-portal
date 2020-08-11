@@ -1,10 +1,10 @@
 # @title 
 # @param arg1=TIGR 
 
-#stdin <http://mbgd.genome.ad.jp/rdf/resource/gene/puf:UFO1_RS15575>
+# @input <http://mbgd.genome.ad.jp/rdf/resource/gene/puf:UFO1_RS15575>
 SELECT DISTINCT ?gene_id ?begin ?end ?motif_name ?e_value ?motif_begin ?motif_end ?motif_length ?motif_descr ?gene_length ?gene_name ?gene_descr
 WHERE {
-    VALUES (?gene) { $STDIN }
+    VALUES (?gene) { {{INPUT}} }
     ?motif_hit mbgd:motifType "$arg1";
         mbgd:gene ?gene ;
 	mbgd:begin ?begin ;

@@ -2,7 +2,7 @@
 
 SELECT DISTINCT ?taxon ?org ?org_label
 WHERE {
-    VALUES (?taxon) { $STDIN }
+    VALUES (?taxon) { {{INPUT}} }
     mbgdr:default mbgd:organism ?org .
     ?org a mbgd:Genome .
     ?org mbgd:inTaxon ?taxon .

@@ -15,6 +15,6 @@ WHERE {
     ?factor atlas:propertyType ?condition_type ;
             atlas:propertyValue ?condition .
     ?probe atlas:dbXref ?uniprot .
-    VALUES (?uniprot) { $STDIN }
+    VALUES (?uniprot) { {{INPUT}} }
 }
 

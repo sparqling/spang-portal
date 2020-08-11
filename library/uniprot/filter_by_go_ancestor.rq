@@ -8,6 +8,6 @@ WHERE {
 	     rdfs:label ?uniprot_label .
     ?go rdfs:subClassOf* obo:$arg1 .
     ?go rdfs:label ?go_label
-    VALUES (?uniprot) { $STDIN }
+    VALUES (?uniprot) { {{INPUT}} }
 }
 

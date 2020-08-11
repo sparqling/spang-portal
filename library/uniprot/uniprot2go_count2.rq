@@ -6,7 +6,7 @@ WHERE {
     {
 	SELECT DISTINCT ?uniprot ?go
 	WHERE {
-	    VALUES (?uniprot) { $STDIN }
+	    VALUES (?uniprot) { {{INPUT}} }
 	    ?uniprot up:classifiedWith ?go .
 	    ?go up:database <http://purl.uniprot.org/database/go> .
 	}
