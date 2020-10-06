@@ -1,5 +1,8 @@
 $(document).ready(function() {
-    var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+    let textArea = document.getElementById("code");
+    let originalValue = textArea.value;
+    
+    let editor = CodeMirror.fromTextArea(textArea, {
         mode: "application/sparql-query",
         matchBrackets: true,
         autoCloseBrackets: true,
@@ -14,7 +17,13 @@ $(document).ready(function() {
           }
         }
     });
-    var endpoint = $('#code').data('endpoint');
+    const historyTraversal = event.persisted ||
+      ( typeof window.performance != "undefined" &&
+        window.performance.navigation.type === 2 );
+    if ( !historyTraversal ) {
+      editor.setValue(originalValue);
+    }
+    let endpoint = $('#code').data('endpoint');
     if (endpoint == "https://query.wikidata.org/") {
         $('#submit_button_query').on('click',
             function () {

@@ -2,7 +2,7 @@
 
 SELECT ?taxid ?parent
 WHERE {
-    VALUES (?taxid) { $STDIN }
+    VALUES (?taxid) { {{INPUT}} }
     # ?taxid_new taxont:merged* ?taxid  . # taxid can be replaced with a new ID
     # ?taxid_new rdfs:subClassOf ?parent .
     ?taxid rdfs:subClassOf ?parent .

@@ -1,6 +1,6 @@
 # @title 
 
-#stdin uniprot:P00918
+# @input uniprot:P00918
 SELECT ?uniprot ?gene
 ?protein_label
 ?disease_label
@@ -11,6 +11,6 @@ WHERE {
     ?annot a up:Disease_Annotation ;
              up:disease ?disease .
     ?disease skos:prefLabel ?disease_label .
-    VALUES (?uniprot) { $STDIN }
+    VALUES (?uniprot) { {{INPUT}} }
 }
 

@@ -3,7 +3,7 @@
 
 SELECT ?taxon (COUNT(DISTINCT ?taxid) AS ?num)
 WHERE {
-    VALUES (?taxid) { $STDIN }
+    VALUES (?taxid) { {{INPUT}} }
     ?taxid a up:Taxon .
     ?taxid rdfs:subClassOf+ ?ancestor .
     ?ancestor up:rank up:$arg1 ;

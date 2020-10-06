@@ -2,7 +2,7 @@
 
 SELECT DISTINCT ?taxon ?org
 WHERE {
-    VALUES (?taxon) { $STDIN }
+    VALUES (?taxon) { {{INPUT}} }
     ?org a mbgd:Genome .
     ?org mbgd:inTaxon ?taxon .
 }

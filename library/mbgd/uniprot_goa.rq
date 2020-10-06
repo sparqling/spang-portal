@@ -1,10 +1,10 @@
 # @title GO annotation for UniProt IDs
 # @param arg1=goa 
 
-#stdin uniprot:K9Z723
+# @input uniprot:K9Z723
 SELECT DISTINCT ?uniprot ?go_id ?go_label ?comment
 WHERE {
-    VALUES (?uniprot) { $STDIN }
+    VALUES (?uniprot) { {{INPUT}} }
     ?uniprot ?goa ?go_id .
     ?goa rdfs:subPropertyOf* goa:$arg1 ; # goa:goa, goa:goaEXP, etc.
          rdfs:comment ?comment .

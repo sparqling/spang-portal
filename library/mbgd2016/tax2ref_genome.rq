@@ -1,10 +1,10 @@
 # @title 
 
-#stdin taxid:543
-#stdin taxid:1117
+# @input taxid:543
+# input taxid:1117
 SELECT ?taxid ?code ?min_date
 WHERE {
-    VALUES (?taxid) { $STDIN }
+    VALUES (?taxid) { {{INPUT}} }
     mbgdr:default
         mbgd:organism ?ref_genome .
     ?ref_genome

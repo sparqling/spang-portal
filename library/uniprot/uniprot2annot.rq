@@ -1,6 +1,6 @@
 # @title ?organism
 
-#stdin uniprot:K9Z723
+# @input uniprot:K9Z723
 SELECT ?uniprot ?gene ?protein_label
 ?function
 WHERE {
@@ -10,6 +10,6 @@ WHERE {
              up:annotation ?annot .
     ?annot a up:Function_Annotation ;
    	  rdfs:comment ?function .
-    VALUES (?uniprot) { $STDIN }
+    VALUES (?uniprot) { {{INPUT}} }
 }
 

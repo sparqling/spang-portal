@@ -20,6 +20,12 @@ RUN apt-get update \
 
 RUN gem install bundler
 
+RUN cd /opt/ \
+    && git clone https://github.com/hchiba1/spang.git \
+    && cd spang \
+    && npm install \
+    && npm link    
+
 EXPOSE 3000
 
 ENTRYPOINT ["/docker-entrypoint.sh"]

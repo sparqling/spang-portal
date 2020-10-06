@@ -1,6 +1,6 @@
 # @title Get diseases associated with given UniProt IDs
 
-#stdin uniprot:P05067
+# @input uniprot:P05067
 PREFIX disgenet_source: <http://rdf.disgenet.org/v4.0.0/void/>
 
 SELECT DISTINCT ?uniprot ?disease_label ?score ?gene_label ?source
@@ -20,7 +20,7 @@ WHERE {
         ?gda sio:SIO_000772 ?pmid ;
              dct:description ?sentence .
     }
-    VALUES (?uniprot) { $STDIN }
+    VALUES (?uniprot) { {{INPUT}} }
     # VALUES (?source) { (<http://rdf.disgenet.org/v4.0.0/void/uniprot-2016>)
     #                  (<http://rdf.disgenet.org/v4.0.0/void/ctd_human-2016>)
     #                  (<http://rdf.disgenet.org/v4.0.0/void/clinvar-2016>)

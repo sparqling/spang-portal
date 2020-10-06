@@ -14,7 +14,7 @@ WHERE {
     {
         SELECT (COUNT(?uniprot) AS ?count) ?go
         WHERE {
-            VALUES (?uniprot) { $STDIN }
+            VALUES (?uniprot) { {{INPUT}} }
             ?uniprot up:classifiedWith ?go .
     	}
     }

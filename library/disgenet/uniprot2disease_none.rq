@@ -1,6 +1,6 @@
 # @title Get diseases associated with given UniProt IDs
 
-#stdin uniprot:P05067
+# @input uniprot:P05067
 
 SELECT DISTINCT ?uniprot ?gene ?gene_label
 WHERE {
@@ -10,7 +10,7 @@ WHERE {
     OPTIONAL {
     	?gda sio:SIO_000628 ?gene .
     }
-    VALUES (?uniprot) { $STDIN }
+    VALUES (?uniprot) { {{INPUT}} }
     FILTER (! bound(?gda))
 }
 

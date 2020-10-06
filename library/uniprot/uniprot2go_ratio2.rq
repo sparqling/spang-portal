@@ -11,7 +11,7 @@ WHERE {
 		    ?uniprot up:classifiedWith ?go .
 		    ?go up:database <http://purl.uniprot.org/database/go> ;
                     rdfs:label ?go_label .
-		    VALUES (?uniprot) { $STDIN }
+		    VALUES (?uniprot) { {{INPUT}} }
 		}
 	    }
 	}

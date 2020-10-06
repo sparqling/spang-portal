@@ -1,10 +1,10 @@
 # @title ORDER BY DESC(?sum_length)
 
-#stdin org:eco
-#stdin org:bsu
+# @input org:eco
+# input org:bsu
 SELECT ?code ?phylum ?organism ?sum_genes ?sum_length ?date ?pubmed
 WHERE {
-    VALUES (?genome) { $STDIN }
+    VALUES (?genome) { {{INPUT}} }
     ?genome
         rdfs:label ?organism ;
         dct:identifier ?code ;
