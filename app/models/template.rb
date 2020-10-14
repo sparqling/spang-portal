@@ -93,8 +93,7 @@ class Template
     @cached_query =
         Tempfile.create do |file|
           create_sparql_file(file)
-          puts "spang2 -e mbgd #{file.path} -r spang/etc/prefix,spang/user_prefix -q #{create_param_options}"
-          `spang2 -e mbgd #{file.path} -r spang/etc/prefix,spang/user_prefix -q #{create_param_options}`
+          `spang2 #{file.path} -r spang/etc/prefix,spang/user_prefix -q #{create_param_options}`
         end
     @cached_query
   end
