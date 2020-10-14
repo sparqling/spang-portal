@@ -13,7 +13,7 @@ It will include SPANG repository as a sub-module in the future.
     $ bundle
     $ exit
 
-After the container started, access localhost:8080 by a web browser.
+After the container started, access localhost:7070 by a web browser.
 
 ### Without Docker (ruby 2.5.1 is required)
     $ bundle 
