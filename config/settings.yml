@@ -2,3 +2,8 @@ site_name: SPANG
 library_root: library
 root_url: http://localhost:7070/api
 spang_home: https://spang.dbcls.jp
+repository: 
+  user: hchiba1
+  name: spang-portal
+  path: library
+  branch: master

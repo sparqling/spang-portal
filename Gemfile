@@ -66,3 +66,5 @@ gem 'haml-rails'
 gem "jquery-rails"
 
 gem 'config'
+
+gem 'colorize'
