@@ -12,11 +12,11 @@
   %h1
     = "SPARQL library for #{@library.title}"
   .content_wrapper
-    - if @library.schema
+    - if @library.schema&.length > 0
       %a.link_title{ href:  @library.schema }
         = "#{@library.title} RDF schema"
       %br
-    - if @library.endpoint
+    - if @library.endpoint&.length > 0
       %br
       %a.link_title{ href:  @library.endpoint }
         = "#{@library.title} SPARQL endpoint"

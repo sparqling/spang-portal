@@ -27,11 +27,13 @@
 
 %h2 Execute SPARQL query
 %form
-  = "Endpoint: #{@template.library.title} ( "
-  %a{ href: @template.endpoint }
-    =  @template.endpoint
-  )
+  - if @template.endpoint.length > 0
+    = "Endpoint: #{@template.library.title} ( "
+    %a{ href: @template.endpoint }
+      =  @template.endpoint
+    )
   %textarea#code{ name: 'code', 'data-endpoint': @template.endpoint }
     = @template.query
-%button#submit_button_query{ type: "button" }
-  Exec
+- if @template.endpoint.length > 0
+  %button#submit_button_query{ type: "button" }
+    Exec

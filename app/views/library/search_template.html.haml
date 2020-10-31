@@ -21,7 +21,7 @@
         Get JSON
     - @template_groups.each do |lib, templates|
       %h2
-        %a{ href: lib.endpoint }
+        %a{ href: lib.name }
           = "#{lib.title}/"
       .indented
         - templates.each do |template|

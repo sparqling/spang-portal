@@ -1,13 +1,16 @@
 class Library
 
   def self.all
-    entries = parse_config(File.join(Settings.library_root,'index.ini'))
+    config_path = File.join(Settings.library_root,'index.ini')
+    if File.exist?(config_path)
+      entries = parse_config(config_path)
+    else
+      entries = Dir.entries(Settings.library_root).select do
+          |entry| File.directory? File.join(Settings.library_root, entry) and !(entry =='.' || entry == '..') 
+      end.map{ |entry| [entry, nil] }
+    end
     entries.map do |dir, _|
-      if !File.exist?(File.join(Settings.library_root, dir, 'index.ini'))
-        nil
-      else
-        self.new(dir)
-      end
+      self.new(dir)
     end.compact
   end
 
@@ -42,12 +45,17 @@ class Library
   attr_accessor :name, :title, :description, :endpoint, :schema
 
   def initialize(name)
-    config = self.class.parse_config(File.join(Settings.library_root, name, 'index.ini')).symbolize_keys
+    config_path = File.join(Settings.library_root, name, 'index.ini')
+    if File.exist?(config_path)
+      config = self.class.parse_config(config_path).symbolize_keys
+    else
+      config = {}
+    end
     @name = name
-    @title = config[:title]
-    @description = config[:title]
-    @endpoint = config[:endpoint]
-    @schema = config[:schema]
+    @title = config[:title] || name 
+    @description = config[:title] || name
+    @endpoint = config[:endpoint] || ''
+    @schema = config[:schema] || ''
   end
 
   def templates
