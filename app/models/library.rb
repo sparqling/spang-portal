@@ -7,7 +7,7 @@ class Library
     else
       entries = Dir.entries(Settings.library_root).select do
           |entry| File.directory? File.join(Settings.library_root, entry) and !(entry =='.' || entry == '..') 
-      end.map{ |entry| [entry, nil] }
+      end.sort.map{ |entry| [entry, nil] }
     end
     entries.map do |dir, _|
       self.new(dir)
@@ -59,7 +59,7 @@ class Library
   end
 
   def templates
-    @cached_templates ||= Dir.glob(File.join(Settings.library_root, @name, '*.rq')).select{ |file| File.file?(file) }.map do |file|
+    @cached_templates ||= Dir.glob(File.join(Settings.library_root, @name, '*.rq')).select{ |file| File.file?(file) }.sort.map do |file|
       file_name = File.basename(file, '.*')
       Template.new(self, file_name)
     end.compact
