@@ -8,6 +8,7 @@ services:
       - .:/app:cached
       - bundle:/usr/local/bundle:cached
       - /app/.git
+      - /home/chiba/github/hchiba1/spang/library/:/app/library
     command: bundle exec rails s -p 3000 -b '0.0.0.0'
     logging:     
       driver: "json-file"
