@@ -146,6 +146,7 @@ class Template
                description_lines << line[1..-1].strip
              end
         end
+        query_lines << line.gsub("\n", '')
       else
         header = false
         query_lines << line.gsub("\n", '')
