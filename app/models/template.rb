@@ -142,9 +142,8 @@ class Template
           else
             $stderr.puts("Ignoring unknown annotation: @#{annotation}")
           end
-        else if (description == false)
-               description_lines << line[1..-1].strip
-             end
+        elsif (description == false)
+          description_lines << line[1..-1].strip
         end
         query_lines << line.gsub("\n", '')
       else
