@@ -1,16 +1,20 @@
 class Library
-
-  def self.all
-    config_path = File.join(Settings.library_root,'index.ini')
+  
+  def self.get_entries
+    config_path = File.join(Settings.library_root, 'index.yaml')
     if File.exist?(config_path)
       entries = parse_config(config_path)
     else
       entries = Dir.entries(Settings.library_root).select do
-          |entry| File.directory? File.join(Settings.library_root, entry) and !(entry =='.' || entry == '..') 
+      |entry| File.directory? File.join(Settings.library_root, entry) and !(entry =='.' || entry == '..')
       end.sort.map{ |entry| [entry, nil] }
     end
-    entries.map do |dir, _|
-      self.new(dir)
+    entries
+  end
+
+  def self.all
+    get_entries.map do |name, conf|
+      self.new(name, conf)
     end.compact
   end
 
@@ -36,30 +40,25 @@ class Library
   
   def self.parse_config(path)
     return nil unless File.exists?(path)
-    File.read(path).each_line.map do |line|
-      tokens = line.gsub(/^#.*$/, '').split
-      tokens[0..1] if tokens.length == 2
-    end.compact.to_h
+    YAML.load(File.read(path))
   end
 
   attr_accessor :name, :title, :description, :endpoint, :schema
 
-  def initialize(name)
-    config_path = File.join(Settings.library_root, name, 'index.ini')
-    if File.exist?(config_path)
-      config = self.class.parse_config(config_path).symbolize_keys
-    else
-      config = {}
-    end
+  def initialize(name, config=nil)
+    config ||= self.class.get_entries[name].symbolize_keys
     @name = name
-    @title = config[:title] || name 
+    @title = config[:title] || name
+    @query_paths = config[:queries]&.map{ |q| File.join(Settings.library_root, name, q) } ||
+      Dir.glob(File.join(Settings.library_root, @name, '*.rq'))
+    @query_paths = @query_paths.select{ |file| File.file?(file) }.sort
     @description = config[:title] || name
     @endpoint = config[:endpoint] || ''
     @schema = config[:schema] || ''
   end
 
   def templates
-    @cached_templates ||= Dir.glob(File.join(Settings.library_root, @name, '*.rq')).select{ |file| File.file?(file) }.sort.map do |file|
+    @cached_templates ||= @query_paths.map do |file|
       file_name = File.basename(file, '.*')
       Template.new(self, file_name)
     end.compact
@@ -71,7 +70,7 @@ class Library
   end
 
   def count
-    Dir.glob(File.join(Settings.library_root, @name, '*.rq')).select{ |file| File.file?(file) }.size
+    @query_paths.size
   end
 
   def to_h(with_templates = false)
@@ -79,7 +78,6 @@ class Library
     hash['uri'] = uri
     hash['count'] = count
     hash['templates'] = templates.map(&:to_h) if with_templates
-    puts "hash: #{hash}"
     hash
   end
 end

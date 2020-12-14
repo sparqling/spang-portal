@@ -1,0 +1,10 @@
+disgenet:
+  title: DisGenet
+  endpoint: http://rdf.disgenet.org/sparql/
+  queries:
+    - disease_gene.rq
+    - disease_uniprot.rq
+wikipathways:
+  title: WikiPathways
+  endpoint: http://sparql.wikipathways.org/
+  # queriesがない場合はすべて取得
