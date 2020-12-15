@@ -5,9 +5,9 @@ class Library
     if File.exist?(config_path)
       entries = parse_config(config_path)
     else
-      entries = Dir.entries(Settings.library_root).select do
-      |entry| File.directory? File.join(Settings.library_root, entry) and !(entry =='.' || entry == '..')
-      end.sort.map{ |entry| [entry, nil] }
+      entries = Dir.entries(Settings.library_root).select do |entry|
+        File.directory? File.join(Settings.library_root, entry) and !(entry =='.' || entry == '..')
+      end.sort.map{ |entry| [entry, { }] }.to_h
     end
     entries
   end
