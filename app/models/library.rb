@@ -46,7 +46,8 @@ class Library
   attr_accessor :name, :title, :description, :endpoint, :schema
 
   def initialize(name, config=nil)
-    config ||= self.class.get_entries[name].symbolize_keys
+    config ||= self.class.get_entries[name]
+    config = config.symbolize_keys
     @name = name
     @title = config[:title] || name
     @query_paths = config[:queries]&.map{ |q| File.join(Settings.library_root, name, q) } ||
