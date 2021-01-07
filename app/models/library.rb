@@ -53,7 +53,7 @@ class Library
     @query_paths = config[:queries]&.map{ |q| File.join(Settings.library_root, name, q) } ||
       Dir.glob(File.join(Settings.library_root, @name, '*.rq'))
     @query_paths = @query_paths.select{ |file| !config[:ignore].include?(File.basename(file)) } if config[:ignore]
-    @query_paths = @query_paths.select{ |file| File.file?(file) }.sort
+    @query_paths = @query_paths.select{ |file| File.file?(file) }
     @description = config[:title] || name
     @endpoint = config[:endpoint] || ''
     @schema = config[:schema] || ''
