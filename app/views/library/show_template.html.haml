@@ -9,7 +9,8 @@
   %style{:src => "/codemirror-5.30.0/mode/sparql/sparql.js"}
   = javascript_include_tag('library/show_template.js', 'data-turbolinks-track': 'reload')
   :css
-    .CodeMirror {border-top: 1px solid black; border-bottom: 1px solid black;}
+    .CodeMirror-sizer { min-height: 330px !important; }
+    .CodeMirror {height: auto !important; min-height: 330px; border-top: 1px solid black; border-bottom: 1px solid black;}
 
 - content_for :path do
   .small

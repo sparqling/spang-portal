@@ -9,6 +9,7 @@ $(document).ready(function() {
         lineNumbers: true,
         sparqlSupportAutoComp: true,
         scrollbarStyle: "null",
+        viewportMargin: Infinity,
         extraKeys: {
           "Tab": function (instance) {
             return false;
