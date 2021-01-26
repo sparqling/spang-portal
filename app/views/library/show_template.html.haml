@@ -39,8 +39,11 @@
     %a{ href: @template.endpoint }
       =  @template.endpoint
     )
+  %br
+  %br
   %textarea#code{ name: 'code', 'data-endpoint': @template.endpoint }
     = @template.query
 - if @template.endpoint.length > 0
+  %br
   %button#submit_button_query{ type: "button" }
     Exec
