@@ -10,7 +10,13 @@
   = javascript_include_tag('library/show_template.js', 'data-turbolinks-track': 'reload')
   :css
     .CodeMirror-sizer { min-height: 330px !important; max-height: 660px !important; }
-    .CodeMirror {height: auto !important; min-height: 330px; max-height: 660px; border-top: 1px solid black; border-bottom: 1px solid black;}
+    .CodeMirror {height: auto !important; min-height: 330px;
+                 max-height: 660px; border-top: 1px solid black; border-bottom: 1px solid black;
+     }
+    .CodeMirror * {
+                 font-family: Monaco, "Courier New", monospace;    
+                 font-size: 13px;
+    }
 
 - content_for :path do
   .small
