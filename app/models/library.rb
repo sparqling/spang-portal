@@ -2,6 +2,7 @@ class Library
   
   def self.get_entries
     config_path = File.join(Settings.library_root, 'index.yaml')
+    config_path = File.join(Settings.library_root, 'index.yml') unless File.exist?(config_path)
     if File.exist?(config_path)
       entries = parse_config(config_path)
     else
