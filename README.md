@@ -17,7 +17,7 @@ After the container started, access localhost:7070 by a web browser.
 
 To check if a query is processed correctly,
 ```
-$ docker-compose exec app spang2 library/disgenet/disease_gene.rq  -r spang/etc/prefix,spang/user_prefix -q
+$ docker-compose exec app spang2 library/disgenet/disease_gene.rq  --prefix spang/etc/prefix,spang/user_prefix -q
 ```
 
 To see the log,

@@ -81,19 +81,19 @@ class Template
     params = @param.map{ |pair| [pair[:name], pair[:default]] }.to_h
     params = params.merge(external_params) if external_params
     return '' if params.length == 0
-    '-p ' + params.map { |k, v| "#{k}=#{v}" }.join(',')
+    params.map { |k, v| "#{k}=#{v}" }.join(',')
   end
-  
+
   def create_sparql_file(file)
     file.write(@raw_query)
     file.rewind
   end
-
+  
   def query
     @cached_query =
         Tempfile.create do |file|
           create_sparql_file(file)
-          `spang2 #{file.path} -r spang/etc/prefix,spang/user_prefix -q #{create_param_options}`
+          `spang2 #{file.path} --prefix spang/etc/prefix,spang/user_prefix -q #{create_param_options}`
         end
     @cached_query
   end
@@ -101,11 +101,9 @@ class Template
   def query_to_endpoint(external_params)
       Tempfile.create do |file|
         create_sparql_file(file)
-        `spang2 -e #{endpoint} #{file.path} -r spang/etc/prefix,spang/user_prefix #{create_param_options(external_params)}`
+        `spang2 -e #{endpoint} #{file.path} --prefix spang/etc/prefix,spang/user_prefix #{create_param_options(external_params)}`
       end
   end
-
-
 
   def to_h
     %w[name title uri endpoint param].map do |prop|

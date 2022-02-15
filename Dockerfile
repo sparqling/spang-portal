@@ -2,7 +2,7 @@ FROM ruby:2.5.1
 RUN apt-get update -qq && apt-get install -y build-essential libpq-dev cron
 
 # Node.js
-RUN curl -sL https://deb.nodesource.com/setup_12.x | bash - && \
+RUN curl -sL https://deb.nodesource.com/setup_16.x | bash - && \
 apt-get install nodejs
 
 RUN apt-get update && apt-get install -y curl apt-transport-https wget && \
@@ -17,9 +17,9 @@ ADD docker-entrypoint.sh /
 RUN gem install bundler
 
 RUN cd /opt/ \
-    && git clone https://github.com/hchiba1/spang.git \
+    && git clone https://github.com/hchiba1/spang.git/ -b v2.3.1 \
     && cd spang \
-    && npm install \
+    && npm install --engine-strict \
     && npm link    
 
 EXPOSE 3000
